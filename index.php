@@ -4,45 +4,56 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: Slide and Push Menus</title>
-		<meta name="description" content="Blueprint: Slide and Push Menus" />
-		<meta name="keywords" content="sliding menu, pushing menu, navigation, responsive, menu, css, jquery" />
-		<meta name="author" content="Codrops" />
+		<title>Ragam 2015</title>
+		<meta name="description" content="Ragam 2015, NIT Calicut's Annual Cultural Festival" />
+		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
+		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<body class="cbp-spmenu-push">
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-			<h3>Menu</h3>
-			<a href="#">Celery seakale</a>
-			<a href="#">Dulse daikon</a>
-			<a href="#">Zucchini garlic</a>
-			<a href="#">Catsear azuki bean</a>
-			<a href="#">Dandelion bunya</a>
-			<a href="#">Rutabaga</a>
-		</nav>
-		
+	<body class="spmenu-push">
+			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
+				<div id="one">
+				</div>
+				<div id="two">
+				
+					<!--Login button somewhere here-->
+					<h3>Menu</h3>
+					<a href="#">Events</a>
+					<a href="#">Workshops</a>
+					<a href="#">Proshows</a>
+					<a href="#">General Info</a>
+					<a href="#">Sponsors</a>
+				</div>	
+			</nav>
+		<!--/div-->
 		<div class="container">
 			<div class="main">
-				<section class="buttonset">
-					<h2>Push Menus</h2>
-					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-					<button id="showRightPush"></button>
-				</section>
+				<div id="showRightPush">Ragam
+				</div>
 			</div>
 		</div>
+
 		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
 		<script>
-			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRightPush = document.getElementById( 'showRightPush' ),
+			/*works on id named "showRightPush*/
+			var menuRight = document.getElementById( 'spmenu-s2' ),
+				showRightPush = document.getElementById( 'spmenu-s2' ),
 				body = document.body;
-			showRightPush.onclick = function() {
+			//showRightPush.onclick = function() {
+			showRightPush.onmouseenter = function() {
 				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toleft' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				classie.toggle( body, 'spmenu-push-toleft' );
+				classie.toggle( menuRight, 'spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+			showRightPush.onmouseleave = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'spmenu-push-toleft' );
+				classie.toggle( menuRight, 'spmenu-open' );
 				disableOther( 'showRightPush' );
 			};
 			function disableOther( button ) {
