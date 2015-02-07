@@ -29,17 +29,14 @@
 				<section class="buttonset">
 					<h2>Push Menus</h2>
 					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-					<button id="showRightPush">Show/Hide Right Push Menu</button>
+					<button id="showRightPush"></button>
 				</section>
 			</div>
 		</div>
 		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
 		<script>
-			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-				menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				menuTop = document.getElementById( 'cbp-spmenu-s3' ),
-				menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
 				showRightPush = document.getElementById( 'showRightPush' ),
 				body = document.body;
 			showRightPush.onclick = function() {
