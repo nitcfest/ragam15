@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
-		<meta charset="utf-8"> 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=500" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Ragam 2015</title>
+		<meta name="description" content="Ragam 2015, NIT Calicut's Annual Cultural Festival" />
+		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
+		<meta name="author" content="Ragam Creative Team" />
+		<link rel="shortcut icon" href="../favicon.ico">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
