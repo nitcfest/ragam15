@@ -13,7 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<body class="spmenu-push">
+	<body>
+		<div class="spmenu-push" id="mega">
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="one">
 				</div>
@@ -28,10 +29,10 @@
 					<a href="#">Sponsors</a>
 				</div>	
 			</nav>
-		<!--/div-->
-		<div class="container">
-			<div class="main">
-				<div id="showRightPush">Ragam
+			<div class="container">
+				<div class="main">
+					<div id="showRightPush">Ragam
+					</div>
 				</div>
 			</div>
 		</div>
@@ -42,7 +43,7 @@
 			/*works on id named "showRightPush*/
 			var menuRight = document.getElementById( 'spmenu-s2' ),
 				showRightPush = document.getElementById( 'spmenu-s2' ),
-				body = document.body;
+				body = document.getElementById('mega');
 			//showRightPush.onclick = function() {
 			showRightPush.onmouseenter = function() {
 				classie.toggle( this, 'active' );
