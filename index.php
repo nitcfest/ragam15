@@ -31,7 +31,10 @@
 			</nav>
 			<div class="container">
 				<div class="main">
-					<div id="showRightPush">Ragam
+					<div id="showRightPush">
+						<h1>Ragam></h1>
+						<h2>Ragam></h2>
+						<h3>Ragam></h3>
 					</div>
 				</div>
 			</div>
