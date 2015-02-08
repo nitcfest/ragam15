@@ -15,11 +15,15 @@
 			<div id="grad1" class="background"></div>
 			<div id="grad2" class="background"></div>
 			<div id="grad3" class="background"></div>
+			<div id="grad4" class="background"></div>
+			<div id="grad5" class="background"></div>
 		</div>
 		<div id="rest">
-			<div id="sec1" class="sec"></div>
-			<div id="sec2" class="sec"></div>
-			<div id="sec3" class="sec"></div>
+			<div id="sec1" class="sec">Hello</div>
+			<div id="sec2" class="sec">jhbasdkjn</div>
+			<div id="sec3" class="sec">ahbsiuyhd</div>
+			<div id="sec4" class="sec">ahbsiuyhd</div>
+			<div id="sec5" class="sec">ahbsiuyhd</div>
 		</div>
 	</body>
 	<script>
@@ -40,6 +44,15 @@
 						.setClassToggle("#grad3", "active") // add class toggle
 						.addTo(controller)
 						.addIndicators();
+		new ScrollScene({triggerElement: "#sec4"})
+						.setClassToggle("#grad4", "active") // add class toggle
+						.addTo(controller)
+						.addIndicators();
+		new ScrollScene({triggerElement: "#sec5"})
+						.setClassToggle("#grad5", "active") // add class toggle
+						.addTo(controller)
+						.addIndicators();
+
 	});
 </script>
 </html>
