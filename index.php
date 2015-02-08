@@ -31,15 +31,15 @@
 			</nav>
 			<div class="container">
 				<div class="main">
-					<div id="showRightPush">
-						<h1>Ragam></h1>
-						<h2>Ragam></h2>
-						<h3>Ragam></h3>
+					<div id="main-text">
+						<h1>Ragam</h1>
+						<h2>Culture Personified</h2>
+						<h3>March 26-29</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		
 		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
 		<script>

@@ -25,11 +25,17 @@ a {
 a:hover {
 	color: #000;
 }
+
 #mega{
 	
     height: 100%;
     background-image:url("http://ragam.org.in/2014/img/farhan.jpg");
 }
+#main-text
+ {
+ 	color:white;
+ }
+ 
 .main{
 	text-align: center;
 	width: 90%;
