@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="spmenu-push" id="mega">
@@ -39,7 +40,47 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+	$(function(){
+		simpleTicker();
+	});
+	
+	function simpleTicker(){
+	
+		var tTime = 2000;
+			tObj = $('#ticker ol');
+			tClass = 'currentTick';
+			
+		$(tObj).children().hide();
+		$(tObj).children('li:first').addClass(tClass).show();
 		
+		setInterval(function(){
+			var tCurrentObj = $(tObj).children('.' + tClass);
+				tNext = $(tCurrentObj).next();
+			if (tNext.length == 0){
+				$(tObj).children('li:last').removeClass().fadeOut();
+				tNext = $(tObj).children('li:first');
+				tNext.addClass(tClass);
+			}
+			else {
+				tNext;
+			}
+			$(tNext).prev().removeClass().fadeOut();
+			$(tNext).addClass(tClass).fadeIn();		
+		}, tTime);
+		
+	}
+</script>
+<div id="ticker">
+	<strong>Here are some news</strong>
+	<ol>
+		<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+		<li><a href="#">Nullam luctus vulputate elit, eget imperdiet enim tristique sed.</a></li>
+		<li><a href="#">Pellentesque molestie ultrices nisl, quis tempor quam facilisis eget.</a></li>
+		<li><a href="#">Duis pharetra vestibulum dui, vitae congue eros iaculis a.</a></li>
+		<li><a href="#">Cras rutrum nisi nec nulla placerat vestibulum semper nisi sagittis.</a></li>
+	</ol>
+</div>
 		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
 		<script>
