@@ -8,7 +8,8 @@
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 	</head>
 	<body>
 		<div id="backgrounds">
@@ -19,12 +20,14 @@
 			<div id="grad5" class="background"></div>
 		</div>
 		<div id="rest">
-			<div id="sec1" class="sec">Hello</div>
-			<div id="sec2" class="sec">jhbasdkjn</div>
-			<div id="sec3" class="sec">ahbsiuyhd</div>
-			<div id="sec4" class="sec">ahbsiuyhd</div>
-			<div id="sec5" class="sec">ahbsiuyhd</div>
+			<div id="Events" class="sec">Events</div>
+			<div id="Workshops" class="sec">Workshops</div>
+			<div id="Proshows" class="sec">Proshows</div>
+			<div id="Info" class="sec">General Info</div>
+			<div id="Sponsors" class="sec">Sponsors</div>
 		</div>
+		<?php include ('ticker.html'); ?>
+
 	</body>
 	<script>
 	$(document).ready(function($) {
@@ -32,23 +35,23 @@
 		var controller = new ScrollMagic();
 
 		// build scenes
-		new ScrollScene({triggerElement: "#sec1"})
+		new ScrollScene({triggerElement: "#Events"})
 						.setClassToggle("#grad1", "active") // add class toggle
 						.addTo(controller)
 						.addIndicators();
-		new ScrollScene({triggerElement: "#sec2"})
+		new ScrollScene({triggerElement: "#Workshops"})
 						.setClassToggle("#grad2", "active") // add class toggle
 						.addTo(controller)
 						.addIndicators();
-		new ScrollScene({triggerElement: "#sec3"})
+		new ScrollScene({triggerElement: "#Proshows"})
 						.setClassToggle("#grad3", "active") // add class toggle
 						.addTo(controller)
 						.addIndicators();
-		new ScrollScene({triggerElement: "#sec4"})
+		new ScrollScene({triggerElement: "#Info"})
 						.setClassToggle("#grad4", "active") // add class toggle
 						.addTo(controller)
 						.addIndicators();
-		new ScrollScene({triggerElement: "#sec5"})
+		new ScrollScene({triggerElement: "#Sponsors"})
 						.setClassToggle("#grad5", "active") // add class toggle
 						.addTo(controller)
 						.addIndicators();
