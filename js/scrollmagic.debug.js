@@ -54,7 +54,7 @@ Greensock License info at http://www.greensock.com/licensing/
 		var
 			DEFAULT_OPTIONS = {
 				parent: undefined,
-				zindex: -1,
+				zindex: 100,
 				indent: 0,
 				suffix: "",
 				colorTrigger: "blue",
