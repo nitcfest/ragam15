@@ -1,3 +1,12 @@
+#fadebox
+ {
+ 	position: absolute;
+ 	z-index:1000;
+ 	height:100%;
+ 	width:100%;
+ 	background-color: white;
+ }
+
 /* General styles for all menus */
 .spmenu {
 	background: #47a3da;
@@ -35,7 +44,7 @@
 	width: 290px;
 	height: 100%;
 	top: 0;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .spmenu-vertical a {

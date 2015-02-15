@@ -10,6 +10,7 @@
 		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/fadebox.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
@@ -17,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 	</head>
 	<body>
+		<div id="fadebox"></div>
 		<div id="backgrounds">
 			<div id="grad1" class="background"></div>
 			<div id="grad2" class="background"></div>
