@@ -2,6 +2,6 @@
 
 $(window).load(function() 
 {
-		$("#fadebox").fadeOut(1000);
+	$("#fadebox").fadeOut(1000);
 	
 });
