@@ -24,7 +24,7 @@
   $wks_lis="";
   while($row1=$result1->fetch_assoc())
   {
-    $cat_cur="<li><h4>".$row1['name']."</h4><ul>";
+    $cat_cur="<li><ul>";
     $catid=$row1['cat_id'];
     $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
     $result2=$mysqli->query($query2);
@@ -73,22 +73,31 @@
 		<div id="rest">
 			<div id="Events" class="sec">
 				
-				<div style="height:100%;width:30%;background:green;float:left"></div>
-				<div style="height:100%;width:70%;background:blue;float:left">
+				<div style="height:98%;width:28%;float:left;">
+					Events
+				</br>
+				</br>
+				</br>
+				</br>
+			</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
+				</div>
+				<div style="height:100%;width:70%;float:left">
 					<ul id="elist">
 		    			<?php echo $cat_lis; ?>
 		  			</ul>
 				</div>
 			</div>
+
 			<div id="Workshops" class="sec">
-				<div style="height:100%;width:70%;background:red;float:left">
+				<div style="height:100%;width:70%;float:left">
 					<ul id="wlist">
 		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
-				<div style="height:100%;width:30%;background:yellow;float:left"></div>
+				<div style="height:100%;width:30%;float:left">Workshops</div>
 
 			</div>
+			
 			<div id="Proshows" class="sec">Proshows</div>
 			<div id="Info" class="sec">General Info</div>
 			<div id="Sponsors" class="sec">Sponsors</div>
