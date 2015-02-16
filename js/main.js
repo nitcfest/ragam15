@@ -1,7 +1,3 @@
-$(document).ready(function($) {
-
-
-
 /************Scrolling*************/
   var $window = $(window);
        var scrollTime = 1;
@@ -57,8 +53,13 @@ $(document).ready(function($) {
 					.addIndicators();
 	/***************************scolling end************/
 
-
-
+$(document).ready(function($) {
+$(".event").click(function () {
+		$('#eventContent').show('slide', {direction: 'right'}, 1000);
+	});
 
 
 });
+
+
+

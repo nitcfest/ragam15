@@ -30,16 +30,16 @@ $(document).ready(function()
 
 	$("#topdraw-content").mouseenter(function(){
 
-		$("#topdraw").removeClass("topdraw-hover");
+		$("#topdraw").removeClass("topdraw-hover",500,"easeOutBounce");
 	});
 	$("#topdraw-hanger").mouseenter(function(){
 
-		$("#topdraw").removeClass("topdraw-hover");
+		$("#topdraw").removeClass("topdraw-hover",500,"easeOutBounce");
 	});
 
 	$("#topdraw").mouseleave(function(){
 
-		$("#topdraw").addClass("topdraw-hover");
+		$("#topdraw").addClass("topdraw-hover",500,"easeOutBounce");
 	});
 
 });

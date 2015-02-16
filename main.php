@@ -89,11 +89,11 @@
 		    			<?php echo $cat_lis; ?>
 		  			</ul>
 				</div>
+
 				<div id="eventContent" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
 				<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
 					  <div id="event_wrap">
 					  <div id="event_head">
-					  	<span id="event_logo" style="display: block;"></span>
 					    <span id="event_title">Acoustics</span>
 					    <span id="reg_response"></span>
 					  </div>
@@ -134,6 +134,8 @@
 					  </div>
 					</div>
 				</div>
+			
+
 			</div>
 
 			<div id="Workshops" class="sec">
@@ -156,9 +158,7 @@
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
-	$(".event").click(function () {
-		$('#eventContent').show('slide', {direction: 'right'}, 1000);
-	});
+	
 	</script>
 	
 </html>
