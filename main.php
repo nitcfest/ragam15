@@ -29,7 +29,14 @@
 			<div id="grad5" class="background"></div>
 		</div>
 		<div id="rest">
-			<div id="Events" class="sec">Events</div>
+			<div id="Events" class="sec">
+				<div style="height:100%;width:30%;background:green;float:left"></div>
+				<div style="height:100%;width:70%;background:blue;float:left">
+					<div style="height:100%;width:33.33%;background:red;float:left"></div>
+					<div style="height:100%;width:33.33%;background:purple;float:left"></div>
+					<div style="height:100%;width:33.33%;background:yellow;float:left"></div>
+				</div>
+			</div>
 			<div id="Workshops" class="sec">Workshops</div>
 			<div id="Proshows" class="sec">Proshows</div>
 			<div id="Info" class="sec">General Info</div>
