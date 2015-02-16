@@ -16,6 +16,14 @@
 	</head>
 	<body>
 		<div id="fadebox"></div>
+		<div id="topdraw" class="topdraw-hover">
+			<div id="topdraw-content">
+
+			</div>
+			<div id="topdraw-hanger">
+
+			</div>
+		</div>
 		<div class="spmenu-push" id="mega">
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="one">
@@ -45,33 +53,13 @@
 		<!-- Thanks from the Ragam team to Jquery Simple Ticker by @ignacioricci https://github.com/ignacioricci/Jquery-Newsticker -->
 
 	
-		<script src="js/modernizr.custom.js"></script>
-		<script type="text/javascript" src="js/fadebox.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
 		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
+		<script type="text/javascript" src="js/commonscript.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 		<script>
-			/*works on id named "showRightPush*/
-			var menuRight = document.getElementById( 'spmenu-s2' ),
-				showRightPush = document.getElementById( 'spmenu-s2' ),
-				body = document.getElementById('mega');
-			//showRightPush.onclick = function() {
-			showRightPush.onmouseenter = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'spmenu-push-toleft' );
-				classie.toggle( menuRight, 'spmenu-open' );
-				disableOther( 'showRightPush' );
-			};
-			showRightPush.onmouseleave = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'spmenu-push-toleft' );
-				classie.toggle( menuRight, 'spmenu-open' );
-				disableOther( 'showRightPush' );
-			};
-			function disableOther( button ) {
-				if( button !== 'showRightPush' ) {
-					classie.toggle( showRightPush, 'disabled' );
-				}
-			}
+			
 		</script>
 		<?php include ('ticker.html'); ?>
 	</body>
