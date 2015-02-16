@@ -1,3 +1,44 @@
+<?php
+  require_once('connect.php');
+  $query1="SELECT name,cat_id FROM `event_cats` WHERE `par_cat`='1' ORDER BY FIELD(cat_id, 10, 9, 8, 7, 5) DESC";
+  $result1=$mysqli->query($query1);
+  $cat_lis="";
+  while($row1=$result1->fetch_assoc())
+  {
+    $cat_cur="<li><h4>".$row1['name']."</h4><ul>";
+    $catid=$row1['cat_id'];
+    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
+    $result2=$mysqli->query($query2);
+    while($row2=$result2->fetch_assoc())
+    {
+      $name=str_replace(' ', '_', $row2['name']);
+      $cat_cur.="<li><a id='e_$row2[code]' href='events/$name'>".$row2['name']."</a></li>";
+    }
+    $result2->free();
+    $cat_lis .= $cat_cur."</ul></li>";
+  }
+  $result1->free();
+
+  $query1="SELECT name,cat_id FROM `event_cats` WHERE `cat_id`='2' OR `cat_id`='15'";
+  $result1=$mysqli->query($query1);
+  $wks_lis="";
+  while($row1=$result1->fetch_assoc())
+  {
+    $cat_cur="<li><h4>".$row1['name']."</h4><ul>";
+    $catid=$row1['cat_id'];
+    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
+    $result2=$mysqli->query($query2);
+    while($row2=$result2->fetch_assoc())
+    {
+      $name=str_replace(' ', '_', $row2['name']);
+      $cat_cur.="<li><a id='e_$row2[code]' href='workshops/$name'>".$row2['name']."</a></li>";
+    }
+    $result2->free();
+    $wks_lis .= $cat_cur."</ul></li>";
+  }
+  $result1->free();
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
@@ -32,12 +73,19 @@
 			<div id="Events" class="sec">
 				<div style="height:100%;width:30%;background:green;float:left"></div>
 				<div style="height:100%;width:70%;background:blue;float:left">
-					<div style="height:100%;width:33.33%;background:red;float:left"></div>
-					<div style="height:100%;width:33.33%;background:purple;float:left"></div>
-					<div style="height:100%;width:33.33%;background:yellow;float:left"></div>
+					<ul id="elist">
+		    			<?php echo $cat_lis; ?>
+		  			</ul>
 				</div>
 			</div>
-			<div id="Workshops" class="sec">Workshops</div>
+			<div id="Workshops" class="sec">
+				<div style="height:100%;width:70%;background:red;float:left">
+					<ul id="wlist">
+		    			<?php echo $wks_lis; ?>
+		  			</ul>
+				</div>
+				<div style="height:100%;width:30%;background:yellow;float:left"></div>
+			</div>
 			<div id="Proshows" class="sec">Proshows</div>
 			<div id="Info" class="sec">General Info</div>
 			<div id="Sponsors" class="sec">Sponsors</div>
