@@ -68,6 +68,7 @@
 			<div id="grad3" class="background"></div>
 			<div id="grad4" class="background"></div>
 			<div id="grad5" class="background"></div>
+			<div id="back" class="background"></div>
 		</div>
 		<div id="rest">
 			<div id="Events" class="sec">
@@ -91,6 +92,7 @@
 			<div id="Proshows" class="sec">Proshows</div>
 			<div id="Info" class="sec">General Info</div>
 			<div id="Sponsors" class="sec">Sponsors</div>
+			<div id="footer">Footer</div>
 		</div>
 
 	</body>
