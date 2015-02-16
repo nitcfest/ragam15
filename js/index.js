@@ -43,3 +43,9 @@ $(document).ready(function()
 	});
 
 });
+$("#two>a").click(function(){
+	var $that=$(this);
+	$("#fadebox").fadeIn(1000,function(){
+		location.href=$that.data('href');
+	});
+})
