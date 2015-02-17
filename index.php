@@ -32,11 +32,11 @@
 				
 					<!--Login button somewhere here-->
 					<h3>Menu</h3>
-					<a href="main.php#Events">Events</a>
-					<a href="main.php#Workshops">Workshops</a>
-					<a href="main.php#Proshows">Proshows</a>
-					<a href="main.php#Info">General Info</a>
-					<a href="main.php#Sponsors">Sponsors</a>
+					<a data-href="main.php#Events">Events</a>
+					<a data-href="main.php#Workshops">Workshops</a>
+					<a data-href="main.php#Proshows">Proshows</a>
+					<a data-href="main.php#Info">General Info</a>
+					<a data-href="main.php#Sponsors">Sponsors</a>
 				</div>	
 			</nav>
 			<div class="container">
