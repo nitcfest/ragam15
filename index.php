@@ -16,16 +16,15 @@
 	</head>
 	<body>
 		<div id="fadebox"></div>
-		<div id="topdraw" class="topdraw-hover">
-			<div id="topdraw-content">
-
-			</div>
-			<div id="topdraw-hanger">
-				Tarun :)
-			</div>
-		</div>
-		
 		<div class="spmenu-push" id="mega">
+			<div id="topdraw" class="topdraw-hover">
+				<div id="topdraw-content">
+
+				</div>
+				<div id="topdraw-hanger">
+					Tarun :)
+				</div>
+			</div>
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="one">
 				</div>

@@ -13,6 +13,8 @@
  	z-index: 20;
  	width:100%;
  	height:30%;
+ 	top:0%;
+ 	-webkit-transition:all .2s ease-in;
  }
 #topdraw-content
  {
@@ -31,7 +33,7 @@
 
 .topdraw-hover
   {
- 	top:-24%;
+ 	top:-24% !important;
   }
 /* General styles for all menus */
 .spmenu {

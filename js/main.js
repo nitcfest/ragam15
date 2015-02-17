@@ -37,6 +37,8 @@
 					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setClassToggle("#grad2", "active") // add class toggle
+					.on("end", function (e) {
+									alert("asd");								})
 					.addTo(controller)
 					.addIndicators();
 	new ScrollScene({triggerElement: "#Proshows"})
