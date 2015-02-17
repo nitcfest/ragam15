@@ -82,34 +82,12 @@ body{
 	background: linear-gradient(to right, rgba(84,201,255,1) 0%, rgba(67,108,230,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54c9ff', endColorstr='#436ce6', GradientType=1 );
 }
-#grad6{
-	background: rgba(255,84,235,1);
-	background: -moz-linear-gradient(left, rgba(255,84,235,1) 0%, rgba(230,69,133,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,84,235,1)), color-stop(100%, rgba(230,69,133,1)));
-	background: -webkit-linear-gradient(left, rgba(255,84,235,1) 0%, rgba(230,69,133,1) 100%);
-	background: -o-linear-gradient(left, rgba(255,84,235,1) 0%, rgba(230,69,133,1) 100%);
-	background: -ms-linear-gradient(left, rgba(255,84,235,1) 0%, rgba(230,69,133,1) 100%);
-	background: linear-gradient(to right, rgba(255,84,235,1) 0%, rgba(230,69,133,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff54eb', endColorstr='#e64585', GradientType=1 );
-}
-#back 
-{
 
-}
 .sec{
 	width:100%;
 	height: 100%;
 }
-#footer
- {
- 	padding:5px;
-	background:gray;
-	width:100%;
-	height: 60%;
-	box-shadow: inset 5px 10px 15px -6px #000000;
-   -webkit-box-shadow: inset 5px 10px 15px -6px #000000;
-   -moz-box-shadow: inset 5px 10px 15px -6px #000000;
- }
+
 #rest{
 	position: absolute;
 	width: 100%;
@@ -370,3 +348,80 @@ body{
   background-color:#fff;
   cursor:pointer;
 }
+#footer
+ {
+ 	
+ 	padding:5px;
+	background:#292929;
+	width:100%;
+	height: 60%;
+	box-shadow: inset 5px 10px 15px -6px #000000;
+   -webkit-box-shadow: inset 5px 10px 15px -6px #000000;
+   -moz-box-shadow: inset 5px 10px 15px -6px #000000;
+ }
+#footer-wrapper
+ {
+ 	position:relative;
+ 	left:5%;
+ 	top:5%;
+ 	height: 90%;
+ 	width: 90%;
+ }
+#footer-top
+ {
+ 	position:relative;
+ }
+#footer-content
+ {
+ 	position:relative;
+ 	left:5%;
+ 	top:5%;
+ 	height: 90%;
+ 	width: 30%;
+ 	/*background-color: yellow;*/
+ }
+
+#footer-content>h1
+ {
+ 	color:white;
+ 	font-size: 2em;
+ 	text-decoration: none;
+ }
+
+#footer-content>h3
+ {
+ 	font-size: 0.75em;
+ 	text-decoration: none;
+ 	color:gray;
+ }
+
+#footer-column1
+ {
+
+ 	background-color: green;
+ 	width:20%;
+ 	height:90%;
+
+ }
+
+#footer-column2
+ {
+ 	background-color: blue;
+ 	width:20%;
+ 	height:90%;
+ }
+
+#footer-line
+ {
+ 	position:relative;
+ 	margin:1% 2%;
+ 	width:96%;
+ 	height:2px;
+ 	background-color: gray;
+ }
+#footer-bottom
+ {
+ 	text-align: center;
+ 	position:relative;
+ 	width:96%;
+ }

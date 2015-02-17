@@ -51,7 +51,7 @@
 		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/fadebox.js"></script>
+		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
@@ -69,12 +69,12 @@
 			<div id="grad3" class="background"></div>
 			<div id="grad4" class="background"></div>
 			<div id="grad5" class="background"></div>
-			<div id="back" class="background"></div>
+			<div id="grad6" class="background"></div>
 		</div>
 		<div id="rest">
-			<div id="Events" class="sec">
 
-				
+<!--**********************************************1EVENTS START*******************-->				
+			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
 					Events
 				</br>
@@ -134,9 +134,11 @@
 					  </div>
 					</div>
 				</div>
+			</div>
 			
 
-			</div>
+<!--**********************************************EVENTS END*******************-->				
+<!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">
 				<div style="height:100%;width:70%;float:left">
@@ -147,11 +149,40 @@
 				<div style="height:100%;width:30%;float:left">Workshops</div>
 
 			</div>
+<!--**********************************************WORKSHOPS END*******************-->				
+<!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">Proshows</div>
 			<div id="Info" class="sec">General Info</div>
 			<div id="Sponsors" class="sec">Sponsors</div>
-			<div id="footer">Footer</div>
+			
+
+
+			<div id="footer">
+				<div id="footer-wrapper">
+					<div id="footer-top">
+						<div id="footer-content">
+							<h1>Ragam 2015</h1>
+							<h3>March 26 - 29, 2015</h3>
+							<h3>Culture Personified | Awesomeness Festified</h3>
+						</div>
+						
+						<div id="footer-column1">
+						</div>
+						
+						<div id="footer-column2">
+						</div>
+					</div>
+						
+					<div id="footer-line"></div>
+					
+					<div id="footer-bottom">
+						Ragam 2015 | Culture Personified | Awesomeness Festified | NIT Calicut
+					</div>
+				</div>
+			</div>
+<!-- Footer End-->
+<!-- End-->
 		</div>
 
 	</body>
