@@ -152,7 +152,12 @@
 <!--**********************************************WORKSHOPS END*******************-->				
 <!--**********************************************3PROSHOWS START*******************-->				
 			
-			<div id="Proshows" class="sec">Proshows</div>
+			<div id="Proshows" class="sec">
+				<div style="height:100%;width:30%;float:left">Proshows</div>
+				<div style="height:100%;width:70%;float:left">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ghb6eDopW8I" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
 			<div id="Info" class="sec">General Info</div>
 			<div id="Sponsors" class="sec">Sponsors</div>
 			
@@ -177,7 +182,7 @@
 					<div id="footer-line"></div>
 					
 					<div id="footer-bottom">
-						Ragam 2015 | Culture Personified | Awesomeness Festified | NIT Calicut
+						All Rights Reserved | Ragam 2015
 					</div>
 				</div>
 			</div>
@@ -187,9 +192,5 @@
 
 	</body>
 	<script type="text/javascript" src="js/commonscript.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript">
-	
-	</script>
-	
+	<script type="text/javascript" src="js/main.js"></script>	
 </html>
