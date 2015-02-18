@@ -82,7 +82,7 @@
 
 
 .spmenu-right {
-	right: -240px;
+	right: -222px;
 }
 
 .spmenu-right.spmenu-open {
@@ -145,4 +145,7 @@
 	.spmenu-push-toright {
 		left: 240px;
 	}
+}
+.align-mid {
+	padding-left: 19px;
 }

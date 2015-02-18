@@ -7,13 +7,13 @@ var menuRight = document.getElementById( 'spmenu-s2' ),
 //showRightPush.onclick = function() {
 showRightPush.onmouseenter = function() {
 	classie.toggle( this, 'active' );
-	classie.toggle( body, 'spmenu-push-toleft' );
+	//classie.toggle( body, 'spmenu-push-toleft' );
 	classie.toggle( menuRight, 'spmenu-open' );
 	disableOther( 'showRightPush' );
 };
 showRightPush.onmouseleave = function() {
 	classie.toggle( this, 'active' );
-	classie.toggle( body, 'spmenu-push-toleft' );
+	//classie.toggle( body, 'spmenu-push-toleft' );
 	classie.toggle( menuRight, 'spmenu-open' );
 	disableOther( 'showRightPush' );
 };
