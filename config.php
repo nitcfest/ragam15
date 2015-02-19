@@ -7,7 +7,7 @@
 $host = 'localhost'; 	
 $db_name = 'ragam14';
 $db_user = 'root';
-$db_password = 'requiemofsouls';
+$db_password = '';
 // Admin username and password
 $admin="admin";
 $password="ragamanact";

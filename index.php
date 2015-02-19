@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/ticker.css" />
+		<link rel="stylesheet" type="text/css" href="css/mine.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 	</head>
 	<body>
@@ -26,17 +27,14 @@
 				</div>
 			</div>
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
-				<div id="one">
-				</div>
 				<div id="two">
-				
+				    <a href=""><span class="icon-menu"></span></a>
 					<!--Login button somewhere here-->
-					<h3>Menu</h3>
-					<a data-href="main.php#Events">Events</a>
-					<a data-href="main.php#Workshops">Workshops</a>
-					<a data-href="main.php#Proshows">Proshows</a>
-					<a data-href="main.php#Info">General Info</a>
-					<a data-href="main.php#Sponsors">Sponsors</a>
+					<a data-href="main.php#Events"><span class="icon-drawer"></span><span class="align-mid">Events<span></a>
+					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops<</a>
+					<a data-href="main.php#Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
+					<a data-href="main.php#Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
+					<a data-href="main.php#Sponsors"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
 				</div>	
 			</nav>
 			<div class="container">
