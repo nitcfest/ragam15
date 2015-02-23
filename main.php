@@ -31,7 +31,7 @@
     while($row2=$result2->fetch_assoc())
     {
       $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a data-event_code='$row2[code]' class=\"pageload-link\">".$row2['name']."</a></li>";
+      $cat_cur.="<li><a data-event_code='$row2[code]' id='$row2[code]' class=\"pageload-link\">".$row2['name']."</a></li>";
     }
     $result2->free();
     $wks_lis .= $cat_cur."</ul></li>";
