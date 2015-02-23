@@ -290,22 +290,29 @@
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
-		var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
-		var competitions=events[0];
-		var html="";
-		for(i=0;i<competitions.sub_categories.length;i++){
-			html+="<li>";
-			sub_cat=competitions.sub_categories[i];
-			html+=("<h4>"+sub_cat['name']+"</h4>");
-			html+="<ul>";
-			sub_cat_events=sub_cat["events"];
-			for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
-				html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event'>"+sub_cat_events[k]["name"]+"</a></li>");
-			}
-			html+="</ul>";
-			html+="</li>";
-		}	
-		$("#elist").html(html);
+		//var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
+		$.ajax({
+		  type: "GET",
+		  url: "http://www.ragam.org.in/2015/cms/api/events",
+		  data: {}
+		}).done(function( events ) {
+		  	var competitions=events[0];
+			var html="";
+			for(i=0;i<competitions.sub_categories.length;i++){
+				html+="<li>";
+				sub_cat=competitions.sub_categories[i];
+				html+=("<h4>"+sub_cat['name']+"</h4>");
+				html+="<ul>";
+				sub_cat_events=sub_cat["events"];
+				for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
+					html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event'>"+sub_cat_events[k]["name"]+"</a></li>");
+				}
+				html+="</ul>";
+				html+="</li>";
+			}	
+			$("#elist").html(html);
+		  });
+		
 		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
 		var fill_event_details=function(event_details){
 			// $("#event_title").html(event_details["name"]);
