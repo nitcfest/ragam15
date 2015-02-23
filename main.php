@@ -60,6 +60,99 @@
 		<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
 		<script type="text/javascript" src="js/cssplugin.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script src="js/snap.svg-min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/svgLoader.js"></script>
+		<style>
+				. {
+			display: none;
+		}
+
+		..show {
+			display: block;
+		}
+
+		.pageload-overlay {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			visibility: hidden;
+		}
+
+		.pageload-overlay.show {
+			visibility: visible;
+		}
+
+		.pageload-overlay svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+		}
+
+		.pageload-overlay svg path {
+			fill: #fff;
+		}
+
+		.pageload-overlay::after,
+		.pageload-overlay::before {
+			content: '';
+			position: fixed;
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			left: 50%;
+			margin: -10px 0 0 -10px;
+			border-radius: 50%;
+			visibility: hidden;
+			opacity: 0;
+			z-index: 1000;
+			-webkit-transition: opacity 0.15s, visibility 0s 0.15s;
+			transition: opacity 0.15s, visibility 0s 0.15s;
+		}
+
+		.pageload-overlay::after {
+			background: #6cc88a;
+			-webkit-transform: translateX(-20px);
+			transform: translateX(-20px);
+			-webkit-animation: moveRight 0.6s linear infinite alternate;
+			animation: moveRight 0.6s linear infinite alternate;
+		}
+
+		.pageload-overlay::before {
+			background: #4fc3f7;
+			-webkit-transform: translateX(20px);
+			transform: translateX(20px);
+			-webkit-animation: moveLeft 0.6s linear infinite alternate;
+			animation: moveLeft 0.6s linear infinite alternate;
+		}
+
+		@-webkit-keyframes moveRight {
+			to { -webkit-transform: translateX(20px); }
+		}
+
+		@keyframes moveRight {
+			to { transform: translateX(20px); }
+		}
+
+		@-webkit-keyframes moveLeft {
+			to { -webkit-transform: translateX(-20px); }
+		}
+
+		@keyframes moveLeft {
+			to { transform: translateX(-20px); }
+		}
+
+		.pageload-loading.pageload-overlay::after,
+		.pageload-loading.pageload-overlay::before {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transition: opacity 0.3s;
+			transition: opacity 0.3s;
+		}
+		</style>
 	</head>
 	<body>
 		<div id="fadebox"></div>
@@ -83,55 +176,57 @@
 				</br>
 			</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
 				</div>
-				<div style="height:100%;width:70%;float:left">
+				<div id="pagewrap"
+				<div style="height:100%;width:70%;float:left" class="">
 
 					<ul id="elist">
 		  			</ul>
 				</div>
 
-				<div id="eventContent" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
-				<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
-					  <div id="event_wrap">
-					  <div id="event_head">
-					    <span id="event_title">Acoustics</span>
-					    <span id="reg_response"></span>
-					  </div>
-					  <div id="event_main">
-					    <div id="event_text">
-					      <span id="event_text_left"><span id="cat_bg" style="background-color: rgb(241, 196, 15);"><img src="img/illustrations/9.png" width="200px"></span><span id="participation" min="1" max="12" style="display: none; background-color: rgb(241, 196, 15);"></span><span id="Prize_Money" style="background-color: rgb(241, 196, 15);"><h2>Prize Money</h2><p>First: INR 10000<br>
-					Second : INR 6000<br>
-					Third : INR 4000</p></span><span id="Contacts" style="background-color: rgb(241, 196, 15);"><h2>Contacts</h2><p>Tom Sebastian<br>9037102360<br>acoustics@ragam.org.in<br><br></p><p>Nirmal Sabu<br>9895420189<br>acoustics@ragam.org.in<br><br></p></span></span>
-					      <span id="event_text_right" style="background-color: rgb(241, 196, 15);">
-					          <div id="event_register">
-
-					          <div id="close"></div>
-					          <span class="arrow"></span>
-					          </div>        
-					      <span id="Introduction" style="background-color: rgb(241, 196, 15);"><h2>Introduction</h2><p>Perfect rhythm, powerful chords and rockstar style; bring these three together to conquer the Acoustics stage this Ragam '14. 
-
-					Own the stage and captivate our hearts as your instruments take centre stage. So bring out your coolest guitars, pack those drums, and let your music reverberate in our minds. Impress these crowds and you walk away with hundreds of dedicated fans, a handsome cash prize and an incredible experience.
-					</p></span><span id="Rules_and Regulations" style="background-color: rgb(241, 196, 15);"><h2>Rules and Regulations</h2><p></p><ul>
-					<li>Maximum of 12 participants per team.</li>
-					<li>Time limit: 15 minutes + 3 minutes set-up time.</li>
-					<li>Participating teams should upload a video of any of their performance on YouTube and send its URL to acoustics@ragam.org.in along with the following details:
-					<ul>
-					<li>College/Band Name</li>
-					<li>Name and Contact Info of the Team Leader</li>
-					<li>List of Team members</li>
-					</ul>
-					</li>
-					<li>Finalists will be screened based on the video sent. Registration will be confirmed only after receiving the confirmation letter.</li>
-					<li>There is no On the Spot Registration.</li>
-					<li>Teams are permitted to perform in the language of their choice.</li>
-					<li>No electric instruments permitted apart from bass and electric guitar (clean).</li>
-					<li>Keyboards are permitted only on piano patch.</li>
-					<li>Points: (40, 30, 20)</li>
-					<li></li>
-					</ul><p></p></span></span>
-					    </div>
+				<div id="eventContent" class=" show" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
+					<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
+						  <div id="event_wrap">
+						  <div id="event_head">
+						    <span id="event_title">Acoustics</span>
+						    <span id="reg_response"></span>
+						  </div>
+						  <div id="event_main">
+						    <div id="event_text">
+						      <span id="event_text_left"><span id="cat_bg" style="background-color: rgb(241, 196, 15);"><img src="img/illustrations/9.png" width="200px"></span><span id="participation" min="1" max="12" style="display: none; background-color: rgb(241, 196, 15);"></span><span id="Prize_Money" style="background-color: rgb(241, 196, 15);"><h2>Prize Money</h2><p>First: INR 10000<br>
+						Second : INR 6000<br>
+						Third : INR 4000</p></span><span id="Contacts" style="background-color: rgb(241, 196, 15);"><h2>Contacts</h2><p>Tom Sebastian<br>9037102360<br>acoustics@ragam.org.in<br><br></p><p>Nirmal Sabu<br>9895420189<br>acoustics@ragam.org.in<br><br></p></span></span>
+						      <span id="event_text_right" style="background-color: rgb(241, 196, 15);">
+									<div id="event_register">
+										<div id="close"></div>
+										<span class="arrow"></span>
+									</div>        
+									<span id="Introduction" style="background-color: rgb(241, 196, 15);"><h2>Introduction</h2><p>Perfect rhythm, powerful chords and rockstar style; bring these three together to conquer the Acoustics stage this Ragam '14. 
+										Own the stage and captivate our hearts as your instruments take centre stage. So bring out your coolest guitars, pack those drums, and let your music reverberate in our minds. Impress these crowds and you walk away with hundreds of dedicated fans, a handsome cash prize and an incredible experience.
+										</p></span><span id="Rules_and Regulations" style="background-color: rgb(241, 196, 15);"><h2>Rules and Regulations</h2><p></p><ul>
+										<li>Maximum of 12 participants per team.</li>
+										<li>Time limit: 15 minutes + 3 minutes set-up time.</li>
+										<li>Participating teams should upload a video of any of their performance on YouTube and send its URL to acoustics@ragam.org.in along with the following details:
+										<ul>
+										<li>College/Band Name</li>
+										<li>Name and Contact Info of the Team Leader</li>
+										<li>List of Team members</li>
+										</ul>
+										</li>
+										<li>Finalists will be screened based on the video sent. Registration will be confirmed only after receiving the confirmation letter.</li>
+										<li>There is no On the Spot Registration.</li>
+										<li>Teams are permitted to perform in the language of their choice.</li>
+										<li>No electric instruments permitted apart from bass and electric guitar (clean).</li>
+										<li>Keyboards are permitted only on piano patch.</li>
+										<li>Points: (40, 30, 20)</li>
+										<li></li>
+										</ul><p></p>
+									</span>
+								</span>
+						    </div>
 					  </div>
 					  </div>
 					</div>
+				</div>
 				</div>
 			</div>
 			
@@ -145,6 +240,7 @@
 		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
+				<div class="come-from-right"></div>
 				<div style="height:100%;width:30%;float:left">Workshops</div>
 
 			</div>
@@ -190,6 +286,7 @@
 		</div>
 
 	</body>
+
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>

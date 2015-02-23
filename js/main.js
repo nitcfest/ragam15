@@ -31,14 +31,15 @@
 	// 	// init controller
 	}
 	// build scenes
+	 TweenMax.to($(".come-from-right"), 20, {backgroundColor: "green", scale: 1,"left":"100%"});
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
 					.addIndicators();
-	new ScrollScene({triggerElement: "#Workshops"})
+	new ScrollScene({triggerElement: "#Workshops",duration: 300})
 					.setClassToggle("#grad2", "active") // add class toggle
-					.on("end", function (e) {
-									alert("asd");								})
+					// .on("end", function (e) {
+					// 				alert("asd");	})						
 					.addTo(controller)
 					.addIndicators();
 	new ScrollScene({triggerElement: "#Proshows"})

@@ -426,3 +426,10 @@ body{
  	position:relative;
  	width:96%;
  }
+ .come-from-right{
+    position: relative;
+    width:200px;
+    height:200px;
+    background-color:red;
+    left: 0%;
+ }
