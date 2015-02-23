@@ -1,44 +1,3 @@
-<?php
-  require_once('connect.php');
-  $query1="SELECT name,cat_id FROM `event_cats` WHERE `par_cat`='1' ORDER BY FIELD(cat_id, 10, 9, 8, 7, 5) DESC";
-  $result1=$mysqli->query($query1);
-  $cat_lis="";
-  while($row1=$result1->fetch_assoc())
-  {
-    $cat_cur="<li><h4>".$row1['name']."</h4><ul>";
-    $catid=$row1['cat_id'];
-    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
-    $result2=$mysqli->query($query2);
-    while($row2=$result2->fetch_assoc())
-    {
-      $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a data-code='$row2[code]' id='$row2[code]' class='event'>".$row2['name']."</a></li>";
-    }
-    $result2->free();
-    $cat_lis .= $cat_cur."</ul></li>";
-  }
-  $result1->free();
-
-  $query1="SELECT name,cat_id FROM `event_cats` WHERE `cat_id`='2' OR `cat_id`='15'";
-  $result1=$mysqli->query($query1);
-  $wks_lis="";
-  while($row1=$result1->fetch_assoc())
-  {
-    $cat_cur="<li><ul>";
-    $catid=$row1['cat_id'];
-    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
-    $result2=$mysqli->query($query2);
-    while($row2=$result2->fetch_assoc())
-    {
-      $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a data-event_code='$row2[code]' id='$row2[code]' class=\"pageload-link\">".$row2['name']."</a></li>";
-    }
-    $result2->free();
-    $wks_lis .= $cat_cur."</ul></li>";
-  }
-  $result1->free();
-?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
@@ -57,7 +16,6 @@
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
-		<script type="text/javascript" src="js/fetch.js"></script>
 		<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
 		<script type="text/javascript" src="js/cssplugin.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
@@ -256,13 +214,8 @@
 		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
-				<div class="come-from-right"></div>
 				<div style="height:100%;width:30%;float:left">Workshops</div>
 			</div>
-			<div style="height:100%;width:30%;float:left">
-				Workshops
-			</div>
-		</div>
 <!--**********************************************WORKSHOPS END*******************-->				
 <!--**********************************************3PROSHOWS START*******************-->				
 		
@@ -311,62 +264,5 @@
 
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script>
-		var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
-		var competitions=events[0];
-		var html="";
-		for(i=0;i<competitions.sub_categories.length;i++){
-			html+="<li>";
-			sub_cat=competitions.sub_categories[i];
-			html+=("<h4>"+sub_cat['name']+"</h4>");
-			html+="<ul>";
-			sub_cat_events=sub_cat["events"];
-			for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
-				html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event'>"+sub_cat_events[k]["name"]+"</a></li>");
-			}
-			html+="</ul>";
-			html+="</li>";
-		}	
-		$("#elist").html(html);
-		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
-		var fill_event_details=function(event_details)
-		{
-			alert("1");
-			jQuery.ajax({
-				  url: base_url+'events',
-				  type: 'GET',
-				  dataType: 'jsonp',
-				  success: function(data, textStatus, xhr) {
-				  	if(data.length>0){
-				  		$('.categories').html('<br>');
-				  		data.forEach(function(category){
-				  			$('.categories').append(category.name+'<br>');
-
-				  			if(category.hasOwnProperty('sub_categories')){
-				  				category.sub_categories.forEach(function(sub){
-				  					$('.categories').append('--- '+sub.name+'<br>');
-
-				  					if(sub.hasOwnProperty('events')){
-				  						sub.events.forEach(function(this_event){
-				  							$('.categories').append('--- <a href="#" class="event-name" data-event_code="'+this_event.event_code+'">@'+this_event.name+'</a><br>');
-				  						});
-				  					}
-				  				});
-				  			}			  			
-
-				  		});
-
-				  	}				  	
-				  },
-				  error: function(xhr, textStatus, errorThrown) {
-				  	$('.categories').html('Error!');
-				  }
-				});
-				
-
-			// $("#event_title").html(event_details["name"]);
-			// $("#Prize_Money").html(event_details["prizes"]);
-			// $("#Rules_and Regulations").html(event_details["ru"])
-		}
-	</script>
+	<script type="text/javascript" src="js/fetch.js"></script>
 </html>
