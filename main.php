@@ -74,10 +74,10 @@
 
 		.pageload-overlay {
 			position: fixed;
-			width: 100%;
+			width: 70%;
 			height: 100%;
 			top: 0;
-			left: 0;
+			left: 30%;
 			visibility: hidden;
 		}
 
@@ -103,7 +103,7 @@
 			width: 20px;
 			height: 20px;
 			top: 50%;
-			left: 50%;
+			left: 70%;
 			margin: -10px 0 0 -10px;
 			border-radius: 50%;
 			visibility: hidden;
@@ -176,14 +176,19 @@
 				</br>
 			</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
 				</div>
-				<div id="pagewrap"
 				<div style="height:100%;width:70%;float:left" class="">
-
+				<div id="loader" style="z-index:1"class="pageload-overlay" data-opening="M20,15 50,30 50,30 30,30 Z;M0,0 80,0 50,30 20,45 Z;M0,0 80,0 60,45 0,60 Z;M0,0 80,0 80,60 0,60 Z" data-closing="M0,0 80,0 60,45 0,60 Z;M0,0 80,0 50,30 20,45 Z;M20,15 50,30 50,30 30,30 Z;M30,30 50,30 50,30 30,30 Z">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+					<path d="M30,30 50,30 50,30 30,30 Z"/>
+				</svg>
+			</div>
 					<ul id="elist">
+
 		  			</ul>
 				</div>
 
-				<div id="eventContent" class=" show" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
+				<div id="eventContent" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
+					
 					<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
 						  <div id="event_wrap">
 						  <div id="event_head">
@@ -228,6 +233,8 @@
 					</div>
 				</div>
 				</div>
+
+			
 			</div>
 			
 
@@ -240,7 +247,6 @@
 		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
-				<div class="come-from-right"></div>
 				<div style="height:100%;width:30%;float:left">Workshops</div>
 
 			</div>
@@ -290,12 +296,12 @@
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
-		//var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
-		$.ajax({
-		  type: "GET",
-		  url: "http://www.ragam.org.in/2015/cms/api/events",
-		  data: {}
-		}).done(function( events ) {
+		var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
+		// $.ajax({
+		//   type: "GET",
+		//   url: "http://www.ragam.org.in/2015/cms/api/events",
+		//   data: {}
+		// }).done(function( events ) {
 		  	var competitions=events[0];
 			var html="";
 			for(i=0;i<competitions.sub_categories.length;i++){
@@ -311,13 +317,17 @@
 				html+="</li>";
 			}	
 			$("#elist").html(html);
-		  });
+		  // });
 		
-		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
-		var fill_event_details=function(event_details){
+		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZcZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
+		var fill_event_details=function(){
 			// $("#event_title").html(event_details["name"]);
 			// $("#Prize_Money").html(event_details["prizes"]);
 			// $("#Rules_and Regulations").html(event_details["ru"])
+			setTimeout(function(){
+			$('#eventContent').show('slide', {direction: 'right'}, 1000,function(){loader.hide();});
+			},1000)
+				
 		}
 	</script>
 </html>
