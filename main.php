@@ -184,6 +184,8 @@
 		  			</ul>
 				</div>
 
+<!-- event panel>
+
 				<div id="eventContent" class=" show" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
 					<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
 						  <div id="event_wrap">
@@ -230,6 +232,7 @@
 
 				</div>
 				</div>
+<! event panel-->
 			</div>
 			
 
