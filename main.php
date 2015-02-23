@@ -12,7 +12,7 @@
     while($row2=$result2->fetch_assoc())
     {
       $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a id='$row2[code]' class='event'>".$row2['name']."</a></li>";
+      $cat_cur.="<li><a data-code='$row2[code]' id='$row2[code]' class='event'>".$row2['name']."</a></li>";
     }
     $result2->free();
     $cat_lis .= $cat_cur."</ul></li>";
@@ -31,7 +31,7 @@
     while($row2=$result2->fetch_assoc())
     {
       $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a id='$row2[code]' class=\"pageload-link\">".$row2['name']."</a></li>";
+      $cat_cur.="<li><a data-event_code='$row2[code]' class=\"pageload-link\">".$row2['name']."</a></li>";
     }
     $result2->free();
     $wks_lis .= $cat_cur."</ul></li>";
@@ -329,7 +329,41 @@
 		}	
 		$("#elist").html(html);
 		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
-		var fill_event_details=function(event_details){
+		var fill_event_details=function(event_details)
+		{
+			alert("1");
+			jQuery.ajax({
+				  url: base_url+'events',
+				  type: 'GET',
+				  dataType: 'jsonp',
+				  success: function(data, textStatus, xhr) {
+				  	if(data.length>0){
+				  		$('.categories').html('<br>');
+				  		data.forEach(function(category){
+				  			$('.categories').append(category.name+'<br>');
+
+				  			if(category.hasOwnProperty('sub_categories')){
+				  				category.sub_categories.forEach(function(sub){
+				  					$('.categories').append('--- '+sub.name+'<br>');
+
+				  					if(sub.hasOwnProperty('events')){
+				  						sub.events.forEach(function(this_event){
+				  							$('.categories').append('--- <a href="#" class="event-name" data-event_code="'+this_event.event_code+'">@'+this_event.name+'</a><br>');
+				  						});
+				  					}
+				  				});
+				  			}			  			
+
+				  		});
+
+				  	}				  	
+				  },
+				  error: function(xhr, textStatus, errorThrown) {
+				  	$('.categories').html('Error!');
+				  }
+				});
+				
+
 			// $("#event_title").html(event_details["name"]);
 			// $("#Prize_Money").html(event_details["prizes"]);
 			// $("#Rules_and Regulations").html(event_details["ru"])
