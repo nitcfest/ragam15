@@ -55,9 +55,13 @@
 					.addTo(controller)
 					.addIndicators();
 	/***************************scolling end************/
+/*****************event loader *********************/
+
+/*****************event loader end *********************/
+
 
 $(document).ready(function($) {
-$(".event").click(function () {
+	$(".event").click(function () {
 		$('#eventContent').show('slide', {direction: 'right'}, 1000);
 	});
 
