@@ -431,8 +431,6 @@ body{
  	position:relative;
  	width:96%;
  }
-
-
  /********************** pageload*******************************/
  .container {
 	display: none;
@@ -521,3 +519,11 @@ body{
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
+ .come-from-right{
+    position: relative;
+    width:200px;
+    height:200px;
+    background-color:red;
+    left: 0%;
+ }
+
