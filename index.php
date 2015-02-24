@@ -31,14 +31,10 @@
 	<body>
 		<div id="fadebox"></div>
 		<div class="spmenu-push" id="mega">
-			<div id="topdraw" class="topdraw-hover">
-				<div id="topdraw-content">
-
-				</div>
-				<div id="topdraw-hanger">
-					Tarun :)
-				</div>
-			</div>
+			<!--div id="topdraw" class="topdraw-hover">
+				<div id="topdraw-content"></div>
+				<div id="topdraw-hanger"></div>
+			</div-->
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="two" class="target">
 				    <a href=""><span class="icon-menu"></span><span class="align-mid">Menu<span></a>
