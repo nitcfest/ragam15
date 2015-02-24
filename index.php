@@ -56,9 +56,13 @@
 		<script src="js/classie.js"></script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/ticker.js"></script>
 		<script>
 			
 		</script>
-		<?php include ('ticker.html'); ?>
+		<div id="ticker">
+			<strong>Ragam Updates</strong>
+			<ol></ol>
+		</div>
 	</body>
 </html>

@@ -155,20 +155,12 @@
 							    	<div id="event_text">
 							      		<span id="event_text_left">
 							      			<span id="cat_bg" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="participation" min="1" max="12" style="background-color: rgb(241, 196, 15);">
+							      			<span id="participation" style="background-color: rgb(241, 196, 15);">
 							      			</span>
 							      			<span id="Prize_Money" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="Contacts" style="background-color: rgb(241, 196, 15);">
-							      				<h2>Contacts</h2>
-							      				<p>Tom Sebastian<br>9037102360<br>acoustics@ragam.org.in<br><br></p>
-							      				<p>Nirmal Sabu<br>9895420189<br>acoustics@ragam.org.in<br><br></p>
-							      			</span>
+							      			<span id="Contacts" style="background-color: rgb(241, 196, 15);"></span>
 							      		</span>
-							      		<span id="event_text_right" style="background-color: rgb(241, 196, 15);">
-							        		<div id="event_register">
-							        			<div id="close"></div>
-							        	  		<span class="arrow"></span>
-							        	  	</div>        
+							      		<span id="event_text_right" style="background-color: rgb(241, 196, 15);">       
 							      			<span id="Introduction" style="background-color: rgb(241, 196, 15);">
 							      				<h2>Introduction</h2>
 							      				<p>

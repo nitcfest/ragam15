@@ -46,8 +46,12 @@ $(function()
 		{
 		  	if(data.response == 'success')
 		  	{
+		  		console.log(data.event_code);
+		  		//Event Title
 		  		$("#event_title").html(data.name);
+		  		//Prize Money
 		  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
+		  		//Participation
 		  		$("#participation").css("display","block");
 		  		if(data.team_min>data.team_max)
 		  			$("#participation").css("display","none");
@@ -60,6 +64,33 @@ $(function()
 		  		}
 		  		else
 		  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
+		  		//Contacts
+		  		var i=0;
+		  		var cont=data.contacts
+		  		var entry="<h2>Contacts</h2><br>";
+		  		while(i<cont.length)
+		  		{
+					entry=entry+cont[i].name+"<br>";
+					entry=entry+cont[i].phone+"<br>";
+					if(cont[i].email)
+						entry=entry+cont[i].email+"<br>";
+					entry=entry+"<br>";
+					i++;
+		  		}
+		  		$("#Contacts").html(entry);
+		  		//Sections 
+		  		i=0;
+		  		sect=data.sections
+		  		entry="";
+		  		while(i<sect.length)
+		  		{
+					entry=entry+"<span id=\""+sect[i].title+"\" style=\"background-color: rgb(241, 196, 15);\">"
+					entry=entry+"<h2>"+sect[i].title+"<\/h2><br>";
+					entry=entry+sect[i].text+"<\/span>";
+					i++;
+		  		}
+		  		$("#event_text_right").html(entry);
+
 
 		  	}
 		  	else{
@@ -68,7 +99,7 @@ $(function()
 			$('#eventContent').show('slide', {direction: 'right'}, 1000); /////Event loader
 		},
 		error: function(xhr, textStatus, errorThrown) {
-			$('.event').html('Error!');
+			$('#elist').html('Error!');
 		}
 		});
 	});

@@ -1,8 +1,7 @@
-#ticker {width:100%; font-size:0.75em; position:fixed; left:0; bottom:0; z-index:1; background:#000;}
+#ticker {width:100%; font-size:1em; position:fixed; left:0; bottom:0; z-index:1; background:#000;}
 #ticker strong,
-#ticker ol {float:left; padding:15px;}
+#ticker ol {float:left; padding:10px;}
 #ticker strong {color:#FFF; border-right:1px solid #222;}
 #ticker ol {position:relative; width:80%;}
-#ticker li {width:100%; color:#CCC; list-style:none; position:absolute; left:15px; top:15px; z-index:1;}
+#ticker li {width:100%; color:#CCC; list-style:none; position:absolute; left:15px; top:-8px; z-index:1;}
 #ticker li a {color:#999; text-decoration:none;}
-#ticker a:hover {color:#FFFFCC; text-decoration:underline;}
