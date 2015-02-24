@@ -440,6 +440,15 @@ body{
  	position:relative;
  	width:96%;
  }
+ #close{
+ 	width:100px;
+ 	height:20px;
+ 	position: absolute;
+ 	left: 0%;
+ 	top: 0%;
+ 	color: #000000;
+ 	cursor:pointer;
+ }
  /********************** pageload*******************************/
  .container {
 	display: none;
