@@ -61,9 +61,12 @@
 
 
 $(document).ready(function($) {
-	$(".event").click(function () 
+	$("*").click(function () 
 	{
-		alert("1");
+		var f = $(this).attr("id");
+		var g = this.id;
+		alert(f);
+		alert(g);
 		$('#eventContent').show('slide', {direction: 'right'}, 1000);
 	});
 

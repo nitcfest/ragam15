@@ -9,13 +9,12 @@
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
 		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
 		<script type="text/javascript" src="js/cssplugin.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
@@ -128,12 +127,17 @@
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
-					Events
+					Competitions
 					</br>
 					</br>
 					</br>
 					</br>
-					</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
+					</br>Rekindle the hero within you. 
+					</br>
+					Fight in the battle of your life. 
+					</br>
+					Emerge triumphant, and the trophy shall be waiting for you.
+
 				</div>
 				<div id="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="">

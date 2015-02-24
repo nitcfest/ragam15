@@ -20,7 +20,7 @@ $(function()
 					html+="<ul>";
 					sub_cat_events=sub_cat["events"];
 					for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
-						html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event'>"+sub_cat_events[k]["name"]+"</a></li>");
+						html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event-name'>"+sub_cat_events[k]["name"]+"</a></li>");
 					}
 					html+="</ul>";
 					html+="</li>";
