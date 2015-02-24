@@ -60,13 +60,10 @@
 /*****************event loader end *********************/
 
 
-$(document).ready(function($) {
-	$("*").click(function () 
-	{
-		var f = $(this).attr("id");
-		var g = this.id;
-		alert(f);
-		alert(g);
+$(document).ready(function($) 
+{
+	$("#elist").on("click",".event",function () {
+		alert("fd");
 		$('#eventContent').show('slide', {direction: 'right'}, 1000);
 	});
 
