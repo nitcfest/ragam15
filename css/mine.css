@@ -76,3 +76,49 @@
   content: "\e9bd";
 }
 
+#spmenu-s2 {
+  top: 98px;
+}
+#logo {
+  width: 100%;
+  padding-top: 10px;
+}
+#logo1{
+  width: 75%;
+  z-index: -1111;
+}
+.skill-bar span {
+    background: #fff;
+    height: 4.5px;
+    display: inline-block;
+}
+.skill-bar span {
+    -webkit-animation: w70 5s ease forwards;
+}
+.skill-bar .w70 {
+    width: 70%;
+}
+@-webkit-keyframes w70 {
+    from { width: 0%; }
+    to { width: 70%; }
+}
+.bar{
+     transform:rotate(180deg);
+
+}
+.bar span {
+    background: #fff;
+    height: 4.5px;
+    display: inline-block;
+}
+.bar span {
+    -webkit-animation: w70 5s ease forwards;
+}
+.bar .w70 {
+    width: 70%;
+
+}
+@-webkit-keyframes w70 {
+    from { width: 0%; }
+    to { width: 70%; }
+}
