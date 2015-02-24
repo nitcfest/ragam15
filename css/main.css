@@ -261,7 +261,28 @@ body{
   #wlist>li  { padding-left: 20px; padding-right: 16px; }
 }
 
-
+/******************/
+.head
+ {
+  background-color: red;
+  margin: 10% auto;
+  height:10%;
+  width:90%;
+ }
+.sprite
+ {
+  background-color: blue;
+  margin: 10% auto;
+  height:40%;
+  width:80%;
+ }
+.words
+ {
+  background-color: yellow;
+  margin: 10% auto;
+  height:30%;
+  width:80%;
+ }
 
 #content_wrap
 {

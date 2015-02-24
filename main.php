@@ -30,14 +30,13 @@
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
-					Competitions
-					</br>
-					</br>
-					</br>Rekindle the hero within you. 
-					</br>
-					Fight in the battle of your life. 
-					</br>
-					Emerge triumphant, and the trophy shall be waiting for you.
+					<div id="events-head" class="head">Competitions</div>
+					<div id="events-sprite" class="sprite"></div>
+					<div id="events-words" class="words">
+						Rekindle the hero within you. 
+						</br>Fight in the battle of your life. 
+						</br>Emerge triumphant, and the trophy shall be waiting for you.
+					</div>
 				</div>
 				<div id="pagewrap" class="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="container show" id="page-1">
