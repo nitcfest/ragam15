@@ -98,6 +98,9 @@ $(function()
 		  	}		  	
 		  	loaderEvents();
 			$('#eventContent').delay(1000).show(1000); /////Event loader
+			$( "#close" ).click(function() {
+  				$( "#eventContent" ).fadeOut();
+			});
 		},
 		error: function(xhr, textStatus, errorThrown) {
 			$('#elist').html('Error!');

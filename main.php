@@ -33,10 +33,10 @@
 
 		.pageload-overlay {
 			position: fixed;
-			width: 70%;
+			width: 100%;
 			height: 100%;
 			top: 0;
-			left: 30%;
+			left: 0%;
 			visibility: hidden;
 		}
 
@@ -62,7 +62,7 @@
 			width: 20px;
 			height: 20px;
 			top: 50%;
-			left: 70%;
+			left: 50%;
 			margin: -10px 0 0 -10px;
 			border-radius: 50%;
 			visibility: hidden;
@@ -152,6 +152,7 @@
 					</div>
 					<div id="eventContent" class="container" id="page-2">
 						<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
+							<div id="close">close</div>
 							<div id="event_wrap">
 								<div id="event_head">
 							    	<span id="event_title"></span>
