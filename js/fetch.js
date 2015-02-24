@@ -46,12 +46,26 @@ $(function()
 		{
 		  	if(data.response == 'success')
 		  	{
-		  		alert("working");
+		  		$("#event_title").html(data.name);
+		  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
+		  		$("#participation").css("display","block");
+		  		if(data.team_min>data.team_max)
+		  			$("#participation").css("display","none");
+		  		else if(data.team_min==data.team_max)
+		  		{	
+		  			if(data.team_min==1)
+		  				$("#participation").html('Solo Event');
+		  			else
+		  				$("#participation").html('Teams of '+data.team_min);
+		  		}
+		  		else
+		  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
+
 		  	}
 		  	else{
 		  		$('.event').html('Error - No event!');
 		  	}		  	
-			$('#eventContent').show('slide', {direction: 'right'}, 1000);
+			$('#eventContent').show('slide', {direction: 'right'}, 1000); /////Event loader
 		},
 		error: function(xhr, textStatus, errorThrown) {
 			$('.event').html('Error!');
