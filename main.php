@@ -12,106 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/tweenmax.js"></script>
-		<script type="text/javascript" src="js/scrollmagic.js"></script>
-		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
-		<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
-		<script type="text/javascript" src="js/cssplugin.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-		<script src="js/snap.svg-min.js"></script>
-		<style>
-				. {
-			display: none;
-		}
-
-		..show {
-			display: block;
-		}
-
-		.pageload-overlay {
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0%;
-			visibility: hidden;
-		}
-
-		.pageload-overlay.show {
-			visibility: visible;
-		}
-
-		.pageload-overlay svg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			pointer-events: none;
-		}
-
-		.pageload-overlay svg path {
-			fill: #fff;
-		}
-
-		.pageload-overlay::after,
-		.pageload-overlay::before {
-			content: '';
-			position: fixed;
-			width: 20px;
-			height: 20px;
-			top: 50%;
-			left: 50%;
-			margin: -10px 0 0 -10px;
-			border-radius: 50%;
-			visibility: hidden;
-			opacity: 0;
-			z-index: 1000;
-			-webkit-transition: opacity 0.15s, visibility 0s 0.15s;
-			transition: opacity 0.15s, visibility 0s 0.15s;
-		}
-
-		.pageload-overlay::after {
-			background: #6cc88a;
-			-webkit-transform: translateX(-20px);
-			transform: translateX(-20px);
-			-webkit-animation: moveRight 0.6s linear infinite alternate;
-			animation: moveRight 0.6s linear infinite alternate;
-		}
-
-		.pageload-overlay::before {
-			background: #4fc3f7;
-			-webkit-transform: translateX(20px);
-			transform: translateX(20px);
-			-webkit-animation: moveLeft 0.6s linear infinite alternate;
-			animation: moveLeft 0.6s linear infinite alternate;
-		}
-
-		@-webkit-keyframes moveRight {
-			to { -webkit-transform: translateX(20px); }
-		}
-
-		@keyframes moveRight {
-			to { transform: translateX(20px); }
-		}
-
-		@-webkit-keyframes moveLeft {
-			to { -webkit-transform: translateX(-20px); }
-		}
-
-		@keyframes moveLeft {
-			to { transform: translateX(-20px); }
-		}
-
-		.pageload-loading.pageload-overlay::after,
-		.pageload-loading.pageload-overlay::before {
-			opacity: 1;
-			visibility: visible;
-			-webkit-transition: opacity 0.3s;
-			transition: opacity 0.3s;
-		}
-		</style>
 	</head>
 	<body>
 		<div id="fadebox"></div>
@@ -166,7 +68,7 @@
 						</div>
 					</div>
 				</div>
-				</div>
+			</div>
 			
 
 <!--**********************************************EVENTS END*******************-->				
@@ -226,77 +128,18 @@
 				</svg>
 			</div><!-- /pageload-overlay -->
 	</body>
-
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/tweenmax.js"></script>
+	<script type="text/javascript" src="js/scrollmagic.js"></script>
+	<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
+	<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
+	<script type="text/javascript" src="js/cssplugin.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script src="js/snap.svg-min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/svgLoader.js"></script>
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/svgLoader.js"></script>
-	<script>
-		var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
-		// $.ajax({
-		//   type: "GET",
-		//   url: "http://www.ragam.org.in/2015/cms/api/events",
-		//   data: {}
-		// }).done(function( events ) {
-		  	var competitions=events[0];
-			var html="";
-			for(i=0;i<competitions.sub_categories.length;i++){
-				html+="<li>";
-				sub_cat=competitions.sub_categories[i];
-				html+=("<h4>"+sub_cat['name']+"</h4>");
-				html+="<ul>";
-				sub_cat_events=sub_cat["events"];
-				for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
-					html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event'>"+sub_cat_events[k]["name"]+"</a></li>");
-				}
-				html+="</ul>";
-				html+="</li>";
-			}	
-			$("#elist").html(html);
-		  // });
-		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
-		var fill_event_details=function(event_details)
-		{
-			alert("1");
-			jQuery.ajax({
-				  url: base_url+'events',
-				  type: 'GET',
-				  dataType: 'jsonp',
-				  success: function(data, textStatus, xhr) {
-				  	if(data.length>0){
-				  		$('.categories').html('<br>');
-				  		data.forEach(function(category){
-				  			$('.categories').append(category.name+'<br>');
-
-				  			if(category.hasOwnProperty('sub_categories')){
-				  				category.sub_categories.forEach(function(sub){
-				  					$('.categories').append('--- '+sub.name+'<br>');
-
-				  					if(sub.hasOwnProperty('events')){
-				  						sub.events.forEach(function(this_event){
-				  							$('.categories').append('--- <a href="#" class="event-name" data-event_code="'+this_event.event_code+'">@'+this_event.name+'</a><br>');
-				  						});
-				  					}
-				  				});
-				  			}			  			
-
-				  		});
-
-				  	}				  	
-				  },
-				  error: function(xhr, textStatus, errorThrown) {
-				  	$('.categories').html('Error!');
-				  }
-				});
-			// $("#event_title").html(event_details["name"]);
-			// $("#Prize_Money").html(event_details["prizes"]);
-			// $("#Rules_and Regulations").html(event_details["ru"])
-			setTimeout(function(){
-			$('#eventContent').show('slide', {direction: 'right'}, 1000,function(){loader.hide();});
-			},1000)
-				
-		}
-	</script>
 </html>
