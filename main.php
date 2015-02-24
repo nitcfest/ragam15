@@ -10,6 +10,7 @@
 		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
@@ -21,8 +22,6 @@
 		<script type="text/javascript" src="js/cssplugin.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script src="js/snap.svg-min.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/svgLoader.js"></script>
 		<style>
 				. {
 			display: none;
@@ -130,30 +129,28 @@
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
 					Events
-				</br>
-				</br>
-				</br>
-				</br>
-			</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
-					Competitions
 					</br>
 					</br>
 					</br>
 					</br>
-					</br>Rekindle the hero within you. 
-					</br>
-					Fight in the battle of your life. 
-					</br>
-					Emerge triumphant, and the trophy shall be waiting for you.
+					</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
+						Competitions
+						</br>
+						</br>
+						</br>
+						</br>
+						</br>Rekindle the hero within you. 
+						</br>
+						Fight in the battle of your life. 
+						</br>
+						Emerge triumphant, and the trophy shall be waiting for you.
 				</div>
-				<div id="pagewrap"
-				<div style="height:100%;width:70%;float:left" class="">
-
-					<ul id="elist">
-		  			</ul>
-				</div>
-
-				<div id="eventContent" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
+				<div id="pagewrap" class="pagewrap">
+					<div style="height:100%;width:70%;float:left" class="container show" id="page-1">
+						<ul id="elist">
+			  			</ul>
+					</div>
+					<div id="eventContent" class="container" id="page-2">
 						<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
 							<div id="event_wrap">
 								<div id="event_head">
@@ -214,8 +211,6 @@
 						</div>
 					</div>
 				</div>
-				</div>
-			</div>
 			
 
 <!--**********************************************EVENTS END*******************-->				
@@ -270,12 +265,19 @@
 <!-- Footer End-->
 <!-- End-->
 		</div>
-
+		<div id="loader" class="pageload-overlay" data-opening="M 0,60 80,60 80,50 0,40 0,60;M 0,60 80,60 80,25 0,40 0,60;M 0,60 80,60 80,25 0,10 0,60;M 0,60 80,60 80,0 0,0 0,60" data-closing="M 0,60 80,60 80,20 0,0 0,60;M 0,60 80,60 80,20 0,40 0,60;m 0,60 80,0 0,0 -80,0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+					<path d="m 0,60 80,0 0,0 -80,0"/>
+				</svg>
+			</div><!-- /pageload-overlay -->
 	</body>
 
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/loadereve.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/svgLoader.js"></script>
 	<script>
 		//var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
 		$.ajax({
