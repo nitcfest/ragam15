@@ -35,62 +35,27 @@ $(function()
 		}
 	});
 
-	$('.categories').on('click', '.event-name', function(event) {
+	$('#elist').on('click', '.event-name', function(event) {
 		event.preventDefault();
 		jQuery.ajax(
 		{
-			/*url: base_url+'event/' + $(this).data('event_code'),
+			url: base_url+'event/' + this.id,
 			type: 'GET',
 			dataType: 'jsonp',
 		success: function(data, textStatus, xhr) 
 		{
-		  	if(data.response == 'success'){
-		  		$('.event').html(
-		  			data.name+'<br>'+
-		  			data.event_email+'@ragam.org.in<br>'+
-		  			data.short_description+'<br>'
-		  			);
+		  	if(data.response == 'success')
+		  	{
+		  		alert("working");
 		  	}
 		  	else{
 		  		$('.event').html('Error - No event!');
 		  	}		  	
+			$('#eventContent').show('slide', {direction: 'right'}, 1000);
 		},
 		error: function(xhr, textStatus, errorThrown) {
 			$('.event').html('Error!');
-		}*/
+		}
 		});
 	});
 });
-
-	/*
-	var base_url = 'http://www.ragam.org.in/2015/cms/api/';
-	$('.event').on('click', function(event) 
-	{
-		alert($(this).attr('id'));
-		event.preventDefault();
-		jQuery.ajax({
-		  url: base_url+'event/' + $(this).attr('id'),
-		  type: 'GET',
-		  dataType: 'jsonp',
-		  success: function(data, textStatus, xhr) 
-		  {
-		  	if(data.response == 'success')
-		  	{
-		alert($(this).attr('id'));
-		  		$("#event_title").html(data.name);
-		  		$("#event_title").html(data.name);
-		  	}
-		  	else
-		  	{
-		  		$('.event').html('Error - No event!');
-		  	}		  				  		  	
-		  },
-		  error: function(xhr, textStatus, errorThrown)
-		  {
-		  	$('.event').html('Error!');
-		  }
-		});
-	});
-
-		});
-});*/
