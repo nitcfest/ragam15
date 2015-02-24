@@ -211,7 +211,7 @@
 						</div>
 					</div>
 				</div>
-			
+				</div>
 
 <!--**********************************************EVENTS END*******************-->				
 <!--**********************************************2WORKSHOPS START*******************-->				
@@ -219,7 +219,6 @@
 			<div id="Workshops" class="sec">
 				<div style="height:100%;width:70%;float:left">
 					<ul id="wlist">
-		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
 				<div style="height:100%;width:30%;float:left">Workshops</div>
