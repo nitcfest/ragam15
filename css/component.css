@@ -37,7 +37,6 @@
   }
 /* General styles for all menus */
 .spmenu {
-	background: #47a3da;
 	position: fixed;
 }
 
@@ -69,7 +68,7 @@
 /* Orientation-dependent styles for the content of the menu */
 
 .spmenu-vertical {
-	width: 290px;
+	width: 184px;
 	height: 100%;
 	top: 0;
 	z-index: 100;
@@ -84,7 +83,7 @@
 
 
 .spmenu-right {
-	right: -222px;
+	right: -117px;
 }
 
 .spmenu-right.spmenu-open {
@@ -123,6 +122,8 @@
 #two
  {
  	width:290px;
+ 	-webkit-box-shadow:rgba(0, 0, 0, 0.298039) 0 1px 0px, rgba(255, 255, 255, 0.8) 0 -1px 0px, rgba(0, 0, 0, 0.6) 0 4px 10px;
+  box-shadow:rgba(0, 0, 0, 0.298039) 0 1px 0px, rgba(255, 255, 255, 0.8) 0 -1px 0px, rgba(0, 0, 0, 0.6) 0 4px 10px;
  }
 #two>a
  {
@@ -154,4 +155,29 @@
 }
 .align-mid {
 	padding-left: 19px;
+}
+.sv1{
+	height:2px;
+}
+ul{
+	list-style-type: none;
+	margin-left: -118px;
+	width: 702px;
+}
+ul li{
+	display: inline;
+	float: left;
+	width: 100px;
+}
+.bar {
+	line-height: 82px;
+}
+.skill-bar{
+	line-height: 68px;
+}
+.barboth{
+	width:293px;
+}
+.barboth2{
+	width:343px;
 }

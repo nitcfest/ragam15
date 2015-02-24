@@ -29,17 +29,20 @@ a:hover {
 #mega{
 	
     height: 100%;
-    background-image:url("http://ragam.org.in/2014/img/farhan.jpg");
+    background:url("../img/mainclr.jpg") top no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
 }
 #main-text
  {
  	color:white;
+ 	margin-top: 50%;
+
  }
 
 .main{
-	text-align: center;
 	width: 90%;
-	max-width: 30em; /*******************Width here******************/
+	max-width: 572px; /*******************Width here******************/
 	margin: 0 auto;
 	padding: 0 1.875em 3.125em 1.875em;
 }
