@@ -135,6 +135,7 @@
 					</br>
 					</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
 				</div>
+				<div id="sprite1"></div>
 				<div id="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="">
 						<ul id="elist"></ul>
@@ -265,4 +266,10 @@
 	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
+	<script>
+	var frameWidth = 100, numCols = 38;
+var steppedEase = new SteppedEase(numCols);
+
+TweenMax.to('#sprite1', 6, {backgroundPosition: '0px 100%', ease:steppedEase, repeat:-1});
+	</script>
 </html>
