@@ -61,7 +61,8 @@
 
 
 $(document).ready(function($) {
-	$(".event").click(function () {
+	$("#elist").on("click",".event",function () {
+		alert("fd");
 		$('#eventContent').show('slide', {direction: 'right'}, 1000);
 	});
 
