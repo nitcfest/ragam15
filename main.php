@@ -1,44 +1,3 @@
-<?php
-  require_once('connect.php');
-  $query1="SELECT name,cat_id FROM `event_cats` WHERE `par_cat`='1' ORDER BY FIELD(cat_id, 10, 9, 8, 7, 5) DESC";
-  $result1=$mysqli->query($query1);
-  $cat_lis="";
-  while($row1=$result1->fetch_assoc())
-  {
-    $cat_cur="<li><h4>".$row1['name']."</h4><ul>";
-    $catid=$row1['cat_id'];
-    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
-    $result2=$mysqli->query($query2);
-    while($row2=$result2->fetch_assoc())
-    {
-      $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a data-code='$row2[code]' id='$row2[code]' class='event'>".$row2['name']."</a></li>";
-    }
-    $result2->free();
-    $cat_lis .= $cat_cur."</ul></li>";
-  }
-  $result1->free();
-
-  $query1="SELECT name,cat_id FROM `event_cats` WHERE `cat_id`='2' OR `cat_id`='15'";
-  $result1=$mysqli->query($query1);
-  $wks_lis="";
-  while($row1=$result1->fetch_assoc())
-  {
-    $cat_cur="<li><ul>";
-    $catid=$row1['cat_id'];
-    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
-    $result2=$mysqli->query($query2);
-    while($row2=$result2->fetch_assoc())
-    {
-      $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a data-event_code='$row2[code]' class=\"pageload-link\">".$row2['name']."</a></li>";
-    }
-    $result2->free();
-    $wks_lis .= $cat_cur."</ul></li>";
-  }
-  $result1->free();
-?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
@@ -50,8 +9,9 @@
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
 		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
@@ -175,6 +135,16 @@
 				</br>
 				</br>
 			</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
+					Competitions
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>Rekindle the hero within you. 
+					</br>
+					Fight in the battle of your life. 
+					</br>
+					Emerge triumphant, and the trophy shall be waiting for you.
 				</div>
 				<div id="pagewrap"
 				<div style="height:100%;width:70%;float:left" class="">
@@ -240,7 +210,6 @@
 		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
-				<div class="come-from-right"></div>
 				<div style="height:100%;width:30%;float:left">Workshops</div>
 
 			</div>
@@ -288,6 +257,7 @@
 	</body>
 
 	<script type="text/javascript" src="js/commonscript.js"></script>
+	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
 		//var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
