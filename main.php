@@ -128,22 +128,14 @@
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
-					Events
+					Competitions
 					</br>
 					</br>
+					</br>Rekindle the hero within you. 
 					</br>
+					Fight in the battle of your life. 
 					</br>
-					</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
-						Competitions
-						</br>
-						</br>
-						</br>
-						</br>
-						</br>Rekindle the hero within you. 
-						</br>
-						Fight in the battle of your life. 
-						</br>
-						Emerge triumphant, and the trophy shall be waiting for you.
+					Emerge triumphant, and the trophy shall be waiting for you.
 				</div>
 				<div id="pagewrap" class="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="container show" id="page-1">
@@ -161,41 +153,11 @@
 							    	<div id="event_text">
 							      		<span id="event_text_left">
 							      			<span id="cat_bg" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="participation" style="background-color: rgb(241, 196, 15);">
-							      			</span>
+							      			<span id="participation" style="background-color: rgb(241, 196, 15);"></span>
 							      			<span id="Prize_Money" style="background-color: rgb(241, 196, 15);"></span>
 							      			<span id="Contacts" style="background-color: rgb(241, 196, 15);"></span>
 							      		</span>
-							      		<span id="event_text_right" style="background-color: rgb(241, 196, 15);">       
-							      			<span id="Introduction" style="background-color: rgb(241, 196, 15);">
-							      				<h2>Introduction</h2>
-							      				<p>
-							      					Perfect rhythm, powerful chords and rockstar style; bring these three together to conquer the Acoustics stage this Ragam '14. Own the stage and captivate our hearts as your instruments take centre stage. So bring out your coolest guitars, pack those drums, and let your music reverberate in our minds. Impress these crowds and you walk away with hundreds of dedicated fans, a handsome cash prize and an incredible experience.
-												</p>
-											</span>
-											<span id="Rules_and Regulations" style="background-color: rgb(241, 196, 15);">
-												<h2>Rules and Regulations</h2>
-												<p></p>
-												<ul>
-													<li>Maximum of 12 participants per team.</li>
-													<li>Time limit: 15 minutes + 3 minutes set-up time.</li>
-													<li>Participating teams should upload a video of any of their performance on YouTube and send its URL to acoustics@ragam.org.in along with the following details:
-														<ul>
-															<li>College/Band Name</li>
-															<li>Name and Contact Info of the Team Leader</li>
-															<li>List of Team members</li>
-														</ul>
-													</li>
-													<li>Finalists will be screened based on the video sent. Registration will be confirmed only after receiving the confirmation letter.</li>
-													<li>There is no On the Spot Registration.</li>
-													<li>Teams are permitted to perform in the language of their choice.</li>
-													<li>No electric instruments permitted apart from bass and electric guitar (clean).</li>
-													<li>Keyboards are permitted only on piano patch.</li>
-													<li>Points: (40, 30, 20)</li>
-													<li></li>
-												</ul>
-													<p></p>
-											</span>
+							      		<span id="event_text_right" style="background-color: rgb(241, 196, 15);">
 										</span>
 								    </div>
 								</div>
