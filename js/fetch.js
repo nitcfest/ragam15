@@ -26,25 +26,7 @@ $(function()
 					html+="</li>";
 				}	
 				$("#elist").html(html);
-				/*$('.categories').html('<br>');
-				data.forEach(function(category)
-				{
-					$('.categories').append(category.name+'<br>');
-					if(category.hasOwnProperty('sub_categories'))
-					{
-				  		category.sub_categories.forEach(function(sub)
-				  		{
-				  			$('.categories').append('--- '+sub.name+'<br>');
-							if(sub.hasOwnProperty('events'))
-							{
-				  				sub.events.forEach(function(this_event)
-				  				{
-				  					$('.categories').append('--- <a href="#" class="event-name" data-event_code="'+this_event.event_code+'">@'+this_event.name+'</a><br>');
-				  				});
-				  			}
-				  		});
-				  	}			  			
-				});*/
+				
 			}				  	
 		},
 		error: function(xhr, textStatus, errorThrown) 

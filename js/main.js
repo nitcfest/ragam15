@@ -61,7 +61,9 @@
 
 
 $(document).ready(function($) {
-	$(".event").click(function () {
+	$(".event").click(function () 
+	{
+		alert("1");
 		$('#eventContent').show('slide', {direction: 'right'}, 1000);
 	});
 
