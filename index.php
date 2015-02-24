@@ -14,31 +14,19 @@
 		<link rel="stylesheet" type="text/css" href="css/ticker.css">
 		<link rel="stylesheet" type="text/css" href="css/mine.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
-  		<script type='text/javascript' src='js/blur.min.js'></script>
-  		<script type="text/javascript">
-  		$(document).ready(function(){
-    
- 
-    $('#two').blurjs({source:'body',overlay:'rgba(0,100,100,0.9)'})
-    //demos($("#overlayblur2").attr('id')); 
 
-    
-});
-
-  		</script>
 	</head>
 	<body>
 		<div id="fadebox"></div>
 		<div class="spmenu-push" id="mega">
-			<div id="topdraw" class="topdraw-hover">
+			<!--<div id="topdraw" class="topdraw-hover">
 				<div id="topdraw-content">
 
 				</div>
 				<div id="topdraw-hanger">
 					Tarun :)
 				</div>
-			</div>
+			</div>-->
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="two" class="target">
 				    <a href=""><span class="icon-menu"></span><span class="align-mid">Menu<span></a>
@@ -86,8 +74,6 @@
 		<script src="js/classie.js"></script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
-		<script>
-			
-		</script>
+		
 	</body>
 </html>
