@@ -1,44 +1,3 @@
-<?php
-  require_once('connect.php');
-  $query1="SELECT name,cat_id FROM `event_cats` WHERE `par_cat`='1' ORDER BY FIELD(cat_id, 10, 9, 8, 7, 5) DESC";
-  $result1=$mysqli->query($query1);
-  $cat_lis="";
-  while($row1=$result1->fetch_assoc())
-  {
-    $cat_cur="<li><h4>".$row1['name']."</h4><ul>";
-    $catid=$row1['cat_id'];
-    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
-    $result2=$mysqli->query($query2);
-    while($row2=$result2->fetch_assoc())
-    {
-      $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a id='$row2[code]' class='event'>".$row2['name']."</a></li>";
-    }
-    $result2->free();
-    $cat_lis .= $cat_cur."</ul></li>";
-  }
-  $result1->free();
-
-  $query1="SELECT name,cat_id FROM `event_cats` WHERE `cat_id`='2' OR `cat_id`='15'";
-  $result1=$mysqli->query($query1);
-  $wks_lis="";
-  while($row1=$result1->fetch_assoc())
-  {
-    $cat_cur="<li><ul>";
-    $catid=$row1['cat_id'];
-    $query2="SELECT code, name FROM `events` WHERE `cat_id`='$row1[cat_id]'";
-    $result2=$mysqli->query($query2);
-    while($row2=$result2->fetch_assoc())
-    {
-      $name=str_replace(' ', '_', $row2['name']);
-      $cat_cur.="<li><a id='$row2[code]'>".$row2['name']."</a></li>";
-    }
-    $result2->free();
-    $wks_lis .= $cat_cur."</ul></li>";
-  }
-  $result1->free();
-?>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
@@ -50,8 +9,10 @@
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
 		<meta name="author" content="Ragam Creative Team" />
 		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/tweenmax.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.js"></script>
 		<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
@@ -61,8 +22,6 @@
 		<script type="text/javascript" src="js/cssplugin.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script src="js/snap.svg-min.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/svgLoader.js"></script>
 		<style>
 				. {
 			display: none;
@@ -170,72 +129,82 @@
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
 					Events
-				</br>
-				</br>
-				</br>
-				</br>
-			</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
+					</br>
+					</br>
+					</br>
+					</br>
+					</br> Events of the india are of ragam and the best in the world. General description and motivational phrase inviting to participate in the events goes here!
+						Competitions
+						</br>
+						</br>
+						</br>
+						</br>
+						</br>Rekindle the hero within you. 
+						</br>
+						Fight in the battle of your life. 
+						</br>
+						Emerge triumphant, and the trophy shall be waiting for you.
 				</div>
-				<div style="height:100%;width:70%;float:left" class="">
-				<div id="loader" style="z-index:1"class="pageload-overlay" data-opening="M20,15 50,30 50,30 30,30 Z;M0,0 80,0 50,30 20,45 Z;M0,0 80,0 60,45 0,60 Z;M0,0 80,0 80,60 0,60 Z" data-closing="M0,0 80,0 60,45 0,60 Z;M0,0 80,0 50,30 20,45 Z;M20,15 50,30 50,30 30,30 Z;M30,30 50,30 50,30 30,30 Z">
-				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
-					<path d="M30,30 50,30 50,30 30,30 Z"/>
-				</svg>
-			</div>
-					<ul id="elist">
-
-		  			</ul>
-				</div>
-
-				<div id="eventContent" style="position:absolute;left:30%;height:100%;width:70%;background:red;float:left;display:none">
-					
-					<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
-						  <div id="event_wrap">
-						  <div id="event_head">
-						    <span id="event_title">Acoustics</span>
-						    <span id="reg_response"></span>
-						  </div>
-						  <div id="event_main">
-						    <div id="event_text">
-						      <span id="event_text_left"><span id="cat_bg" style="background-color: rgb(241, 196, 15);"><img src="img/illustrations/9.png" width="200px"></span><span id="participation" min="1" max="12" style="display: none; background-color: rgb(241, 196, 15);"></span><span id="Prize_Money" style="background-color: rgb(241, 196, 15);"><h2>Prize Money</h2><p>First: INR 10000<br>
-						Second : INR 6000<br>
-						Third : INR 4000</p></span><span id="Contacts" style="background-color: rgb(241, 196, 15);"><h2>Contacts</h2><p>Tom Sebastian<br>9037102360<br>acoustics@ragam.org.in<br><br></p><p>Nirmal Sabu<br>9895420189<br>acoustics@ragam.org.in<br><br></p></span></span>
-						      <span id="event_text_right" style="background-color: rgb(241, 196, 15);">
-									<div id="event_register">
-										<div id="close"></div>
-										<span class="arrow"></span>
-									</div>        
-									<span id="Introduction" style="background-color: rgb(241, 196, 15);"><h2>Introduction</h2><p>Perfect rhythm, powerful chords and rockstar style; bring these three together to conquer the Acoustics stage this Ragam '14. 
-										Own the stage and captivate our hearts as your instruments take centre stage. So bring out your coolest guitars, pack those drums, and let your music reverberate in our minds. Impress these crowds and you walk away with hundreds of dedicated fans, a handsome cash prize and an incredible experience.
-										</p></span><span id="Rules_and Regulations" style="background-color: rgb(241, 196, 15);"><h2>Rules and Regulations</h2><p></p><ul>
-										<li>Maximum of 12 participants per team.</li>
-										<li>Time limit: 15 minutes + 3 minutes set-up time.</li>
-										<li>Participating teams should upload a video of any of their performance on YouTube and send its URL to acoustics@ragam.org.in along with the following details:
-										<ul>
-										<li>College/Band Name</li>
-										<li>Name and Contact Info of the Team Leader</li>
-										<li>List of Team members</li>
-										</ul>
-										</li>
-										<li>Finalists will be screened based on the video sent. Registration will be confirmed only after receiving the confirmation letter.</li>
-										<li>There is no On the Spot Registration.</li>
-										<li>Teams are permitted to perform in the language of their choice.</li>
-										<li>No electric instruments permitted apart from bass and electric guitar (clean).</li>
-										<li>Keyboards are permitted only on piano patch.</li>
-										<li>Points: (40, 30, 20)</li>
-										<li></li>
-										</ul><p></p>
-									</span>
-								</span>
-						    </div>
-					  </div>
-					  </div>
+				<div id="pagewrap" class="pagewrap">
+					<div style="height:100%;width:70%;float:left" class="container show" id="page-1">
+						<ul id="elist">
+			  			</ul>
+					</div>
+					<div id="eventContent" class="container" id="page-2">
+						<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
+							<div id="event_wrap">
+								<div id="event_head">
+							    	<span id="event_title"></span>
+							    	<span id="reg_response"></span>
+							  	</div>
+							  	<div id="event_main">
+							    	<div id="event_text">
+							      		<span id="event_text_left">
+							      			<span id="cat_bg" style="background-color: rgb(241, 196, 15);"></span>
+							      			<span id="participation" style="background-color: rgb(241, 196, 15);">
+							      			</span>
+							      			<span id="Prize_Money" style="background-color: rgb(241, 196, 15);"></span>
+							      			<span id="Contacts" style="background-color: rgb(241, 196, 15);"></span>
+							      		</span>
+							      		<span id="event_text_right" style="background-color: rgb(241, 196, 15);">       
+							      			<span id="Introduction" style="background-color: rgb(241, 196, 15);">
+							      				<h2>Introduction</h2>
+							      				<p>
+							      					Perfect rhythm, powerful chords and rockstar style; bring these three together to conquer the Acoustics stage this Ragam '14. Own the stage and captivate our hearts as your instruments take centre stage. So bring out your coolest guitars, pack those drums, and let your music reverberate in our minds. Impress these crowds and you walk away with hundreds of dedicated fans, a handsome cash prize and an incredible experience.
+												</p>
+											</span>
+											<span id="Rules_and Regulations" style="background-color: rgb(241, 196, 15);">
+												<h2>Rules and Regulations</h2>
+												<p></p>
+												<ul>
+													<li>Maximum of 12 participants per team.</li>
+													<li>Time limit: 15 minutes + 3 minutes set-up time.</li>
+													<li>Participating teams should upload a video of any of their performance on YouTube and send its URL to acoustics@ragam.org.in along with the following details:
+														<ul>
+															<li>College/Band Name</li>
+															<li>Name and Contact Info of the Team Leader</li>
+															<li>List of Team members</li>
+														</ul>
+													</li>
+													<li>Finalists will be screened based on the video sent. Registration will be confirmed only after receiving the confirmation letter.</li>
+													<li>There is no On the Spot Registration.</li>
+													<li>Teams are permitted to perform in the language of their choice.</li>
+													<li>No electric instruments permitted apart from bass and electric guitar (clean).</li>
+													<li>Keyboards are permitted only on piano patch.</li>
+													<li>Points: (40, 30, 20)</li>
+													<li></li>
+												</ul>
+													<p></p>
+											</span>
+										</span>
+								    </div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				</div>
-
-			
-			</div>
+>>>>>>> stable1
 			
 
 <!--**********************************************EVENTS END*******************-->				
@@ -244,7 +213,6 @@
 			<div id="Workshops" class="sec">
 				<div style="height:100%;width:70%;float:left">
 					<ul id="wlist">
-		    			<?php echo $wks_lis; ?>
 		  			</ul>
 				</div>
 				<div style="height:100%;width:30%;float:left">Workshops</div>
@@ -290,11 +258,19 @@
 <!-- Footer End-->
 <!-- End-->
 		</div>
-
+		<div id="loader" class="pageload-overlay" data-opening="M 0,60 80,60 80,50 0,40 0,60;M 0,60 80,60 80,25 0,40 0,60;M 0,60 80,60 80,25 0,10 0,60;M 0,60 80,60 80,0 0,0 0,60" data-closing="M 0,60 80,60 80,20 0,0 0,60;M 0,60 80,60 80,20 0,40 0,60;m 0,60 80,0 0,0 -80,0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+					<path d="m 0,60 80,0 0,0 -80,0"/>
+				</svg>
+			</div><!-- /pageload-overlay -->
 	</body>
 
 	<script type="text/javascript" src="js/commonscript.js"></script>
+	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/loadereve.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/svgLoader.js"></script>
 	<script>
 		var events=[{"id":"1","parent_id":"0","name":"Events","sub_categories":[{"id":"4","parent_id":"1","name":"General"},{"id":"5","parent_id":"1","name":"Literary"},{"id":"6","parent_id":"1","name":"Dance","events":[{"event_code":"CHN","name":"ChoreoNite","tags":"dance, choreo, group dance","prizes":"Non-Themed\r\nFirst - INR 30000\r\nSecond - INR 20000\r\n\r\nThemed\r\nFirst - INR 30000\r\nSecond - INR 20000","short_description":"Pop, Lock and Break!","team_min":"5","team_max":"30"}]},{"id":"7","parent_id":"1","name":"Dramatics"},{"id":"8","parent_id":"1","name":"Music","events":[{"event_code":"WSO","name":"Western Solo","tags":"song, solo, western solo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1"}]},{"id":"9","parent_id":"1","name":"Fine Arts"},{"id":"10","parent_id":"1","name":"Thematic"},{"id":"11","parent_id":"1","name":"Online"},{"id":"12","parent_id":"1","name":"Gaming"},{"id":"13","parent_id":"1","name":"Gaming"},{"id":"14","parent_id":"1","name":"Sports"}]},{"id":"2","parent_id":"0","name":"Workshops"},{"id":"3","parent_id":"0","name":"Proshows"}]
 		// $.ajax({
@@ -318,9 +294,40 @@
 			}	
 			$("#elist").html(html);
 		  // });
-		
-		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZcZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
-		var fill_event_details=function(){
+		var event_details={"event_code":"WSO","category_id":"8","name":null,"tags":"song, solo, western solo","event_email":"westernsolo","prizes":"First Prize: 10,000 INR\r\nSecond Prize: 5,000 INR\r\nThird Prize: 1,000 INR","short_description":"Sing solo, and rock on the stage!","team_min":"1","team_max":"1","validated":"1","updated_at":{"date":"-0001-11-30 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Kolkata"},"sections":[{"title":"Introduction","text":"<i>Pour out the liquid music of your voice,<br>Enrapture the crowd with your little dew-drops of melody,<br>Pursue your dream and charm your way to stardom,<br>And be the talent the world has never seen!<br><br><img alt=\"\" src=\"http:\/\/www.ragam.org.in\/2015\/cms\/images\/ZZZ_2.jpg\"><br><\/i>"},{"title":"Rules and Regulations","text":"<li>One participant per college in each category(male &amp;female)<br><\/li><li>The judging will be separate for male and female categories<\/li><li>Time limit: 5 minutes per participant.<br><\/li><li>One (only) Instrumental accompaniment is permitted.<\/li><li>Keyboard (piano patch only)\/Electric Guitar may be provided if required.<br><\/li><li>Points: (10, 6, 4)<\/li>"}],"contacts":[{"name":"Surya Rajan","phone":"9633721575","email":"westernsolo@ragam.org.in","facebook":"http:\/\/www.facebook.com\/boss"}]};
+		var fill_event_details=function(event_details)
+		{
+			alert("1");
+			jQuery.ajax({
+				  url: base_url+'events',
+				  type: 'GET',
+				  dataType: 'jsonp',
+				  success: function(data, textStatus, xhr) {
+				  	if(data.length>0){
+				  		$('.categories').html('<br>');
+				  		data.forEach(function(category){
+				  			$('.categories').append(category.name+'<br>');
+
+				  			if(category.hasOwnProperty('sub_categories')){
+				  				category.sub_categories.forEach(function(sub){
+				  					$('.categories').append('--- '+sub.name+'<br>');
+
+				  					if(sub.hasOwnProperty('events')){
+				  						sub.events.forEach(function(this_event){
+				  							$('.categories').append('--- <a href="#" class="event-name" data-event_code="'+this_event.event_code+'">@'+this_event.name+'</a><br>');
+				  						});
+				  					}
+				  				});
+				  			}			  			
+
+				  		});
+
+				  	}				  	
+				  },
+				  error: function(xhr, textStatus, errorThrown) {
+				  	$('.categories').html('Error!');
+				  }
+				});
 			// $("#event_title").html(event_details["name"]);
 			// $("#Prize_Money").html(event_details["prizes"]);
 			// $("#Rules_and Regulations").html(event_details["ru"])

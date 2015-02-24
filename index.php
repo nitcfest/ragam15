@@ -31,7 +31,7 @@
 				    <a href=""><span class="icon-menu"></span></a>
 					<!--Login button somewhere here-->
 					<a data-href="main.php#Events"><span class="icon-drawer"></span><span class="align-mid">Events<span></a>
-					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops<</a>
+					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</a>
 					<a data-href="main.php#Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="main.php#Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="main.php#Sponsors"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
@@ -56,9 +56,13 @@
 		<script src="js/classie.js"></script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/ticker.js"></script>
 		<script>
 			
 		</script>
-		<?php include ('ticker.html'); ?>
+		<div id="ticker">
+			<strong>Ragam Updates</strong>
+			<ol></ol>
+		</div>
 	</body>
 </html>

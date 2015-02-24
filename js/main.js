@@ -55,16 +55,5 @@
 					.addTo(controller)
 					.addIndicators();
 	/***************************scolling end************/
-
-$(document).ready(function($) {
-	loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400 } );
-	$(".event").click(function () {
-		loader.show();
-		fill_event_details();
-	});
-
-
-});
-
-
-
+/*****************event loader *********************/
+/*****************event loader end *********************/
