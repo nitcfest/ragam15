@@ -355,9 +355,9 @@ body{
 }
 #eventContent{
 	position:absolute;
-	left:30%;
+	left:0%;
 	height:100%;
-	width:70%;
+	width:100%;
 	background:red;
 	float:left;
 	display:none;
