@@ -155,7 +155,7 @@
 							    	<div id="event_text">
 							      		<span id="event_text_left">
 							      			<span id="cat_bg" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="participation" min="1" max="12" style="display: none; background-color: rgb(241, 196, 15);">
+							      			<span id="participation" min="1" max="12" style="background-color: rgb(241, 196, 15);">
 							      			</span>
 							      			<span id="Prize_Money" style="background-color: rgb(241, 196, 15);"></span>
 							      			<span id="Contacts" style="background-color: rgb(241, 196, 15);">
