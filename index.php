@@ -43,7 +43,7 @@
 					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="main.php#Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="main.php#Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
-					<a data-href="main.php#Sponsors"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
+					<a data-href="main.php#Sponsors"><span class="icon-user-tie"></span><span class="align-mid">Highlights</span></a>
 				</div>	
 			</nav>
 			<div class="container">

@@ -12,7 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 	</head>
 	<body>
@@ -23,20 +22,23 @@
 			<div id="grad3" class="background"></div>
 			<div id="grad4" class="background"></div>
 			<div id="grad5" class="background"></div>
-			<div id="grad6" class="background"></div>
 		</div>
 		<div id="rest">
 
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
-					<div id="events-head" class="head">Competitions</div>
-					<div id="events-sprite" class="sprite"></div>
-					<div id="events-words" class="words">
+					<div id="events-head-place" class="head-place">
+						<div id="events-head" class="head">
+							Competitions
+						</div>
+					</div>
+					<div id="events-words-place" class="words-place">
 						Rekindle the hero within you. 
 						</br>Fight in the battle of your life. 
 						</br>Emerge triumphant, and the trophy shall be waiting for you.
 					</div>
+					<div id="events-sprite" class="sprite"></div>
 				</div>
 				<div id="pagewrap" class="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="container show" id="page-1">
@@ -47,8 +49,8 @@
 						<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
 							<div id="close">close</div>
 							<div id="event_wrap">
-								<div id="event_head">
-							    	<span id="event_title"></span>
+								<div id="event_head-place">
+							    	<span-place id="event_title"></span>
 							    	<span id="reg_response"></span>
 							  	</div>
 							  	<div id="event_main">
@@ -78,20 +80,82 @@
 					<ul id="wlist">
 		  			</ul>
 				</div>
-				<div style="height:100%;width:30%;float:left">Workshops</div>
+				<div style="height:100%;width:30%;float:left">
+					<div id="workshops-head-place" class="head-place">
+						<div id="workshops-head" class="head">
+							Workshops
+						</div>
+					</div>
+					<div id="workshops-words-place" class="words-place">
+						ENTER TEXT FOR WORKSHOPS
+						</br>Fight in the battle of your life. 
+						</br>Emerge triumphant, and the trophy shall be waiting for you.
+					</div>
+					<div id="workshops-sprite" class="sprite"></div>
+				</div>
 
 			</div>
 <!--**********************************************WORKSHOPS END*******************-->				
 <!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">
-				<div style="height:100%;width:30%;float:left">Proshows</div>
+				<div style="height:100%;width:30%;float:left">
+					<div id="proshows-head-place" class="head-place">
+						<div id="proshows-head" class="head">
+							Proshows
+						</div>
+					</div>
+					<div id="proshows-words-place" class="words-place">
+						Rekindle the hero within you. 
+						</br>Fight in the battle of your life. 
+						</br>Emerge triumphant, and the trophy shall be waiting for you.
+					</div>
+					<div id="proshows-sprite" class="sprite"></div>
+				</div>
 				<div style="height:100%;width:70%;float:left">
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ghb6eDopW8I" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
-			<div id="Info" class="sec">General Info</div>
-			<div id="Sponsors" class="sec">Sponsors</div>
+<!--**********************************************3PROSHOWS END*******************-->				
+<!--**********************************************4INFO START*******************-->				
+			<div id="Info" class="sec">
+				<div style="height:100%;width:70%;float:left">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="400" height="300" frameborder="0" style="border:0"></iframe>
+				</div>
+				<div style="height:100%;width:30%;float:left">
+					<div id="info-head-place" class="head-place">
+						<div id="info-head" class="head">
+							General
+							 Info</div>
+						 Info</div>
+					<div id="info-words-place" class="words-place">
+						ENTER TEXT FOR WORKSHOPS
+						</br>Fight in the battle of your life. 
+						</br>Emerge triumphant, and the trophy shall be waiting for you.
+					</div>
+					<div id="info-sprite" class="sprite"></div>
+				</div>
+
+			</div>
+<!--**********************************************4INFO END*******************-->				
+<!--**********************************************5Highlights START*******************-->				
+			<div id="Highlights" class="sec">
+				<div style="height:100%;width:30%;float:left">
+					<div id="Highlights-head-place" class="head-place">
+						<div id="Highlights-head" class="head">
+							Highlights
+						</div>
+					</div>
+					<div id="Highlights-words-place" class="words-place">
+						Rekindle the hero within you. 
+						</br>Fight in the battle of your life. 
+						</br>Emerge triumphant, and the trophy shall be waiting for you.
+					</div>
+					<div id="Highlights-sprite" class="sprite"></div>
+				</div>
+				<div style="height:100%;width:70%;float:left">
+				</div>
+			</div>
+<!--**********************************************5Highlights END*******************-->				
 			
 
 
