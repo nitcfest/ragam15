@@ -40,10 +40,10 @@
 					</div>
 					<div id="events-sprite" class="sprite"></div>
 				</div>
-				<div id="pagewrap" class="pagewrap">
-					<div style="height:100%;width:70%;float:left" class="container show" id="page-1">
-						<ul id="elist">
-			  			</ul>
+				<div id="sprite1"></div>
+				<div id="pagewrap">
+					<div style="height:100%;width:70%;float:left" class="">
+						<ul id="elist"></ul>
 					</div>
 					<div id="eventContent" class="container" id="page-2" style="position:fixed;z-index:500;">
 						<div id="content_wrap" style="background-image: none; background-color: rgb(33, 155, 220);">
@@ -207,4 +207,14 @@
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
+	<script>
+	var bat_width=400,bat_height=400,bat_num_pics=39,bat_repeat_num=4,bat_speed=8;
+	var steppedEase = new SteppedEase(bat_num_pics-1);
+	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
+	$("#sprite1").css({"width":bat_width+"px","height": bat_height+"px",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
+	var start_repeat_batman=function(){
+		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+ '-'+(bat_num_pics-1)*bat_height+'px'},{backgroundPosition: '0px '+ '-'+(bat_num_pics- bat_repeat_num)*bat_height+'px', ease:steppedEase2,repeat:-1});
+	}
+	TweenMax.to('#sprite1', bat_speed, {backgroundPosition: '0px '+ '-'+(bat_num_pics-1)*bat_height+'px', ease:steppedEase,onComplete:start_repeat_batman});
+	</script>
 </html>

@@ -45,7 +45,7 @@ $(function (){
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
 					.addIndicators();
-	new ScrollScene({triggerElement: "#Workshops",duration: 300})
+	new ScrollScene({triggerElement: "#Workshops"})
 					.setClassToggle("#grad2", "active") // add class toggle
 					.addTo(controller)
 					.addIndicators();
