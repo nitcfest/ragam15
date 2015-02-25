@@ -3,6 +3,6 @@
 #ticker ol {float:left; padding:10px;}
 #ticker strong {color:#FFF; border-right:1px solid #222;}
 #ticker ol {position:relative; width:80%;}
-#ticker li {width:100%; color:#CCC; list-style:none; position:absolute; left:15px; top:2px; z-index:1;}
+#ticker li {width:100%; color:#CCC; list-style:none; position:absolute; left:15px; top:0px; z-index:1;}
 #ticker li a {color:#999; text-decoration:none;}
 #ticker a:hover {color:#FFFFCC; text-decoration:underline;}
