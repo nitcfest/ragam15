@@ -298,7 +298,7 @@ body{
  }
 .sprite
  {
-  margin: 10% auto;
+  /*margin: 10% auto;*/
   height:40%;
   width:80%;
  }

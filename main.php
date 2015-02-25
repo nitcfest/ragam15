@@ -38,9 +38,10 @@
 						</br>Fight in the battle of your life. 
 						</br>Emerge triumphant, and the trophy shall be waiting for you.
 					</div>
-					<div id="events-sprite" class="sprite"></div>
+					<div id="events-sprite" class="sprite">
+						<div id="sprite1"></div>
+					</div>
 				</div>
-				<div id="sprite1"></div>
 				<div id="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="">
 						<ul id="elist"></ul>
