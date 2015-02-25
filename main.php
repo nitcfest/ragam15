@@ -124,9 +124,9 @@
 				<div style="height:100%;width:30%;float:left">
 					<div id="info-head-place" class="head-place">
 						<div id="info-head" class="head">
-							General
-							 Info</div>
-						 Info</div>
+							General Info
+						</div>
+					</div>
 					<div id="info-words-place" class="words-place">
 						ENTER TEXT FOR WORKSHOPS
 						</br>Fight in the battle of your life. 
