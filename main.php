@@ -45,7 +45,7 @@
 			  			</ul>
 					</div>
 					<div id="eventContent" class="container" id="page-2">
-						<div id="content_wrap" style="background-image: none; background-color: rgb(243, 156, 18);">
+						<div id="content_wrap" style="background-image: none; background-color: rgb(33, 155, 220);">
 							<div id="close">close</div>
 							<div id="event_wrap">
 								<div id="event_head">
@@ -55,12 +55,14 @@
 							  	<div id="event_main">
 							    	<div id="event_text">
 							      		<span id="event_text_left">
-							      			<span id="cat_bg" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="participation" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="Prize_Money" style="background-color: rgb(241, 196, 15);"></span>
-							      			<span id="Contacts" style="background-color: rgb(241, 196, 15);"></span>
+							      			<!-- <span id="cat_bg"></span> -->
+							      			<span id="participation"></span>
+							      			<span id="Prize_Money"></span>
+							      			<span id="Contacts"></span>
 							      		</span>
-							      		<span id="event_text_right" style="background-color: rgb(241, 196, 15);">
+							      		<span id="event_text_right">
+							      			<span id="Introduction" style="background-color:rgb(33, 155, 220);"></span>
+							      			<span id="Rules and Regulations" style="background-color:rgb(33, 155, 220);"></span>
 										</span>
 								    </div>
 								</div>

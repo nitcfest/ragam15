@@ -84,7 +84,7 @@ $(function()
 		  		entry="";
 		  		while(i<sect.length)
 		  		{
-					entry=entry+"<span id=\""+sect[i].title+"\" style=\"background-color: rgb(241, 196, 15);\">"
+					entry=entry+"<span id=\""+sect[i].title+"\" style=\"background-color: rgb(33, 155, 220);\">"
 					entry=entry+"<h2>"+sect[i].title+"<\/h2><br>";
 					entry=entry+sect[i].text+"<\/span>";
 					i++;
