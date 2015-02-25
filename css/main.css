@@ -1,3 +1,15 @@
+@font-face {
+  /*font-weight: normal;
+  font-style: normal;*/
+  font-family: 'Steelfish Rg';
+  src:url('../fonts/steelfishrg.ttf');
+}
+@font-face {
+  /*font-weight: normal;
+  font-style: normal;*/
+  font-family: 'Nexa';
+  src:url('../fonts/NexaLight.otf');
+}
 *{
 	padding: 0px;
 	margin: 0px;
@@ -286,9 +298,9 @@ body{
   padding: 20px;
   display: block;
   vertical-align: middle;
-  font-family:'Calibri';
+  font-family:'Steelfish Rg';
   text-transform:uppercase;
-  letter-spacing:15px;
+  /*letter-spacing:15px;*/
   text-align: center; 
   font-size: 2.5em;
 }
@@ -310,6 +322,7 @@ body{
   overflow: auto;
   padding: 20px;
   font-size:.8em;
+  font-family: 'Nexa';
 }
 
 #event_text>span>span
