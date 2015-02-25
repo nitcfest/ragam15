@@ -27,7 +27,6 @@ $(function()
 					html+="</li>";
 				}	
 				$("#elist").html(html);
-				$("#fadebox").fadeOut(1500);
 			}				  	
 		},
 		error: function(xhr, textStatus, errorThrown) 
@@ -35,6 +34,7 @@ $(function()
 		  	$('.categories').html('Error!');
 		}
 	});
+				$("#fadebox").fadeOut(1500);
 
 	$('#elist').on('click', '.event-name', function(event) {
 		event.preventDefault();
