@@ -38,9 +38,10 @@
 						</br>Fight in the battle of your life. 
 						</br>Emerge triumphant, and the trophy shall be waiting for you.
 					</div>
-					<div id="events-sprite" class="sprite"></div>
+					<div id="events-sprite" class="sprite">
+						<div id="sprite1"></div>
+					</div>
 				</div>
-				<div id="sprite1"></div>
 				<div id="pagewrap">
 					<div style="height:100%;width:70%;float:left" class="">
 						<ul id="elist"></ul>
@@ -211,7 +212,7 @@
 	var bat_width=400,bat_height=100/39,bat_num_pics=39,bat_repeat_num=4,bat_speed=8;
 	var steppedEase = new SteppedEase(bat_num_pics-1);
 	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
-	$("#sprite1").css({"width":"30%","height": "30%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
+	$("#sprite1").css({"width":"100%","height": "100%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
 	var start_repeat_batman=function(){
 		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
 	}
