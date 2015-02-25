@@ -267,9 +267,13 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script>
-	var frameWidth = 100, numCols = 38;
-var steppedEase = new SteppedEase(numCols);
-
-TweenMax.to('#sprite1', 6, {backgroundPosition: '0px 100%', ease:steppedEase, repeat:-1});
+	var bat_width=200,bat_height=200,bat_num_pics=39,bat_repeat_num=4,bat_speed=8;
+	var steppedEase = new SteppedEase(bat_num_pics-1);
+	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
+	$("#sprite1").css({"width":bat_width+"px","height": bat_height+"px",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
+	var start_repeat_batman=function(){
+		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+ '-'+(bat_num_pics-1)*bat_height+'px'},{backgroundPosition: '0px '+ '-'+(bat_num_pics- bat_repeat_num)*bat_height+'px', ease:steppedEase2,repeat:-1});
+	}
+	TweenMax.to('#sprite1', bat_speed, {backgroundPosition: '0px '+ '-'+(bat_num_pics-1)*bat_height+'px', ease:steppedEase,onComplete:start_repeat_batman});
 	</script>
 </html>

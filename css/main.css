@@ -529,12 +529,4 @@ body{
 
 /*************************/
 
-#sprite1{
-  width:1000px;
-  height: 1000px;
-  background-image:url("../batman.png");
-  background-size: 100% 3800%;
-  background-repeat: no-repeat;
-
-}
 /*************************/
