@@ -210,6 +210,7 @@
 
 
 			<div id="Workshops" class="sec">
+			<div id="test"></div>
 				<div style="height:100%;width:70%;float:left">
 					<ul id="wlist">
 		    			<?php echo $wks_lis; ?>
@@ -267,7 +268,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script>
-	var bat_width=200,bat_height=200,bat_num_pics=39,bat_repeat_num=4,bat_speed=8;
+	var bat_width=400,bat_height=400,bat_num_pics=39,bat_repeat_num=4,bat_speed=8;
 	var steppedEase = new SteppedEase(bat_num_pics-1);
 	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
 	$("#sprite1").css({"width":bat_width+"px","height": bat_height+"px",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
