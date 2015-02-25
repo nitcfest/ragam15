@@ -101,6 +101,7 @@ $(function()
 			$('#eventContent').delay(1000).show(1000); /////Event loader
 			$( "#close" ).click(function() {
   				$( "#eventContent" ).fadeOut();
+  				$("body").removeClass("noscroll");
 			});
 		},
 		error: function(xhr, textStatus, errorThrown) {

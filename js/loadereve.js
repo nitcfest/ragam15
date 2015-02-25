@@ -4,11 +4,11 @@ function loaderEvents() {
 		currentPage = 0,
 		triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
 		loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 200, easingIn : mina.linear } );
-
 	function init() {
 		triggerLoading.forEach( function( ev ) {
 				//ev.preventDefault();
 				//alert('asdf');
+				$("body").addClass("noscroll");
 				loader.show();
 				// after some time hide loader
 				setTimeout( function() {

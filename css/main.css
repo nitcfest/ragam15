@@ -54,6 +54,10 @@ body{
 .active{
   opacity:1 !important;
 }
+.noscroll
+ {
+  overflow:hidden;
+ }
 #grad1{
   background: rgba(130,174,63,1);
   background: -moz-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
