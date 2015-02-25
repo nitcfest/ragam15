@@ -31,7 +31,8 @@
 $(function (){
 	//$(".head").hide();
 	// build scenes
-	TweenMax.to($(".come-from-right"), 20, {backgroundColor: "green", scale: 1,"left":"100%"});
+	var a=TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
+	var b=TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
@@ -50,6 +51,11 @@ $(function (){
 					.addIndicators();
 	new ScrollScene({triggerElement: "#Highlights"})
 					.setClassToggle("#grad5", "active") // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Workshops"})
+					// .setTween(a) // add class toggle
+					.setTween(b) // add class toggle
 					.addTo(controller)
 					.addIndicators();
 });
