@@ -49,3 +49,8 @@ $("#two>a").click(function(){
 		location.href=$that.data('href');
 	});
 })
+$(window).load(function() 
+{
+	$("#fadebox").fadeOut(1500);
+	
+});

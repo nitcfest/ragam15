@@ -1,5 +1,6 @@
 $(function() 
 {
+	var load=0;
 	var base_url = 'http://www.ragam.org.in/2015/cms/api/';
 	event.preventDefault();
 	jQuery.ajax({
@@ -26,7 +27,7 @@ $(function()
 					html+="</li>";
 				}	
 				$("#elist").html(html);
-				
+				$("#fadebox").fadeOut(1500);
 			}				  	
 		},
 		error: function(xhr, textStatus, errorThrown) 
