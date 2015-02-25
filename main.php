@@ -204,7 +204,6 @@
 	<script src="js/snap.svg-min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/svgLoader.js"></script>
-	<script type="text/javascript" src="js/commonscript.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>

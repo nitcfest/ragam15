@@ -1,19 +1,20 @@
 @font-face {
-  /*font-weight: normal;
-  font-style: normal;*/
   font-family: 'Steelfish Rg';
   src:url('../fonts/steelfishrg.ttf');
 }
 @font-face {
-  /*font-weight: normal;
-  font-style: normal;*/
-  font-family: 'Nexa';
+\  font-family: 'NexaL';
   src:url('../fonts/NexaLight.otf');
+}
+@font-face {
+  font-family: 'NexaB';
+  src:url('../fonts/NexaBold.otf');
 }
 *{
   padding: 0px;
   margin: 0px;
   font-family: Gill Sans MT;
+  list-style-type:none;
 }
 #fadebox
  {
@@ -172,6 +173,13 @@ body{
 {
   background: #ddd;
 }
+
+.event-name
+ {
+  font-family: "NexaL";
+  text-transform: uppercase;
+ }
+
 
 @media screen and (max-width: 649px)
 {
@@ -361,7 +369,7 @@ body{
   overflow: auto;
   padding: 20px;
   font-size:.8em;
-  font-family: 'Nexa';
+  font-family: 'NexaL';
 }
 
 #event_text>span>span
