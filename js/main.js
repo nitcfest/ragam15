@@ -31,8 +31,16 @@
 $(function (){
 	//$(".head").hide();
 	// build scenes
-	var a=TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
-	var b=TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	var workshop_heading=TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
+	var workshop_text=TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	var event_heading=TweenMax.fromTo($("#events-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+	var event_text=TweenMax.fromTo($("#events-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	var proshow_heading=TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+	var proshow_text=TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	var info_heading=TweenMax.fromTo($("#info-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
+	var info_text=TweenMax.fromTo($("#info-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	var highlight_heading=TweenMax.fromTo($("#Highlights-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+	var highlight_text=TweenMax.fromTo($("#Highlights-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
@@ -54,8 +62,43 @@ $(function (){
 					.addTo(controller)
 					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops"})
-					// .setTween(a) // add class toggle
-					.setTween(b) // add class toggle
+					.setTween(workshop_heading) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Workshops"})
+					.setTween(workshop_text) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Events"})
+					.setTween(event_heading) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Events"})
+					.setTween(event_text) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Proshows"})
+					.setTween(proshow_heading) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Proshows"})
+					.setTween(proshow_text) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Highlights"})
+					.setTween(highlight_heading) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Highlights"})
+					.setTween(highlight_text) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Info"})
+					.setTween(info_heading) // add class toggle
+					.addTo(controller)
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Info"})
+					.setTween(info_text) // add class toggle
 					.addTo(controller)
 					.addIndicators();
 });
