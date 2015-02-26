@@ -120,10 +120,12 @@
 <!--**********************************************3PROSHOWS END*******************-->				
 <!--**********************************************4INFO START*******************-->				
 			<div id="Info" class="sec">
-				<div style="height:100%;width:70%;float:left">
-					<div style="height:100%;width:70%;float:left">
+				<div style="height:100%;width:70%;float:left;position:absolute">
+					<div id="info-menus"></div>
+					<div id="info-container">
+						<div class= "info-tab" id="tab-reg">
 						<h2>	REGISTRATION RULES</h2>
-						</br><p>
+						<p>
 							1. Participants should have a confirmed Ragam ID for participating in any event.
 							</br>
 							2. Online provided Ragam ID becomes valid only when it is confirmed at the 
@@ -172,9 +174,170 @@
 							13th March to 9.00AM, 17th March. In case of early arrival at NIT Campus, contact 
 							the hospitality manager to avail temporary accommodation.
 						</p>
+						</div>
+						<div class= "info-tab" id="tab-hospreg">
+						<h2>HOSPITALITY / ACCOMODATION </h2>
+						<p>
+							1. The registration fee for hospitality is Rs.100 per person, out of which Rs.50 will be 
+							refunded on successful de-registration.
+							</br>
+							2. The hospitality desk will be open round the clock (24 hrs). 
+							</br>
+							3. All the utilities given to participants should be returned to the hospitality desk 
+							without any damage before 1PM, 17-3-2014. 
+							</br>
+							4. If any commodity is missing or damaged the refund amount for the whole team will 
+							not be returned.
+							</br>
+							5. If the commodities are not returned on time, Ragam'14 Hospitality team have the 
+							full power to take over the commodities given to participants and in this case no 
+							refund will be given back.
+							</br>
+							6. For selected events (Swararaaga, Amplified and Accoustics), the store room will be 
+							open during Ragam days, and for availing store facilities Rs.100 will be charged 
+							per person as a caution deposit and the whole amount will be refunded at the time 
+							of de-registration.
+							</br>
+							7. For Rs.50 refund, Participants must submit Hospitality Registration form, Bill 
+							receipt and all the utilities provided (without any damage).
+						</p>
+						</div>
+						<div class= "info-tab" id="tab-reach">
+						<h2>HOW TO REACH NIT CALICUT</h2>
+						<h3>
+							By Road:
+						</h3>
+						Just follow the yellow brick road. Just kidding! You can reach NIT Calicut by taxi 
+						from the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the 
+						taxi fare is approximately Rs. 400/- You can reach NIT Calicut by autoriksha from 
+						the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the fare is 
+						approximately Rs. 300/-
+						</br>
+						OR
+						</br>
+						You can reach NIT Calicut by bus from Kozhikode (Calicut) bus station (KSRTC or 
+						private bus station). From these bus stations go to Palayam Bus station by taking 
+						an Autoriksha (fare :Rs.15/ ) and take a bus to NIT Calicut (buses to Mukkam, 
+						Areekkode, etc. via Kunnamangalam) and get down at NIT Calicut bus stop.
+						<h3>
+							By Rail
+						</h3>
+						Direct trains/ coaches are available from Calicut to the major centres in India which 
+						include New Delhi, Jammu Tawi, Gorakhpur, Bombay, Calcutta, Gowhatti, 
+						Hyderabad, Bangalore, Madras, Ahmedabad, Indore, Trichy, Mangalore, 
+						Trivandrum and Varanasi. The Calicut bound trains take deviation from the main 
+						Madras-Cochin route from Palghat Junction or Shornur Junction. You can reach 
+						NIT Calicut by taxi from the Kozhikode (Calicut) Railway station and the taxi fare is 
+						approximately Rs. 400/- OR You can reach NIT Calicut by autorikshaw from the 
+						Kozhikode (Calicut) Railway station and the fare is approximately Rs. 300/-
+						</div>
+						<div class= "info-tab" id="tab-faq">
+						<h2>FREQUENTLY ASKED QUESTIONS</h2>
+						<p>
+							<h3>
+								1. What to do at Ragam '14?
+							</h3>
+							Hakuna Matata, fellas! With over 5 lakhs to be won in 50+ events and with 
+							contestants from all over the country, this is the platform to showcase your talents. 
+							Various workshops and exhibitions on art and art forms will be conducted 
+							throughout the 3 days. Informals, Adventure Sports and various other fun events 
+							will also be organised to keep you occupied. The icing on the cake will be the 
+							proshows.
+							</br>
+							<h3>
+								2. Where to register for Ragam '14?
+							</h3>
+							If you don’t know where you’re going, any road’ll take you there. Online registration 
+							has already begun. You can sign up directly from this site (Home Page -> Login) 
+							which would simplify the process as you only need to confirm your registration at 
+							Registration desk (MB 206) which will be functioning through the course of 
+							Ragam'14. The Registration desk also provides on the spot registration.
+							</br>
+							<h3>
+								3. Where to collect your prizes?
+							</h3>
+							You can collect your prizes and certificates at the registration desk after the 
+							announcement of results. Participation certificates will also be provided. After all, 
+							it’s only fun if you get a scar out of it!
+							</br>
+							<h3>
+								4. How to avail rooms for outsiders?
+							</h3>
+							We have a dedicated set of team that will ensure your pleasant stay. A Hospitality 
+							Desk will be working 24 hours a day during Ragam in MB 207.
+							</br>
+							<h3>
+								5. To eat or not to eat? 
+							</h3>
+								Calicut is famous for its delicious food. There will be array of food stalls that 
+								showcase Malabar as well as other type of cuisines. Unfortunately, they won’t be 
+								selling any omelette du fromage. In addition to all that, we have the Main Canteen 
+								which is right outside the Main Gate and also the Mini Canteen. Apart from these, 
+								one could also try out the various restaurants in Kattangal, the nearest junction. 
+								Lasagna, anyone?
+							</br>
+							<h3>
+								6. Availability of ATMs?
+							</h3>
+								Why so serious? There are 4 ATMs within the campus. There is one ATM near the 
+								centre circle, within the college; another ATM next to the Main Ladies Hostel Gate; 
+								a Punjab National Bank ATM in the School of Management Studies campus and 
+								the farthest one is right next to SBI which is a 5 minutes' walk from the main gate.
+							</br>
+							<h3>
+								7. Queries regarding events?
+							</h3>
+								The event description and rules are given in the Events section of the website. For 
+								any queries regarding individual events, feel free to contact the event co-ordinators 
+								which has been listed. It is highly recommended that you keep the contact numbers 
+								of the respective event co-ordinators so that any doubts regarding clash of events, 
+								schedule, etc. can be sorted out. An exclusive PC Room will be set up in MB 105, 
+								for further clarifications.
+							</br>
+							<h3>
+								8. Entries for proshow?
+							</h3>
+							For non-NIT students, tickets for the proshow will be sold during the 3 days of 
+							Ragam at the MB Lobby. This ticket along with your respective college ID card will 
+							be adequate. For NIT-C students, the college ID card and the Hostel ID card (or 
+							slip from Hostel Ofiice if you are a day scholar) will suffice. All you gotta do is just 
+							smile and wave boys, smile and wave.
+						
+							</br>
+							<h3>
+								9. Acronyms used that you can familiarise with?
+							</h3>
+							Every college has its own set of names that it associates with its buildings/spots. 
+							Billions of bilious blue blistering barnacles! Now that we’ve warmed you up with 
+							that tongue twister, here are our famous few: ELHC - Electronics Lecture Hall 
+							Complex; NLHC - New Lecture Hall Complex; MB - Main Building; DB - Department 
+							Building; CC - Central Computing Centre (yes, one C is missing); MC - Main 
+							Canteen; Pits - the steps in front of the ELHC; MBDH - MB Drawing Hall; AB - 
+							Academic Building, apart from the common few like the OAT - Open Air Theatre; 
+							Audi - Auditorium etc.
+							</br>
+							<h3>
+								10. Places to see in and around Calicut?
+							</h3>
+							Since it is an opportunity you get to visit Calicut, why not make it a tour to 
+							remember? There are a lot of places one could visit- Calicut Beach, Kappad Beach 
+							(THE Vasco da Gama beach), Beypore, Sarovaram Bio-Park and you can even 
+							stopover at Wayanad which is a 1.5 hour drive from campus.
+							</br>
+							<h3>
+								11. For further details?
+							</h3>
+							You can contact us at info@ragam.org.in, and even approach the Help Desk which 
+							will be located in the MB Lobby during Ragam.
+						</p>
+						</div>
+						<div class= "info-tab" id="tab-contacts">
+							<h2>Contacts</h2>
+							<p></p>
+						</div>
 					</div>
 				</div>
-				<div style="height:100%;width:30%;float:left">
+				<div style="height:100%;width:30%;right:0%;;position:absolute">
 					<div id="info-head-place" class="head-place">
 						<div id="info-head" class="head">
 							General Info
