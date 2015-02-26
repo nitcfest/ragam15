@@ -48,7 +48,10 @@
 					</div>
 					<div id="eventContent" class="container" id="page-2" style="position:fixed;z-index:500;">
 						<div id="content_wrap" style="background-image: none; background-color: rgb(33, 155, 220);">
-							<div id="close">close</div>
+							<div id="close">
+								<div id="closein">
+								</div>
+							</div>
 							<div id="event_wrap">
 								<div id="event_head-place">
 							    	<span-place id="event_title"></span>

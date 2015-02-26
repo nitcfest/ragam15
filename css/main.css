@@ -340,6 +340,19 @@ body{
   width: 100%;
   overflow: hidden;
 }
+#close
+ {
+  width:50px;
+  height:50px;
+  position: absolute;
+  cursor:pointer;
+ }
+#closein
+ {
+  width:100%;
+  height:100%;
+  background: url("../img/close.png");
+ }
 
 #event_wrap
 {
@@ -534,15 +547,6 @@ body{
  	text-align: center;
  	position:relative;
  	width:96%;
- }
- #close{
- 	width:100px;
- 	height:20px;
- 	position: absolute;
- 	left: 0%;
- 	top: 0%;
- 	color: #000000;
- 	cursor:pointer;
  }
  .come-from-right{
     position: relative;
