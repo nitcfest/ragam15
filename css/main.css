@@ -574,16 +574,33 @@ body{
   top:10%;
   margin-left:20%;
  }
-.info-tab
-{
+#info-container
+ {
   position:absolute;
-  overflow-y: scroll;
-  overflow-x:hidden; 
-  display: block;
   top:20%;
   left:10%;
   height:70%;
   width:90%;
+ }
+button
+ {
+  width:120px;
+  height:30px;
+ cursor:pointer;
+ }
+.but-active
+ {
+  font-weight: bold;
+ }
+.info-tab
+{
+  height:90%;
+  top:10%;
+  width:100%;
+  position:absolute;
+  overflow-y: scroll;
+  overflow-x:hidden; 
+  display: block;
   /*max-height:400px;
   max-width: 720px;*/
 }
