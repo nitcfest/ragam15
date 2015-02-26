@@ -82,20 +82,24 @@
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">
-				<div style="height:100%;width:70%;float:left">
+				<div id="Workshop-left" style="height:100%;width:50%;float:left">
 					<ul id="wlist">
 		  			</ul>
 				</div>
-				<div style="height:100%;width:30%;float:left">
+				<div style="height:100%;width:50%;float:left">
 					<div id="workshops-head-place" class="head-place">
 						<div id="workshops-head" class="head">
 							Workshops
 						</div>
 					</div>
 					<div id="workshops-words-place" class="words-place">
-						ENTER TEXT FOR WORKSHOPS
+						Hone your skills to get that edge.<br/>
+						Learn from the best an beat the rest.
 					</div>
-					<div id="workshops-sprite" class="sprite"></div>
+					<div id="workshops-sprite" class="sprite">
+						<img src="img/Workshops.png"/>
+					</div>
+					<div id="workshop-text-space"></div>
 				</div>
 
 			</div>
