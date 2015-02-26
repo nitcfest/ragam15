@@ -28,12 +28,12 @@
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">
-					<div id="events-head-place" class="head-place">
+					<div id="events-head-place" class="head-place3">
 						<div id="events-head" class="head">
 							Competitions
 						</div>
 					</div>
-					<div id="events-words-place" class="words-place">
+					<div id="events-words-place" class="words-place3">
 						Rekindle the hero within you. 
 						</br>Fight in the battle of your life. 
 						</br>Emerge triumphant, and the trophy shall be waiting for you.
@@ -83,6 +83,7 @@
 
 			<div id="Workshops" class="sec">
 				<div id="Workshop-left" style="height:100%;width:50%;float:left">
+					<div class="comingsoon">COMING SOON</div>
 					<ul id="wlist">
 		  			</ul>
 				</div>
@@ -107,18 +108,26 @@
 <!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">
-				<div style="height:100%;width:30%;float:left">
-					<div id="proshows-head-place" class="head-place">
+				<div style="height:100%;width:50%;float:left">
+					<div id="proshows-head-place" class="head-place2">
 						<div id="proshows-head" class="head">
 							Proshows
 						</div>
 					</div>
-					<div id="proshows-words-place" class="words-place">
+					<div id="proshows-words-place" class="words-place2">
 						Rekindle the hero within you. 
 					</div>
-					<div id="proshows-sprite" class="sprite"></div>
+					<div id="proshows-sprite" class="sprite2">
+						<img src="img/nites.png">
+					</div>
 				</div>
-				<div style="height:100%;width:70%;float:left">
+				<div style="height:100%;width:50%;float:left">
+					<div class="center-attraction">
+						Too anxious to know about the major eventS?<br/>
+						Expect a few surprises in the coming days..<br/>
+						Stay tuned for updates.
+					</div>
+					<div class="comingsoon2">COMING SOON</div>
 				</div>
 			</div>
 <!--**********************************************3PROSHOWS END*******************-->				

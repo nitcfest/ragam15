@@ -303,6 +303,28 @@ body{
 /******************/
 .head-place
  {
+  font-size: 3.5em;
+  color: white;
+  margin-top: 10%;
+  padding-left: 30%;
+  height: 10%;
+  text-align: center;
+  width: 70%;
+  font-family: "NexaB";
+ }
+ .head-place2
+ {
+  font-size: 3.5em;
+  color: white;
+  margin-top: 10%;
+  padding-left: 15%;
+  height: 10%;
+  text-align: center;
+  width: 70%;
+  font-family: "NexaB";
+ }
+ .head-place3
+ {
   /* text-transform: uppercase;*/
   font-size: 2.5em;
   color:white;
@@ -318,7 +340,35 @@ body{
   height:40%;
   width:80%;
  }
+ .sprite2
+ {
+  height:40%;
+  width:80%;
+ }
 .words-place
+ {
+  font-family: "NexaL";
+  color: white;
+  font-size: 1.5em;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 30%;
+  width: 80%;
+  text-align: left;
+ }
+ .words-place2
+ {
+  font-family: "NexaL";
+  color: white;
+  font-size: 1.5em;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 30%;
+  width: 80%;
+ }
+ .words-place3
  {
   font-family:"NexaL";
   color:white;
@@ -582,4 +632,40 @@ body{
 #workshops-sprite img{
   max-width: 100%;
   max-height: 100%;
+}
+.comingsoon{
+  position: absolute;
+  top: 172%;
+  left: 10%;
+  color: #ffffff;
+  font-family: 'Steelfish Rg';
+  font-size: 7em;
+  z-index: 1500;
+}
+.comingsoon2{
+  position: absolute;
+  top: 272%;
+  right: 10%;
+  color: #ffffff;
+  font-family: 'Steelfish Rg';
+  font-size: 7em;
+  z-index: 1500;
+}
+/*--------------------------------Proshows-----------------------------*/
+#proshows-sprite img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.center-attraction{
+  width:500px;
+  height: 110px;
+  font-family: 'NexaL';
+  text-align: center;
+  font-size: 1.5em;
+  position: absolute;
+  top:250%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -50px;
+  color: #ffffff;
 }
