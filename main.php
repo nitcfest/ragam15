@@ -342,7 +342,71 @@
 						</div>
 						<div class= "info-tab" id="tab-contacts">
 							<h2>Contacts</h2>
-							<p></p>
+							<div class="cont-tabs" id="cont-one">
+								<h3>General Secretary</h3>
+								<h4>Dilber Shahul</h4>
+								<h4>+91 9567670916</h4>
+								<h4>dilber@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-two">
+								<h3>Events Co-ordinator</h3>
+								<h4>Hafiz Muhammed</h4>
+								<h4>+91 8089219732</h4>
+								<h4>hafiz@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-thr">
+								<h3>Events Co-ordinator
+								</h3>
+								<h4>Nandagopal R</h4>
+								<h4>+91 9497321312</h4>
+								<h4>nandagopal@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-fou">
+								<h3>Marketing Co-ordinator</h3>
+								<h4>Christopher Jacob</h4>
+								<h4>+91 9846095751</h4>
+								<h4>christopher@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-fiv">
+								<h3>Hospitality</h3>
+								<h4>Flemill Jose</h4>
+								<h4>+91 94974 16791</h4>
+								<h4>hospitality@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-six">
+								<h3>Hospitality</h3>
+								<h4>Haritha</h4>
+								<h4>+91 94974 16791</h4>
+								<h4>hospitality@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-sev">
+								<h3>Registrations</h3>
+								<h4>Harikrishnan Subash</h4>
+								<h4>+91 94005 75471</h4>
+								<h4>registration@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-eig">
+								<h3>
+								</h3>
+								<h4>
+								</h4>
+								<h4>
+								</h4>
+								<h4>
+								</h4>
+							</div>
+							<div class="cont-tabs" id="cont-nin">
+								<h3>Workshops</h3>
+								<h4>Aby Anil John</h4>
+								<h4>+91 97464 79909</h4>
+								<h4>worshops@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-ten">
+								<h3>Convenor</h3>
+								<h4>Abdul Wasih</h4>
+								<h4>+91 8547562834</h4>
+								<h4>wasih@ragam.org.in</h4>
+							</div>
 						</div>
 					</div>
 				</div>

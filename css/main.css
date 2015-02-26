@@ -574,6 +574,8 @@ body{
   top:10%;
   margin-left:20%;
  }
+
+ /******info*****/
 #info-container
  {
   position:absolute;
@@ -581,6 +583,43 @@ body{
   left:10%;
   height:70%;
   width:90%;
+ }
+.info-tab>h2
+ {
+  text-align: center;
+  text-transform: uppercase;
+ }
+.cont-tabs
+ {
+  position:absolute;
+  width:30%;
+  height:25%;
+  margin:1%;
+  text-align: center;
+ }
+.cont-tabs>h3
+ {
+  text-transform: uppercase;
+ }
+#cont-two,#cont-fiv,#cont-eig,#cont-ten
+ {
+  left:32%;
+ }
+#cont-thr,#cont-six,#cont-nin
+ {
+  left:65%;
+ }
+#cont-one,#cont-two,#cont-thr
+ {
+  top:35%;
+ }
+#cont-fou,#cont-fiv,#cont-six
+ {
+  top:63%;
+ }
+#cont-sev,#cont-eig,#cont-nin
+ {
+  top:93%;
  }
 button
  {

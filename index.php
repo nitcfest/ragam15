@@ -83,9 +83,9 @@
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/ticker.js"></script>
-		<div id="ticker">
+		<!--div id="ticker">
 			<strong>Ragam Updates</strong>
 			<ol></ol>
-		</div>
+		</div-->
 	</body>
 </html>
