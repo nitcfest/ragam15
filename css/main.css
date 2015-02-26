@@ -558,18 +558,89 @@ body{
 #ctalk-overlay
  {
   z-index:600;
-  position: absolute;
-  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  top:0;
+  background: #47374e;
+  background: rgba(71, 55, 78, 0.85);
   height:100%;
   width:100%;
+  display: none;
  }
 #ctalk-box
  {
   z-index:601;
-  position:absolute;
+  position:fixed;
+  top: 17%;
+  left: 17%;
   background-color: red;
-  height:80%;
-  width:60%;
-  top:10%;
-  margin-left:20%;
+  height:60%;
+  width:65%;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  font-family: "PT Sans", sans-serif;
+  color: #3e585f;
  }
+#lbox{
+  background: #000;
+  width: 40%;
+  height: 100%;
+  float: left;
+  background: url(../img/jg.jpg) no-repeat;
+  background-size: cover;
+}
+#rbox{
+  background: #fff;
+  height: 100%;
+  width: 54%;
+  float: right;
+  font-size: 1.5em;
+  vertical-align: baseline;
+}
+#ctalk-box h3,#ctalk-box h5{
+  font-weight: normal;
+} 
+#ctalk-box h3{
+  padding: 28px 0px 10px 0px;
+}
+#ctalk-box h5{
+  font-size: .7em;
+  margin-top: -7px;
+}
+.close{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+color: #000;
+margin-top: -86px;
+float: right;
+cursor: pointer;}
+
+  .close:hover {
+    .close::before, .close::after {
+      background: $blue;
+    }
+  }
+
+  .close::before, .close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+  .close::before {
+     transform:rotate(45deg);
+  }
+  .close::after {
+    transform:rotate(-45deg);
+  }
+  .rounded {
+    .close::before, .close::after 
+      border-radius: 5px;
+    }
+  

@@ -106,7 +106,14 @@ $(function (){
 	$(".ch-info").click(function()
 	{
 		$("#ctalk-overlay").fadeIn();
-		$("body").addClass("noscroll");
+		//$("body").addClass("noscroll");
 
 	});
+	$(document).keyup(function(e) {
+  if (e.keyCode == 27) $('#ctalk-overlay').fadeOut();   // esc
+});
+$(".close").click(function() {
+  $('#ctalk-overlay').fadeOut();   // esc
+});
+
 });
