@@ -107,6 +107,42 @@ $(function (){
 	{
 		$("#ctalk-overlay").fadeIn();
 		$("body").addClass("noscroll");
-
 	});
+
+	/* info */
+	$(".info-tab").hide();
+	$("#tab-reg").show();
+	$(".info-but").removeClass("but-active");
+	$("#but-reg").addClass("but-active");
+	$("#but-reg").click(function(){
+		$(".info-tab").hide();
+		$("#tab-reg").show();
+		$(".info-but").removeClass("but-active");
+		$("#but-reg").addClass("but-active");
+	});
+	$("#but-hosp").click(function(){
+		$(".info-tab").hide();
+		$("#tab-hosp").show();
+		$(".info-but").removeClass("but-active");
+		$("#but-hosp").addClass("but-active");
+	});
+	$("#but-reach").click(function(){
+		$(".info-tab").hide();
+		$("#tab-reach").show();
+		$(".info-but").removeClass("but-active");
+		$("#but-reach").addClass("but-active");
+	});
+	$("#but-faq").click(function(){
+		$(".info-tab").hide();
+		$("#tab-faq").show();
+		$(".info-but").removeClass("but-active");
+		$("#but-faq").addClass("but-active");
+	});
+	$("#but-contacts").click(function(){
+		$(".info-tab").hide();
+		$("#tab-contacts").show();
+		$(".info-but").removeClass("but-active");
+		$("#but-contacts").addClass("but-active");
+	});
+	
 });

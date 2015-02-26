@@ -110,7 +110,7 @@ $(function()
 		});
 	});
 
-/*******Workshops List*********/
+/*******Workshops List*********
 jQuery.ajax({
 		url: base_url+'events',
 		type: 'GET',
@@ -141,7 +141,7 @@ jQuery.ajax({
 		{
 		  	$('.categories').html('Error!');
 		}
-	});
+	});*/
 
 
 });
