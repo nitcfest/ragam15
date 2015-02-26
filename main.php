@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div id="fadebox"></div>
@@ -441,12 +442,20 @@
 			<div id="CelebTalks" class="sec">
 				<div id="ctalk-overlay">
 					<div id="ctalk-box">
+					<div id="lbox"></div>
+					<div id="rbox">
 						<div id="ctalk-header">
+						<h3>Jagadish</h3>
+						<h5>Actor | Screen writer</h5>
 						</div>
+						<span class="close rounded black"></span>
 						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.
+						</p>
 						</div>
-						<div id="ctalk-close">
-						</div>
+						
+					</div>
 					</div>
 				</div>
 				<div style="height:100%;width:30%;float:left">
@@ -463,14 +472,6 @@
 				<div style="height:100%;width:70%;float:left">
 				
 					<ul class="ch-grid">
-						<!--li>
-							<div class="ch-item ch-img-1">
-								<div class="ch-info md-trigger" data-modal="modal-11">
-									<h3></h3>
-									<p>Actor</p>
-								</div>
-							</div>
-						</li-->
 						<li>
 							<div class="ch-item ch-img-2">
 								<div class="ch-info md-trigger" data-modal="modal-11">

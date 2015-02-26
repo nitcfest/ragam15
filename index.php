@@ -14,27 +14,19 @@
 		<link rel="stylesheet" type="text/css" href="css/ticker.css">
 		<link rel="stylesheet" type="text/css" href="css/mine.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'></script>
-  		<script type='text/javascript' src='js/blur.min.js'></script>
-  		<script type="text/javascript">
-  		$(document).ready(function(){
-    
- 
-    $('#two').blurjs({source:'body',overlay:'rgba(0,100,100,0.9)'})
-    //demos($("#overlayblur2").attr('id')); 
 
-    
-});
-
-  		</script>
 	</head>
 	<body>
 		<div id="fadebox"></div>
 		<div class="spmenu-push" id="mega">
-			<!--div id="topdraw" class="topdraw-hover">
-				<div id="topdraw-content"></div>
-				<div id="topdraw-hanger"></div>
-			</div-->
+			<!--<div id="topdraw" class="topdraw-hover">
+				<div id="topdraw-content">
+
+				</div>
+				<div id="topdraw-hanger">
+					Tarun :)
+				</div>
+			</div>-->
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="two" class="target">
 				    <a href=""><span class="icon-menu"></span><span class="align-mid">Menu<span></a>
@@ -43,7 +35,7 @@
 					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="main.php#Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="main.php#Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
-					<a data-href="main.php#Sponsors"><span class="icon-user-tie"></span><span class="align-mid">Celebrity Talk</span></a>
+					<a data-href="main.php#Sponsors"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
 				</div>	
 			</nav>
 			<div class="container">
@@ -82,10 +74,5 @@
 		<script src="js/classie.js"></script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript" src="js/ticker.js"></script>
-		<!--div id="ticker">
-			<strong>Ragam Updates</strong>
-			<ol></ol>
-		</div-->
 	</body>
 </html>

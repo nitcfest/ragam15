@@ -106,8 +106,12 @@ $(function (){
 	$(".ch-info").click(function()
 	{
 		$("#ctalk-overlay").fadeIn();
+<<<<<<< HEAD
 		$("body").addClass("noscroll");
 	});
+=======
+		//$("body").addClass("noscroll");
+>>>>>>> last
 
 	/* info */
 	$(".info-tab").hide();
@@ -144,5 +148,10 @@ $(function (){
 		$(".info-but").removeClass("but-active");
 		$("#but-contacts").addClass("but-active");
 	});
-	
+	$(document).keyup(function(e) {
+  if (e.keyCode == 27) $('#ctalk-overlay').fadeOut();   // esc
+});
+$(".close").click(function() {
+  $('#ctalk-overlay').fadeOut();   // esc
+});
 });

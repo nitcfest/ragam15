@@ -26,13 +26,36 @@ a:hover {
 	color: #000;
 }
 
+@-webkit-keyframes fadein {
+	from { background:url("../img/mainbw.jpg") top no-repeat;
+     background-size: cover; }
+    to { background: url("../img/mainclr.jpg") top no-repeat;
+     background-size: cover; }
+    
+}
+
+@-moz-keyframes fadein {
+   from { background:url("../img/mainbw.jpg") top no-repeat;
+     background-size: cover; }
+    to { background: url("../img/mainclr.jpg") top no-repeat;
+     background-size: cover; }
+}
+
+@keyframes fadein {
+   from { background:url("../img/mainbw.jpg") top no-repeat;
+     background-size: cover; }
+    to { background: url("../img/mainclr.jpg") top no-repeat;
+     background-size: cover; }
+}
 #mega{
 	
     height: 100%;
-    background:url("../img/mainclr.jpg") top no-repeat;
-    background-size: cover;
     overflow-y: hidden;
+    -webkit-animation: fadein 10s ease-in alternate infinite;
+    -moz-animation: fadein 10s ease-in alternate infinite;
+    animation: fadein 10s ease-in alternate infinite;
 }
+
 #main-text
  {
  	color:white;
