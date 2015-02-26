@@ -106,14 +106,8 @@ $(function (){
 	$(".ch-info").click(function()
 	{
 		$("#ctalk-overlay").fadeIn();
-<<<<<<< HEAD
-		$("body").addClass("noscroll");
-	});
-=======
-		//$("body").addClass("noscroll");
->>>>>>> last
 
-	/* info */
+	});
 	$(".info-tab").hide();
 	$("#tab-reg").show();
 	$(".info-but").removeClass("but-active");
@@ -154,4 +148,5 @@ $(function (){
 $(".close").click(function() {
   $('#ctalk-overlay').fadeOut();   // esc
 });
+
 });
