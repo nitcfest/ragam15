@@ -54,7 +54,8 @@ html{
 body{
   width:100%;
   height: 100%;
-  overflow-x:hidden; 
+  overflow-x:hidden;
+  font-family: "NexaL"; 
 }
 .active{
   opacity:1 !important;
