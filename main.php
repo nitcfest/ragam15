@@ -12,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
-		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
 	</head>
 	<body>
 		<div id="fadebox"></div>
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 				<div id="pagewrap">
-					<div style="height:100%;width:70%;float:left" class="">
+					<div style="height:100%;width:70%;float:left">
 						<ul id="elist"></ul>
 					</div>
 					<div id="eventContent" class="container" id="page-2" style="position:fixed;z-index:500;">
@@ -91,8 +91,6 @@
 					</div>
 					<div id="workshops-words-place" class="words-place">
 						ENTER TEXT FOR WORKSHOPS
-						</br>Fight in the battle of your life. 
-						</br>Emerge triumphant, and the trophy shall be waiting for you.
 					</div>
 					<div id="workshops-sprite" class="sprite"></div>
 				</div>
@@ -110,8 +108,6 @@
 					</div>
 					<div id="proshows-words-place" class="words-place">
 						Rekindle the hero within you. 
-						</br>Fight in the battle of your life. 
-						</br>Emerge triumphant, and the trophy shall be waiting for you.
 					</div>
 					<div id="proshows-sprite" class="sprite"></div>
 				</div>
@@ -122,7 +118,6 @@
 <!--**********************************************4INFO START*******************-->				
 			<div id="Info" class="sec">
 				<div style="height:100%;width:70%;float:left">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="400" height="300" frameborder="0" style="border:0"></iframe>
 				</div>
 				<div style="height:100%;width:30%;float:left">
 					<div id="info-head-place" class="head-place">
@@ -131,31 +126,58 @@
 						</div>
 					</div>
 					<div id="info-words-place" class="words-place">
-						ENTER TEXT FOR WORKSHOPS
-						</br>Fight in the battle of your life. 
-						</br>Emerge triumphant, and the trophy shall be waiting for you.
+						ENTER TEXT FOR INFO
 					</div>
-					<div id="info-sprite" class="sprite"></div>
+					<div id="info-sprite" class="sprite">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+					</div>
 				</div>
 
 			</div>
 <!--**********************************************4INFO END*******************-->				
 <!--**********************************************5Highlights START*******************-->				
-			<div id="Highlights" class="sec">
+			<div id="CelebTalks" class="sec">
+				<div id="ctalk-overlay">
+					<div id="ctalk-box">
+						<div id="ctalk-header">
+						</div>
+						<div id="ctalk-container">
+						</div>
+						<div id="ctalk-close">
+						</div>
+					</div>
+				</div>
 				<div style="height:100%;width:30%;float:left">
 					<div id="Highlights-head-place" class="head-place">
 						<div id="Highlights-head" class="head">
-							Highlights
+							Celebrity Talks
 						</div>
 					</div>
 					<div id="Highlights-words-place" class="words-place">
-						Rekindle the hero within you. 
-						</br>Fight in the battle of your life. 
-						</br>Emerge triumphant, and the trophy shall be waiting for you.
+						
 					</div>
 					<div id="Highlights-sprite" class="sprite"></div>
 				</div>
 				<div style="height:100%;width:70%;float:left">
+				
+					<ul class="ch-grid">
+						<li>
+							<div class="ch-item ch-img-1">
+								<div class="ch-info md-trigger" data-modal="modal-11">
+									<h3>Suresh Gopi</h3>
+									<p>Actor</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-2">
+								<div class="ch-info md-trigger" data-modal="modal-11">
+									<h3>Jagadish</h3>
+									<p>Actor | Screenwriter</p>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 <!--**********************************************5Highlights END*******************-->				
@@ -201,9 +223,9 @@
 	<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
 	<script type="text/javascript" src="js/cssplugin.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script src="js/snap.svg-min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/svgLoader.js"></script>
+	<script type="text/javascript" src="js/snap.svg-min.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+	<script type="text/javascript" src="js/svgLoader.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>

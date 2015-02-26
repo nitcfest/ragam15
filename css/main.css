@@ -3,18 +3,22 @@
   src:url('../fonts/steelfishrg.ttf');
 }
 @font-face {
-\  font-family: 'NexaL';
-  src:url('../fonts/NexaLight.otf');
+    font-family: 'NexaL';
+  src:url('../fonts/Roboto-Light.ttf');
 }
 @font-face {
   font-family: 'NexaB';
+  src:url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'NexaBold';
   src:url('../fonts/NexaBold.otf');
 }
 *{
   padding: 0px;
   margin: 0px;
-  font-family: Gill Sans MT;
-  list-style-type:none;
+
+  /*list-style-type:none;*/
 }
 #fadebox
  {
@@ -100,13 +104,13 @@ body{
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );*/
 }
 #grad5{
-  background: rgba(240,120,199,1);
-  background: -moz-linear-gradient(left, rgba(240,120,199,1) 0%, rgba(229,77,251,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,120,199,1)), color-stop(100%, rgba(229,77,251,1)));
-  background: -webkit-linear-gradient(left, rgba(240,120,199,1) 0%, rgba(229,77,251,1) 100%);
-  background: -o-linear-gradient(left, rgba(240,120,199,1) 0%, rgba(229,77,251,1) 100%);
-  background: -ms-linear-gradient(left, rgba(240,120,199,1) 0%, rgba(229,77,251,1) 100%);
-  background: linear-gradient(to right, rgba(240,120,199,1) 0%, rgba(229,77,251,1) 100%);
+  background: rgba(111,197,202,1);
+  background: -moz-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(111,197,202,1)), color-stop(100%, rgba(12,166,139,1)));
+  background: -webkit-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: -o-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: -ms-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: linear-gradient(to right, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54c9ff', endColorstr='#436ce6', GradientType=1 );*/
 }
 
@@ -134,8 +138,8 @@ body{
 /* Events list */
 
 #elist {
-	padding:1.5em;
-	font-size: 1em;
+  padding:1.5em;
+  font-size: 1em;
 }
 
 #elist>li
@@ -149,9 +153,9 @@ body{
 
 #elist ul>li>a
 {
-  line-height:1.8em;
+  line-height:1em;
   cursor:pointer;
-  color:#222;
+  color:#DDD;
   text-decoration:none;
 }
 
@@ -162,11 +166,12 @@ body{
 
 #elist>li>h4
 {
-  color:#222;
+  color:#444;
   font-weight:bold;
   font-size: 1.2em;
   text-transform:uppercase; 
   padding-bottom: 2px;
+  font-family: "NexaB"
 }
 
 #elist .filtered
@@ -177,9 +182,10 @@ body{
 .event-name
  {
   font-family: "NexaL";
+  font-weight: bold;
   text-transform: uppercase;
+  font-size: 0.9em;
  }
-
 
 @media screen and (max-width: 649px)
 {
@@ -297,12 +303,14 @@ body{
 /******************/
 .head-place
  {
-  font-size: 3em;
+  /* text-transform: uppercase;*/
+  font-size: 2.5em;
   color:white;
   margin: 10% auto;
   height:10%;
   text-align: center;
   width:90%;
+  font-family:"NexaB";
  }
 .sprite
  {
@@ -312,6 +320,7 @@ body{
  }
 .words-place
  {
+  font-family:"NexaL";
   color:white;
   margin: 10% auto;
   height:30%;
@@ -542,11 +551,21 @@ body{
     background-color:red;
     left: 0%;
  }
-
-/*************************/
-#test{
-  width: 100px;
-  height: 100px;
+#ctalk-overlay
+ {
+  z-index:600;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  height:100%;
+  width:100%;
+ }
+#ctalk-box
+ {
+  z-index:601;
+  position:absolute;
   background-color: red;
-}
-/*************************/
+  height:80%;
+  width:60%;
+  top:10%;
+  margin-left:20%;
+ }

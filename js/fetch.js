@@ -109,4 +109,39 @@ $(function()
 		}
 		});
 	});
+
+/*******Workshops List*********/
+jQuery.ajax({
+		url: base_url+'events',
+		type: 'GET',
+		dataType: 'jsonp',
+		success: function(data, textStatus, xhr) 
+		{
+			if(data.length>0)
+			{
+				var events=data;
+				var competitions=events[1];
+				var html="";
+				for(i=0;i<competitions.sub_categories.length;i++){
+					html+="<li>";
+					sub_cat=competitions.sub_categories[i];
+					html+=("<h4>"+sub_cat['name']+"</h4>");
+					html+="<ul>";
+					sub_cat_events=sub_cat["events"];
+					for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
+						html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event-name pageload-link'>"+sub_cat_events[k]["name"]+"</a></li>");
+					}
+					html+="</ul>";
+					html+="</li>";
+				}	
+				$("#wlist").html(html);
+			}				  	
+		},
+		error: function(xhr, textStatus, errorThrown) 
+		{
+		  	$('.categories').html('Error!');
+		}
+	});
+
+
 });

@@ -29,7 +29,7 @@
 	// 	// init controller
 	}
 $(function (){
-	//$(".head").hide();
+	
 	// build scenes
 	var workshop_heading=TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
 	var workshop_text=TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
@@ -57,7 +57,7 @@ $(function (){
 					.setClassToggle("#grad4", "active") // add class toggle
 					.addTo(controller)
 					.addIndicators();
-	new ScrollScene({triggerElement: "#Highlights"})
+	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setClassToggle("#grad5", "active") // add class toggle
 					.addTo(controller)
 					.addIndicators();
@@ -85,11 +85,11 @@ $(function (){
 					.setTween(proshow_text) // add class toggle
 					.addTo(controller)
 					.addIndicators();
-	new ScrollScene({triggerElement: "#Highlights"})
+	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
 					.addTo(controller)
 					.addIndicators();
-	new ScrollScene({triggerElement: "#Highlights"})
+	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_text) // add class toggle
 					.addTo(controller)
 					.addIndicators();
@@ -101,4 +101,12 @@ $(function (){
 					.setTween(info_text) // add class toggle
 					.addTo(controller)
 					.addIndicators();
+
+	$("#ctalk-overlay").hide();
+	$(".ch-info").click(function()
+	{
+		$("#ctalk-overlay").fadeIn();
+		$("body").addClass("noscroll");
+
+	});
 });
