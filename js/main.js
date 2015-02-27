@@ -31,10 +31,6 @@
 $(function (){
 	
 	// build scenes
-	var workshop_heading=TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
-	var workshop_text=TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
-	var event_heading=TweenMax.fromTo($("#events-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-	var event_text=TweenMax.fromTo($("#events-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var proshow_heading=TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
 	var proshow_text=TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var info_heading=TweenMax.fromTo($("#info-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
@@ -49,6 +45,35 @@ $(function (){
 		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
 	}
 	var bat_sprite=TweenMax.to('#sprite1', 6, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%', ease:steppedEase,onComplete:start_repeat_batman});
+	
+ var tween_events = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#event_list"), 1, {opacity:0,x:100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#events-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#events-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1}),
+                                    TweenMax.fromTo($("#events-sprite"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1})
+                                ]);
+ var tween_events_reverse= new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#event_list"), 1, {opacity:1,x:0},{opacity:0,x:100}),
+                                    TweenMax.fromTo($("#events-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($("#events-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
+                                    TweenMax.fromTo($("#events-sprite"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+ var tween_workshops = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1}),
+                                    TweenMax.fromTo($("#workshops-sprite"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1}),
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
+                                ]);
+ var tween_workshops_reverse = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#workshops-head"), 1, {opacity:1,x:0},{opacity:0,x:100}),
+                                    TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
+                                    TweenMax.fromTo($("#workshops-sprite"), 1, {x:0,opacity:1,scale:1},{x:-100,opacity:0,scale:.5}),
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
@@ -65,17 +90,19 @@ $(function (){
 					.setClassToggle("#grad5", "active") // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#Workshops"})
-					.setTween(workshop_heading) // add class toggle
+					.setTween(tween_workshops) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Workshops"})
-					.setTween(workshop_text) // add class toggle
-					.addTo(controller)
-	new ScrollScene({triggerElement: "#Events"})
-					.setTween(event_heading) // add class toggle
+	new ScrollScene({triggerElement: "#Workshops",offset:650})
+					.setTween(tween_workshops_reverse) // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#Events"})
-					.setTween(event_text) // add class toggle
-					.addTo(controller)
+					.setTween(tween_events) // add class toggle
+					.addTo(controller)	
+	new ScrollScene({triggerElement: "#Events",offset:650})
+					.setTween(tween_events_reverse) // add class toggle
+					.addTo(controller)	
+					.addIndicators();
+	
 	new ScrollScene({triggerElement: "#Proshows"})
 					.setTween(bat_sprite) // add class toggle
 					.addTo(controller)
