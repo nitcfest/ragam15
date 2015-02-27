@@ -41,6 +41,14 @@ $(function (){
 	var info_text=TweenMax.fromTo($("#info-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var highlight_heading=TweenMax.fromTo($("#Highlights-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
 	var highlight_text=TweenMax.fromTo($("#Highlights-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	var bat_width=400,bat_height=100/39,bat_num_pics=39,bat_repeat_num=4,bat_speed=5;
+	var steppedEase = new SteppedEase(bat_num_pics-1);
+	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
+	$("#sprite1").css({"width":"60%","height": "60%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
+	var start_repeat_batman=function(){
+		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
+	}
+	var bat_sprite=TweenMax.to('#sprite1', 6, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%', ease:steppedEase,onComplete:start_repeat_batman});
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
@@ -69,7 +77,10 @@ $(function (){
 					.setTween(event_text) // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(proshow_heading) // add class toggle
+					.setTween(bat_sprite) // add class toggle
+					.addTo(controller)
+	new ScrollScene({triggerElement: "#Proshows"})
+					.setTween(proshow_text) // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#Proshows"})
 					.setTween(proshow_text) // add class toggle

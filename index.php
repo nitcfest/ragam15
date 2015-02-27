@@ -7,7 +7,7 @@
 		<title>Ragam 2015</title>
 		<meta name="description" content="Ragam 2015, NIT Calicut's Annual Cultural Festival">
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga">
-		<meta name="author" content="Ragam Creative Team">
+		<meta name="author" content="Ragam Creative Team">	
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css">
@@ -40,7 +40,7 @@
 				</div>	
 			</nav>
 			<div class="container">
-				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone gray show static" id="contact-icon">
+				<a href="main.php#Info" data-toggle="modal" data-target="#callback" class="cbh-phone gray show static" id="contact-icon">
 					<div class="cbh-ph-circle"></div>
 					<div class="cbh-ph-circle-fill"></div>
 					<div class="cbh-ph-img-circle"></div>
@@ -81,7 +81,6 @@
 	
 	
 		<script type="text/javascript" src="js/modernizr.custom.js"></script>
-		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
 		<script>
 			$('#two').blurjs({

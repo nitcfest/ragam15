@@ -40,7 +40,7 @@
 						</br>Emerge triumphant, and the trophy shall be waiting for you.
 					</div>
 					<div id="events-sprite" class="sprite">
-						<div id="sprite1"></div>
+						<img src="img/events.jpg" style="width: 200%;">
 					</div>
 				</div>
 				<div id="pagewrap">
@@ -117,8 +117,7 @@
 					</div>
 					<div id="proshows-words-place" class="words-place2">
 					</div>
-					<div id="proshows-sprite" class="sprite2">
-						<img src="img/nites.png">
+					<div id="sprite1" class="sprite2">
 					</div>
 				</div>
 				<div style="height:100%;width:50%;float:left">
@@ -533,15 +532,6 @@
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
-	<script>
-	var bat_width=400,bat_height=100/39,bat_num_pics=39,bat_repeat_num=4,bat_speed=5;
-	var steppedEase = new SteppedEase(bat_num_pics-1);
-	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
-	$("#sprite1").css({"width":"100%","height": "100%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
-	var start_repeat_batman=function(){
-		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
-	}
-	TweenMax.to('#sprite1', 6, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%', ease:steppedEase,onComplete:start_repeat_batman});
 	
-	</script>
+	
 </html>
