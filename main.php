@@ -116,7 +116,6 @@
 						</div>
 					</div>
 					<div id="proshows-words-place" class="words-place2">
-						Rekindle the hero within you. 
 					</div>
 					<div id="proshows-sprite" class="sprite2">
 						<img src="img/nites.png">
@@ -124,7 +123,7 @@
 				</div>
 				<div style="height:100%;width:50%;float:left">
 					<div class="center-attraction">
-						Too anxious to know about the major eventS?<br/>
+						Too anxious to know about all the major events?<br/>
 						Expect a few surprises in the coming days..<br/>
 						Stay tuned for updates.
 					</div>
@@ -359,20 +358,20 @@
 							<div class="cont-tabs" id="cont-one">
 								<h3>General Secretary</h3>
 								<h4>Dilber Shahul</h4>
-								<h4>+91 9567670916</h4>
+								<h4>+91 95676 70916</h4>
 								<h4>dilber@ragam.org.in</h4>
 							</div>
 							<div class="cont-tabs" id="cont-two">
 								<h3>Events Co-ordinator</h3>
 								<h4>Hafiz Muhammed</h4>
-								<h4>+91 8089219732</h4>
+								<h4>+91 80892 19732</h4>
 								<h4>hafiz@ragam.org.in</h4>
 							</div>
 							<div class="cont-tabs" id="cont-thr">
 								<h3>Events Co-ordinator
 								</h3>
 								<h4>Nandagopal R</h4>
-								<h4>+91 9497321312</h4>
+								<h4>+91 95670 35935</h4>
 								<h4>nandagopal@ragam.org.in</h4>
 							</div>
 							<div class="cont-tabs" id="cont-fou">
@@ -451,7 +450,9 @@
 						<span class="close rounded black"></span>
 						<div id="ctalk-container">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores amet iste repellendus similique reiciendis, maxime laborum praesentium.
+						
+						
+						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
 						</p>
 						</div>
 						

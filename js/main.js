@@ -44,63 +44,48 @@ $(function (){
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setClassToggle("#grad2", "active") // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Proshows"})
 					.setClassToggle("#grad3", "active") // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Info"})
 					.setClassToggle("#grad4", "active") // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setClassToggle("#grad5", "active") // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(workshop_heading) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(workshop_text) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Events"})
 					.setTween(event_heading) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Events"})
 					.setTween(event_text) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Proshows"})
 					.setTween(proshow_heading) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Proshows"})
 					.setTween(proshow_text) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_text) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_text) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 
 	$("#ctalk-overlay").hide();
 	$(".ch-info").click(function()

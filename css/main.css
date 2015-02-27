@@ -56,6 +56,7 @@ body{
   height: 100%;
   overflow-x:hidden;
   font-family: "NexaL"; 
+  overflow: hidden;
 }
 .active{
   opacity:1 !important;
