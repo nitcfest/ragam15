@@ -1,7 +1,7 @@
 $(function() 
 {
 	var load=0;
-	var base_url = 'http://localhost/api/public/api/';
+	var base_url = 'http://ragam.org.in/2015/cms/api/';
 	jQuery.ajax({
 		url: base_url+'events',
 		type: 'GET',
