@@ -14,6 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="css/ticker.css">
 		<link rel="stylesheet" type="text/css" href="css/mine.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/blur.js"></script>
 
 	</head>
 	<body>
@@ -39,6 +40,16 @@
 				</div>	
 			</nav>
 			<div class="container">
+				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone gray show static" id="contact-icon">
+					<div class="cbh-ph-circle"></div>
+					<div class="cbh-ph-circle-fill"></div>
+					<div class="cbh-ph-img-circle"></div>
+				</a>
+				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone gray show static playing" id="music-icon">
+					<div class="cbh-ph-circle"></div>
+					<div class="cbh-ph-circle-fill"></div>
+					<div class="cbh-ph-img-circle"></div>
+				</a>
 				<div class="main">
 					<div id="main-text" class="path-container">
 					<ul>
@@ -72,6 +83,27 @@
 		<script type="text/javascript" src="js/modernizr.custom.js"></script>
 		<!-- Thanks from the Ragam team to Classie - class helper functions by @desandro https://github.com/desandro/classie -->
 		<script src="js/classie.js"></script>
+		<script>
+			$('#two').blurjs({
+		source: 'body',
+		overlay: 'rgba(255,255,255,0.4)'
+	});
+				music1 = new Audio('music/music1.mp3');
+			var music_on_ready=function(){
+					music1.play();
+					$("#music-icon").click(function(){
+					if($("#music-icon").hasClass("playing")){
+						$("#music-icon").removeClass("playing");
+						music1.pause();
+					}
+					else{
+						$("#music-icon").addClass("playing");
+						music1.play();
+					}
+				})
+			}
+				music1.addEventListener('canplaythrough', music_on_ready, false);
+		</script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>

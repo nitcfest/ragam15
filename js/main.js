@@ -1,7 +1,7 @@
 /************Scrolling*************/
   var $window = $(window);
        var scrollTime = 1;
-       var scrollDistance = 250;
+       var scrollDistance = 150;
        var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
        var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
        var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
