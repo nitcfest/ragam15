@@ -63,6 +63,7 @@ $(function (){
                                     TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0}),
                                     TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1}),
                                     TweenMax.fromTo($("#workshops-sprite"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1}),
+                                    TweenMax.fromTo($("#workshop_coming_soon"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1}),
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
                                 ]);
  var tween_workshops_reverse = new TimelineMax ()
@@ -70,6 +71,7 @@ $(function (){
                                     TweenMax.fromTo($("#workshops-head"), 1, {opacity:1,x:0},{opacity:0,x:100}),
                                     TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
                                     TweenMax.fromTo($("#workshops-sprite"), 1, {x:0,opacity:1,scale:1},{x:-100,opacity:0,scale:.5}),
+                                    TweenMax.fromTo($("#workshop_coming_soon"), 1, {x:0,opacity:1,scale:1},{x:-100,opacity:0,scale:.5}),
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
                                 ]);
   var tween_proshows = new TimelineMax ()
@@ -77,7 +79,7 @@ $(function (){
                                     TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
                                     TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
                                     TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1})
+									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1})
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
                                 ]);
  var tween_proshows_reverse = new TimelineMax ()
@@ -85,7 +87,8 @@ $(function (){
                                     TweenMax.fromTo($("#proshows-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
                                     TweenMax.fromTo($(".center-attraction"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
                                     TweenMax.fromTo($("#sprite1"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
-									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5})
+									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
+									TweenMax.fromTo($("#proshow_coming_soon"), 1, {opacity:1,scale:1},{opacity:0,scale:.5})
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
                                 ]);
  var tween_infos = new TimelineMax ()

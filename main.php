@@ -88,7 +88,7 @@ $event_code=$_GET["events"];
 
 			<div id="Workshops" class="sec">
 				<div id="Workshop-left" style="height:100%;width:50%;float:left">
-					<div class="comingsoon">COMING SOON</div>
+					<div id="workshop_coming_soon" class="comingsoon">COMING SOON</div>
 					<ul id="wlist">
 		  			</ul>
 				</div>
@@ -130,7 +130,7 @@ $event_code=$_GET["events"];
 						Expect a few surprises in the coming days..<br/>
 						Stay tuned for updates.
 					</div>
-					<div class="comingsoon2">COMING SOON</div>
+					<div id="proshow_coming_soon" class="comingsoon2">COMING SOON</div>
 				</div>
 			</div>
 <!--**********************************************3PROSHOWS END*******************-->				
@@ -188,22 +188,22 @@ $event_code=$_GET["events"];
 						</div>
 						<div class= "info-tab" id="tab-contacts">
 							<h2>Contacts</h2>
-							<div class="cont-tabs" id="cont-one">
+							<div class="cont-tabs" id="cont-eleven">
 								<h3>General Secretary</h3>
 								<h4>Dilber Shahul</h4>
 								<h4>+91 95676 70916</h4>
 								<h4>dilber@ragam.org.in</h4>
 							</div>
-							<div class="cont-tabs" id="cont-ten">
+							<div class="cont-tabs" id="cont-one">
 								<h3>Convenor</h3>
 								<h4>Abdul Wasih</h4>
-								<h4>+91 8547562834</h4>
+								<h4>+91 85475 62834</h4>
 								<h4>wasih@ragam.org.in</h4>
 							</div>
-							<div class="cont-tabs" id="cont-eleven">
+							<div class="cont-tabs" id="cont-ten">
 								<h3>Faculty In Charge</h3>
 								<h4>Sunil Mathew</h4>
-								<h4>+919349769083</h4>
+								<h4>+91 93497 69083</h4>
 								<h4>sunilmathew@ragam.org.in</h4>
 							</div>
 							<div class="cont-tabs" id="cont-two">
@@ -222,22 +222,22 @@ $event_code=$_GET["events"];
 							<div class="cont-tabs" id="cont-fou">
 								<h3>Marketing Co-ordinator</h3>
 								<h4>Christopher Jacob</h4>
-								<h4>+91 9846095751</h4>
-								<h4>kiranananth@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-sev">
-								<h3>Marketing Co-ordinator</h3>
-								<h4>Kiran Ananth</h4>
-								<h4>+919947786864</h4>
+								<h4>+91 98460 95751</h4>
 								<h4>christopher@ragam.org.in</h4>
+							</div>
+							<div class="cont-tabs" id="cont-fiv">
+								<h3>Public Relations</h3>
+								<h4>Kiran Ananth</h4>
+								<h4>+91 99477 86864</h4>
+								<h4>kiranananth@ragam.org.in</h4>
 							</div>
 							<div class="cont-tabs" id="cont-12">
 								<h3>Public Relations</h3>
 								<h4>Shamil Puthukkot</h4>
-								<h4>+919633425202</h4>
+								<h4>+91 96334 25202</h4>
 								<h4>shamil@ragam.org.in</h4>
 							</div>
-							<div class="cont-tabs" id="cont-13">
+							<div class="cont-tabs" id="cont-nin">
 								<h3>Registrations</h3>
 								<h4>Harikrishnan Subash</h4>
 								<h4>+91 94005 75471</h4>
@@ -248,7 +248,7 @@ $event_code=$_GET["events"];
 							
 
 
-							<div class="cont-tabs" id="cont-fiv">
+							<div class="cont-tabs" id="cont-sev">
 								<h3>Hospitality</h3>
 								<h4>Flemill Jose</h4>
 								<h4>+91 94974 16791</h4>
@@ -256,15 +256,15 @@ $event_code=$_GET["events"];
 							</div>
 							<div class="cont-tabs" id="cont-six">
 								<h3>Hospitality</h3>
-								<h4>Haritha</h4>
-								<h4>+91 94974 16791</h4>
+								<h4>Haritha U R</h4>
+								<h4>+91 85905 17653</h4>
 								<h4>hospitality@ragam.org.in</h4>
 							</div>
-							<div class="cont-tabs" id="cont-nin">
+							<div class="cont-tabs" id="cont-13">
 								<h3>Workshops</h3>
 								<h4>Aby Anil John</h4>
 								<h4>+91 97464 79909</h4>
-								<h4>worshops@ragam.org.in</h4>
+								<h4>workshop@ragam.org.in</h4>
 							</div>
 						</div>
 					</div>
@@ -380,9 +380,7 @@ $event_code=$_GET["events"];
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
 	<script type="text/javascript" src="js/TimelineMax.min.js"></script>]
-	<script>
-	alert("<?php echo $event_code?>")
-	</script>
+	
 
 	
 	
