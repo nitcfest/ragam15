@@ -704,26 +704,30 @@ body{
  {
   text-transform: uppercase;
  }
-#cont-two,#cont-fiv,#cont-eig,#cont-ten
+#cont-one,#cont-thr,#cont-12,#cont-six
  {
   left:32%;
  }
-#cont-thr,#cont-six,#cont-nin
+#cont-eleven,#cont-fou,#cont-13{
+  left:65%;
+ }
+#cont-nin
  {
   left:65%;
  }
-#cont-one,#cont-two,#cont-thr
+#cont-two,#cont-thr,#cont-fou
  {
   top:35%;
  }
-#cont-fou,#cont-fiv,#cont-six
+#cont-fiv,#cont-12,#cont-13
  {
   top:63%;
  }
-#cont-sev,#cont-eig,#cont-nin
+#cont-sev,#cont-eig,#cont-nin,#cont-six
  {
   top:93%;
  }
+
 button
  {
   width:120px;
@@ -809,3 +813,11 @@ cursor: pointer;}
     .close::before, .close::after 
       border-radius: 5px;
     }
+#home-button{
+  background-image: url("../img/ragam1.png");
+  background-size:100% 100%;
+  -webkit-transition:all .3s ease-in;
+}
+#home-button:hover{
+  -webkit-transform:scale(1.5);
+}

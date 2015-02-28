@@ -31,8 +31,6 @@
 $(function (){
 	
 	// build scenes
-	var proshow_heading=TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-	var proshow_text=TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var info_heading=TweenMax.fromTo($("#info-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
 	var info_text=TweenMax.fromTo($("#info-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var highlight_heading=TweenMax.fromTo($("#Highlights-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
@@ -74,6 +72,34 @@ $(function (){
                                     TweenMax.fromTo($("#workshops-sprite"), 1, {x:0,opacity:1,scale:1},{x:-100,opacity:0,scale:.5}),
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
                                 ]);
+  var tween_proshows = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1})
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
+                                ]);
+ var tween_proshows_reverse = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#proshows-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5})
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+ var tween_infos = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#info_scroll"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+  var tween_infos_reverse = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#info_scroll"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);                           
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
@@ -92,9 +118,11 @@ $(function (){
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(tween_workshops) // add class toggle
 					.addTo(controller)
+					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops",offset:650})
 					.setTween(tween_workshops_reverse) // add class toggle
 					.addTo(controller)
+					.addIndicators();
 	new ScrollScene({triggerElement: "#Events"})
 					.setTween(tween_events) // add class toggle
 					.addTo(controller)	
@@ -104,20 +132,30 @@ $(function (){
 					.addIndicators();
 	
 	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(bat_sprite) // add class toggle
+					.setTween(tween_proshows) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(proshow_text) // add class toggle
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Proshows",offset:650})
+					.setTween(tween_proshows_reverse) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(proshow_text) // add class toggle
-					.addTo(controller)
+					.addIndicators();
+
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_text) // add class toggle
 					.addTo(controller)
+	new ScrollScene({triggerElement: "#Info"})
+					.setTween(info_heading) // add class toggle
+					.addTo(controller)
+	new ScrollScene({triggerElement: "#Info"})
+					.setTween(tween_infos) // add class toggle
+					.addTo(controller)
+    new ScrollScene({triggerElement: "#Info",offset:650})
+					.setTween(tween_infos_reverse) // add class toggle
+					.addTo(controller)
+					
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle
 					.addTo(controller)

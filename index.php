@@ -30,9 +30,8 @@
 			</div>-->
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 				<div id="two" class="target">
-				    <a href=""><span class="icon-menu"></span><span class="align-mid">Menu<span></a>
 					<!--Login button somewhere here-->
-					<a data-href="main.php#Events"><span class="icon-drawer"></span><span class="align-mid">Events<span></a>
+					<a data-href="main.php#Events"><span class="icon-drawer"></span><span class="align-mid">Competitions<span></a>
 					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="main.php#Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="main.php#Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
@@ -88,6 +87,7 @@
 		overlay: 'rgba(255,255,255,0.4)'
 	});
 				music1 = new Audio('music/music1.mp3');
+				music1.volume=.15;
 			var music_on_ready=function(){
 					music1.play();
 					$("#music-icon").click(function(){
