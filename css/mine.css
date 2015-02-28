@@ -145,8 +145,7 @@
 }
 #fb-icon>.cbh-ph-img-circle 
 {
-  background-size: 100%;
-  background-image: url(../img/facebook-logo.png);
+  background: url(../img/sm.png) 0 0 !important;
 }
 #fb-icon.playing>.cbh-ph-img-circle{
   background-position: 0px 3px;
@@ -158,8 +157,7 @@
 }
 #twitter-icon>.cbh-ph-img-circle 
 {
-  background-size: 100%;
-  background-image: url(../img/twitter-logo.png);
+  background: url(../img/sm.png) 0 30px !important;
 }
 #twitter-icon.playing>.cbh-ph-img-circle{
   background-position: 0px 3px;
@@ -171,8 +169,7 @@
 }
 #instagram-icon>.cbh-ph-img-circle 
 {
-  background-size: 100%;
-  background-image: url(../img/instagram-logo.jpg);
+  background: url(../img/sm.png) 0 59px !important;
 }
 #instagram-icon.playing>.cbh-ph-img-circle{
   background-position: 0px 3px;
@@ -184,8 +181,7 @@
 }
 #youtube-icon>.cbh-ph-img-circle 
 {
-  background-size: 100%;
-  background-image: url(../img/youtube-logo.png);
+  background: url(../img/sm.png) 0 87px !important;
 }
 #youtube-icon.playing>.cbh-ph-img-circle{
   background-position: 0px 3px;
