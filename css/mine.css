@@ -138,6 +138,60 @@
 #music-icon.playing>.cbh-ph-img-circle{
   background-position: 0px 3px;
 }
+
+#fb-icon{
+  left: 43%;
+  bottom: 4%;
+}
+#fb-icon>.cbh-ph-img-circle 
+{
+  background-size: 100%;
+  background-image: url(../img/facebook-logo.png);
+}
+#fb-icon.playing>.cbh-ph-img-circle{
+  background-position: 0px 3px;
+}
+
+#twitter-icon{
+  left: 47%;
+  bottom: 4%;
+}
+#twitter-icon>.cbh-ph-img-circle 
+{
+  background-size: 100%;
+  background-image: url(../img/twitter-logo.png);
+}
+#twitter-icon.playing>.cbh-ph-img-circle{
+  background-position: 0px 3px;
+}
+
+#instagram-icon{
+  left: 51%;
+  bottom: 4%;
+}
+#instagram-icon>.cbh-ph-img-circle 
+{
+  background-size: 100%;
+  background-image: url(../img/instagram-logo.jpg);
+}
+#instagram-icon.playing>.cbh-ph-img-circle{
+  background-position: 0px 3px;
+}
+
+#youtube-icon{
+  left: 55%;
+  bottom: 4%;
+}
+#youtube-icon>.cbh-ph-img-circle 
+{
+  background-size: 100%;
+  background-image: url(../img/youtube-logo.png);
+}
+#youtube-icon.playing>.cbh-ph-img-circle{
+  background-position: 0px 3px;
+}
+
+
 .cbh-phone {
   position: fixed;
   display: block;
@@ -150,6 +204,13 @@
   -moz-transition: visibility .5s;
   -o-transition: visibility .5s;
   transition: visibility .5s;
+}
+
+.cbh-contact {
+
+  width: 50px;
+  height: 50px;
+
 }
 
 @-webkit-keyframes fadeInRight {
@@ -321,6 +382,11 @@
   transition: all .5s;
 }
 
+.cbh-ph-circle-fill-logo {
+  top: 0px;
+  left: 0px;
+}
+
 .cbh-phone.active .cbh-ph-circle-fill {
   -webkit-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out;
   -moz-animation: cbh-circle-fill-anim 1.7s infinite ease-in-out;
@@ -384,6 +450,13 @@
   -ms-animation: cbh-circle-img-anim 1s infinite ease-in-out;
   -o-animation: cbh-circle-img-anim 1s infinite ease-in-out;
   animation: cbh-circle-img-anim 1s infinite ease-in-out;
+}
+
+.cbh-ph-img-circle-logo {
+  width: 30px;
+  height: 30px;
+  top: 0px;
+  left: 0px;
 }
 
 .cbh-phone.active .cbh-ph-img-circle {

@@ -49,6 +49,18 @@
 					<div class="cbh-ph-circle-fill"></div>
 					<div class="cbh-ph-img-circle"></div>
 				</a>
+				<a target="_blank" href="https://www.facebook.com/Ragam.nitc" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="fb-icon">
+					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
+				</a>
+				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="twitter-icon">
+					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
+				</a>
+				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="instagram-icon">
+					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
+				</a>
+				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="youtube-icon">
+					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
+				</a>
 				<div class="main">
 					<div id="main-text" class="path-container">
 					<ul>
@@ -75,6 +87,7 @@
   					</ul>
 					</div>
 				</div>
+				<div style="position:absolute;bottom:10%;height:10%;width:100%;font-size:2em;color:#fff"><center>March 26<sup>th</sup> - 29<sup>th</sup> </center></div>
 			</div>
 		</div>
 	
