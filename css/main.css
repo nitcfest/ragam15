@@ -346,6 +346,7 @@ body{
  {
   height:40%;
   width:80%;
+  margin-top: -28%;
  }
 .words-place
  {
@@ -820,4 +821,13 @@ cursor: pointer;}
 }
 #home-button:hover{
   -webkit-transform:scale(1.5);
+}
+#mute-button{
+  background-image: url("../img/music.png");
+  background-size:100% 200%;
+  -webkit-transition:all .1s ease-in;
+  background-position: 0% 100%;
+}
+.not_muted{
+  background-position: 0% 0% !important;
 }

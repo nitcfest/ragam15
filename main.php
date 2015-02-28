@@ -30,6 +30,7 @@ $event_code=$_GET["events"];
 		</div>
 		<div id="rest">
 			<a href="http://www.ragam.org.in/2015/" style="position:fixed;z-index:400;top:10px;right:10px;"><div id="home-button" style="width:40px;height:40px;border-radius:20px;"></div></a>
+			<div id="mute-button" class="not_muted" style="position:fixed;z-index:400;left:10px;bottom:10px;width:40px;height:40px;border-radius:20px;"></div>
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div style="height:98%;width:28%;float:left;">

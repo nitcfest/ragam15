@@ -1,5 +1,7 @@
 /************Scrolling*************/
   var $window = $(window);
+var scrolling=false;
+var $window=$(window);
        var scrollTime = 1;
        var scrollDistance = 150;
        var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
@@ -18,12 +20,20 @@
                 var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
                 var scrollTop = $window.scrollTop();
                 var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-                
+                var ratio=(finalScroll/$window.height());
+					if(delta<0&&ratio%1>.6){
+			finalScroll=((ratio+1)>>0)*$window.height();
+		}
+		if(delta>0&&ratio%1<.6){
+			finalScroll=((ratio)>>0)*$window.height();
+		}
                 TweenMax.to($window, scrollTime, {
                     scrollTo:{ y: finalScroll, autoKill:false },
                         ease: Power1.easeOut,
                         overwrite: 5							
                     });
+                
+	
             });
 		var controller = new ScrollMagic();
 	// 	// init controller
@@ -213,4 +223,55 @@ $(".close").click(function() {
   $('#ctalk-overlay').fadeOut();   // esc
 });
 
+
 });
+var fix=function(){
+	var ratio=($window.scrollTop()/$window.height());
+	if(ratio%1>.6){
+			$window.scrollTop(((ratio+1)>>0)*$window.height());
+	}
+}
+function setCookie(cname, cvalue, exdays) {
+		    var d = new Date();
+		    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		    var expires = "expires="+d.toUTCString();
+		    document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+		function getCookie(cname) {
+		    var name = cname + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i=0; i<ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0)==' ') c = c.substring(1);
+		        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		    }
+		    return "";
+		}
+				music1 = new Audio('music/music1.mp3');
+				music1.volume=.15;
+				console.log(document.cookie);
+			var music_on_ready=function(){
+				music1.removeEventListener("canplaythrough", music_on_ready, false);
+				if(getCookie("music")&&!isNaN(getCookie("music"))){
+					music1.currentTime=getCookie("music");
+				}
+					$("#mute-button").click(function(){
+					if($("#mute-button").hasClass("not_muted")){
+						$("#mute-button").removeClass("not_muted");
+						music1.pause();
+						setCookie("muted", "true", 1)
+					}
+					else{
+						setCookie("muted", "false", 1)
+						$("#mute-button").addClass("not_muted");
+						music1.play();
+					}
+				})
+					music1.play();
+					if(getCookie("muted")=="true")
+						$("#mute-button").click();
+			}
+				music1.addEventListener('canplaythrough', music_on_ready, false);
+				window.onbeforeunload=function(){
+					setCookie("music",music1.currentTime,1);
+				}

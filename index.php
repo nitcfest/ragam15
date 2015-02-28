@@ -99,22 +99,51 @@
 		source: 'body',
 		overlay: 'rgba(255,255,255,0.4)'
 	});
+			function setCookie(cname, cvalue, exdays) {
+		    var d = new Date();
+		    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		    var expires = "expires="+d.toUTCString();
+		    document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+		function getCookie(cname) {
+		    var name = cname + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i=0; i<ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0)==' ') c = c.substring(1);
+		        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		    }
+		    return "";
+		}
 				music1 = new Audio('music/music1.mp3');
 				music1.volume=.15;
+				console.log(document.cookie);
 			var music_on_ready=function(){
+				music1.removeEventListener("canplaythrough", music_on_ready, false);
+				if(getCookie("music")&&!isNaN(getCookie("music"))){
+					music1.currentTime=getCookie("music");
+				}
 					music1.play();
 					$("#music-icon").click(function(){
 					if($("#music-icon").hasClass("playing")){
 						$("#music-icon").removeClass("playing");
 						music1.pause();
+						setCookie("muted", "true", 1)
 					}
 					else{
+						setCookie("muted", "false", 1)
 						$("#music-icon").addClass("playing");
 						music1.play();
 					}
 				})
+					music1.play();
+					if(getCookie("muted")=="true")
+						$("#music-icon").click();
 			}
 				music1.addEventListener('canplaythrough', music_on_ready, false);
+				window.onbeforeunload=function(){
+					setCookie("music",music1.currentTime,1);
+				}
 		</script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
