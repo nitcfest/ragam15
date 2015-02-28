@@ -1,5 +1,7 @@
 /************Scrolling*************/
   var $window = $(window);
+var scrolling=false;
+var $window=$(window);
        var scrollTime = 1;
        var scrollDistance = 150;
        var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
@@ -18,12 +20,20 @@
                 var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
                 var scrollTop = $window.scrollTop();
                 var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-                
+                var ratio=(finalScroll/$window.height());
+					if(delta<0&&ratio%1>.6){
+			finalScroll=((ratio+1)>>0)*$window.height();
+		}
+		if(delta>0&&ratio%1<.6){
+			finalScroll=((ratio)>>0)*$window.height();
+		}
                 TweenMax.to($window, scrollTime, {
                     scrollTo:{ y: finalScroll, autoKill:false },
                         ease: Power1.easeOut,
                         overwrite: 5							
                     });
+                
+	
             });
 		var controller = new ScrollMagic();
 	// 	// init controller
@@ -31,12 +41,6 @@
 $(function (){
 	
 	// build scenes
-	var workshop_heading=TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
-	var workshop_text=TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
-	var event_heading=TweenMax.fromTo($("#events-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-	var event_text=TweenMax.fromTo($("#events-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
-	var proshow_heading=TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-	var proshow_text=TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var info_heading=TweenMax.fromTo($("#info-head"), 1, {opacity:0,x:100},{opacity:1,x:0});
 	var info_text=TweenMax.fromTo($("#info-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	var highlight_heading=TweenMax.fromTo($("#Highlights-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
@@ -49,6 +53,66 @@ $(function (){
 		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
 	}
 	var bat_sprite=TweenMax.to('#sprite1', 6, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%', ease:steppedEase,onComplete:start_repeat_batman});
+	
+ var tween_events = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#event_list"), 1, {opacity:0,x:100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#events-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#events-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1}),
+                                    TweenMax.fromTo($("#events-sprite"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1})
+                                ]);
+ var tween_events_reverse= new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#event_list"), 1, {opacity:1,x:0},{opacity:0,x:100}),
+                                    TweenMax.fromTo($("#events-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($("#events-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
+                                    TweenMax.fromTo($("#events-sprite"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+ var tween_workshops = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1}),
+                                    TweenMax.fromTo($("#workshops-sprite"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1}),
+                                    TweenMax.fromTo($("#workshop_coming_soon"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1}),
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
+                                ]);
+ var tween_workshops_reverse = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#workshops-head"), 1, {opacity:1,x:0},{opacity:0,x:100}),
+                                    TweenMax.fromTo($("#workshops-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
+                                    TweenMax.fromTo($("#workshops-sprite"), 1, {x:0,opacity:1,scale:1},{x:-100,opacity:0,scale:.5}),
+                                    TweenMax.fromTo($("#workshop_coming_soon"), 1, {x:0,opacity:1,scale:1},{x:-100,opacity:0,scale:.5}),
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+  var tween_proshows = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1})
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
+                                ]);
+ var tween_proshows_reverse = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#proshows-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
+									TweenMax.fromTo($("#proshow_coming_soon"), 1, {opacity:1,scale:1},{opacity:0,scale:.5})
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+ var tween_infos = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#info_scroll"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);
+  var tween_infos_reverse = new TimelineMax ()
+                                 .add([
+                                    TweenMax.fromTo($("#info_scroll"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    
+                                    // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                ]);                           
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
@@ -65,32 +129,46 @@ $(function (){
 					.setClassToggle("#grad5", "active") // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#Workshops"})
-					.setTween(workshop_heading) // add class toggle
+					.setTween(tween_workshops) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Workshops"})
-					.setTween(workshop_text) // add class toggle
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Workshops",offset:650})
+					.setTween(tween_workshops_reverse) // add class toggle
 					.addTo(controller)
+					.addIndicators();
 	new ScrollScene({triggerElement: "#Events"})
-					.setTween(event_heading) // add class toggle
-					.addTo(controller)
-	new ScrollScene({triggerElement: "#Events"})
-					.setTween(event_text) // add class toggle
-					.addTo(controller)
+					.setTween(tween_events) // add class toggle
+					.addTo(controller)	
+	new ScrollScene({triggerElement: "#Events",offset:650})
+					.setTween(tween_events_reverse) // add class toggle
+					.addTo(controller)	
+					.addIndicators();
+	
 	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(bat_sprite) // add class toggle
+					.setTween(tween_proshows) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(proshow_text) // add class toggle
+					.addIndicators();
+	new ScrollScene({triggerElement: "#Proshows",offset:650})
+					.setTween(tween_proshows_reverse) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(proshow_text) // add class toggle
-					.addTo(controller)
+					.addIndicators();
+
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_text) // add class toggle
 					.addTo(controller)
+	new ScrollScene({triggerElement: "#Info"})
+					.setTween(info_heading) // add class toggle
+					.addTo(controller)
+	new ScrollScene({triggerElement: "#Info"})
+					.setTween(tween_infos) // add class toggle
+					.addTo(controller)
+    new ScrollScene({triggerElement: "#Info",offset:650})
+					.setTween(tween_infos_reverse) // add class toggle
+					.addTo(controller)
+					
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle
 					.addTo(controller)
@@ -145,4 +223,55 @@ $(".close").click(function() {
   $('#ctalk-overlay').fadeOut();   // esc
 });
 
+
 });
+var fix=function(){
+	var ratio=($window.scrollTop()/$window.height());
+	if(ratio%1>.6){
+			$window.scrollTop(((ratio+1)>>0)*$window.height());
+	}
+}
+function setCookie(cname, cvalue, exdays) {
+		    var d = new Date();
+		    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		    var expires = "expires="+d.toUTCString();
+		    document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+		function getCookie(cname) {
+		    var name = cname + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i=0; i<ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0)==' ') c = c.substring(1);
+		        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		    }
+		    return "";
+		}
+				music1 = new Audio('music/music1.mp3');
+				music1.volume=.15;
+				console.log(document.cookie);
+			var music_on_ready=function(){
+				music1.removeEventListener("canplaythrough", music_on_ready, false);
+				if(getCookie("music")&&!isNaN(getCookie("music"))){
+					music1.currentTime=getCookie("music");
+				}
+					$("#mute-button").click(function(){
+					if($("#mute-button").hasClass("not_muted")){
+						$("#mute-button").removeClass("not_muted");
+						music1.pause();
+						setCookie("muted", "true", 1)
+					}
+					else{
+						setCookie("muted", "false", 1)
+						$("#mute-button").addClass("not_muted");
+						music1.play();
+					}
+				})
+					music1.play();
+					if(getCookie("muted")=="true")
+						$("#mute-button").click();
+			}
+				music1.addEventListener('canplaythrough', music_on_ready, false);
+				window.onbeforeunload=function(){
+					setCookie("music",music1.currentTime,1);
+				}

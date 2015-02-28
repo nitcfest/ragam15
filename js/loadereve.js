@@ -3,7 +3,7 @@ function loaderEvents() {
 		pages = [].slice.call( pageWrap.querySelectorAll( 'div.container' ) ),
 		currentPage = 0,
 		triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
-		loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 200, easingIn : mina.linear } );
+		loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 100, easingIn : mina.linear } );
 	function init() {
 		triggerLoading.forEach( function( ev ) {
 				//ev.preventDefault();
