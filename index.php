@@ -53,13 +53,13 @@
 				<a target="_blank" href="https://www.facebook.com/Ragam.nitc" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="fb-icon">
 					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
 				</a>
-				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="twitter-icon">
+				<a target="_blank" href="https://twitter.com/ragamnitc" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="twitter-icon">
 					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
 				</a>
-				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="instagram-icon">
+				<a target="_blank" href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="instagram-icon">
 					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
 				</a>
-				<a href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="youtube-icon">
+				<a target="_blank" href="#" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="youtube-icon">
 					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
 				</a>
 				<div class="main">
