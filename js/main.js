@@ -224,7 +224,7 @@ $(".close").click(function() {
 });
 
 
-});
+
 var fix=function(){
 	var ratio=($window.scrollTop()/$window.height());
 	if(ratio%1>.6){
@@ -275,3 +275,4 @@ function setCookie(cname, cvalue, exdays) {
 				window.onbeforeunload=function(){
 					setCookie("music",music1.currentTime,1);
 				}
+});
