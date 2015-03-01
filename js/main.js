@@ -94,44 +94,56 @@ $(function (){
 
 	});
 	$(".info-tab").hide();
-	$("#tab-reg").show();
+	$("#italk-overlay").hide();
 	$(".info-but").removeClass("but-active");
-	$("#but-reg").addClass("but-active");
 	$("#but-reg").click(function(){
-		$(".info-tab").hide();
-		$("#tab-reg").show();
+		$(".info-tab").fadeOut("fast");
+		$("#italk-overlay").fadeOut("fast");
+		$("#tab-reg").fadeIn("fast");
 		$(".info-but").removeClass("but-active");
 		$("#but-reg").addClass("but-active");
+		$("#italk-overlay").fadeIn("fast");
 	});
 	$("#but-hosp").click(function(){
-		$(".info-tab").hide();
-		$("#tab-hosp").show();
+		$("#italk-overlay").fadeOut("fast");
+		$(".info-tab").fadeOut("fast");
+		$("#tab-hosp").fadeIn("fast");
 		$(".info-but").removeClass("but-active");
 		$("#but-hosp").addClass("but-active");
+		$("#italk-overlay").fadeIn("fast");
 	});
 	$("#but-reach").click(function(){
-		$(".info-tab").hide();
-		$("#tab-reach").show();
+		$("#italk-overlay").fadeOut("fast");
+		$(".info-tab").fadeOut("fast");
+		$("#tab-reach").fadeIn("fast");
 		$(".info-but").removeClass("but-active");
 		$("#but-reach").addClass("but-active");
+		$("#italk-overlay").fadeIn("fast");
 	});
 	$("#but-faq").click(function(){
-		$(".info-tab").hide();
-		$("#tab-faq").show();
+		$("#italk-overlay").fadeOut("fast");
+		$(".info-tab").fadeOut("fast");
+		$("#tab-faq").fadeIn("fast");
 		$(".info-but").removeClass("but-active");
 		$("#but-faq").addClass("but-active");
+		$("#italk-overlay").fadeIn("fast");
 	});
 	$("#but-contacts").click(function(){
-		$(".info-tab").hide();
-		$("#tab-contacts").show();
+		$("#italk-overlay").fadeOut("fast");
+		$(".info-tab").fadeOut("fast");
+		$("#tab-contacts").fadeIn("fast");
 		$(".info-but").removeClass("but-active");
 		$("#but-contacts").addClass("but-active");
+		$("#italk-overlay").fadeIn("fast");
 	});
 	$(document).keyup(function(e) {
   if (e.keyCode == 27) $('#ctalk-overlay').fadeOut();   // esc
 });
 $(".close").click(function() {
   $('#ctalk-overlay').fadeOut();   // esc
+});
+$(".iclose").click(function() {
+  $('#italk-overlay').fadeOut();   // esc
 });
 
 });

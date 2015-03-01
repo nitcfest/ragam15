@@ -632,6 +632,31 @@ body{
   font-family: "PT Sans", sans-serif;
   color: #3e585f;
  }
+ #italk-overlay
+ {
+  z-index:600;
+  position: fixed;
+  top:0;
+  background: #47374e;
+  background: rgba(71, 55, 78, 0.85);
+  height:100%;
+  width:100%;
+  display: none;
+ }
+#italk-box
+ {
+  z-index:601;
+  position:fixed;
+  top: 17%;
+  left: 17%;
+  background-color: red;
+  height:60%;
+  width:65%;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  font-family: "PT Sans", sans-serif;
+  color: #3e585f;
+ }
 
 /*-----------------------------Workshops--------------------------------------*/
 #Workshop-left img{
@@ -724,11 +749,14 @@ body{
  {
   top:93%;
  }
-button
+.info-but
  {
-  width:120px;
-  height:30px;
+  width:150px;
+  float:left;
+  height:35px;
  cursor:pointer;
+ text-align: center;
+ padding-top: 5px;
  }
 .but-active
  {
@@ -746,13 +774,21 @@ button
   /*max-height:400px;
   max-width: 720px;*/
 }
-#lbox{
-  background: #000;
-  width: 40%;
+#ibox{
+  background: #fff;
   height: 100%;
-  float: left;
-  background: url(../img/jg.jpg) no-repeat;
-  background-size: cover;
+  width: 100%;
+  vertical-align: baseline;
+}
+#italk-box h3,#italk-box h5{
+  font-weight: normal;
+} 
+#italk-box h3{
+  padding: 20px 0px 10px 0px;
+}
+#italk-box h5{
+  font-size: .7em;
+  margin-top: -7px;
 }
 #rbox{
   background: #fff;
@@ -766,7 +802,7 @@ button
   font-weight: normal;
 } 
 #ctalk-box h3{
-  padding: 28px 0px 10px 0px;
+  padding: 20px 0px 10px 0px;
 }
 #ctalk-box h5{
   font-size: .7em;

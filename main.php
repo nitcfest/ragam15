@@ -136,13 +136,21 @@
 				<div style="height:100%;width:70%;float:left;position:absolute">
 					<div id="info-container">
 						<div id="info-menu">
-							<button class="info-but" id="but-reg">Registration</button>
-							<button class="info-but" id="but-hosp">Hospitality</button>
-							<button class="info-but" id="but-reach">How to Reach</button>
-							<button class="info-but" id="but-faq">FAQ</button>
-							<button class="info-but" id="but-contacts">Contacts</button>
+							<div class="info-but" id="but-reg">Registration</div>
+							<div class="info-but" id="but-hosp">Hospitality</div>
+							<div class="info-but" id="but-reach">How to Reach</div>
+							<div class="info-but" id="but-faq">FAQ</div>
+							<div class="info-but" id="but-contacts">Contacts</div>
 						</div>
-						<div class= "info-tab" id="tab-reg">
+						<div id="italk-overlay">
+							<div id="italk-box">
+								<div id="ibox">
+									<div id="italk-header">
+									</div>
+									<span class="iclose close rounded black"></span>
+									<div id="ctalk-container">
+										<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+											<div class= "info-tab" id="tab-reg">
 							<h2>	REGISTRATION RULES</h2>
 							<p>
 							1. Participants should have a confirmed Ragam ID for participating in any event.
@@ -193,8 +201,8 @@
 							13th March to 9.00AM, 17th March. In case of early arrival at NIT Campus, contact 
 							the hospitality manager to avail temporary accommodation.
 							</p>
-						</div>
-						<div class= "info-tab" id="tab-hosp">
+											</div>
+											<div class= "info-tab" id="tab-hosp">
 							<h2>HOSPITALITY / ACCOMODATION </h2>
 							<p>
 							1. The registration fee for hospitality is Rs.100 per person, out of which Rs.50 will be 
@@ -220,8 +228,8 @@
 							7. For Rs.50 refund, Participants must submit Hospitality Registration form, Bill 
 							receipt and all the utilities provided (without any damage).
 							</p>
-						</div>
-						<div class= "info-tab" id="tab-reach">
+											</div>
+											<div class= "info-tab" id="tab-reach">
 							<h2>HOW TO REACH NIT CALICUT</h2>
 							<h3>
 								By Road:
@@ -251,9 +259,8 @@
 							Kozhikode (Calicut) Railway station and the fare is approximately Rs. 300/-
 							</br>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="100%" height="100%" frameborder="0" style="border:0"></iframe>	
-
-						</div>
-						<div class= "info-tab" id="tab-faq">
+											</div>
+											<div class= "info-tab" id="tab-faq">
 							<h2>FREQUENTLY ASKED QUESTIONS</h2>
 							<p>
 								<h3>
@@ -352,8 +359,8 @@
 								You can contact us at info@ragam.org.in, and even approach the Help Desk which 
 								will be located in the MB Lobby during Ragam.
 							</p>
-						</div>
-						<div class= "info-tab" id="tab-contacts">
+											</div>
+											<div class= "info-tab" id="tab-contacts">
 							<h2>Contacts</h2>
 							<div class="cont-tabs" id="cont-one">
 								<h3>General Secretary</h3>
@@ -420,7 +427,13 @@
 								<h4>+91 8547562834</h4>
 								<h4>wasih@ragam.org.in</h4>
 							</div>
+											</div>
+										</p>
+									</div>	
+								</div>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 				<div style="height:100%;width:30%;right:0%;;position:absolute">
@@ -441,22 +454,20 @@
 			<div id="CelebTalks" class="sec">
 				<div id="ctalk-overlay">
 					<div id="ctalk-box">
-					<div id="lbox"></div>
-					<div id="rbox">
-						<div id="ctalk-header">
-						<h3>Jagadish</h3>
-						<h5>Actor | Screen writer</h5>
+						<div id="lbox"></div>
+						<div id="rbox">
+							<div id="ctalk-header">
+								<h3>Jagadish</h3>
+								<h5>Actor | Screen writer</h5>
+							</div>
+							<span class="close rounded black"></span>
+							<div id="ctalk-container">
+								<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+									Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+								</p>
+							</div>
+							
 						</div>
-						<span class="close rounded black"></span>
-						<div id="ctalk-container">
-						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						
-						
-						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
-						</p>
-						</div>
-						
-					</div>
 					</div>
 				</div>
 				<div style="height:100%;width:30%;float:left">
