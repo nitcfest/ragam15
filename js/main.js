@@ -1,7 +1,7 @@
 /************Scrolling*************/
   var $window = $(window);
 var scrolling=false;
-var $window=$(window);
+var $window=$(window); 
        var scrollTime = 1;
        var scrollDistance = 150;
        var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
@@ -16,7 +16,10 @@ var $window=$(window);
        }
        else{
 		$window.on("mousewheel DOMMouseScroll", function(event){                
-                event.preventDefault();	          
+                event.preventDefault();
+                if($("#eventContent").css("display")=="block"){
+                	return;
+                }	          
                 var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
                 var scrollTop = $window.scrollTop();
                 var finalScroll = scrollTop - parseInt(delta*scrollDistance);
@@ -131,27 +134,22 @@ $(function (){
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(tween_workshops) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Workshops",offset:650})
 					.setTween(tween_workshops_reverse) // add class toggle
-					.addTo(controller)
-					.addIndicators();
+					.addTo(controller);
 	new ScrollScene({triggerElement: "#Events"})
 					.setTween(tween_events) // add class toggle
 					.addTo(controller)	
 	new ScrollScene({triggerElement: "#Events",offset:650})
 					.setTween(tween_events_reverse) // add class toggle
 					.addTo(controller)	
-					.addIndicators();
 	
 	new ScrollScene({triggerElement: "#Proshows"})
 					.setTween(tween_proshows) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 	new ScrollScene({triggerElement: "#Proshows",offset:650})
 					.setTween(tween_proshows_reverse) // add class toggle
 					.addTo(controller)
-					.addIndicators();
 
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
