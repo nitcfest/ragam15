@@ -139,9 +139,27 @@ $event_code=$_GET["events"];
 					<div id="proshow_coming_soon" class="comingsoon2">COMING SOON</div>
 				</div>
 			</div>
-<!--**********************************************3PROSHOWS END*******************-->				
-<!--**********************************************4INFO START*******************-->				
-					<div id="CelebTalks" class="sec">
+<!--**********************************************3PROSHOWS END*******************-->
+<!--**********************************************SNEHARAGAM*******************-->								
+			<div id="sneharagam" class="sec">
+				<div style="height:100%;width:50%;float:left">
+					<div id="sneha-head-place" class="head-place">
+						<div id="sneha-head" class="head">
+							Sneharagam
+						</div>
+					</div>
+					<div id="sneha-words-place" class="words-place">
+						
+					</div>
+					<div id="sneha-sprite" class="sprite"></div>
+				</div>
+				<div style="height:100%;width:50%;float:left">
+					<div id="sneha_coming_soon" class="comingsoon3">COMING SOON</div>
+				</div>
+			</div>
+<!--**********************************************SNEHARAGAM ENDS*******************-->	
+<!--**********************************************4INFO START*******************-->		
+			<div id="CelebTalks" class="sec">
 				<div id="ctalk-overlay">
 					<div id="ctalk-box">
 					<div id="lbox"></div>
@@ -193,9 +211,8 @@ $event_code=$_GET["events"];
 						<div id="info-menu">
 							<button class="info-but" id="but-reg">Registration</button>
 							<button class="info-but" id="but-hosp">Hospitality</button>
-							<button class="info-but" id="but-reach">How to Reach</button>
+							<button class="info-but" id="but-reach">Reach Us</button>
 							<button class="info-but" id="but-faq">FAQ</button>
-							<button class="info-but" id="but-contacts">Contacts</button>
 						</div>
 						<div class= "info-tab" id="tab-reg">
 							<h2>	TO BE UPDATED SOON...</h2>
@@ -204,10 +221,11 @@ $event_code=$_GET["events"];
 							<h2>	TO BE UPDATED SOON... </h2>
 						</div>
 						<div class= "info-tab" id="tab-reach">
-							<h2>HOW TO REACH NIT CALICUT</h2>
+							<h2>How To Reach NIT Calicut</h2>
 							<h3>
 								By Road:
 							</h3>
+							
 							Just follow the yellow brick road. Just kidding! You can reach NIT Calicut by taxi 
 							from the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the 
 							taxi fare is approximately Rs. 400/- You can reach NIT Calicut by autoriksha from 
@@ -220,9 +238,12 @@ $event_code=$_GET["events"];
 							private bus station). From these bus stations go to Palayam Bus station by taking 
 							an Autoriksha (fare :Rs.15/ ) and take a bus to NIT Calicut (buses to Mukkam, 
 							Areekkode, etc. via Kunnamangalam) and get down at NIT Calicut bus stop.
+							<br/>
+							<br/>
 							<h3>
 								By Rail
 							</h3>
+
 							Direct trains/ coaches are available from Calicut to the major centres in India which 
 							include New Delhi, Jammu Tawi, Gorakhpur, Bombay, Calcutta, Gowhatti, 
 							Hyderabad, Bangalore, Madras, Ahmedabad, Indore, Trichy, Mangalore, 
@@ -236,88 +257,55 @@ $event_code=$_GET["events"];
 
 						</div>
 						<div class= "info-tab" id="tab-faq">
-							<h2>TO BE UPDATED SOON...</h2>
-						</div>
-						<div class= "info-tab" id="tab-contacts">
-							<h2>Contacts</h2>
-							<div class="cont-tabs" id="cont-eleven">
-								<h3>General Secretary</h3>
-								<h4>Dilber Shahul</h4>
-								<h4>+91 95676 70916</h4>
-								<h4>dilber@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-one">
-								<h3>Convenor</h3>
-								<h4>Abdul Wasih</h4>
-								<h4>+91 85475 62834</h4>
-								<h4>wasih@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-ten">
-								<h3>Faculty In Charge</h3>
-								<h4>Sunil Mathew</h4>
-								<h4>+91 93497 69083</h4>
-								<h4>sunilmathew@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-two">
-								<h3>Events Co-ordinator</h3>
-								<h4>Hafiz Muhammed</h4>
-								<h4>+91 80892 19732</h4>
-								<h4>hafiz@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-thr">
-								<h3>Events Co-ordinator
-								</h3>
-								<h4>Nandagopal R</h4>
-								<h4>+91 95670 35935</h4>
-								<h4>nandagopal@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-fou">
-								<h3>Marketing Co-ordinator</h3>
-								<h4>Christopher Jacob</h4>
-								<h4>+91 98460 95751</h4>
-								<h4>christopher@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-fiv">
-								<h3>Public Relations</h3>
-								<h4>Kiran Ananth</h4>
-								<h4>+91 99477 86864</h4>
-								<h4>kiranananth@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-12">
-								<h3>Public Relations</h3>
-								<h4>Shamil Puthukkot</h4>
-								<h4>+91 96334 25202</h4>
-								<h4>shamil@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-nin">
-								<h3>Registrations</h3>
-								<h4>Harikrishnan Subash</h4>
-								<h4>+91 94005 75471</h4>
-								<h4>registration@ragam.org.in</h4>
-							</div>
-
-
-							
-
-
-							<div class="cont-tabs" id="cont-sev">
-								<h3>Hospitality</h3>
-								<h4>Flemill Jose</h4>
-								<h4>+91 94974 16791</h4>
-								<h4>hospitality@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-six">
-								<h3>Hospitality</h3>
-								<h4>Haritha U R</h4>
-								<h4>+91 85905 17653</h4>
-								<h4>hospitality@ragam.org.in</h4>
-							</div>
-							<div class="cont-tabs" id="cont-13">
-								<h3>Workshops</h3>
-								<h4>Aby Anil John</h4>
-								<h4>+91 97464 79909</h4>
-								<h4>workshop@ragam.org.in</h4>
-							</div>
+						<ol>
+							<li>What to do at Ragam '14?</li>
+							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is 
+							the platform to showcase your talents. Various workshops and exhibitions on art and art forms will 
+							be conducted throughout the 3 days. Informals, Adventure Sports and various other fun events 
+							will also be organised to keep you occupied.<br><br>
+							<li>Where to register for Ragam '14?</li>
+							Online registration will start soon.<br><br> 
+							<li>Where to collect your prizes?</li>
+							You can collect your prizes and certificates at the registration desk after the announcement 
+							of results. Participation certificates will also be provided.<br><br>
+							<li>How to avail rooms for outsiders?</li>
+							We have a dedicated set of team that will ensure your pleasant stay. A Hospitality Desk will be 
+							working 24 hours a day during Ragam.<br><br> 
+							<li>To eat or not to eat?</li>
+							Calicut is famous for its delicious food. There will be array of food stalls that showcase Malabar 
+							as well as other type of cuisines. In addition to all that, we have the Main Canteen which is right 
+							outside the Main Gate and also the Mini Canteen. Apart from these, one could also try out the 
+							various restaurants in Kattangal, the nearest junction.<br><br>
+							<li>Availability of ATMs?</li>
+							There are 4 ATMs within the campus. There is one ATM near the centre circle, within the college; 
+							another ATM next to the Main Ladies Hostel Gate; a Punjab National Bank ATM in the School of 
+							Management Studies campus and the farthest one is right next to SBI which is a 5 minutes' walk 
+							from the main gate.<br><br> 
+							<li>Queries regarding events?</li>
+							The event description and rules are given in the Events section of the website. For any queries 
+							regarding individual events, feel free to contact the event co-ordinators which has been listed. It is 
+							highly recommended that you keep the contact numbers of the respective event co-ordinators so 
+							that any doubts regarding clash of events, schedule, etc. can be sorted out. An exclusive PC Room 
+							will be set up, for further clarifications.<br><br>
+							<li>Entries for proshow?</li>
+							For non-NIT students, tickets for the proshow will be sold during the 3 days of Ragam at the MB 
+							Lobby. This ticket along with your respective college ID card will be adequate. For NIT-C students, 
+							the college ID card and the Hostel ID card (or slip from Hostel Ofiice if you are a day scholar) will 
+							suffice.<br><br> 
+							<li>Acronyms used that you can familiarise with?</li>
+							Every college has its own set of names that it associates with its buildings/spots. Here are our 
+							famous few: ELHC - Electronics Lecture Hall Complex;EBLHC - East Block Lecture Hall Complex; NLHC - New Lecture Hall Complex; MB - Main 
+							Building; DB - Department Building; CC - Central Computing Centre (yes, one C is missing); MC - Main 
+							Canteen; Pits - the steps in front of the ELHC; MBDH - MB Drawing Hall; AB - Academic Building, 
+							apart from the common few like the OAT - Open Air Theatre; Audi - Auditorium etc.<br><br> 
+							<li>Places to see in and around Calicut?</li>
+							Since it is an opportunity you get to visit Calicut, why not make it a tour to remember? There are 
+							a lot of places one could visit- Calicut Beach, Kappad Beach (THE Vasco da Gama beach), Beypore, 
+							Sarovaram Bio-Park and you can even stopover at Wayanad which is a 1.5 hour drive from campus.<br><br> 
+							<li>For further details?</li>
+							You can contact us at info@ragam.org.in, and even approach the Help Desk which will be located in 
+							the MB Lobby during Ragam.<br><br>
+							</ol>
 						</div>
 					</div>
 				</div>
@@ -333,6 +321,92 @@ $event_code=$_GET["events"];
 					</div>
 				</div>
 
+			</div>
+			<div id="contacts" class="sec">
+				
+
+				<div style="height:100%;width:80%;float:left;margin-top:8%;padding-left:10%">
+					
+					<div id="contact-head-place" class="head-place" style="margin-top:0;padding-left:38%">
+						<div id="contact-head" class="head"style="font-size:0.8em" >
+							Contact Us
+						</div>
+					</div>
+
+							<div class="contacts-tabs">
+								<h3>General Secretary</h3>
+								<h4>Dilber Shahul</h4>
+								<h4>+91 95676 70916</h4>
+								<h4>dilber@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Convenor</h3>
+								<h4>Abdul Wasih</h4>
+								<h4>+91 85475 62834</h4>
+								<h4>wasih@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Faculty In Charge</h3>
+								<h4>Sunil Mathew</h4>
+								<h4>+91 93497 69083</h4>
+								<h4>sunilmathew@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Events Co-ordinator</h3>
+								<h4>Hafiz Muhammed</h4>
+								<h4>+91 80892 19732</h4>
+								<h4>hafiz@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Events Co-ordinator
+								</h3>
+								<h4>Nandagopal R</h4>
+								<h4>+91 95670 35935</h4>
+								<h4>nandagopal@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Marketing Co-ordinator</h3>
+								<h4>Christopher Jacob</h4>
+								<h4>+91 98460 95751</h4>
+								<h4>christopher@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Public Relations</h3>
+								<h4>Kiran Ananth</h4>
+								<h4>+91 99477 86864</h4>
+								<h4>kiranananth@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Public Relations</h3>
+								<h4>Shamil Puthukkot</h4>
+								<h4>+91 96334 25202</h4>
+								<h4>shamil@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Registrations</h3>
+								<h4>Harikrishnan Subash</h4>
+								<h4>+91 94005 75471</h4>
+								<h4>registration@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Hospitality</h3>
+								<h4>Flemill Jose</h4>
+								<h4>+91 94974 16791</h4>
+								<h4>hospitality@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Hospitality</h3>
+								<h4>Haritha U R</h4>
+								<h4>+91 85905 17653</h4>
+								<h4>hospitality@ragam.org.in</h4>
+							</div>
+							<div class="contacts-tabs">
+								<h3>Workshops</h3>
+								<h4>Aby Anil John</h4>
+								<h4>+91 97464 79909</h4>
+								<h4>workshop@ragam.org.in</h4>
+							</div>
+				</div>
 			</div>
 <!--**********************************************4INFO END*******************-->				
 <!--**********************************************5Highlights START*******************-->				

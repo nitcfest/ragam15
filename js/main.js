@@ -71,6 +71,7 @@ $(function (){
                                     TweenMax.fromTo($("#events-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
                                     TweenMax.fromTo($("#events-sprite"), 1, {x:0,opacity:1},{x:-100,opacity:0})
                                 ]);
+
  var tween_workshops = new TimelineMax ()
                                  .add([
                                     TweenMax.fromTo($("#workshops-head"), 1, {opacity:0,x:100},{opacity:1,x:0}),
@@ -131,6 +132,7 @@ $(function (){
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setClassToggle("#grad5", "active") // add class toggle
 					.addTo(controller)
+
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(tween_workshops) // add class toggle
 					.addTo(controller)

@@ -600,6 +600,7 @@ body{
  	text-align: center;
  	position:relative;
  	width:96%;
+  color: gray
  }
  .come-from-right{
     position: relative;
@@ -661,6 +662,15 @@ body{
   font-size: 7em;
   z-index: 1500;
 }
+.comingsoon3{
+  position: absolute;
+  top: 372%;
+  right: 10%;
+  color: #ffffff;
+  font-family: 'Steelfish Rg';
+  font-size: 7em;
+  z-index: 1500;
+}
 /*--------------------------------Proshows-----------------------------*/
 #proshows-sprite img{
   max-width: 100%;
@@ -701,9 +711,39 @@ body{
   margin:1%;
   text-align: center;
  }
+ .contacts-tabs
+ {
+  width:30%;
+  margin:1%;
+  text-align: center;
+  float:left;
+ }
+
+*::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 0.5em;
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 0.5em;
+/*  outline: 1px solid slategrey;*/
+}
 .cont-tabs>h3
  {
   text-transform: uppercase;
+ }
+ .contacts-tabs>h3
+ {
+  text-transform: uppercase;
+ }
+  .contacts-tabs>h4
+ {
+  font-weight: 200;
  }
 #cont-one,#cont-thr,#cont-12,#cont-six
  {
@@ -731,13 +771,34 @@ body{
 
 button
  {
-  width:120px;
+
   height:30px;
  cursor:pointer;
  }
 .but-active
  {
   font-weight: bold;
+  background:#BBBBBF;
+ }
+ .info-but {
+  display: inline-block;
+height: 38px;
+padding: 0 30px;
+color: #555;
+text-align: center;
+font-size: 11px;
+
+
+line-height: 38px;
+letter-spacing: .1rem;
+text-transform: uppercase;
+text-decoration: none;
+white-space: nowrap;
+
+border-radius: 4px;
+border: 1px solid #bbb;
+cursor: pointer;
+box-sizing: border-box;
  }
 .info-tab
 {
@@ -748,8 +809,13 @@ button
   overflow-y: scroll;
   overflow-x:hidden; 
   display: block;
+  border-radius: 4px;
   /*max-height:400px;
   max-width: 720px;*/
+}
+.info-tab>ol>li
+{
+  font-weight: 600;
 }
 #lbox{
   background: #000;
