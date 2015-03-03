@@ -29,7 +29,12 @@ $event_code=$_GET["events"];
 			<div id="grad5" class="background"></div>
 		</div>
 		<div id="rest">
-			<a href="http://www.ragam.org.in/2015/" style="position:fixed;z-index:400;top:10px;right:10px;"><div id="home-button" style="width:40px;height:40px;border-radius:20px;"></div></a>
+			<a href="http://www.ragam.org.in/2015/" style="position:fixed;z-index:400;top:10px;right:10px;"><div id="home-button" style="width:40px;height:40px;border-radius:20px;"><div id="asd" style="
+    margin-top: 37px;
+    position: absolute;
+    color: white;
+    font-size:14px;
+"> HOME</div></div></a>
 			<div id="mute-button" class="not_muted" style="position:fixed;z-index:400;left:10px;bottom:10px;width:40px;height:40px;border-radius:20px;"></div>
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
@@ -136,6 +141,52 @@ $event_code=$_GET["events"];
 			</div>
 <!--**********************************************3PROSHOWS END*******************-->				
 <!--**********************************************4INFO START*******************-->				
+					<div id="CelebTalks" class="sec">
+				<div id="ctalk-overlay">
+					<div id="ctalk-box">
+					<div id="lbox"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Jagadish</h3>
+						<h5>Actor | Screen writer</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						
+						
+						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						</p>
+						</div>
+						
+					</div>
+					</div>
+				</div>
+				<div style="height:100%;width:30%;float:left">
+					<div id="Highlights-head-place" class="head-place">
+						<div id="Highlights-head" class="head">
+							Celebrity Talks
+						</div>
+					</div>
+					<div id="Highlights-words-place" class="words-place">
+						
+					</div>
+					<div id="Highlights-sprite" class="sprite"></div>
+				</div>
+				<div style="height:100%;width:70%;float:left;margin-top:8%;">
+				
+					<ul class="ch-grid">
+						<li>
+							<div class="ch-item ch-img-2">
+								<div class="ch-info md-trigger" data-modal="modal-11">
+									<h3>Jagadish</h3>
+									<p>Actor | Screenwriter</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div id="Info" class="sec">
 				<div id="info_scroll" style="height:100%;width:70%;float:left;position:absolute">
 					<div id="info-container">
@@ -285,52 +336,7 @@ $event_code=$_GET["events"];
 			</div>
 <!--**********************************************4INFO END*******************-->				
 <!--**********************************************5Highlights START*******************-->				
-			<div id="CelebTalks" class="sec">
-				<div id="ctalk-overlay">
-					<div id="ctalk-box">
-					<div id="lbox"></div>
-					<div id="rbox">
-						<div id="ctalk-header">
-						<h3>Jagadish</h3>
-						<h5>Actor | Screen writer</h5>
-						</div>
-						<span class="close rounded black"></span>
-						<div id="ctalk-container">
-						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						
-						
-						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
-						</p>
-						</div>
-						
-					</div>
-					</div>
-				</div>
-				<div style="height:100%;width:30%;float:left">
-					<div id="Highlights-head-place" class="head-place">
-						<div id="Highlights-head" class="head">
-							Celebrity Talks
-						</div>
-					</div>
-					<div id="Highlights-words-place" class="words-place">
-						
-					</div>
-					<div id="Highlights-sprite" class="sprite"></div>
-				</div>
-				<div style="height:100%;width:70%;float:left;margin-top:8%;">
-				
-					<ul class="ch-grid">
-						<li>
-							<div class="ch-item ch-img-2">
-								<div class="ch-info md-trigger" data-modal="modal-11">
-									<h3>Jagadish</h3>
-									<p>Actor | Screenwriter</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+	
 <!--**********************************************5Highlights END*******************-->				
 			
 
