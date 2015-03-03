@@ -139,7 +139,7 @@ $(function (){
                                     TweenMax.staggerFromTo($(".contacts-tabs"), 1, {opacity:1,x:0},{opacity:0,x:-100},.5),
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
                                 ]);
- TweenMax.staggerFromTo($(".contacts-tabs"), 1, {opacity:1,x:0},{opacity:0,x:-100},.5);
+ TweenMax.staggerFromTo($(".contacts-tabs"), .1, {opacity:1,x:0},{opacity:0,x:-100},.5);
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
