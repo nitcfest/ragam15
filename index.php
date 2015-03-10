@@ -28,7 +28,84 @@
 					Tarun :)
 				</div>
 			</div>-->
+			<div id="login_link">login</div>
+			<div id="reg_link">reg</div>
+			<div id="modal">
+				<div id="div-login" style="display:none;">
+					<form action="" id="form-login" method="POST" role="form">
+						<h3>Have an account? Login.</h3>
+						<input type="email" name="email" placeholder="Your email address" required>
+						<br>
+						<input type="password" name="password" placeholder="Your password" required>
+						<br>		
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<br>
+						<span id="login-messages"></span>
+					</form>
+					<h3>New user? <a href="#" id="action-signup">Register now</a>.</h3>
+				</div>
+
+				<div id="div-signup" style="display:none; width:300px;">
+					<form action="" id="form-signup" method="POST" role="form">
+						<input type="text" name="name" placeholder="Full name" style="width:100%;">
+						<br><br>
+						<input type="text" name="email" placeholder="Email address" style="width:100%;">
+						<br><br>
+						<input type="password" name="password" placeholder="Password" style="width:100%;">
+						<br><br>
+						<input type="password" name="password_confirmation" placeholder="Confirm password" style="width:100%;">
+						<br>	
+						<br>
+
+						<input type="text" name="phone" placeholder="Phone number" style="width:100%;">
+						<br><br>
+
+						<select name="college" id="college_select" style="width:100%;">
+							<option value="0">Loading...</option>
+						</select>
+						<br>
+						<br>
+						<br>
+						Don't see your college? <a href="#" id="action-show-add-college">Add it here</a>. 
+						<div id="div-add-college" style="display:none;">
+							(You'll be able to register only after your college is verified by the Ragam team.)<br>
+							<input type="text" id="name_new_college" placeholder="Full college name" style="width:100%;">
+							<button type="button" id="action-add-college">Add College</button>
+
+							<br>
+							<span id="add-college-messages"></span>
+						</div>
+
+						<br><br>
+
+						Do you need hospitality services during Ragam '15?<br><br>
+						<label>
+							<input type="radio" name="hospitality_type" value="0" checked="checked">
+							I do not require accomodation.
+						</label>
+
+						<br>
+
+						<label>
+							<input type="radio" name="hospitality_type" value="1">
+							I would like accomodation Type 1. (Sleeping mat)
+						</label>
+
+						<br>
+
+						<label>
+							<input type="radio" name="hospitality_type" value="2">
+							I would like accomodation Type 2. (Mattress)
+						</label>
+						<br>
+
+
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
+
 				<div id="two" class="target">
 					<!--Login button somewhere here-->
 					<a data-href="main.php#Events"><span class="icon-drawer"></span><span class="align-mid">Competitions<span></a>
@@ -149,5 +226,7 @@
 		</script>
 		<script type="text/javascript" src="js/commonscript.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-beta.3/js/select2.min.js"></script>
+		<script type="text/javascript" src="js/reg.js"></script>
 	</body>
 </html>

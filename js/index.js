@@ -54,3 +54,6 @@ $(window).load(function()
 	$("#fadebox").fadeOut(1500);
 	
 });
+$("#login_link").click(function(){
+		$("#modal").fadeIn();
+})

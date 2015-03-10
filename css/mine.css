@@ -739,3 +739,13 @@
     -o-transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
+#modal{
+  width:100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: none;
+}
