@@ -178,7 +178,6 @@ $(function() {
 				    	};
 				},
 				processResults: function (data, page) {
-					alert("asd");
 			      return {
 			      	results: data.colleges
 			      };
