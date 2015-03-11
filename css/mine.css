@@ -739,13 +739,30 @@
     -o-transform: rotate(0deg) scale(1) skew(1deg);
   }
 }
+
+/*-----------------------------------------Registration-------------------------------------------------------*/
 #modal{
-  width:100%;
+  width:450px;
   position: absolute;
-  top:0px;
-  left:0px;
-  height: 100%;
+  top:50%;
+  left:50%;
+  margin-left: -188px;
+  margin-top: -150px;
+  height: 330px;
   background-color: white;
   z-index: 1000;
   display: none;
+  overflow: scroll;
+  overflow-x:hidden;
+  padding:30px 10px 10px 72px;
+}
+#login_link{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index:100;
+  width:100px;
+  height: 30px;
+  color: #ffffff;
+  cursor: pointer;
 }
