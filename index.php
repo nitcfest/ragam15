@@ -20,7 +20,7 @@
 
 	</head>
 	<body>
-		<div class="fadebox-visible"></div>
+		<div class="fadebox-black"></div>
 		<div class="spmenu-push" id="mega">
 			<!--<div id="topdraw" class="topdraw-hover">
 				<div id="topdraw-content">

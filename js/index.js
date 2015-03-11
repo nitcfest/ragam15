@@ -54,7 +54,7 @@ $("#two>a, .page-exit").click(function(){
 })
 $(window).load(function() 
 {
-	$(".fadebox-visible").removeClass('fadebox-visible').addClass('fadebox-hidden');
+	$(".fadebox-black").removeClass('fadebox-black').addClass('fadebox-hidden');
 	
 });
 $("#login_link").click(function(){
