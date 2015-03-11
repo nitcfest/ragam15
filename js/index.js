@@ -51,7 +51,7 @@ $("#two>a").click(function(){
 })
 $(window).load(function() 
 {
-	$("#fadebox").fadeOut(1500);
+	$(".fadebox-visible").removeClass('fadebox-visible').addClass('fadebox-hidden');
 	
 });
 $("#login_link").click(function(){

@@ -1,11 +1,26 @@
-#fadebox
+.fadebox-visible
  {
  	position: absolute;
  	z-index:1000;
  	height:100%;
  	width:100%;
  	background-color: white;
+
  }
+
+ .fadebox-hidden {
+ 	position: absolute;
+ 	z-index:1000;
+ 	height:100%;
+ 	width:100%;
+ 	background-color: white;
+
+ 	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 2s, opacity 2s linear;
+ }
+
+
 
 #topdraw
  {
