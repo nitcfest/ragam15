@@ -30,17 +30,16 @@
 					Tarun :)
 				</div>
 			</div>-->
-			<div id="login_link">login</div>
-			<div id="reg_link">reg</div>
+			<div id="login_link">LOGIN/REGISTER</div>
 			<div id="modal">
 				<div id="div-login" style="display:none;">
-					<form action="" id="form-login" method="POST" role="form">
+					<form action="" id="form-login" method="POST" role="form" class="af-form">
 						<h3>Have an account? Login.</h3>
 						<input type="email" name="email" placeholder="Your email address" required>
-						<br>
+						<br><br/>
 						<input type="password" name="password" placeholder="Your password" required>
-						<br>		
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<br><br/>		
+						<input type="submit" class="btn btn-primary" placeholder="Submit">
 						<br>
 						<span id="login-messages"></span>
 					</form>
@@ -48,7 +47,7 @@
 				</div>
 
 				<div id="div-signup" style="display:none; width:300px;">
-					<form action="" id="form-signup" method="POST" role="form">
+					<form action="" id="form-signup" method="POST" role="form" class="af-form">
 						<input type="text" name="name" placeholder="Full name" style="width:100%;">
 						<br><br>
 						<input type="text" name="email" placeholder="Email address" style="width:100%;">
@@ -102,7 +101,7 @@
 						<br>
 
 
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<input type="submit" class="btn btn-primary" placeholder="Submit">
 					</form>
 				</div>
 
