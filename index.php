@@ -44,7 +44,7 @@
 						<br>
 						<span id="login-messages"></span>
 					</form>
-					<h3>New user? <a href="#" id="action-signup">Register now</a>.</h3>
+					<h3>New user? <a href="#" id="action-signup">Register now</a>.</h3>				
 				</div>
 
 				<div id="div-signup" style="display:none; width:300px;">
@@ -105,6 +105,13 @@
 						<button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
+
+				<div id="div-user-details" style="background:#CACFF7; border: 1px solid #000; display:none;"></div>
+
+				<div id="div-user-logout" style="display:none;">
+					<h3><a href="#" id="action-logout">Log out</a></h3>
+				</div>
+				<span id="user-messages"></span>
 
 
 			</div>

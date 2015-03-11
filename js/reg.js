@@ -1,8 +1,6 @@
 $(function() {
 
-		// var base_url = 'http://localhost/www/elegant-ragam/public/api/';
 		var base_url = 'http://www.ragam.org.in/2015/cms/api/';
-
 		
 		//This code should run everytime page is reloaded. It checks if the user is logged in.
 		var checkLoginStatus = function() {
@@ -39,6 +37,7 @@ $(function() {
 			$('#div-signup').hide();
 
 			$('#div-event-register').show();
+			$('#div-user-logout').show();
 
 
 			// Clear team members field on login.
@@ -77,6 +76,8 @@ $(function() {
 			$('#div-event-register').hide();
 			$('#div-signup').hide();
 			$('#div-user-details').slideUp();
+
+			$('#div-user-logout').hide();
 
 			$('#div-login').show();
 		}
