@@ -43,7 +43,7 @@ $(document).ready(function()
 	});
 
 });
-$("#two>a").click(function(){
+$("#two>a, .page-exit").click(function(){
 	var $that=$(this);
 
 	$('.fadebox-hidden').removeClass('fadebox-hidden').addClass('fadebox-black');

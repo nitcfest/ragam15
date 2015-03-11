@@ -128,7 +128,7 @@
 				</div>	
 			</nav>
 			<div class="container">
-				<a href="main.php#contacts" data-toggle="modal" data-target="#callback" class="cbh-phone gray show static" id="contact-icon">
+				<a href="main.php#contacts" data-toggle="modal" data-target="#callback" class="cbh-phone gray show static page-exit" id="contact-icon">
 					<div class="cbh-ph-circle"></div>
 					<div class="cbh-ph-circle-fill"></div>
 					<div class="cbh-ph-img-circle"></div>
