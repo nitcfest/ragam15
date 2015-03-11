@@ -45,9 +45,12 @@ $(document).ready(function()
 });
 $("#two>a").click(function(){
 	var $that=$(this);
-	$("#fadebox").fadeIn(1000,function(){
+
+	$('.fadebox-hidden').removeClass('fadebox-hidden').addClass('fadebox-black');
+	setTimeout(function(){
 		location.href=$that.data('href');
-	});
+	}, 1000);
+
 })
 $(window).load(function() 
 {
