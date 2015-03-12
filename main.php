@@ -17,8 +17,10 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
-		
 		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style6.css" />
 
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	</head>
@@ -97,28 +99,79 @@ $event_code=$_GET["events"];
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">
-				<div id="Workshop-left" style="height:100%;width:50%;float:left">
-					<div id="workshop_coming_soon" class="comingsoon">COMING SOON</div>
-					<ul id="wlist">
-		  			</ul>
+				<div id="workshop_heading">Workshops</div>
+					<div id="wlist">
+						<section class="main">
+							<ul class="ch-gridw">
+								<li>
+									<div class="ch-itemw ch-img-1w event-name" id="PTY">				
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-1w"></div>
+												<div class="ch-info-backw">
+													<h3>Services Image</h3>
+													<p>by Gumball Creative <a href="http://drbl.in/eFDk">View on Dribbble</a></p>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw ch-img-2w event-name" id="SDW">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-2w"></div>
+												<div class="ch-info-backw">
+													<h3>Heart</h3>
+													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw ch-img-3w event-name" id="DJW">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-3w"></div>
+												<div class="ch-info-backw">
+													<h3>Heart</h3>
+													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw ch-img-4w event-name" id="PTY">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-4w"></div>
+												<div class="ch-info-backw">
+													<h3>Heart</h3>
+													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw ch-img-5w event-name" id="PTY">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-5w"></div>
+												<div class="ch-info-backw">
+													<h3>Art Print</h3>
+													<p>by Tad Carpenter <a href="http://drbl.in/eNTe">View on Dribbble</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</section>
+					</div>
 				</div>
-				<div style="height:100%;width:50%;float:left">
-					<div id="workshops-head-place" class="head-place">
-						<div id="workshops-head" class="head">
-							Workshops
-						</div>
-					</div>
-					<div id="workshops-words-place" class="words-place">
-						Hone your skills to get that edge.<br/>
-						Learn from the best and beat the rest.
-					</div>
-					<div id="workshops-sprite" class="sprite">
-						<img src="img/Workshops.png"/>
-					</div>
-					<div id="workshop-text-space"></div>
-				</div>
-
-			</div>
 <!--**********************************************WORKSHOPS END*******************-->				
 <!--**********************************************3PROSHOWS START*******************-->				
 			
@@ -462,11 +515,10 @@ $event_code=$_GET["events"];
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/svgLoader.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
-	<script type="text/javascript" src="js/TimelineMax.min.js"></script>]
+	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	
-
 	
 	
 </html>
