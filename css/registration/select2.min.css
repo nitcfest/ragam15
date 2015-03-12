@@ -245,6 +245,7 @@ cursor:pointer;
 display:inline-block;
 font-weight:bold;
 margin-right:2px;
+font-family: serif;
 
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover{

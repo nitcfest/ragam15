@@ -36,11 +36,11 @@
 
 
 			<div class="registration-bar">			
-				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success">LOGIN</button>
-				<button id="registration-action-register" type="button" class="pure-button button-xsmall">REGISTER</button>
-				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary">VIEW PROFILE</button>
-				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning">LOG OUT</button>
-				<span id="registration-current-status">You are not logged in yet.</span>
+				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success" style="display:none;">LOGIN</button>
+				<button id="registration-action-register" type="button" class="pure-button button-xsmall" style="display:none;">REGISTER</button>
+				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary" style="display:none;">VIEW PROFILE</button>
+				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button>
+				<span id="registration-current-status">&nbsp;</span>
 			</div>
 
 
@@ -49,6 +49,7 @@
 				    <div class="pure-u-1">
 				    	<form action="" id="form-login" method="POST" role="form" class="pure-form">
 				    		<h3>Have an account? Login.</h3>
+				    		<a href="http://www.ragam.org.in/2015/cms/api/user/fb_login"><img src="img/fb_login.png"></a><br><br>
 				    		<input class="pure-input-1" type="email" name="email" placeholder="Your email address" required>
 				    		<br><br>
 				    		<input class="pure-input-1" type="password" name="password" placeholder="Your password" required>
@@ -65,6 +66,7 @@
 				<div class="pure-g">
 				    <div class="pure-u-1">
 				    	<h3>Create a new account.</h3>
+				    	<a href="http://www.ragam.org.in/2015/cms/api/user/fb_login"><img src="img/fb_login.png"></a><br><br>
 						<p>Note that if you have already logged in with Facebook, you cannot use the same email to register another account.</p>
 						<form action="" id="form-signup" method="POST" role="form" class="pure-form">
 							<input class="pure-input-1" type="text" name="name" placeholder="Full name">
@@ -294,7 +296,6 @@
 		<!-- Registration -->
 		<script src="js/registration/select2.min.js"></script>
 		<script src="js/registration/jquery.remodal.js"></script>
-		<script src="js/registration/jquery.leanModal.min.js"></script>
 		<script src="js/registration/registration-common.js"></script>
 
 	</body>

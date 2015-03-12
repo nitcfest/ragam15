@@ -17,6 +17,7 @@ $(function() {
 
 	$('#registration-action-user').click(function(event) {
 		event.preventDefault();
+		checkLoginStatus();
 
 		$.remodal.lookup[$('[data-remodal-id=show-registration-user]').data('remodal')].open();
 	});
@@ -26,6 +27,15 @@ $(function() {
 
 		$.remodal.lookup[$('[data-remodal-id=show-registration-login]').data('remodal')].close();
 		$.remodal.lookup[$('[data-remodal-id=show-registration-register]').data('remodal')].open();
+	});
+
+
+	// For event register
+
+	$('#action-register-button').click(function(event) {
+		event.preventDefault();
+
+		$.remodal.lookup[$('[data-remodal-id=show-registration-event]').data('remodal')].open();
 	});
 
 
@@ -382,12 +392,15 @@ $(function() {
 
 	// On Event Register form submit
 	$('#form-event-register').submit(function(event) {
+
+		$('#event-register-messages').html('<img src="img/loading.gif">');
+
 		$.ajax({
 		  url: base_url + 'event_register',
 		  type: 'GET',
 		  dataType: 'jsonp',
-		  data: {
-		  	'event_code' : 'WSO',
+		  data:  {
+		  	'event_code' : $('#registration-event-code').val(),
 		  	'team_members' : $('#team_members_select').val(),
 		  },
 		  success: function(data, textStatus, xhr) {
@@ -395,37 +408,37 @@ $(function() {
 			checkLoginStatus();
 
 		  	if(data.result == 'success'){
-		  		$('#event-register-messages').html('Event registration successfull. Your team ID is '+data.team_code);
+		  		$('#event-register-messages').html('<br>Event registration successfull. Your team ID is <strong>'+data.team_code+'</strong>');
 		  		
 		  		// Clear team members field.
 		  		$('#team_members_select').val(null).trigger("change");
 
 		  	}else if(data.result == 'fail' && data.reason == 'not_logged_in'){
-		  		$('#event-register-messages').html('Please login before you register for events.');
+		  		$('#event-register-messages').html('<br>Please login before you register for events.');
 		  		//User may have logged out in another tab.
-		  		alert('Please login before you register for events.');
+		  		
 		  		loggedOutActions();
 		  	}else if(data.result == 'fail' && data.reason == 'no_event'){
-		  		$('#event-register-messages').html('Cannot register for this event.');
+		  		$('#event-register-messages').html('<br>An error occured.');
 				//The event is not valid OR it has been invalidated.			  		
 		  	}else if(data.result == 'fail' && data.reason == 'already_registered'){
-		  		$('#event-register-messages').html('You are already registered for this event.');
+		  		$('#event-register-messages').html('<br>You are already registered for this event.');
 		  		//The current user is already registered.
 		  	}else if(data.result == 'fail' && data.reason == 'team_member_already_registered'){
 		  		//A team member in the selected team has already registered.
 		  		//The ID of the member is returned in data.existing_member
-		  		$('#event-register-messages').html(data.existing_member+' is already registered for this event.');
+		  		$('#event-register-messages').html('<br>'+data.existing_member+' is already registered for this event.');
 		  	}else if(data.result == 'fail' && data.reason == 'team_too_big'){
-		  		$('#event-register-messages').html('Your team size is too big.');
+		  		$('#event-register-messages').html('<br>Your team size is too big.');
 		  	}else if(data.result == 'fail' && data.reason == 'team_too_small'){
-		  		$('#event-register-messages').html('Your team size is too small.');
+		  		$('#event-register-messages').html('<br>Your team size is too small.');
 		  	}
-
 
 
 		  },
 		  error: function(xhr, textStatus, errorThrown) {
 		  	console.log('Error during registration. Try again.');
+		  	$('#event-register-messages').html('');
 		  }
 		});
 

@@ -16,6 +16,7 @@
 	padding: 3px 10px;
 	height: 33px;
 	color: #FFF;
+	z-index: 1000;
 }
 
 .modal-registration{
