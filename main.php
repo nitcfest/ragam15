@@ -214,13 +214,13 @@ $event_code=$_GET["events"];
 							<button class="info-but" id="but-reach">Reach Us</button>
 							<button class="info-but" id="but-faq">FAQ</button>
 						</div>
-						<div class= "info-tab" id="tab-reg">
+						<div class= "info-tab slideLeft" id="tab-reg">
 							<h2>	TO BE UPDATED SOON...</h2>
 						</div>
-						<div class= "info-tab" id="tab-hosp">
+						<div class= "info-tab slideLeft" id="tab-hosp">
 							<h2>	TO BE UPDATED SOON... </h2>
 						</div>
-						<div class= "info-tab" id="tab-reach">
+						<div class= "info-tab slideLeft" id="tab-reach">
 							<h2>How To Reach NIT Calicut</h2>
 							<h3>
 								By Road:
@@ -256,7 +256,7 @@ $event_code=$_GET["events"];
 							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="100%" height="100%" frameborder="0" style="border:0"></iframe>	
 
 						</div>
-						<div class= "info-tab" id="tab-faq">
+						<div class= "info-tab slideLeft" id="tab-faq">
 						<ol>
 							<li>What to do at Ragam '14?</li>
 							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is 
