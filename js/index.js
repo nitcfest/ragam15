@@ -43,14 +43,20 @@ $(document).ready(function()
 	});
 
 });
-$("#two>a").click(function(){
+$("#two>a, .page-exit").click(function(){
 	var $that=$(this);
-	$("#fadebox").fadeIn(1000,function(){
+
+	$('.fadebox-hidden').removeClass('fadebox-hidden').addClass('fadebox-black');
+	setTimeout(function(){
 		location.href=$that.data('href');
-	});
+	}, 1000);
+
 })
 $(window).load(function() 
 {
-	$("#fadebox").fadeOut(1500);
+	$(".fadebox-black").removeClass('fadebox-black').addClass('fadebox-hidden');
 	
 });
+$("#login_link").click(function(){
+		$("#modal").fadeIn();
+})

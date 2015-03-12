@@ -17,6 +17,9 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
@@ -27,6 +30,7 @@ $event_code=$_GET["events"];
 			<div id="grad3" class="background"></div>
 			<div id="grad4" class="background"></div>
 			<div id="grad5" class="background"></div>
+			<div id="grad6" class="background"></div>
 		</div>
 		<div id="rest">
 			<a href="http://www.ragam.org.in/2015/" style="position:fixed;z-index:400;top:10px;right:10px;"><div id="home-button" style="width:40px;height:40px;border-radius:20px;"><div id="asd" style="
