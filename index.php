@@ -13,10 +13,12 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<link rel="stylesheet" type="text/css" href="css/ticker.css">
 		<link rel="stylesheet" type="text/css" href="css/mine.css">
-		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/blur.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="css/registration/pure-nr-min.css">		
+		<link rel="stylesheet" type="text/css" href="css/registration/registration.css">
+		<link rel="stylesheet" type="text/css" href="css/registration/select2.min.css">
 
 	</head>
 	<body>
@@ -27,93 +29,87 @@
 
 				</div>
 				<div id="topdraw-hanger">
-					Tarun :)
 				</div>
 			</div>-->
-			<div id="login_link">LOGIN/REGISTER</div>
-			<div id="modal">
-				<div id="div-login" style="display:none;">
-					<form action="" id="form-login" method="POST" role="form" class="af-form">
-						<h3>Have an account? Login.</h3>
-						<input type="email" name="email" placeholder="Your email address" required>
-						<br><br/>
-						<input type="password" name="password" placeholder="Your password" required>
-						<br><br/>		
-						<input type="submit" class="btn btn-primary" placeholder="Submit">
-						<br>
-						<span id="login-messages"></span>
-					</form>
-					<h3>New user? <a href="#" id="action-signup">Register now</a>.</h3>				
+
+
+			<div class="registration-bar">
+				<a id="modal-link-login" href="#show-registration-login" class="pure-button button-xsmall" style="display:none;">LOGIN</a>
+				<a id="modal-link-register" href="#show-registration-register" class="pure-button button-xsmall" style="display:none;">REGISTER</a>
+				<a id="modal-link-user" href="#show-registration-user" class="pure-button button-xsmall" style="display:none;">VIEW PROFILE</a>
+				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning">LOG OUT</button>
+			</div>
+
+
+			<div class="modal-registration" id="show-registration-login">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+				    	<form action="" id="form-login" method="POST" role="form" class="pure-form">
+				    		<h3>Have an account? Login.</h3>
+				    		<input class="pure-input-1" type="email" name="email" placeholder="Your email address" required>
+				    		<br><br>
+				    		<input class="pure-input-1" type="password" name="password" placeholder="Your password" required>
+				    		<br><br>
+				    		<button type="submit" class="pure-button button-success">Log in</button>
+				    		<button type="button" id="registration-action-new-user" class="pure-button button-secondary">New User</button>
+
+				    		<span id="login-messages"></span>
+				    	</form>
+				    </div>
 				</div>
+			</div>
+			<div class="modal-registration" id="show-registration-register">
+					<div class="pure-g">
+					    <div class="pure-u-1">
+					    	<h3>Create a new account.</h3>
+							<p>Note that if you have already logged in with Facebook, you cannot use the same email to register another account.</p>
+							<form action="" id="form-signup" method="POST" role="form" class="pure-form">
+								<input class="pure-input-1" type="text" name="name" placeholder="Full name">
+								<br><br>
+								<input class="pure-input-1" type="text" name="email" placeholder="Email address">
+								<br><br>
+								<input class="pure-input-1" type="password" name="password" placeholder="Password">
+								<br><br>
+								<input class="pure-input-1" type="password" name="password_confirmation" placeholder="Confirm password">
+								<br><br>
+								<input class="pure-input-1" type="text" name="phone" placeholder="Phone number" style="width:100%;">
+								<br><br>
+								<select name="college" id="college_select" style="width:100%;">
+									<option value="0">Loading...</option>
+								</select>
+								<br><br><br>
+								Don't see your college? <a href="#" id="action-show-add-college">Add it here</a>. 
+								<div id="div-add-college" style="display:none;">
+									<small>You'll be able to register only after your college is verified by the Ragam team.</small><br><br>
+									<input type="text" id="name_new_college" placeholder="Full college name" style="width:100%;">
+									<br><br>
+									<button type="button" id="action-add-college" class="pure-button">Add College</button>
 
-				<div id="div-signup" style="display:none; width:300px;">
-					<form action="" id="form-signup" method="POST" role="form" class="af-form">
-						<input type="text" name="name" placeholder="Full name" style="width:100%;">
-						<br><br>
-						<input type="text" name="email" placeholder="Email address" style="width:100%;">
-						<br><br>
-						<input type="password" name="password" placeholder="Password" style="width:100%;">
-						<br><br>
-						<input type="password" name="password_confirmation" placeholder="Confirm password" style="width:100%;">
-						<br>	
-						<br>
+									<br>
+									<span id="add-college-messages"></span>
+								</div>
 
-						<input type="text" name="phone" placeholder="Phone number" style="width:100%;">
-						<br><br>
+								<br><br>
 
-						<select name="college" id="college_select" style="width:100%;">
-							<option value="0">Loading...</option>
-						</select>
-						<br>
-						<br>
-						<br>
-						Don't see your college? <a href="#" id="action-show-add-college">Add it here</a>. 
-						<div id="div-add-college" style="display:none;">
-							(You'll be able to register only after your college is verified by the Ragam team.)<br>
-							<input type="text" id="name_new_college" placeholder="Full college name" style="width:100%;">
-							<button type="button" id="action-add-college">Add College</button>
+								Do you need hospitality services during Ragam '15?
+								<label class="pure-radio">
+									<input type="radio" name="hospitality_type" value="0" checked="checked">
+									I do not require accomodation.
+								</label>
+								<label class="pure-radio">
+									<input type="radio" name="hospitality_type" value="1">
+									I would like accomodation.
+								</label>
 
-							<br>
-							<span id="add-college-messages"></span>
+								<button type="submit" class="pure-button button-success">Register </button>
+							</form>
 						</div>
 
-						<br><br>
+					</div>
 
-						Do you need hospitality services during Ragam '15?<br><br>
-						<label>
-							<input type="radio" name="hospitality_type" value="0" checked="checked">
-							I do not require accomodation.
-						</label>
-
-						<br>
-
-						<label>
-							<input type="radio" name="hospitality_type" value="1">
-							I would like accomodation Type 1. (Sleeping mat)
-						</label>
-
-						<br>
-
-						<label>
-							<input type="radio" name="hospitality_type" value="2">
-							I would like accomodation Type 2. (Mattress)
-						</label>
-						<br>
-
-
-						<input type="submit" class="btn btn-primary" placeholder="Submit">
-					</form>
 				</div>
-
-				<div id="div-user-details" style="background:#CACFF7; border: 1px solid #000; display:none;"></div>
-
-				<div id="div-user-logout" style="display:none;">
-					<h3><a href="#" id="action-logout">Log out</a></h3>
-				</div>
-				<span id="user-messages"></span>
-
-
 			</div>
+
 			<nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
 
 				<div id="two" class="target">
@@ -179,8 +175,9 @@
 				<div style="position:absolute;bottom:10%;height:10%;width:100%;font-size:2em;color:#fff"><center>March 26<sup>th</sup> - 29<sup>th</sup> </center></div>
 			</div>
 		</div>
-	
-	
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/blur.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/classie.js"></script>
 		<script>
@@ -241,7 +238,10 @@
 
 		</script>
 		<script src="js/index.js"></script>
-		<script src="js/select2.min.js"></script>
-		<script src="js/reg.js"></script>
+		
+		<script src="js/registration/select2.min.js"></script>
+		<script src="js/registration/jquery.leanModal.min.js"></script>
+		<script src="js/registration/registration-common.js"></script>
+
 	</body>
 </html>

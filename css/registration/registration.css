@@ -1,0 +1,92 @@
+#lean_overlay {
+    position: fixed;
+    z-index:1000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.registration-bar{
+	background: #000;
+	opacity: 0.6;
+	width: 100%;
+	padding: 3px 10px;
+	height: 33px;
+	color: #FFF;
+}
+
+.modal-registration{
+	display:none;
+
+	position: fixed;
+	opacity: 1;
+	z-index: 1000;
+	left: 50%;
+	margin-left: -330px;
+	top: 200px;
+
+	width: 600px;
+	padding: 30px;
+
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 0 4px;
+
+	border-radius: 5px;
+	box-shadow: 0 0 4px;
+
+
+	background: #FFF;
+
+	max-height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+
+/*Buttons*/
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+   color: white;
+   border-radius: 4px;
+   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+   background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+   background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+   background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+   background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+
+.button-xsmall {
+   font-size: 70%;
+}
+
+.button-small {
+   font-size: 85%;
+}
+
+.button-large {
+   font-size: 110%;
+}
+
+.button-xlarge {
+   font-size: 125%;
+}

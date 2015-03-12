@@ -1,8 +1,18 @@
 $(function() {
 
+		$('#modal-link-login').leanModal();
+		$('#modal-link-register').leanModal();
+		$('#modal-link-user').leanModal();
+
+		$('#registration-action-new-user').click(function(event) {
+			event.preventDefault();
+
+			$('#modal-link-register').trigger('click');
+		});
+
+
 		var base_url = 'http://www.ragam.org.in/2015/cms/api/';
 		
-		//This code should run everytime page is reloaded. It checks if the user is logged in.
 		var checkLoginStatus = function() {
 			
 			$.ajax({
@@ -11,25 +21,26 @@ $(function() {
 			  dataType: 'jsonp',
 			  success: function(data, textStatus, xhr) {
 			  	if(data.status == 'logged_in'){
-
-			  		//Once logged in, a user object is returned.
-			  		//console.log the object for better understanding.
 			  		loggedInActions(data.user);			  		
 			  	}else{
-			  		//User is not logged in. Show login form.
 			  		loggedOutActions();
 			  	}
 
 			  },
 			  error: function(xhr, textStatus, errorThrown) {
-			  	console.log('Could not load status! Show some error and ask user to try reloading the page.');
+			  	console.log('Could not load status! Please reload page.');
 			  }
 			});
 
 		};
-
+	
 
 		var loggedInActions = function(user) {
+			$('#modal-link-login').hide();
+			$('#modal-link-register').hide();
+			$('#modal-link-user').show();
+			$('#registration-action-logout').show();
+
 			//Called only if user is logged in, and after successful logins/signups.
 
 			//Hide the login/signup features.
@@ -73,16 +84,42 @@ $(function() {
 		};
 
 		var loggedOutActions = function(){
-			$('#div-event-register').hide();
-			$('#div-signup').hide();
-			$('#div-user-details').slideUp();
+			$('#modal-link-login').show();
+			$('#modal-link-register').show();
+			$('#modal-link-user').hide();
+			$('#registration-action-logout').hide();
+			
 
-			$('#div-user-logout').hide();
+			// $('#div-event-register').hide();
+			// $('#div-signup').hide();
+			// $('#div-user-details').slideUp();
 
-			$('#div-login').show();
+			// $('#div-user-logout').hide();
+
+			// $('#div-login').show();
 		}
 
+		
+		//Check the status
 		checkLoginStatus();
+
+		//For logout
+		$('#registration-action-logout').click(function(event) {
+			event.preventDefault();
+
+			$.ajax({
+			  url: base_url + 'user/logout',
+			  type: 'GET',
+			  dataType: 'jsonp',
+			  success: function(data, textStatus, xhr) {
+			  	loggedOutActions();
+			  },
+			  error: function(xhr, textStatus, errorThrown) {
+			  	console.log('Error trying to log out.');
+			  }
+			});
+
+		});
 
 
 		//On trying to login.
@@ -110,7 +147,7 @@ $(function() {
 			  	}
 			  },
 			  error: function(xhr, textStatus, errorThrown) {
-			  	console.log('Error trying to login. Ask user to try again.');
+			  	console.log('Error trying to login.');
 			  }
 			});
 
@@ -120,23 +157,7 @@ $(function() {
 		});
 
 
-		//For logout
-		$('#action-logout').click(function(event) {
-			event.preventDefault();
 
-			$.ajax({
-			  url: base_url + 'user/logout',
-			  type: 'GET',
-			  dataType: 'jsonp',
-			  success: function(data, textStatus, xhr) {
-			  	loggedOutActions();
-			  },
-			  error: function(xhr, textStatus, errorThrown) {
-			  	console.log('Error trying to log out.');
-			  }
-			});
-
-		});
 
 
 
