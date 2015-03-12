@@ -16,9 +16,11 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- Registration -->
+		<link rel="stylesheet" type="text/css" href="css/registration/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/registration/jquery.remodal.css">		
 		<link rel="stylesheet" type="text/css" href="css/registration/pure-nr-min.css">		
 		<link rel="stylesheet" type="text/css" href="css/registration/registration.css">
-		<link rel="stylesheet" type="text/css" href="css/registration/select2.min.css">
 
 	</head>
 	<body>
@@ -33,15 +35,16 @@
 			</div>-->
 
 
-			<div class="registration-bar">
-				<a id="modal-link-login" href="#show-registration-login" class="pure-button button-xsmall" style="display:none;">LOGIN</a>
-				<a id="modal-link-register" href="#show-registration-register" class="pure-button button-xsmall" style="display:none;">REGISTER</a>
-				<a id="modal-link-user" href="#show-registration-user" class="pure-button button-xsmall" style="display:none;">VIEW PROFILE</a>
+			<div class="registration-bar">			
+				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success">LOGIN</button>
+				<button id="registration-action-register" type="button" class="pure-button button-xsmall">REGISTER</button>
+				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary">VIEW PROFILE</button>
 				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning">LOG OUT</button>
+				<span id="registration-current-status">You are not logged in yet.</span>
 			</div>
 
 
-			<div class="modal-registration" id="show-registration-login">
+			<div class="remodal" data-remodal-id="show-registration-login" data-remodal-options="hashTracking: false">
 				<div class="pure-g">
 				    <div class="pure-u-1">
 				    	<form action="" id="form-login" method="POST" role="form" class="pure-form">
@@ -58,55 +61,105 @@
 				    </div>
 				</div>
 			</div>
-			<div class="modal-registration" id="show-registration-register">
-					<div class="pure-g">
-					    <div class="pure-u-1">
-					    	<h3>Create a new account.</h3>
-							<p>Note that if you have already logged in with Facebook, you cannot use the same email to register another account.</p>
-							<form action="" id="form-signup" method="POST" role="form" class="pure-form">
-								<input class="pure-input-1" type="text" name="name" placeholder="Full name">
+			<div class="remodal" data-remodal-id="show-registration-register" data-remodal-options="hashTracking: false">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+				    	<h3>Create a new account.</h3>
+						<p>Note that if you have already logged in with Facebook, you cannot use the same email to register another account.</p>
+						<form action="" id="form-signup" method="POST" role="form" class="pure-form">
+							<input class="pure-input-1" type="text" name="name" placeholder="Full name">
+							<br><br>
+							<input class="pure-input-1" type="text" name="email" placeholder="Email address">
+							<br><br>
+							<input class="pure-input-1" type="password" name="password" placeholder="Password">
+							<br><br>
+							<input class="pure-input-1" type="password" name="password_confirmation" placeholder="Confirm password">
+							<br><br>
+							<input class="pure-input-1" type="text" name="phone" placeholder="Phone number" style="width:100%;">
+							<br><br>
+							<select name="college" id="college_select" style="width:100%;">
+								<option value="0">Loading...</option>
+							</select>
+							<br><br><br>
+							Don't see your college? <a href="#" id="action-show-add-college">Add it here</a>. 
+							<div id="div-add-college" style="display:none;">
+								<small>You'll be able to register only after your college is verified by the Ragam team.</small><br><br>
+								<input type="text" id="name_new_college" placeholder="Full college name" style="width:100%;">
 								<br><br>
-								<input class="pure-input-1" type="text" name="email" placeholder="Email address">
-								<br><br>
-								<input class="pure-input-1" type="password" name="password" placeholder="Password">
-								<br><br>
-								<input class="pure-input-1" type="password" name="password_confirmation" placeholder="Confirm password">
-								<br><br>
-								<input class="pure-input-1" type="text" name="phone" placeholder="Phone number" style="width:100%;">
-								<br><br>
-								<select name="college" id="college_select" style="width:100%;">
-									<option value="0">Loading...</option>
-								</select>
-								<br><br><br>
-								Don't see your college? <a href="#" id="action-show-add-college">Add it here</a>. 
-								<div id="div-add-college" style="display:none;">
-									<small>You'll be able to register only after your college is verified by the Ragam team.</small><br><br>
-									<input type="text" id="name_new_college" placeholder="Full college name" style="width:100%;">
-									<br><br>
-									<button type="button" id="action-add-college" class="pure-button">Add College</button>
+								<button type="button" id="action-add-college" class="pure-button">Add College</button>
+								<span id="add-college-messages"></span>
+							</div>
 
-									<br>
-									<span id="add-college-messages"></span>
-								</div>
+							<br><br>
 
-								<br><br>
+							Do you need hospitality services during Ragam '15?
+							<label class="pure-radio">
+								<input type="radio" name="hospitality_type" value="0" checked="checked">
+								I do not require accomodation.
+							</label>
+							<label class="pure-radio">
+								<input type="radio" name="hospitality_type" value="1">
+								I would like accomodation.
+							</label>
 
-								Do you need hospitality services during Ragam '15?
-								<label class="pure-radio">
-									<input type="radio" name="hospitality_type" value="0" checked="checked">
-									I do not require accomodation.
-								</label>
-								<label class="pure-radio">
-									<input type="radio" name="hospitality_type" value="1">
-									I would like accomodation.
-								</label>
-
-								<button type="submit" class="pure-button button-success">Register </button>
-							</form>
-						</div>
-
+							<button type="submit" class="pure-button button-success">Register </button>
+							
+							<span id="signup-messages"></span>
+						</form>
 					</div>
+				</div>
+			</div>
 
+			<div class="remodal" data-remodal-id="show-registration-user" data-remodal-options="hashTracking: false">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+			    		<h3>Your Profile</h3>
+
+			    		<table class="pure-table table-unbordered">
+			    		    <tbody>
+			    		        <tr>
+			    		            <td>Name</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-name"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>Ragam ID</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-id"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>Email</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-email"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>Phone</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-phone"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>College</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-college"></td>
+			    		        </tr>
+			    		    </tbody>
+			    		</table>
+
+			    		<h3>Events Registered</h3>
+			    		<table class="pure-table">
+			    		    <thead>
+			    		        <tr>
+			    		            <th>Event Name</th>
+			    		            <th>Team Code</th>
+			    		            <th>Team Members</th>
+			    		            <th>Action <span id="registration-action-loading"></span></th>
+			    		        </tr>
+			    		    </thead>
+			    		    <tbody id="registration-table-events">
+			    		    </tbody>
+			    		</table>
+
+				    </div>
 				</div>
 			</div>
 
@@ -148,25 +201,24 @@
 				</a>
 				<div class="main">
 					<div id="main-text" class="path-container">
-					<ul>
-  						<li class="barboth">
+					<ul class="ulstyled">
+  						<li class="barboth styled">
   							<div class="bar"><span class="w70"></span></div>
   						</li>
   
-  						<li><img id="logo1" src="img/ragam1.png"></li>
+  						<li class="styled"><img id="logo1" src="img/ragam1.png"></li>
  
-  						<li style="margin-left:-24px;" class="barboth">
+  						<li style="margin-left:-24px;" class="barboth styled">
   							<div class="skill-bar"> <span class="w70"></span></div>
   						</li>
   					</ul>
   					<img id="logo" src="img/ragam.png">
-						<ul style="margin-top:-20px;">
-  						<li class="barboth2">
+					<ul class="ulstyled" style="margin-top:-20px;">
+  						<li class="barboth2 styled">
   							<div class="bar"><span class="w70"></span></div>
   						</li>
   
- 
-  						<li style="margin-left:-24px;" class="barboth2">
+  						<li style="margin-left:-24px;" class="barboth2 styled">
   							<div class="skill-bar"> <span class="w70"></span></div>
   						</li>
   					</ul>
@@ -239,7 +291,9 @@
 		</script>
 		<script src="js/index.js"></script>
 		
+		<!-- Registration -->
 		<script src="js/registration/select2.min.js"></script>
+		<script src="js/registration/jquery.remodal.js"></script>
 		<script src="js/registration/jquery.leanModal.min.js"></script>
 		<script src="js/registration/registration-common.js"></script>
 

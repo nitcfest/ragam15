@@ -11,7 +11,7 @@
 
 .registration-bar{
 	background: #000;
-	opacity: 0.6;
+	opacity: 0.7;
 	width: 100%;
 	padding: 3px 10px;
 	height: 33px;
@@ -89,4 +89,11 @@
 
 .button-xlarge {
    font-size: 125%;
+}
+
+
+/*Tables*/
+
+.table-unbordered, .table-unbordered td, .table-unbordered tr{
+	border: 0;
 }
