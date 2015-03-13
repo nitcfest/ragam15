@@ -318,6 +318,7 @@ $(function() {
 			//This function updates the user profile with new event details.
 		  	if(data.result == 'success'){
 		  		setTimeout(checkLoginStatus, 1500);
+
 		  		this_parent.html('<td colspan="4">Event Deregistered.</td>');
 		  	}else if(data.result == 'fail' && data.reason == 'not_logged_in'){
 		  		this_parent.html('<td colspan="4">Please log in again..</td>');
@@ -412,6 +413,9 @@ $(function() {
 		  		
 		  		// Clear team members field.
 		  		$('#team_members_select').val(null).trigger("change");
+
+		  		$('#register-button-space').hide();
+		  		$('#register-message-space').show();
 
 		  	}else if(data.result == 'fail' && data.reason == 'not_logged_in'){
 		  		$('#event-register-messages').html('<br>Please login before you register for events.');
