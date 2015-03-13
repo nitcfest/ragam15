@@ -220,7 +220,7 @@ $event_code=$_GET["events"];
 			</div>
 
 
-			<a href="./" style="position:fixed;z-index:400;top:10px;right:10px;">
+			<a href="./" style="position:fixed;z-index:1400;top:10px;right:10px;">
 				<div id="home-button" style="width:40px;height:40px;border-radius:20px;">
 				<div id="asd" style="margin-top: 37px;position: absolute;color: white;font-size:14px;"> HOME</div>
 				</div>
