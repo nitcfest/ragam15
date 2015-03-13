@@ -90,10 +90,7 @@ $(function (){
                                 ]);
  var tween_proshows = new TimelineMax ()
                                  .add([
-                                    TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1})
+                                   
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
                                 ]);
  var tween_proshows_reverse = new TimelineMax ()
@@ -172,15 +169,22 @@ $(function (){
 	// 				.setTween(tween_events_reverse) // add class toggle
 	// 				.addTo(controller)	
 	
-	new ScrollScene({triggerElement: "#Proshows", duration: 300})
+	new ScrollScene({triggerElement: "#Proshows", duration: 600})
 					.addTo(controller)
 					 .on("enter", function(event) {
 	                console.log("Enter");
-	                tween_proshows.play();
+	                 TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	              })
 	              .on("leave", function(event) {
 	                console.log("Leave");
-	                tween_proshows.reverse();
+	                 TweenMax.fromTo($("#proshows-head"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5});
+									TweenMax.fromTo($("#proshow_coming_soon"), 1, {opacity:1,scale:1},{opacity:0,scale:.5});
 	              })
 	// new ScrollScene({triggerElement: "#Proshows",offset:650})
 	// 				.setTween(tween_proshows_reverse) // add class toggle
