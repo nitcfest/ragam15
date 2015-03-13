@@ -278,7 +278,7 @@ $event_code=$_GET["events"];
 						<section class="main">
 							<ul class="ch-gridw">
 								<li>
-									<div class="ch-itemw ch-img-1w event-name" id="PTY">				
+									<div class="ch-itemw event-name" id="PTY">				
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-1w"></div>
@@ -291,7 +291,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-2w event-name" id="SDW">
+									<div class="ch-itemw event-name" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
@@ -304,7 +304,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-3w event-name" id="DJW">
+									<div class="ch-itemw event-name" id="DJW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-3w"></div>
@@ -317,7 +317,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-4w event-name" id="PTY">
+									<div class="ch-itemw event-name" id="PTY">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-4w"></div>
@@ -330,7 +330,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-5w event-name" id="PTY">
+									<div class="ch-itemw event-name" id="PTY">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-5w"></div>
@@ -372,20 +372,21 @@ $event_code=$_GET["events"];
 			</div>
 <!--**********************************************3PROSHOWS END*******************-->
 <!--**********************************************SNEHARAGAM*******************-->								
-			<div id="sneharagam" class="sec">
+				<div id="sneharagam" class="sec">
 				<div style="height:100%;width:50%;float:left">
 					<div id="sneha-head-place" class="head-place">
 						<div id="sneha-head" class="head">
 							Sneharagam
 						</div>
 					</div>
-					<div id="sneha-words-place" class="words-place">
-						
+					<div id="sneha-words-place" class="words-place4">
+						The joy of bringing a smile on a person’s face can seldom be expressed by words; it’s the pinnacle of delectation, one must experience. Sneharagam is one such experience which is more than just a social initiative; where we share our joy and happiness with the differently abled, while creating an aura of exhilaration amongst them, followed by building a promising platform for them to showcase their respective talents.
+						<br><a href="sneharagam/" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
 					</div>
 					<div id="sneha-sprite" class="sprite"></div>
 				</div>
 				<div style="height:100%;width:50%;float:left">
-					<div id="sneha_coming_soon" class="comingsoon3">COMING SOON</div>
+					
 				</div>
 			</div>
 <!--**********************************************SNEHARAGAM ENDS*******************-->	
@@ -446,10 +447,81 @@ $event_code=$_GET["events"];
 							<button class="info-but" id="but-faq">FAQ</button>
 						</div>
 						<div class= "info-tab" id="tab-reg">
-							<h2>	TO BE UPDATED SOON...</h2>
+							<h2>Registration Guidelines</h2><br><br>
+							<ol>
+								<li>The Ragam ID which will be issued upon online registration will become valid only when it is confirmed at the Ragam ‘15 Registration Desk.</li></br>
+
+								<li>Participants  should have a confirmed Ragam ID for participating in any event.</li></br>
+
+								<li>Only college students are allowed to participate for the events of Ragam ’15 other than Open events.</li></br>
+									
+								<li>Participants should bring a valid college ID as proof of identity for registering for Ragam’15.</li></br>
+									
+								<li>Participants can also register for Ragam at the Ragam’15 registration desk during the event but it is advisable that you register online so that the registration process is hassle free once you reach here.</li></br>
+									
+								<li>For team events, every member of the team should have registered for Ragam and must possess a Ragam ID.</li></br>
+									
+								<li>Once registered, participant can take part in any event or free workshop of Ragam.</li></br>
+									
+								<li>Only those with Ragam ID will be given accommodation.</li></br>
+									
+								<li>Prizes 	and certificates can be collected from the Registration Desk once the results are declared. For team events, the prizes will be handed over ONLY to the EVENT TEAM CAPTAIN.</li></br>
+
+								 <li>The prize moneys for the events have to be collected from the Registration desk in person, with valid Ragam and College ID cards, before 3:00.a.m, March 30, 2015.</li></br>
+
+
+								<li>Registration Fee : Rs.150;</li><br>
+								<li>Hospitality fees:Rs.200 (In addition a caution deposit of Rs.100 will also be collected, which will be refunded at the return of utilities provided).</li><br>
+								<li>Workshops: As per the stipulated fee (No other registration fee required).</li></br>
+
+								<li>Registration fee of Rs.50/person/quiz. Those with valid Ragam IDs need not register separately for the quizzes. </li></br>
+
+								<li>Registration fee for Fury(Basketball) is Rs.1200 per team.</li></br>
+
+								<li>Registration fee for events of ‘Ragnarok’ at Ragam’15 are as follows:
+									<ul>
+										<li>Fifa 14: Rs.100	
+										<li>NFS:Most Wanted : Rs.100
+										<li>Fifa 14 + NFS:Most Wanted (combined registration) : Rs.180
+										<li>Counter Strike: Rs.500/team.
+										<li>DOTA II: Rs.500/team.
+									</ul>
+								</li><br>
+								<li>Atleast one member of the team should have valid Ragam ID for registering for Counter Strike. Ragam IDs are not mandatory for registering for Fifa 14 and NFS:Most Wanted.</li></br>
+
+								 <li>Only teams presenting a printed copy of the confirmation letter will be allowed to register for events like Couture Boulevard, Choreo Nite(Themed and Non-Themed), Swararaaga, Amplified, Acoustics and Drama.</li></br>
+							</ol><br><br>
+
+							<h3>For the special attention of the participants who are coming in groups: </h3>
+
+
+							<ol>
+								<li>A member of the group should be assigned as the group leader and he/she must have a list of all the members of the group, along with their RAGAM IDs which were issued upon their online registration and their college IDs at the time of check in. Carrying such a list can ensure smooth registration.</li></br>
+									
+								<li>A representative from each group is strongly advised to contact the Hospitality Manager prior to their arrival at the campus to smoothen the registration process, for confirmation of accommodation.</li></br>
+							</ol><br><br>
+
+							<h3>NOTE:</h3>
+							<ol>
+								<li>The Ragam Registration Committee reserves the right to deduct from the 	caution deposit for any loss/damage caused by the participants.</li></br>
+
+								<li>The Ragam Registration Committee will have the sole right to disqualify any team engaged in any form of malpractice during Registration or during any event.</li></br>
+
+								<li>Ragam'15 Registration Desk will be open from 6:00 P.M, 26th March. In case of early arrival at the NIT Campus, contact the hospitality manager to avail temporary accommodation.</li></br>
+							</ol>
 						</div>
 						<div class= "info-tab" id="tab-hosp">
-							<h2>	TO BE UPDATED SOON... </h2>
+							<h2>Hospitality Guidelines</h2><br><br>
+							<ol>
+								<li>The registration fee for hospitality is Rs.300 per ’bed’, out of which Rs.100 will be refunded on successful de-registration.</li><br>
+								<li>For Rs.100 refund, participants must submit Hospitality Registration form, Bill receipt and all the utilities provided (without any damage). Failing to submit any of the above mentioned will mean that the candidate will not be eligible to collect his/her refund.</li><br>
+								<li>If any commodity is missing or damaged, the refund amount for the whole team will not be returned.</li><br>
+								<li>All the utilities given to participants should be returned to the hospitality desk without any damage before 8 P. M., 29th March.</li><br>
+								<li>The hospitality desk will be open round the clock (24 hrs) except for proshows.</li><br>
+								<li>If the commodities are not returned on time, Ragam'15 Hospitality team will have the full power to take over the commodities given to the participants and in this case no refund will be given back.</li><br>
+								<li>For selected events (Swararaaga, Amplified and Acoustics), the store room will be open during the Ragam days. Ragam'15 Hospitality team will not be held responsible for any damage or loss of belongings.</li><br>
+							</ol><br><br>
+							<h3 style="text-transform: uppercase;">The Ragam'15 Hospitality team will not be held responsible for any damage or loss of belongings</h3>
 						</div>
 						<div class= "info-tab" id="tab-reach">
 							<h2>How To Reach NIT Calicut</h2>
@@ -489,12 +561,12 @@ $event_code=$_GET["events"];
 						</div>
 						<div class= "info-tab" id="tab-faq">
 						<ol>
-							<li>What to do at Ragam '14?</li>
+							<li>What to do at Ragam '15?</li>
 							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is 
 							the platform to showcase your talents. Various workshops and exhibitions on art and art forms will 
 							be conducted throughout the 3 days. Informals, Adventure Sports and various other fun events 
 							will also be organised to keep you occupied.<br><br>
-							<li>Where to register for Ragam '14?</li>
+							<li>Where to register for Ragam '15?</li>
 							Online registration will start soon.<br><br> 
 							<li>Where to collect your prizes?</li>
 							You can collect your prizes and certificates at the registration desk after the announcement 
