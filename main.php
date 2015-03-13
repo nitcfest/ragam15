@@ -365,7 +365,7 @@ $event_code=$_GET["events"];
 <!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">
-				<div style="height:100%;width:50%;float:left">
+				<div style="height:100%;width:50%;float:left;">
 					<div id="proshows-head-place" class="head-place2">
 						<div id="proshows-head" class="head">
 							Proshows
@@ -376,7 +376,7 @@ $event_code=$_GET["events"];
 					<div id="sprite1" class="sprite2">
 					</div>
 				</div>
-				<div style="height:100%;width:50%;float:left">
+				<div style="height:100%;width:50%;float:left;">
 					<div class="center-attraction">
 						Too anxious to know about all the major events?<br/>
 						Expect a few surprises in the coming days..<br/>
@@ -694,7 +694,7 @@ $event_code=$_GET["events"];
 			</div><!-- /pageload-overlay -->
 	</body>
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/tweenmax.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/scrollmagic.js"></script>
 	<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
 	<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
@@ -705,7 +705,6 @@ $event_code=$_GET["events"];
 	<script type="text/javascript" src="js/svgLoader.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
-	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- Registration -->
 	<script src="js/registration/select2.min.js"></script>
