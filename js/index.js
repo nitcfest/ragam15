@@ -57,6 +57,3 @@ $(window).load(function()
 	$(".fadebox-black").removeClass('fadebox-black').addClass('fadebox-hidden');
 	
 });
-$("#login_link").click(function(){
-		$("#modal").fadeIn();
-})

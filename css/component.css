@@ -192,16 +192,17 @@
 .sv1{
 	height:2px;
 }
-ul{
+ul.ulstyled {
 	list-style-type: none;
 	margin-left: -118px;
 	width: 702px;
 }
-ul li{
+.styled {
 	display: inline;
 	float: left;
 	width: 100px;
 }
+
 .bar {
 	line-height: 82px;
 }

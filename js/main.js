@@ -16,28 +16,28 @@ var $window=$(window);
        }
        else{
 		$window.on("mousewheel DOMMouseScroll", function(event){                
-                event.preventDefault();
                 if($("#eventContent").css("display")=="block"){
+                event.preventDefault();
                 	return;
                 }	          
-                var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-                var scrollTop = $window.scrollTop();
-                var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-                var ratio=(finalScroll/$window.height());
-					if(delta<0&&ratio%1>.6){
-			finalScroll=((ratio+1)>>0)*$window.height();
-		}
-		if(delta>0&&ratio%1<.6){
-			finalScroll=((ratio)>>0)*$window.height();
-		}
-                TweenMax.to($window, scrollTime, {
-                    scrollTo:{ y: finalScroll, autoKill:false },
-                        ease: Power1.easeOut,
-                        overwrite: 5							
-                    });
+     //            var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+     //            var scrollTop = $window.scrollTop();
+     //            var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+     //            var ratio=(finalScroll/$window.height());
+					// if(delta<0&&ratio%1>.6){
+					// 	finalScroll=((ratio+1)>>0)*$window.height();
+					// }
+					// if(delta>0&&ratio%1<.6){
+					// 	finalScroll=((ratio)>>0)*$window.height();
+					// }
+     //          		TweenMax.to($window, scrollTime, {
+     //                	scrollTo:{ y: finalScroll, autoKill:false },
+     //                    ease: Power1.easeOut,
+     //                    overwrite: 5							
+     //               		 });
                 
 	
-            });
+           		 });
 		var controller = new ScrollMagic();
 	// 	// init controller
 	}
@@ -161,37 +161,44 @@ $(function (){
 
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(tween_workshops) // add class toggle
-					.addTo(controller)
-	new ScrollScene({triggerElement: "#Workshops",offset:650})
-					.setTween(tween_workshops_reverse) // add class toggle
-					.addTo(controller);
+	// 				.addTo(controller)
+	// new ScrollScene({triggerElement: "#Workshops",offset:650})
+	// 				.setTween(tween_workshops_reverse) // add class toggle
+	// 				.addTo(controller);
 	new ScrollScene({triggerElement: "#Events"})
 					.setTween(tween_events) // add class toggle
 					.addTo(controller)	
-	new ScrollScene({triggerElement: "#Events",offset:650})
-					.setTween(tween_events_reverse) // add class toggle
-					.addTo(controller)	
+	// new ScrollScene({triggerElement: "#Events",offset:650})
+	// 				.setTween(tween_events_reverse) // add class toggle
+	// 				.addTo(controller)	
 	
-	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(tween_proshows) // add class toggle
+	new ScrollScene({triggerElement: "#Proshows", duration: 300})
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Proshows",offset:650})
-					.setTween(tween_proshows_reverse) // add class toggle
-					.addTo(controller)
+					 .on("enter", function(event) {
+	                console.log("Enter");
+	                tween_proshows.play();
+	              })
+	              .on("leave", function(event) {
+	                console.log("Leave");
+	                tween_proshows.reverse();
+	              })
+	// new ScrollScene({triggerElement: "#Proshows",offset:650})
+	// 				.setTween(tween_proshows_reverse) // add class toggle
+	// 				.addTo(controller)
 
 	new ScrollScene({triggerElement: "#sneharagam"})
 					.setTween(tween_sneharagam) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#sneharagam",offset:650})
-					.setTween(tween_sneharagam_reverse) // add class toggle
-					.addTo(controller)
+	// new ScrollScene({triggerElement: "#sneharagam",offset:650})
+	// 				.setTween(tween_sneharagam_reverse) // add class toggle
+	// 				.addTo(controller)
 
 	new ScrollScene({triggerElement: "#contacts"})
 					.setTween(tween_contacts) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#contacts",offset:650})
-					.setTween(tween_contacts_reverse) // add class toggle
-					.addTo(controller)
+	// new ScrollScene({triggerElement: "#contacts",offset:650})
+	// 				.setTween(tween_contacts_reverse) // add class toggle
+	// 				.addTo(controller)
 
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
@@ -205,9 +212,9 @@ $(function (){
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(tween_infos) // add class toggle
 					.addTo(controller)
-    new ScrollScene({triggerElement: "#Info",offset:650})
-					.setTween(tween_infos_reverse) // add class toggle
-					.addTo(controller)
+    // new ScrollScene({triggerElement: "#Info",offset:650})
+				// 	.setTween(tween_infos_reverse) // add class toggle
+				// 	.addTo(controller)
 					
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle

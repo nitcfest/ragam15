@@ -17,11 +17,21 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
-		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
         <link rel="stylesheet" type="text/css" href="css/style6.css" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Registration -->
+		<link rel="stylesheet" type="text/css" href="css/registration/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/registration/jquery.remodal.css">		
+		<link rel="stylesheet" type="text/css" href="css/registration/pure-nr-min.css">		
+		<link rel="stylesheet" type="text/css" href="css/registration/registration.css">
+
+
 	</head>
 	<body>
 		<div id="fadebox"></div>
@@ -33,14 +43,190 @@ $event_code=$_GET["events"];
 			<div id="grad5" class="background"></div>
 			<div id="grad6" class="background"></div>
 		</div>
+
+
 		<div id="rest">
-			<a href="http://www.ragam.org.in/2015/" style="position:fixed;z-index:400;top:10px;right:10px;"><div id="home-button" style="width:40px;height:40px;border-radius:20px;"><div id="asd" style="
-    margin-top: 37px;
-    position: absolute;
-    color: white;
-    font-size:14px;
-"> HOME</div></div></a>
-			<div id="mute-button" class="not_muted" style="position:fixed;z-index:400;left:10px;bottom:10px;width:40px;height:40px;border-radius:20px;"></div>
+
+
+			<div class="registration-bar">			
+				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success" style="display:none;">LOGIN</button>
+				<button id="registration-action-register" type="button" class="pure-button button-xsmall" style="display:none;">REGISTER</button>
+				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary" style="display:none;">VIEW PROFILE</button>
+				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button>
+				<span id="registration-current-status">&nbsp;</span>
+			</div>
+
+
+			<div class="remodal" data-remodal-id="show-registration-login" data-remodal-options="hashTracking: false">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+				    	<form action="" id="form-login" method="POST" role="form" class="pure-form">
+				    		<h3>Have an account? Login.</h3><br>
+				    		<a href="http://www.ragam.org.in/2015/cms/api/user/fb_login"><img src="img/fb_login.png"></a><br><br>
+				    		<input class="pure-input-1" type="email" name="email" placeholder="Your email address" required>
+				    		<br><br>
+				    		<input class="pure-input-1" type="password" name="password" placeholder="Your password" required>
+				    		<br><br>
+				    		<button type="submit" class="pure-button button-success">Log in</button>
+				    		<button type="button" id="registration-action-new-user" class="pure-button button-secondary">New User</button>
+
+				    		<span id="login-messages"></span>
+				    	</form>
+				    </div>
+				</div>
+			</div>
+			<div class="remodal" data-remodal-id="show-registration-register" data-remodal-options="hashTracking: false">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+				    	<h3>Create a new account.</h3>
+				    	<br>
+				    	<a href="http://www.ragam.org.in/2015/cms/api/user/fb_login"><img src="img/fb_login.png"></a><br><br>
+						<p>Note that if you have already logged in with Facebook, you cannot use the same email to register another account.</p>
+						<form action="" id="form-signup" method="POST" role="form" class="pure-form">
+							<input class="pure-input-1" type="text" name="name" placeholder="Full name">
+							<br><br>
+							<input class="pure-input-1" type="text" name="email" placeholder="Email address">
+							<br><br>
+							<input class="pure-input-1" type="password" name="password" placeholder="Password">
+							<br><br>
+							<input class="pure-input-1" type="password" name="password_confirmation" placeholder="Confirm password">
+							<br><br>
+							<input class="pure-input-1" type="text" name="phone" placeholder="Phone number">
+							<br><br>
+							<select name="college" id="college_select" style="width:100%;">
+								<option value="0">Loading...</option>
+							</select>
+							<br><br><br>
+							Don't see your college? <a href="#" id="action-show-add-college">Add it here</a>. 
+							<div id="div-add-college" style="display:none;">
+								<small>You'll be able to register only after your college is verified by the Ragam team.</small><br><br>
+								<input type="text" id="name_new_college" placeholder="Full college name" style="width:100%;">
+								<br><br>
+								<button type="button" id="action-add-college" class="pure-button">Add College</button>
+								<span id="add-college-messages"></span>
+							</div>
+
+							<br><br>
+
+							Do you need hospitality services during Ragam '15?
+							<label class="pure-radio">
+								<input type="radio" name="hospitality_type" value="0" checked="checked">
+								I do not require accomodation.
+							</label>
+							<label class="pure-radio">
+								<input type="radio" name="hospitality_type" value="1">
+								I would like accomodation.
+							</label>
+
+							<button type="submit" class="pure-button button-success">Register </button>
+							
+							<span id="signup-messages"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="remodal" data-remodal-id="show-registration-user" data-remodal-options="hashTracking: false">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+			    		<h3>Your Profile</h3>
+
+			    		<table class="pure-table table-unbordered">
+			    		    <tbody>
+			    		        <tr>
+			    		            <td>Name</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-name"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>Ragam ID</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-id"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>Email</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-email"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>Phone</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-phone"></td>
+			    		        </tr>
+			    		        <tr>
+			    		            <td>College</td>
+			    		            <td>:</td>
+			    		            <td id="registration-data-college"></td>
+			    		        </tr>
+			    		    </tbody>
+			    		</table>
+
+			    		<h3>Events Registered</h3>
+			    		<table class="pure-table">
+			    		    <thead>
+			    		        <tr>
+			    		            <th>Event Name</th>
+			    		            <th>Team Code</th>
+			    		            <th>Team Members</th>
+			    		            <th>Action <span id="registration-action-loading"></span></th>
+			    		        </tr>
+			    		    </thead>
+			    		    <tbody id="registration-table-events">
+			    		    </tbody>
+			    		</table>
+
+				    </div>
+				</div>
+			</div>
+			<div class="remodal" data-remodal-id="show-registration-event" data-remodal-options="hashTracking: false">
+				<div class="pure-g">
+				    <div class="pure-u-1">
+				    	<h3>Register for an event</h3>
+
+				    	<form action="" id="form-event-register" method="POST" role="form">		
+
+				    		<table class="pure-table pure-table-bordered">
+				    		    <tbody>
+				    		    	<tr>
+				    		    		<td>Event Name</td>
+				    		    		<td id="registration-data-event-name">..</td>
+				    		    	</tr>
+				    		    	<tr>
+				    		    		<td>Team Size (Min/Max)</td>
+				    		    		<td id="registration-data-team-size">..</td>
+				    		    	</tr>
+				    		    </tbody>
+				    		</table>
+				    		<input type="hidden" name="event_code" id="registration-event-code" value="">
+
+				    		<div id="registration-select-team">
+					    		<label><strong>Add your team members</strong></label>
+					    		<select name="team_members" id="team_members_select" style="width:100%;">
+					    		</select>
+					    		<br><br>
+					    		<ul>
+					    			<li>Click inside the text field below.</li>
+					    			<li>Type in your Team Member's name or Ragam ID (The user should already be registered on the website) to search for the user.</li>
+					    			<li>Click on the name to select as your team member. Similarly, add other team members. (You don't have to add yourself again)</li>
+					    		</ul>
+					    	</div>
+				    		<br><br>
+				    		<button type="submit" class="pure-button button-success">Confim Registration</button>
+
+				    		<span id="event-register-messages"></span>
+				    	</form>
+				    </div>
+				</div>
+			</div>
+
+
+			<a href="./" style="position:fixed;z-index:400;top:10px;right:10px;">
+				<div id="home-button" style="width:40px;height:40px;border-radius:20px;">
+				<div id="asd" style="margin-top: 37px;position: absolute;color: white;font-size:14px;"> HOME</div>
+				</div>
+			</a>
+			<div id="mute-button" class="not_muted" style="position:fixed;z-index:400;left:10px;bottom:10px;width:40px;height:40px;border-radius:20px;">
+			</div>
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
 				<div id="pagewrap">
@@ -63,6 +249,9 @@ $event_code=$_GET["events"];
 							    	<div id="event_text">
 							      		<span id="event_text_left">
 							      			<!-- <span id="cat_bg"></span> -->
+							      			<span id="register-button-space" style="display:none;"><button type="button" id="action-register-button" class="pure-button button-secondary">Register for Event</button></span>
+							      			<span id="register-message-space" style="display:none;">You have registered for this event.</span>
+
 							      			<span id="participation"></span>
 							      			<span id="Prize_Money"></span>
 							      			<span id="Contacts"></span>
@@ -161,7 +350,7 @@ $event_code=$_GET["events"];
 <!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">
-				<div style="height:100%;width:50%;float:left">
+				<div style="height:100%;width:50%;float:left;">
 					<div id="proshows-head-place" class="head-place2">
 						<div id="proshows-head" class="head">
 							Proshows
@@ -172,7 +361,7 @@ $event_code=$_GET["events"];
 					<div id="sprite1" class="sprite2">
 					</div>
 				</div>
-				<div style="height:100%;width:50%;float:left">
+				<div style="height:100%;width:50%;float:left;">
 					<div class="center-attraction">
 						Too anxious to know about all the major events?<br/>
 						Expect a few surprises in the coming days..<br/>
@@ -490,7 +679,7 @@ $event_code=$_GET["events"];
 			</div><!-- /pageload-overlay -->
 	</body>
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/tweenmax.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/scrollmagic.js"></script>
 	<script type="text/javascript" src="js/scrollmagic.debug.js"></script>
 	<script type="text/javascript" src="js/ScrollToPlugin.js"></script>
@@ -501,9 +690,12 @@ $event_code=$_GET["events"];
 	<script type="text/javascript" src="js/svgLoader.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
-	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	
+	<!-- Registration -->
+	<script src="js/registration/select2.min.js"></script>
+	<script src="js/registration/jquery.remodal.js"></script>
+	<script src="js/registration/registration-common.js"></script>
+
 	
 	
 </html>
