@@ -21,7 +21,6 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
         <link rel="stylesheet" type="text/css" href="css/style6.css" />
-
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
@@ -44,23 +43,9 @@ $event_code=$_GET["events"];
 			<div id="mute-button" class="not_muted" style="position:fixed;z-index:400;left:10px;bottom:10px;width:40px;height:40px;border-radius:20px;"></div>
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
-				<div style="height:98%;width:28%;float:left;">
-					<div id="events-head-place" class="head-place3">
-						<div id="events-head" class="head">
-							Competitions
-						</div>
-					</div>
-					<div id="events-words-place" class="words-place3">
-						Rekindle the hero within you. 
-						</br>Fight in the battle of your life. 
-						</br>Emerge triumphant, and the trophy shall be waiting for you.
-					</div>
-					<div id="events-sprite" class="sprite">
-						<img src="img/events.jpg" style="width: 200%;">
-					</div>
-				</div>
 				<div id="pagewrap">
-					<div id="event_list" style="height:100%;width:70%;float:left">
+					<div class="heading">Events</div>
+					<div id="event_list" style="height:100%;width:95%;float:left">
 						<ul id="elist"></ul>
 					</div>
 					<div id="eventContent" class="container" id="page-2" style="position:fixed;z-index:500;">
@@ -99,7 +84,7 @@ $event_code=$_GET["events"];
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">
-				<div id="workshop_heading">Workshops</div>
+				<div class="heading">Workshops</div>
 					<div id="wlist">
 						<section class="main">
 							<ul class="ch-gridw">

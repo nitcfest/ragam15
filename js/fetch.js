@@ -12,19 +12,22 @@ $(function()
 			{
 				var events=data;
 				var competitions=events[0];
-				var html="";
+				var html='<ul class="ech-grid">';
 				for(i=0;i<competitions.sub_categories.length;i++){
-					html+="<li>";
 					sub_cat=competitions.sub_categories[i];
-					html+=("<h4>"+sub_cat['name']+"</h4>");
-					html+="<ul>";
+					html+=('<li><div class="ech-item event-name" id="PTY"><div class="ech-info-wrap"><div class="ech-info"><div class="ech-info-front ech-img-1"></div><div class="ech-info-back">');
+					html+="<div style='display:table;width: 100%;height: 100%;'><div style='display:table-cell;vertical-align:middle;'><ul>";
+
+								
+												
 					sub_cat_events=sub_cat["events"];
 					for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
-						html+=("<li>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event-name pageload-link'>"+sub_cat_events[k]["name"]+"</a></li>");
+						html+=("<li style='height:auto !important;width:auto !important;margin:0;display:block;' class='event_name_li'>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event-name pageload-link'>"+sub_cat_events[k]["name"]+"</a></li>");
 					}
 					html+="</ul>";
-					html+="</li>";
+					html+="</div></div></div></div></div></li>";
 				}	
+				html+="</div></ul>";
 				$("#elist").html(html);
 			}				  	
 		},

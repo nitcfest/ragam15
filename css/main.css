@@ -909,7 +909,7 @@ cursor: pointer;}
 .not_muted{
   background-position: 0% 0% !important;
 }
-#workshop_heading{
+.heading{
   font-size: 2.5em;
   color:white;
   height:10%;
