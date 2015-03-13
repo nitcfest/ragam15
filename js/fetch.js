@@ -1,7 +1,7 @@
 $(function() 
 {
 	var load=0;
-	var base_url = 'http://ragam.org.in/2015/cms/api/';
+	var base_url = 'http://www.ragam.org.in/2015/cms/api/';
 	jQuery.ajax({
 		url: base_url+'events',
 		type: 'GET',
@@ -33,20 +33,21 @@ $(function()
 		  	$('.categories').html('Error!');
 		}
 	});
-				$("#fadebox").fadeOut(1500);
+	
+	$("#fadebox").fadeOut(1500);
 
-	$('#elist').on('click', '.event-name', function(event) {
-		// event.preventDefault();
+
+	var fetch_event = function(event_code){
 		jQuery.ajax(
 		{
-			url: base_url+'event/' + this.id,
+			url: base_url+'event/' + event_code,
 			type: 'GET',
 			dataType: 'jsonp',
 		success: function(data, textStatus, xhr) 
 		{
 		  	if(data.response == 'success')
 		  	{
-		  		console.log(data.event_code);
+		  		// console.log(data.event_code);
 		  		//Event Title
 		  		$("#event_title").html(data.name);
 		  		//Prize Money
@@ -80,7 +81,7 @@ $(function()
 				$('#registration-event-code').val(data.event_code);
 				$('#event-register-messages').html('');
 
-				console.log(data);
+				// console.log(data.registration);
 
 				if(data.registration.status == 'registered'){
 					$('#register-button-space').hide();
@@ -133,6 +134,11 @@ $(function()
 			$('#elist').html('Error!');
 		}
 		});
+
+	}
+	$('#elist').on('click', '.event-name', function(event) {
+		// event.preventDefault();
+		fetch_event(this.id);
 	});
 	$('#wlist').on('click', '.event-name', function(event) {
 			// event.preventDefault();
