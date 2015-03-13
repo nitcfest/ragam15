@@ -53,17 +53,43 @@ $(function()
 		  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
 		  		//Participation
 		  		$("#participation").css("display","block");
-		  		if(data.team_min>data.team_max)
+		  		if(data.team_min>data.team_max){
 		  			$("#participation").css("display","none");
+		  			$('#registration-select-team').hide();
+		  		}
 		  		else if(data.team_min==data.team_max)
 		  		{	
-		  			if(data.team_min==1)
+		  			if(data.team_min==1){
 		  				$("#participation").html('Solo Event');
-		  			else
+		  				$('#registration-select-team').hide();
+		  			}
+		  			else{
 		  				$("#participation").html('Teams of '+data.team_min);
+		  				$('#registration-select-team').show();
+		  			}
 		  		}
-		  		else
+		  		else{
 		  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
+		  			$('#registration-select-team').show();
+		  		}
+
+
+		  		//For REG
+		  		$('#registration-data-event-name').html(data.name);
+				$('#registration-data-team-size').html(data.team_min+'/'+data.team_max);
+				$('#registration-event-code').val(data.event_code);
+				$('#event-register-messages').html('');
+
+				console.log(data);
+
+				if(data.registration.status == 'registered'){
+					$('#register-button-space').hide();
+					$('#register-message-space').show();
+				}else{
+					$('#register-button-space').show();
+					$('#register-message-space').hide();
+				}
+
 		  		//Contacts
 		  		var i=0;
 		  		var cont=data.contacts
