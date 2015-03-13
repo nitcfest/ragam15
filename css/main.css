@@ -393,6 +393,18 @@ body{
   height:30%;
   width:80%;
  }
+  .words-place4
+ {
+  position:absolute;
+  left:21%;
+  top:20%;
+  font-family:"NexaL";
+  color:white;
+  margin: 10% auto;
+  height:30%;
+  width:60%;
+  font-size:1.5em;
+ }
 .head
  {
   position:absolute;
