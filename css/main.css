@@ -730,6 +730,14 @@ body{
   text-align: center;
   text-transform: uppercase;
  }
+
+ .info-tab > ol {
+  list-style-type: decimal;
+  margin-left: 40px;
+  padding-right: 20px;
+}
+
+
 .cont-tabs
  {
   position:absolute;
