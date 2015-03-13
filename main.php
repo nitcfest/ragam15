@@ -293,7 +293,7 @@ $event_code=$_GET["events"];
 						<section class="main">
 							<ul class="ch-gridw">
 								<li>
-									<div class="ch-itemw ch-img-1w event-name" id="PTY">				
+									<div class="ch-itemw event-name" id="PTY">				
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-1w"></div>
@@ -306,7 +306,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-2w event-name" id="SDW">
+									<div class="ch-itemw event-name" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
@@ -319,7 +319,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-3w event-name" id="DJW">
+									<div class="ch-itemw event-name" id="DJW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-3w"></div>
@@ -332,7 +332,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-4w event-name" id="PTY">
+									<div class="ch-itemw event-name" id="PTY">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-4w"></div>
@@ -345,7 +345,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-5w event-name" id="PTY">
+									<div class="ch-itemw event-name" id="PTY">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-5w"></div>

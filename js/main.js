@@ -117,11 +117,13 @@ $(function (){
                                 ]);  
  var tween_sneharagam = new TimelineMax ()
                                  .add([
-                                    TweenMax.fromTo($("#sneha_coming_soon"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#sneha-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
+                                    TweenMax.fromTo($("#sneha-words-place"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
                                 ]);
  var tween_sneharagam_reverse = new TimelineMax ()
                                  .add([
-                                    TweenMax.fromTo($("#sneha_coming_soon"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($("#sneha-words-place"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
+                                    TweenMax.fromTo($("#sneha-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
                                 ]); 
 
  var tween_contacts = new TimelineMax ()
@@ -193,9 +195,9 @@ $(function (){
 	new ScrollScene({triggerElement: "#sneharagam"})
 					.setTween(tween_sneharagam) // add class toggle
 					.addTo(controller)
-	// new ScrollScene({triggerElement: "#sneharagam",offset:650})
-	// 				.setTween(tween_sneharagam_reverse) // add class toggle
-	// 				.addTo(controller)
+	new ScrollScene({triggerElement: "#sneharagam",offset:650})
+					.setTween(tween_sneharagam_reverse) // add class toggle
+					.addTo(controller)
 
 	new ScrollScene({triggerElement: "#contacts"})
 					.setTween(tween_contacts) // add class toggle
