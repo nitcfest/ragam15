@@ -47,14 +47,27 @@ $(function()
 		{
 		  	if(data.response == 'success')
 		  	{
-		  		$('#registration-team-size-container').show();
 
-		  		//For REG
+		  		//Set up registration essentials.
+		  		$('#registration-team-size-container').show();
 		  		$('#registration-data-event-name').html(data.name);
 				$('#registration-data-team-size').html(data.team_min+'/'+data.team_max);
 				$('#registration-event-code').val(data.event_code);
 				$('#event-register-messages').html('');
 
+				if(data.registration.status == 'registered'){
+					$('#register-message-space').html('You have registered for this event.');
+
+					$('#register-button-space').hide();
+					$('#register-message-space').show();
+				}else if(data.registration.status == 'not_logged_in'){
+					$('#register-message-space').html('Please login to register.');
+					$('#register-button-space').hide();
+					$('#register-message-space').show();
+				}else{
+					$('#register-button-space').show();
+					$('#register-message-space').hide();
+				}
 
 
 		  		// console.log(data.event_code);
@@ -65,15 +78,30 @@ $(function()
 		  		//Participation
 		  		$("#participation").css("display","block");
 		  		
+		  		console.log(data);
+
 		  		if(data.team_max == 99){
 		  			//No limit for maximum
 		  			$("#participation").css("display","none");
 		  			$('#registration-team-size-container').hide();
 		  			$('#registration-select-team').show();
+		  		}else if(data.team_min == 0 && data.team_max ==0){
+		  			//Disable registration for these events.
+		  			//These are supposed to be informational events OR on spot registration.
+		  			$('#register-button-space').hide();
+		  			$('#register-message-space').hide();
+		  			$("#participation").hide();
+
 		  		}else if(data.team_min>data.team_max){
 		  			//Some mismatch in event details.
-	  				$("#participation").css("display","none");
+		  			//Disable registration too.
+
+		  			$('#register-button-space').hide();
+		  			$('#register-message-space').hide();
+		  			$("#participation").hide();
+
 	  				$('#registration-select-team').hide();
+
 		  		}else if(data.team_min==data.team_max){	
 		  			if(data.team_min==1){
 		  				$("#participation").html('Solo Event');
@@ -89,22 +117,6 @@ $(function()
 
 
 		  		
-				// console.log(data.registration);
-
-				if(data.registration.status == 'registered'){
-					$('#register-message-space').html('You have registered for this event.');
-
-					$('#register-button-space').hide();
-					$('#register-message-space').show();
-				}else if(data.registration.status == 'not_logged_in'){
-					$('#register-message-space').html('Please login to register.');
-					
-					$('#register-button-space').hide();
-					$('#register-message-space').show();
-				}else{
-					$('#register-button-space').show();
-					$('#register-message-space').hide();
-				}
 
 		  		//Contacts
 		  		var i=0;
