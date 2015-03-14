@@ -12,12 +12,14 @@
 .registration-bar{
 	background: #000;
 	opacity: 0.7;
-	width: 100%;
 	padding: 3px 10px;
 	height: 33px;
 	color: #FFF;
 	z-index: 1000;
 	position: fixed;
+	width: 20%;
+	border-radius: 16px;
+	right: 0px;
 }
 
 .modal-registration{
