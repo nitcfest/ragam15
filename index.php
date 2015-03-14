@@ -24,6 +24,7 @@
 
 	</head>
 	<body>
+		<div id="preloader"></div>
 		<div class="fadebox-black"></div>
 		<div class="spmenu-push" id="mega">
 			<!--<div id="topdraw" class="topdraw-hover">
@@ -259,38 +260,6 @@
 				}
 				return "";
 			}
-
-			music1 = new Audio('music/music1.mp3');
-			music1.volume=.15;
-			// console.log(document.cookie);
-			var music_on_ready=function(){
-				music1.removeEventListener("canplaythrough", music_on_ready, false);
-				if(getCookie("music")&&!isNaN(getCookie("music"))){
-					music1.currentTime=getCookie("music");
-				}
-				music1.play();
-				$("#music-icon").click(function(){
-					if($("#music-icon").hasClass("playing")){
-						$("#music-icon").removeClass("playing");
-						music1.pause();
-						setCookie("muted", "true", 1)
-					}
-					else{
-						setCookie("muted", "false", 1)
-						$("#music-icon").addClass("playing");
-						music1.play();
-					}
-				})
-				music1.play();
-				if(getCookie("muted")=="true")
-					$("#music-icon").click();
-			}
-			music1.addEventListener('canplaythrough', music_on_ready, false);
-
-			window.onbeforeunload=function(){
-				setCookie("music",music1.currentTime,1);
-			}
-
 		</script>
 		<script src="js/index.js"></script>
 		

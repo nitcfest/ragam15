@@ -37,6 +37,7 @@ $event_code=$_GET["events"];
 
 	</head>
 	<body>
+		<div id="preloader"></div>
 		<div id="fadebox"></div>
 		<div id="backgrounds">
 			<div id="grad1" class="background"></div>
