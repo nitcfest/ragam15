@@ -23,7 +23,7 @@ $(function()
 												
 					sub_cat_events=sub_cat["events"];
 					for(k=0;sub_cat_events&&k<sub_cat_events.length;k++){
-						html+=("<li style='height:auto !important;width:auto !important;margin:0;display:block;' class='event_name_li'>"+"<a id='"+sub_cat_events[k]["event_code"]+"' class='event-name pageload-link'>"+sub_cat_events[k]["name"]+"</a></li>");
+						html+=("<li style='height:auto !important;width:auto !important;margin:0;display:block;' class='event_name_li'>"+"<a id='"+sub_cat_events[k]["event_code"]+"' title='"+sub_cat_events[k]["short_description"]+"' class='event-name pageload-link'>"+sub_cat_events[k]["name"]+"</a></li>");
 					}
 					html+="</ul>";
 					html+="</div></div></div></div></div></li>";
