@@ -206,20 +206,37 @@
 	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
-	background: #000;
+	background: #000,url(../img/footer_lodyas.png);
 	opacity: 0;
 }
 
 .ech-img-1 { 
-	background-image: url(../img/archery.jpg);
+	background-image: url("../img/events/general events.jpg");
 }
 
 .ech-img-2 { 
-	background-image: url(../img/20.jpg);
+	background-image: url(../img/events/literary.jpg);
 }
 
 .ech-img-3 { 
-	background-image: url(../img/21.jpg);
+	background-image: url(../img/events/dance.jpg);
+}
+.ech-img-4 { 
+	background-image: url(../img/events/dramatics.jpg);
+}
+
+.ech-img-5 { 
+	background-image: url(../img/events/music.jpg);
+}
+
+.ech-img-6 { 
+	background-image: url("../img/events/fine arts.jpg");
+}
+.ech-img-7 { 
+	background-image: url(../img/events/gaming.jpg);
+}
+.ech-img-8 { 
+	background-image: url(../img/events/quizzing.jpg);
 }
 
 .ech-info h3 {

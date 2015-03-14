@@ -13,11 +13,12 @@ $(function()
 				var events=data;
 				var competitions=events[0];
 				var html='<ul class="ech-grid">';
+				var pic_num=1;
 				for(i=0;i<competitions.sub_categories.length;i++){
 					sub_cat=competitions.sub_categories[i];
-					html+=('<li><div class="ech-item event-name" id="PTY"><div class="ech-info-wrap"><div class="ech-info"><div class="ech-info-front ech-img-1"></div><div class="ech-info-back">');
+					html+=('<li><div class="ech-item event-name" id="PTY"><div class="ech-info-wrap"><div class="ech-info"><div class="ech-info-front ech-img-'+pic_num+'"></div><div class="ech-info-back">');
 					html+="<div style='display:table;width: 100%;height: 100%;'><div style='display:table-cell;vertical-align:middle;'><ul>";
-
+					pic_num++;
 								
 												
 					sub_cat_events=sub_cat["events"];

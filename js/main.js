@@ -242,10 +242,10 @@ $(function (){
 					.setTween(info_text) // add class toggle
 					.addTo(controller)
 
-	$("#ctalk-overlay").hide();
+	$(".ctalk-overlay").hide();
 	$(".ch-info").click(function()
 	{
-		$("#ctalk-overlay").fadeIn();
+		alert($('this').data("modal"));
 
 	});
 	$(".info-tab").hide();

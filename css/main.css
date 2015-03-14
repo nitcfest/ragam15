@@ -425,6 +425,8 @@ body{
   height:50px;
   position: absolute;
   cursor:pointer;
+  top:60px;
+  right: 24%;
  }
 #closein
  {
@@ -636,7 +638,7 @@ body{
     background-color:red;
     left: 0%;
  }
-#ctalk-overlay
+.ctalk-overlay
  {
   z-index:600;
   position: fixed;

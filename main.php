@@ -362,11 +362,11 @@ $event_code=$_GET["events"];
 					</div>
 				</div>
 				<div style="height:100%;width:50%;float:left;">
-					<div class="center-attraction">
+					<!-- <div class="center-attraction">
 						Too anxious to know about all the major events?<br/>
 						Expect a few surprises in the coming days..<br/>
 						Stay tuned for updates.
-					</div>
+					</div> -->
 					<div id="proshow_coming_soon" class="comingsoon2">COMING SOON</div>
 				</div>
 			</div>
@@ -392,7 +392,7 @@ $event_code=$_GET["events"];
 <!--**********************************************SNEHARAGAM ENDS*******************-->	
 <!--**********************************************4INFO START*******************-->		
 			<div id="CelebTalks" class="sec">
-				<div id="ctalk-overlay">
+				<div class="ctalk-overlay" id="modal1">
 					<div id="ctalk-box">
 					<div id="lbox"></div>
 					<div id="rbox">
@@ -403,39 +403,99 @@ $event_code=$_GET["events"];
 						<span class="close rounded black"></span>
 						<div id="ctalk-container">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						
-						
 						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
 						</p>
 						</div>
-						
 					</div>
 					</div>
 				</div>
-				<div style="height:100%;width:30%;float:left">
-					<div id="Highlights-head-place" class="head-place">
-						<div id="Highlights-head" class="head">
-							Celebrity Talks
+				<div class="ctalk-overlay" id="modal2">
+					<div id="ctalk-box">
+					<div id="lbox"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Jagadish2</h3>
+						<h5>Actor | Screen writer</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						</p>
 						</div>
 					</div>
-					<div id="Highlights-words-place" class="words-place">
-						
 					</div>
-					<div id="Highlights-sprite" class="sprite"></div>
 				</div>
-				<div style="height:100%;width:70%;float:left;margin-top:8%;">
+				<div class="ctalk-overlay" id="modal3">
+					<div id="ctalk-box">
+					<div id="lbox"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Jagadish3</h3>
+						<h5>Actor | Screen writer</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="ctalk-overlay" id="modal4">
+					<div id="ctalk-box">
+					<div id="lbox"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Jagadish4</h3>
+						<h5>Actor | Screen writer</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			
 				
 					<ul class="ch-grid">
 						<li>
-							<div class="ch-item ch-img-2">
+							<div class="ch-item ch-img-1">
 								<div class="ch-info md-trigger" data-modal="modal-11">
 									<h3>Jagadish</h3>
 									<p>Actor | Screenwriter</p>
 								</div>
 							</div>
 						</li>
+						<li>
+							<div class="ch-item ch-img-2">
+								<div class="ch-info md-trigger" data-modal="modal-11">
+									<h3>Govind P Menon</h3>
+									<p>Violin Performance</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-3">
+								<div class="ch-info md-trigger" data-modal="modal-11">
+									<h3> Mr Banana Show</h3>
+									<p>Interactive comedy with Circus Arts</p>
+								</div>
+							</div>
+						</li>
+						<!-- <li>
+							<div class="ch-item ch-img-4">
+								<div class="ch-info md-trigger" data-modal="modal-11">
+									<h3>Job Kurian</h3>
+									<p>Singer</p>
+								</div>
+							</div>
+						</li> -->
 					</ul>
-				</div>
 			</div>
 			<div id="Info" class="sec">
 				<div id="info_scroll" style="height:100%;width:70%;float:left;position:absolute">
