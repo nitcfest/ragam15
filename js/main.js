@@ -16,28 +16,28 @@ var $window=$(window);
        }
        else{
 		$window.on("mousewheel DOMMouseScroll", function(event){                
-                event.preventDefault();
                 if($("#eventContent").css("display")=="block"){
+                event.preventDefault();
                 	return;
                 }	          
-                var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
-                var scrollTop = $window.scrollTop();
-                var finalScroll = scrollTop - parseInt(delta*scrollDistance);
-                var ratio=(finalScroll/$window.height());
-					if(delta<0&&ratio%1>.6){
-			finalScroll=((ratio+1)>>0)*$window.height();
-		}
-		if(delta>0&&ratio%1<.6){
-			finalScroll=((ratio)>>0)*$window.height();
-		}
-                TweenMax.to($window, scrollTime, {
-                    scrollTo:{ y: finalScroll, autoKill:false },
-                        ease: Power1.easeOut,
-                        overwrite: 5							
-                    });
+     //            var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+     //            var scrollTop = $window.scrollTop();
+     //            var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+     //            var ratio=(finalScroll/$window.height());
+					// if(delta<0&&ratio%1>.6){
+					// 	finalScroll=((ratio+1)>>0)*$window.height();
+					// }
+					// if(delta>0&&ratio%1<.6){
+					// 	finalScroll=((ratio)>>0)*$window.height();
+					// }
+     //          		TweenMax.to($window, scrollTime, {
+     //                	scrollTo:{ y: finalScroll, autoKill:false },
+     //                    ease: Power1.easeOut,
+     //                    overwrite: 5							
+     //               		 });
                 
 	
-            });
+           		 });
 		var controller = new ScrollMagic();
 	// 	// init controller
 	}
@@ -51,7 +51,7 @@ $(function (){
 	var bat_width=400,bat_height=100/39,bat_num_pics=39,bat_repeat_num=4,bat_speed=5;
 	var steppedEase = new SteppedEase(bat_num_pics-1);
 	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
-	$("#sprite1").css({"width":"60%","height": "60%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
+	$("#sprite1").css({"width":"40%","height": "37%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
 	var start_repeat_batman=function(){
 		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
 	}
@@ -90,10 +90,7 @@ $(function (){
                                 ]);
  var tween_proshows = new TimelineMax ()
                                  .add([
-                                    TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1})
+                                   
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
                                 ]);
  var tween_proshows_reverse = new TimelineMax ()
@@ -161,37 +158,51 @@ $(function (){
 
 	new ScrollScene({triggerElement: "#Workshops"})
 					.setTween(tween_workshops) // add class toggle
-					.addTo(controller)
-	new ScrollScene({triggerElement: "#Workshops",offset:650})
-					.setTween(tween_workshops_reverse) // add class toggle
-					.addTo(controller);
+	// 				.addTo(controller)
+	// new ScrollScene({triggerElement: "#Workshops",offset:650})
+	// 				.setTween(tween_workshops_reverse) // add class toggle
+	// 				.addTo(controller);
 	new ScrollScene({triggerElement: "#Events"})
 					.setTween(tween_events) // add class toggle
 					.addTo(controller)	
-	new ScrollScene({triggerElement: "#Events",offset:650})
-					.setTween(tween_events_reverse) // add class toggle
-					.addTo(controller)	
+	// new ScrollScene({triggerElement: "#Events",offset:650})
+	// 				.setTween(tween_events_reverse) // add class toggle
+	// 				.addTo(controller)	
 	
-	new ScrollScene({triggerElement: "#Proshows"})
-					.setTween(tween_proshows) // add class toggle
+	new ScrollScene({triggerElement: "#Proshows", duration: 600})
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#Proshows",offset:650})
-					.setTween(tween_proshows_reverse) // add class toggle
-					.addTo(controller)
+					 .on("enter", function(event) {
+	                console.log("Enter");
+	                 TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
+	              })
+	              .on("leave", function(event) {
+	                console.log("Leave");
+	                 TweenMax.fromTo($("#proshows-head"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+                                    TweenMax.fromTo($("#sprite1"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5});
+									TweenMax.fromTo($("#proshow_coming_soon"), 1, {opacity:1,scale:1},{opacity:0,scale:.5});
+	              })
+	// new ScrollScene({triggerElement: "#Proshows",offset:650})
+	// 				.setTween(tween_proshows_reverse) // add class toggle
+	// 				.addTo(controller)
 
 	new ScrollScene({triggerElement: "#sneharagam"})
 					.setTween(tween_sneharagam) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#sneharagam",offset:650})
-					.setTween(tween_sneharagam_reverse) // add class toggle
-					.addTo(controller)
+	// new ScrollScene({triggerElement: "#sneharagam",offset:650})
+	// 				.setTween(tween_sneharagam_reverse) // add class toggle
+	// 				.addTo(controller)
 
 	new ScrollScene({triggerElement: "#contacts"})
 					.setTween(tween_contacts) // add class toggle
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#contacts",offset:650})
-					.setTween(tween_contacts_reverse) // add class toggle
-					.addTo(controller)
+	// new ScrollScene({triggerElement: "#contacts",offset:650})
+	// 				.setTween(tween_contacts_reverse) // add class toggle
+	// 				.addTo(controller)
 
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setTween(highlight_heading) // add class toggle
@@ -205,9 +216,9 @@ $(function (){
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(tween_infos) // add class toggle
 					.addTo(controller)
-    new ScrollScene({triggerElement: "#Info",offset:650})
-					.setTween(tween_infos_reverse) // add class toggle
-					.addTo(controller)
+    // new ScrollScene({triggerElement: "#Info",offset:650})
+				// 	.setTween(tween_infos_reverse) // add class toggle
+				// 	.addTo(controller)
 					
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle

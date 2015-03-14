@@ -1,7 +1,7 @@
 $(function() 
 {
 	var load=0;
-	var base_url = 'http://ragam.org.in/2015/cms/api/';
+	var base_url = 'http://www.ragam.org.in/2015/cms/api/';
 	jQuery.ajax({
 		url: base_url+'events',
 		type: 'GET',
@@ -33,37 +33,79 @@ $(function()
 		  	$('.categories').html('Error!');
 		}
 	});
-				$("#fadebox").fadeOut(1500);
+	
+	$("#fadebox").fadeOut(1500);
 
-	$('#elist').on('click', '.event-name', function(event) {
-		// event.preventDefault();
+
+	var fetch_event = function(event_code){
 		jQuery.ajax(
 		{
-			url: base_url+'event/' + this.id,
+			url: base_url+'event/' + event_code,
 			type: 'GET',
 			dataType: 'jsonp',
 		success: function(data, textStatus, xhr) 
 		{
 		  	if(data.response == 'success')
 		  	{
-		  		console.log(data.event_code);
+		  		$('#registration-team-size-container').show();
+
+		  		//For REG
+		  		$('#registration-data-event-name').html(data.name);
+				$('#registration-data-team-size').html(data.team_min+'/'+data.team_max);
+				$('#registration-event-code').val(data.event_code);
+				$('#event-register-messages').html('');
+
+
+
+		  		// console.log(data.event_code);
 		  		//Event Title
 		  		$("#event_title").html(data.name);
 		  		//Prize Money
 		  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
 		  		//Participation
 		  		$("#participation").css("display","block");
-		  		if(data.team_min>data.team_max)
+		  		
+		  		if(data.team_max == 99){
+		  			//No limit for maximum
 		  			$("#participation").css("display","none");
-		  		else if(data.team_min==data.team_max)
-		  		{	
-		  			if(data.team_min==1)
+		  			$('#registration-team-size-container').hide();
+		  			$('#registration-select-team').show();
+		  		}else if(data.team_min>data.team_max){
+		  			//Some mismatch in event details.
+	  				$("#participation").css("display","none");
+	  				$('#registration-select-team').hide();
+		  		}else if(data.team_min==data.team_max){	
+		  			if(data.team_min==1){
 		  				$("#participation").html('Solo Event');
-		  			else
+		  				$('#registration-select-team').hide();
+		  			}else{
 		  				$("#participation").html('Teams of '+data.team_min);
-		  		}
-		  		else
+		  				$('#registration-select-team').show();
+		  			}
+		  		}else{
 		  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
+		  			$('#registration-select-team').show();
+		  		}
+
+
+		  		
+				// console.log(data.registration);
+
+				if(data.registration.status == 'registered'){
+					$('#register-message-space').html('You have registered for this event.');
+
+					$('#register-button-space').hide();
+					$('#register-message-space').show();
+				}else if(data.registration.status == 'not_logged_in'){
+					$('#register-message-space').html('Please login to register.');
+					
+					$('#register-button-space').hide();
+					$('#register-message-space').show();
+				}else{
+					$('#register-button-space').show();
+					$('#register-message-space').hide();
+				}
+
 		  		//Contacts
 		  		var i=0;
 		  		var cont=data.contacts
@@ -107,7 +149,85 @@ $(function()
 			$('#elist').html('Error!');
 		}
 		});
+
+	}
+	$('#elist').on('click', '.event-name', function(event) {
+		// event.preventDefault();
+		fetch_event(this.id);
 	});
+	$('#wlist').on('click', '.event-name', function(event) {
+			// event.preventDefault();
+			jQuery.ajax(
+			{
+				url: base_url+'event/' + this.id,
+				type: 'GET',
+				dataType: 'jsonp',
+			success: function(data, textStatus, xhr) 
+			{
+			  	if(data.response == 'success')
+			  	{
+			  		// console.log(data.event_code);
+			  		//Event Title
+			  		$("#event_title").html(data.name);
+			  		//Prize Money
+			  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
+			  		//Participation
+			  		$("#participation").css("display","block");
+			  		if(data.team_min>data.team_max)
+			  			$("#participation").css("display","none");
+			  		else if(data.team_min==data.team_max)
+			  		{	
+			  			if(data.team_min==1)
+			  				$("#participation").html('Solo Event');
+			  			else
+			  				$("#participation").html('Teams of '+data.team_min);
+			  		}
+			  		else
+			  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
+			  		//Contacts
+			  		var i=0;
+			  		var cont=data.contacts
+			  		var entry="<h2>Contacts</h2><br>";
+			  		while(i<cont.length)
+			  		{
+						entry=entry+cont[i].name+"<br>";
+						entry=entry+cont[i].phone+"<br>";
+						if(cont[i].email)
+							entry=entry+cont[i].email+"<br>";
+						entry=entry+"<br>";
+						i++;
+			  		}
+			  		$("#Contacts").html(entry);
+			  		//Sections 
+			  		i=0;
+			  		sect=data.sections
+			  		entry="";
+			  		while(i<sect.length)
+			  		{
+						entry=entry+"<span id=\""+sect[i].title+"\" style=\"background-color: rgb(33, 155, 220);\">"
+						entry=entry+"<h2>"+sect[i].title+"<\/h2><br>";
+						entry=entry+sect[i].text+"<\/span>";
+						i++;
+			  		}
+			  		$("#event_text_right").html(entry);
+
+
+			  	}
+			  	else{
+			  		$('.event').html('Error - No event!');
+			  	}		  	
+			  	loaderEvents();
+				$('#eventContent').delay(1000).show(1000); /////Event loader
+				$( "#close" ).click(function() {
+	  				$( "#eventContent" ).fadeOut();
+	  				$("body").removeClass("noscroll");
+				});
+			},
+			error: function(xhr, textStatus, errorThrown) {
+				$('#elist').html('Error!');
+			}
+			});
+		});
 
 /*******Workshops List*********
 jQuery.ajax({

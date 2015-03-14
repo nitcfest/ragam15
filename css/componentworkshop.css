@@ -40,7 +40,7 @@
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: rgba(0,0,0,1);
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -51,8 +51,8 @@
 }
 
 .og-expander-inner {
-	padding: 50px 30px;
-	height: 70%;
+	padding: 40px 20px;
+	height: 80%;
 }
 
 .og-close {
@@ -95,6 +95,7 @@
 	height: 100%;
 	overflow: hidden;
 	position: relative;
+	color: white
 }
 
 .og-details {
@@ -107,15 +108,13 @@
 
 .og-fullimg img {
 	display: inline-block;
-	max-height: 100%;
+	max-height: 95%;
 	max-width: 100%;
 }
 
 .og-details h3 {
 	font-weight: 300;
-	font-size: 52px;
-	padding: 40px 0 10px;
-	margin-bottom: 10px;
+	font-size: 40px;
 }
 
 .og-details p {
@@ -128,13 +127,13 @@
 .og-details a {
 	font-weight: 700;
 	font-size: 16px;
-	color: #333;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 10px 20px;
 	border: 3px solid #333;
 	display: inline-block;
-	margin: 30px 0 0;
+	margin: 10px 0 0;
 	outline: none;
 }
 

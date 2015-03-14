@@ -344,7 +344,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">Visit website</a>' );
+			this.$href = $( '<a href="#" target="_blank">Visit website</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -455,6 +455,7 @@ var Grid = (function() {
 		calcHeight : function() {
 
 			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded - 100,
+
 				itemHeight = winsize.height;
 
 			if( heightPreview < settings.minHeight ) {

@@ -66,68 +66,70 @@ body{
   overflow:hidden;
  }
 #grad1{
-  background: rgba(130,174,63,1);
-  background: -moz-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(130,174,63,1)), color-stop(100%, rgba(56,154,71,1)));
-  background: -webkit-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
-  background: -o-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
-  background: -ms-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
-  background: linear-gradient(to right, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),rgba(130,174,63,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(130,174,63,1)), color-stop(100%, rgba(56,154,71,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );*/
 }
 #grad2{
-  background: rgba(104,185,248,1);
-  background: -moz-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(104,185,248,1)), color-stop(100%, rgba(44,132,231,1)));
-  background: -webkit-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
-  background: -o-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
-  background: -ms-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
-  background: linear-gradient(to right, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),rgba(104,185,248,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(104,185,248,1)), color-stop(100%, rgba(44,132,231,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(104,185,248,1) 0%, rgba(44,132,231,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54c9ff', endColorstr='#436ce6', GradientType=1 );*/
 }
 #grad3{
-  background: rgba(248,174,104,1);
-  background: -moz-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,174,104,1)), color-stop(100%, rgba(246,93,112,1)));
-  background: -webkit-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: -o-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: -ms-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: linear-gradient(to right, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),rgba(248,174,104,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(248,174,104,1)), color-stop(100%, rgba(246,93,112,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff54eb', endColorstr='#e64585', GradientType=1 );*/
 }
 #grad4{
-  background: rgba(148,167,197,1);
-  background: -moz-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(148,167,197,1)), color-stop(100%, rgba(142,120,240,1)));
-  background: -webkit-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
-  background: -o-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
-  background: -ms-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
-  background: linear-gradient(to right, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),rgba(148,167,197,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(148,167,197,1)), color-stop(100%, rgba(142,120,240,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(148,167,197,1) 0%, rgba(142,120,240,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );*/
 }
 #grad5{
-  background: rgba(111,197,202,1);
-  background: -moz-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(111,197,202,1)), color-stop(100%, rgba(12,166,139,1)));
-  background: -webkit-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
-  background: -o-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
-  background: -ms-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
-  background: linear-gradient(to right, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),rgba(111,197,202,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(111,197,202,1)), color-stop(100%, rgba(12,166,139,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(111,197,202,1) 0%, rgba(12,166,139,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54c9ff', endColorstr='#436ce6', GradientType=1 );*/
 }
 #grad6{
-  background: rgba(248,174,104,1);
-  background: -moz-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,174,104,1)), color-stop(100%, rgba(246,93,112,1)));
-  background: -webkit-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: -o-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: -ms-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
-  background: linear-gradient(to right, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),rgba(248,174,104,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(248,174,104,1)), color-stop(100%, rgba(246,93,112,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff54eb', endColorstr='#e64585', GradientType=1 );*/
 }
 .sec{
   width:100%;
-  height: 100%;
+  position: relative;
+   display: table;
+  height: inherit;
 }
 .sec-wrapper
  {
@@ -235,7 +237,10 @@ body{
 }
 
 #wlist {
-	padding:6em;
+  padding-top:2em;
+  padding-bottom:2em;
+  padding-left:6em;
+	padding-right:6em;
 	font-size: 1em;
 }
 
@@ -353,9 +358,10 @@ body{
  }
  .sprite2
  {
+  position: absolute;
   height:40%;
   width:80%;
-  margin-top: -28%;
+  margin-top: 25%;
  }
 .words-place
  {
@@ -387,6 +393,18 @@ body{
   margin: 10% auto;
   height:30%;
   width:80%;
+ }
+  .words-place4
+ {
+  position:absolute;
+  left:21%;
+  top:20%;
+  font-family:"NexaL";
+  color:white;
+  margin: 10% auto;
+  height:30%;
+  width:60%;
+  font-size:1.5em;
  }
 .head
  {
@@ -531,6 +549,7 @@ body{
 	background:red;
 	float:left;
 	display:none;
+  top:0px;
 }
 #footer
  {
@@ -664,7 +683,7 @@ body{
 }
 .comingsoon2{
   position: absolute;
-  top: 272%;
+  top: 10%;
   right: 10%;
   color: #ffffff;
   font-family: 'Steelfish Rg';
@@ -673,7 +692,7 @@ body{
 }
 .comingsoon3{
   position: absolute;
-  top: 372%;
+  top: 10%;
   right: 10%;
   color: #ffffff;
   font-family: 'Steelfish Rg';
@@ -712,6 +731,14 @@ body{
   text-align: center;
   text-transform: uppercase;
  }
+
+ .info-tab > ol {
+  list-style-type: decimal;
+  margin-left: 40px;
+  padding-right: 20px;
+}
+
+
 .cont-tabs
  {
   position:absolute;
@@ -962,3 +989,34 @@ cursor: pointer;}
   }
 }
 /* custom inclusion of right, left and below tabs */
+
+#workshop_heading{
+  font-size: 2.5em;
+  color:white;
+  height:10%;
+  text-align: center;
+  width:90%;
+  font-family:"NexaB";
+}
+
+#proshow_heading{
+  position: absolute;
+  top: 36%;
+  left:43%;
+  font-size: 2.5em;
+  color:white;
+  height:10%;
+  font-family:"NexaB";
+}
+
+#proshow_details{
+  position: absolute;
+  top: 65%;
+  left:50%;
+  font-size: 1.5em;
+  color:white;
+  height:10%;
+  font-family:"NexaB";
+}
+
+
