@@ -191,7 +191,7 @@ $event_code=$_GET["events"];
 				    		    		<td>Event Name</td>
 				    		    		<td id="registration-data-event-name">..</td>
 				    		    	</tr>
-				    		    	<tr>
+				    		    	<tr id="registration-team-size-container">
 				    		    		<td>Team Size (Min/Max)</td>
 				    		    		<td id="registration-data-team-size">..</td>
 				    		    	</tr>
