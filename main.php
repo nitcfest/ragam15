@@ -17,8 +17,9 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="css/componentworkshop.css">
 		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+		<script src="js/modernizr.custom.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	</head>
@@ -97,50 +98,35 @@ $event_code=$_GET["events"];
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">
-				<div id="Workshop-left" style="height:100%;width:50%;float:left">
-					<div id="workshop_coming_soon" class="comingsoon">COMING SOON</div>
-					<ul id="wlist">
-		  			</ul>
-				</div>
-				<div style="height:100%;width:50%;float:left">
-					<div id="workshops-head-place" class="head-place">
-						<div id="workshops-head" class="head">
-							Workshops
-						</div>
-					</div>
-					<div id="workshops-words-place" class="words-place">
-						Hone your skills to get that edge.<br/>
-						Learn from the best and beat the rest.
-					</div>
-					<div id="workshops-sprite" class="sprite">
-						<img src="img/Workshops.png"/>
-					</div>
-					<div id="workshop-text-space"></div>
-				</div>
+				
 
 			</div>
 <!--**********************************************WORKSHOPS END*******************-->				
 <!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">
-				<div style="height:100%;width:50%;float:left">
-					<div id="proshows-head-place" class="head-place2">
-						<div id="proshows-head" class="head">
-							Proshows
+				<div style="height:100%;width:100%;float:left">
+					<div class="container">	
+						<div class="main">
+							<ul id="og-grid" class="og-grid">
+								<li>
+									<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="img/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+										<img src="img/thumbs/1.jpg" alt="img01"/>
+									</a>
+								</li>
+								<li>
+									<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="img/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+										<img src="img/thumbs/2.jpg" alt="img02"/>
+									</a>
+								</li>
+								<!--<li>
+									<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="img/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+										<img src="img/thumbs/3.jpg" alt="img03"/>
+									</a>
+								</li>-->							
+							</ul>
 						</div>
-					</div>
-					<div id="proshows-words-place" class="words-place2">
-					</div>
-					<div id="sprite1" class="sprite2">
-					</div>
-				</div>
-				<div style="height:100%;width:50%;float:left">
-					<div class="center-attraction">
-						Too anxious to know about all the major events?<br/>
-						Expect a few surprises in the coming days..<br/>
-						Stay tuned for updates.
-					</div>
-					<div id="proshow_coming_soon" class="comingsoon2">COMING SOON</div>
+					</div><!-- /container -->
 				</div>
 			</div>
 <!--**********************************************3PROSHOWS END*******************-->
@@ -464,7 +450,20 @@ $event_code=$_GET["events"];
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
-	<script type="text/javascript" src="js/TimelineMax.min.js"></script>]
+	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
+	<script type="text/javascript" src="js/grid.js"></script>
+			<script>
+			$(function() {
+				Grid.init();
+				// adding more items
+				$('#og-additems').on( 'click', function() {
+					var $items = $( '<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>	<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>' ).appendTo( $( '#og-grid' ) );
+					
+					Grid.addItems( $items );
+					return false;
+				} );
+			});
+		</script>
 	
 
 	
