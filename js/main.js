@@ -51,7 +51,7 @@ $(function (){
 	var bat_width=400,bat_height=100/39,bat_num_pics=39,bat_repeat_num=4,bat_speed=5;
 	var steppedEase = new SteppedEase(bat_num_pics-1);
 	var steppedEase2 = new SteppedEase(bat_repeat_num-1);
-	$("#sprite1").css({"width":"40%","height": "37%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
+	$("#sprite1").css({"width":"40%","height": "57%",  "background-image":"url('batman.png')","background-size": "100% 3900%","background-repeat": "no-repeat"})
 	var start_repeat_batman=function(){
 		TweenMax.fromTo('#sprite1', bat_speed/bat_num_pics*bat_repeat_num, {backgroundPosition: '0px '+(bat_num_pics)*bat_height+'%'},{backgroundPosition: '0px '+(bat_num_pics- bat_repeat_num)*(100/(bat_num_pics-1))+'%', ease:steppedEase2,repeat:-1});
 	}
@@ -180,15 +180,15 @@ $(function (){
 					.addTo(controller)
 					 .on("enter", function(event) {
 	                console.log("Enter");
-	                 TweenMax.fromTo($("#proshows-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+	                 TweenMax.fromTo($("#proshow_heading"), 1, {opacity:0,y:-200},{opacity:1,y:0});
+                                    TweenMax.fromTo($("#proshow_details"), 1, {opacity:0,y:-200},{opacity:1,y:0});
                                     TweenMax.fromTo($("#sprite1"), 1, {opacity:0,x:-100},{opacity:1,x:0});
 									TweenMax.fromTo($("#proshows_coming_soon"), 1, {opacity:0,scale:.5},{opacity:1,scale:1});
 	              })
 	              .on("leave", function(event) {
 	                console.log("Leave");
-	                 TweenMax.fromTo($("#proshows-head"), 1, {opacity:1,x:0},{opacity:0,x:-100});
-                                    TweenMax.fromTo($(".center-attraction"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+	                 TweenMax.fromTo($("#proshow_heading"), 1, {opacity:1,y:0},{opacity:0,y:-200});
+                                    TweenMax.fromTo($("#proshow_details"), 1, {opacity:1,y:0},{opacity:0,y:-200});
                                     TweenMax.fromTo($("#sprite1"), 1, {opacity:1,x:0},{opacity:0,x:-100});
 									TweenMax.fromTo($("#proshows-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5});
 									TweenMax.fromTo($("#proshow_coming_soon"), 1, {opacity:1,scale:1},{opacity:0,scale:.5});
@@ -222,12 +222,12 @@ $(function (){
 					 .on("enter", function(event) {
 	                console.log("Enter");
 	                 				 TweenMax.fromTo($("#workshop_heading"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-                   					 TweenMax.staggerFromTo($(".ch-item"), 1, {opacity:0,rotation: 180},{opacity:1,rotation: 0},.4);
+                   					 TweenMax.staggerFromTo($(".ch-item"), 1, {opacity:0,rotation: 10},{opacity:1,rotation: 0},.4);
 	              })
 	              .on("leave", function(event) {
 	                console.log("Leave");
 	                 				 TweenMax.fromTo($("#workshop_heading"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-                   					 TweenMax.staggerFromTo($(".ch-item"), 1, {opacity:1,rotation: 0},{opacity:0,rotation: 180},.4);
+                   					 TweenMax.staggerFromTo($(".ch-item"), 1, {opacity:1,rotation: 0},{opacity:0,rotation: 10},.4);
 	              })
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle

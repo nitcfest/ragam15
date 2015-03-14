@@ -863,6 +863,27 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 			});
 		</script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.windows.js"></script>
+	<script>
+		$(document).ready(function(){
+
+		    $('.sec').windows({
+		        snapping: true,
+		        snapSpeed: 500,
+		        snapInterval: 1100,
+		        onScroll: function(scrollPos){
+		            // scrollPos:Number
+		        },
+		        onSnapComplete: function($el){
+		            // after window ($el) snaps into place
+		        },
+		        onWindowEnter: function($el){
+		            // when new window ($el) enters viewport
+		        }
+		    })
+
+		});
+	</script>
 	<!-- Registration -->
 	<script src="js/registration/select2.min.js"></script>
 	<script src="js/registration/jquery.remodal.js"></script>
