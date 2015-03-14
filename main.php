@@ -49,11 +49,11 @@ $event_code=$_GET["events"];
 
 
 			<div class="registration-bar">			
+				<span id="registration-current-status">&nbsp;</span>
 				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success" style="display:none;">LOGIN</button>
 				<button id="registration-action-register" type="button" class="pure-button button-xsmall" style="display:none;">REGISTER</button>
 				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary" style="display:none;">VIEW PROFILE</button>
 				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button>
-				<span id="registration-current-status">&nbsp;</span>
 			</div>
 
 
@@ -220,7 +220,7 @@ $event_code=$_GET["events"];
 			</div>
 
 
-			<a href="./" style="position:fixed;z-index:1400;top:10px;right:10px;">
+			<a href="./" style="position:fixed;z-index:1400;top:10px;left:10px;">
 				<div id="home-button" style="width:40px;height:40px;border-radius:20px;">
 				<div id="asd" style="margin-top: 37px;position: absolute;color: white;font-size:14px;"> HOME</div>
 				</div>

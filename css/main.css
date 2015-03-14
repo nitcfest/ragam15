@@ -730,6 +730,14 @@ body{
   text-align: center;
   text-transform: uppercase;
  }
+
+ .info-tab > ol {
+  list-style-type: decimal;
+  margin-left: 40px;
+  padding-right: 20px;
+}
+
+
 .cont-tabs
  {
   position:absolute;
@@ -930,7 +938,9 @@ cursor: pointer;}
   color:white;
   height:10%;
   text-align: center;
-  width:90%;
+  width:20%;
+  position: absolute;
+  left:40%;
   font-family:"NexaB";
   z-index: 10000;
 }

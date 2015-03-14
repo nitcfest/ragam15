@@ -93,16 +93,20 @@ $(function() {
 						 '<td>'+this_event.team_code+'</td>';
 
 			var team_members = '';
+			var flag = 0;
 			this_event.team_members.forEach(function(team_member){
-				team_members+= team_member.name + ' ('+team_member.id+')';
+				if(flag==1)
+					team_members+=', ';
+				flag = 1;
+				team_members+= team_member.name + ' (RAG'+team_member.id+')';
 			});
 
 			event_data+= '<td>'+team_members+'</td>';
 
 			if(this_event.owner_id == user.id)
-				event_data+='<td><a href="#" class="pure-button button-error action-event-deregister" data-event_code="'+this_event.event_code+'">Delete Entire Team</a>';
+				event_data+='<td><a href="#" class="pure-button button-error action-event-deregister" data-event_code="'+this_event.event_code+'">Delete Entire Team</a></td>';
 			else
-				event_data+='<a href="#" class="pure-button button-error  action-event-deregister" data-event_code="'+this_event.event_code+'">Leave Team</a>';
+				event_data+='<td><a href="#" class="pure-button button-error action-event-deregister" data-event_code="'+this_event.event_code+'">Leave Team</a></td>';
 
 			event_data+='</tr>';
 		});

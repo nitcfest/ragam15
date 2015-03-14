@@ -87,6 +87,13 @@ $(function()
 				// console.log(data.registration);
 
 				if(data.registration.status == 'registered'){
+					$('#register-message-space').html('You have registered for this event.');
+
+					$('#register-button-space').hide();
+					$('#register-message-space').show();
+				}else if(data.registration.status == 'not_logged_in'){
+					$('#register-message-space').html('Please login to register.');
+					
 					$('#register-button-space').hide();
 					$('#register-message-space').show();
 				}else{
