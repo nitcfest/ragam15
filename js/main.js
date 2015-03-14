@@ -204,11 +204,11 @@ $(function (){
 					 .on("enter", function(event) {
 	                console.log("Enter");
 	                 TweenMax.fromTo($("#sneha-head"), 1, {opacity:0,x:-100},{opacity:1,x:0});
-                                    TweenMax.fromTo($("#sneha-words-place"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                                    TweenMax.fromTo($("#sneha-words-place"), 1, {opacity:0,x:100},{opacity:1,x:0});
 	              })
 	              .on("leave", function(event) {
 	                console.log("Leave");
-	                 TweenMax.fromTo($("#sneha-words-place"), 1, {opacity:1,x:0},{opacity:0,x:-100});
+	                 TweenMax.fromTo($("#sneha-words-place"), 1, {opacity:1,x:0},{opacity:0,x:100});
                                     TweenMax.fromTo($("#sneha-head"), 1, {opacity:1,x:0},{opacity:0,x:-100});
 	              })
 
