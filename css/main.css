@@ -125,6 +125,16 @@ body{
   background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff54eb', endColorstr='#e64585', GradientType=1 );*/
 }
+#grad7{
+  background: url(../img/crisp-paper-ruffles.png),rgba(130,174,63,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(130,174,63,1)), color-stop(100%, rgba(56,154,71,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );*/
+}
 .sec{
   width:100%;
   position: relative;

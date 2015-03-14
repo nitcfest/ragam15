@@ -59,17 +59,11 @@ $(function (){
 	
  var tween_events = new TimelineMax ()
                                  .add([
-                                    TweenMax.fromTo($("#event_list"), 1, {opacity:0,x:100},{opacity:1,x:0}),
-                                    TweenMax.fromTo($("#events-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-                                    TweenMax.fromTo($("#events-words-place"), 1, {opacity:0,scale:.5},{opacity:1,scale:1}),
-                                    TweenMax.fromTo($("#events-sprite"), 1, {x:-100,opacity:0,scale:.5},{x:0,opacity:1,scale:1})
+                    TweenMax.staggerFromTo($(".ech-item"), 1, {opacity:0,y:-100},{opacity:1,y:0},.2)
                                 ]);
  var tween_events_reverse= new TimelineMax ()
                                  .add([
-                                    TweenMax.fromTo($("#event_list"), 1, {opacity:1,x:0},{opacity:0,x:100}),
-                                    TweenMax.fromTo($("#events-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
-                                    TweenMax.fromTo($("#events-words-place"), 1, {opacity:1,scale:1},{opacity:0,scale:.5}),
-                                    TweenMax.fromTo($("#events-sprite"), 1, {x:0,opacity:1},{x:-100,opacity:0})
+                                   TweenMax.staggerFromTo($(".ech-item"), 1, {opacity:1,y:0},{opacity:0,y:-100},.2)
                                 ]);
 
  // var tween_workshops = new TimelineMax ()
@@ -147,13 +141,16 @@ $(function (){
 					.setClassToggle("#grad3", "active") // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#Info"})
-					.setClassToggle("#grad4", "active") // add class toggle
+					.setClassToggle("#grad6", "active") // add class toggle
 					.addTo(controller)
 	new ScrollScene({triggerElement: "#CelebTalks"})
 					.setClassToggle("#grad5", "active") // add class toggle
 					.addTo(controller)
+	new ScrollScene({triggerElement: "#sneharagam"})
+					.setClassToggle("#grad4", "active") // add class toggle
+					.addTo(controller)
 	new ScrollScene({triggerElement: "#contacts"})
-					.setClassToggle("#grad6", "active") // add class toggle
+					.setClassToggle("#grad7", "active") // add class toggle
 					.addTo(controller)
 
 	new ScrollScene({triggerElement: "#Workshops", duration: 600})
@@ -171,9 +168,10 @@ $(function (){
 	// new ScrollScene({triggerElement: "#Workshops",offset:650})
 	// 				.setTween(tween_workshops_reverse) // add class toggle
 	// 				.addTo(controller);
-	new ScrollScene({triggerElement: "#Events"})
-					.setTween(tween_events) // add class toggle
-					.addTo(controller)	
+	// new ScrollScene({triggerElement: "#Events"})
+	// 				.setTween(tween_events) // add class toggle
+	// 				.addTo(controller)	
+
 	// new ScrollScene({triggerElement: "#Events",offset:650})
 	// 				.setTween(tween_events_reverse) // add class toggle
 	// 				.addTo(controller)	
@@ -219,12 +217,18 @@ $(function (){
 	// 				.setTween(tween_contacts_reverse) // add class toggle
 	// 				.addTo(controller)
 
-	new ScrollScene({triggerElement: "#CelebTalks"})
-					.setTween(highlight_heading) // add class toggle
+	new ScrollScene({triggerElement: "#CelebTalks", duration: 800})
 					.addTo(controller)
-	new ScrollScene({triggerElement: "#CelebTalks"})
-					.setTween(highlight_text) // add class toggle
-					.addTo(controller)
+					 .on("enter", function(event) {
+	                console.log("Enter");
+	                 				 TweenMax.fromTo($("#workshop_heading"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                   					 TweenMax.staggerFromTo($(".ch-item"), 1, {opacity:0,rotation: 180},{opacity:1,rotation: 0},.4);
+	              })
+	              .on("leave", function(event) {
+	                console.log("Leave");
+	                 				 TweenMax.fromTo($("#workshop_heading"), 1, {opacity:0,x:-100},{opacity:1,x:0});
+                   					 TweenMax.staggerFromTo($(".ch-item"), 1, {opacity:1,rotation: 0},{opacity:0,rotation: 180},.4);
+	              })
 	new ScrollScene({triggerElement: "#Info"})
 					.setTween(info_heading) // add class toggle
 					.addTo(controller)

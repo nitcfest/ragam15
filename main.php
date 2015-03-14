@@ -42,6 +42,7 @@ $event_code=$_GET["events"];
 			<div id="grad4" class="background"></div>
 			<div id="grad5" class="background"></div>
 			<div id="grad6" class="background"></div>
+			<div id="grad7" class="background"></div>
 		</div>
 
 
@@ -277,40 +278,15 @@ $event_code=$_GET["events"];
 					<div id="wlist">
 						<section class="main">
 							<ul class="ch-gridw">
-								<li>
-									<div class="ch-itemw event-name" id="PTY">				
-										<div class="ch-info-wrapw">
-											<div class="ch-infow">
-												<div class="ch-info-frontw ch-img-1w"></div>
-												<div class="ch-info-backw">
-													<h3>Services Image</h3>
-													<p>by Gumball Creative <a href="http://drbl.in/eFDk">View on Dribbble</a></p>
-												</div>	
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="ch-itemw event-name" id="SDW">
-										<div class="ch-info-wrapw">
-											<div class="ch-infow">
-												<div class="ch-info-frontw ch-img-2w"></div>
-												<div class="ch-info-backw">
-													<h3>Heart</h3>
-													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
+								
 								<li>
 									<div class="ch-itemw event-name" id="DJW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-3w"></div>
 												<div class="ch-info-backw">
-													<h3>Heart</h3>
-													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
+													<h3>DJ Workshop</h3>
+													<p> </p>
 												</div>
 											</div>
 										</div>
@@ -322,8 +298,8 @@ $event_code=$_GET["events"];
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-4w"></div>
 												<div class="ch-info-backw">
-													<h3>Heart</h3>
-													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
+													<h3>Photography</h3>
+													<p>Two day Photography workshop. </p>
 												</div>
 											</div>
 										</div>
@@ -335,8 +311,34 @@ $event_code=$_GET["events"];
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-5w"></div>
 												<div class="ch-info-backw">
-													<h3>Art Print</h3>
-													<p>by Tad Carpenter <a href="http://drbl.in/eNTe">View on Dribbble</a></p>
+													<h3>Self Defence Workshop</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw event-name" id="PTY">				
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-1w"></div>
+												<div class="ch-info-backw">
+													<h3>Archery</h3>
+													<p>Coming Soon</p>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw event-name" id="SDW">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-2w"></div>
+												<div class="ch-info-backw">
+													<h3>Dance</h3>
+													<p>Coming Soon</p>
 												</div>
 											</div>
 										</div>
@@ -488,14 +490,14 @@ $event_code=$_GET["events"];
 								</div>
 							</div>
 						</li>
-						<li>
+						<!-- <li>
 							<div class="ch-item ch-img-4">
 								<div class="ch-info md-trigger" id="modal4_link">
 									<h3>Job Kurian</h3>
 									<p>Singer</p>
 								</div>
 							</div>
-						</li>
+						</li> -->
 					</ul>
 			</div>
 			<div id="Info" class="sec">
