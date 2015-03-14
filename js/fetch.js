@@ -47,33 +47,7 @@ $(function()
 		{
 		  	if(data.response == 'success')
 		  	{
-		  		// console.log(data.event_code);
-		  		//Event Title
-		  		$("#event_title").html(data.name);
-		  		//Prize Money
-		  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
-		  		//Participation
-		  		$("#participation").css("display","block");
-		  		if(data.team_min>data.team_max){
-		  			$("#participation").css("display","none");
-		  			$('#registration-select-team').hide();
-		  		}
-		  		else if(data.team_min==data.team_max)
-		  		{	
-		  			if(data.team_min==1){
-		  				$("#participation").html('Solo Event');
-		  				$('#registration-select-team').hide();
-		  			}
-		  			else{
-		  				$("#participation").html('Teams of '+data.team_min);
-		  				$('#registration-select-team').show();
-		  			}
-		  		}
-		  		else{
-		  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
-		  			$('#registration-select-team').show();
-		  		}
-
+		  		$('#registration-team-size-container').show();
 
 		  		//For REG
 		  		$('#registration-data-event-name').html(data.name);
@@ -81,6 +55,40 @@ $(function()
 				$('#registration-event-code').val(data.event_code);
 				$('#event-register-messages').html('');
 
+
+
+		  		// console.log(data.event_code);
+		  		//Event Title
+		  		$("#event_title").html(data.name);
+		  		//Prize Money
+		  		$("#Prize_Money").html('<h2>Prize Money</h2><br>'+data.prizes);
+		  		//Participation
+		  		$("#participation").css("display","block");
+		  		
+		  		if(data.team_max == 99){
+		  			//No limit for maximum
+		  			$("#participation").css("display","none");
+		  			$('#registration-team-size-container').hide();
+		  			$('#registration-select-team').show();
+		  		}else if(data.team_min>data.team_max){
+		  			//Some mismatch in event details.
+	  				$("#participation").css("display","none");
+	  				$('#registration-select-team').hide();
+		  		}else if(data.team_min==data.team_max){	
+		  			if(data.team_min==1){
+		  				$("#participation").html('Solo Event');
+		  				$('#registration-select-team').hide();
+		  			}else{
+		  				$("#participation").html('Teams of '+data.team_min);
+		  				$('#registration-select-team').show();
+		  			}
+		  		}else{
+		  			$("#participation").html('Teams of '+data.team_min+' - '+data.team_max+' participants');
+		  			$('#registration-select-team').show();
+		  		}
+
+
+		  		
 				// console.log(data.registration);
 
 				if(data.registration.status == 'registered'){
@@ -158,7 +166,7 @@ $(function()
 			{
 			  	if(data.response == 'success')
 			  	{
-			  		console.log(data.event_code);
+			  		// console.log(data.event_code);
 			  		//Event Title
 			  		$("#event_title").html(data.name);
 			  		//Prize Money
