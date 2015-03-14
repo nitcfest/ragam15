@@ -243,9 +243,29 @@ $(function (){
 					.addTo(controller)
 
 	$(".ctalk-overlay").hide();
-	$(".ch-info").click(function()
+	$("#modal1_link").click(function()
 	{
-		alert($('this').data("modal"));
+		$("#modal1").show();
+
+	});
+	$("#modal2_link").click(function()
+	{
+		$("#modal2").show();
+
+	});
+	$("#modal3_link").click(function()
+	{
+		$("#modal3").show();
+
+	});
+	$("#modal4_link").click(function()
+	{
+		$("#modal4").show();
+
+	});
+	$(".close").click(function()
+	{
+		$(".ctalk-overlay").hide();
 
 	});
 	$(".info-tab").hide();

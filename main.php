@@ -191,7 +191,7 @@ $event_code=$_GET["events"];
 				    		    		<td>Event Name</td>
 				    		    		<td id="registration-data-event-name">..</td>
 				    		    	</tr>
-				    		    	<tr id="registration-team-size-container">
+				    		    	<tr>
 				    		    		<td>Team Size (Min/Max)</td>
 				    		    		<td id="registration-data-team-size">..</td>
 				    		    	</tr>
@@ -394,7 +394,7 @@ $event_code=$_GET["events"];
 			<div id="CelebTalks" class="sec">
 				<div class="ctalk-overlay" id="modal1">
 					<div id="ctalk-box">
-					<div id="lbox"></div>
+					<div id="lbox" style="background-image:url('img/prodezza/jg.jpg');"></div>
 					<div id="rbox">
 						<div id="ctalk-header">
 						<h3>Jagadish</h3>
@@ -411,16 +411,17 @@ $event_code=$_GET["events"];
 				</div>
 				<div class="ctalk-overlay" id="modal2">
 					<div id="ctalk-box">
-					<div id="lbox"></div>
+					<div id="lbox" style="background-image:url('img/prodezza/gpm.jpg');"></div>
 					<div id="rbox">
 						<div id="ctalk-header">
-						<h3>Jagadish2</h3>
-						<h5>Actor | Screen writer</h5>
+						<h3>Govind P Menon</h3>
+						<h5>Violin Performance</h5>
 						</div>
 						<span class="close rounded black"></span>
 						<div id="ctalk-container">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						Thaikudam Bridge is a music band based out of Kerala and founded by cousins- Siddharth Menon and Govind Menon. The 14 member band specializes in an eclectic mix of songs from genres across the spectrum. The band has metamorphised into a sensation succeeding in leaving its spectators in a frenzy after each performance. 
+						Mr. Govind was the brain behind the band and was instrumental in bringing together the talent of 14 members. He was the music director of the award  winning North 24 Katham. As a violinist and vocalist, he has offers pouring in from Mollywood.
 						</p>
 						</div>
 					</div>
@@ -428,16 +429,16 @@ $event_code=$_GET["events"];
 				</div>
 				<div class="ctalk-overlay" id="modal3">
 					<div id="ctalk-box">
-					<div id="lbox"></div>
+					<div id="lbox" style="background-image:url('img/prodezza/banana_big.jpg');"></div>
 					<div id="rbox">
 						<div id="ctalk-header">
-						<h3>Jagadish3</h3>
-						<h5>Actor | Screen writer</h5>
+						<h3>Mr Banana Show</h3>
+						<h5>Interactive comedy with Circus Arts</h5>
 						</div>
 						<span class="close rounded black"></span>
 						<div id="ctalk-container">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						Pierrick St-Pierre or Mr Banana Show, as he's popularly known, is an acclaimed Canadian Juggling Artist based in Paris. A world class performer, he uses interactive comedy and circus skills to give out a message that can be understood worldwide. He has made a name for himself in Canada, France, Germany, United Kingdom, and a many other countries. Inspired by his travels all across the globe, including a stint in Goa, his work is considered one of the best in the world in the forte of  interactive comedy. This Ragam, he is set to make the crowds roar with amusement with his performance
 						</p>
 						</div>
 					</div>
@@ -445,27 +446,27 @@ $event_code=$_GET["events"];
 				</div>
 				<div class="ctalk-overlay" id="modal4">
 					<div id="ctalk-box">
-					<div id="lbox"></div>
+					<div id="lbox" style="background-image:url('img/prodezza/job_inside.jpg');"></div>
 					<div id="rbox">
 						<div id="ctalk-header">
-						<h3>Jagadish4</h3>
-						<h5>Actor | Screen writer</h5>
+						<h3>Job Kurian</h3>
+						<h5>Singer</h5>
 						</div>
 						<span class="close rounded black"></span>
 						<div id="ctalk-container">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
+						Job Kurian,the hugely popular musician has come a long way from the young man who participated in Amritha TV’s music reality show Super Star years ago. An established playback singer in Malayalam movies, he now has an album called Thaalam to his credit. His talent was noticed by many during the reality show and he later bagged several offers as a playback singer for movies like Black Cat and Rithu. Critically acclaimed for the originality in his compositions, he has performed several of his own songs at many concerts and shows.
 						</p>
 						</div>
 					</div>
 					</div>
 				</div>
 			
-				
+					<div class="heading">Prodezza</div>
 					<ul class="ch-grid">
 						<li>
 							<div class="ch-item ch-img-1">
-								<div class="ch-info md-trigger" data-modal="modal-11">
+								<div class="ch-info md-trigger" id="modal1_link">
 									<h3>Jagadish</h3>
 									<p>Actor | Screenwriter</p>
 								</div>
@@ -473,7 +474,7 @@ $event_code=$_GET["events"];
 						</li>
 						<li>
 							<div class="ch-item ch-img-2">
-								<div class="ch-info md-trigger" data-modal="modal-11">
+								<div class="ch-info md-trigger" id="modal2_link">
 									<h3>Govind P Menon</h3>
 									<p>Violin Performance</p>
 								</div>
@@ -481,20 +482,20 @@ $event_code=$_GET["events"];
 						</li>
 						<li>
 							<div class="ch-item ch-img-3">
-								<div class="ch-info md-trigger" data-modal="modal-11">
-									<h3> Mr Banana Show</h3>
+								<div class="ch-info md-trigger" id="modal3_link">
+									<h3>Mr Banana Show</h3>
 									<p>Interactive comedy with Circus Arts</p>
 								</div>
 							</div>
 						</li>
-						<!-- <li>
+						<li>
 							<div class="ch-item ch-img-4">
-								<div class="ch-info md-trigger" data-modal="modal-11">
+								<div class="ch-info md-trigger" id="modal4_link">
 									<h3>Job Kurian</h3>
 									<p>Singer</p>
 								</div>
 							</div>
-						</li> -->
+						</li>
 					</ul>
 			</div>
 			<div id="Info" class="sec">

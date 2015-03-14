@@ -859,7 +859,7 @@ box-sizing: border-box;
   width: 40%;
   height: 100%;
   float: left;
-  background: url(../img/jg.jpg) no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
 }
 #rbox{
