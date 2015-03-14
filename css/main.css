@@ -954,5 +954,5 @@ cursor: pointer;}
   position: absolute;
   left:40%;
   font-family:"NexaB";
-  z-index: 10000;
+  z-index: 100;
 }

@@ -74,7 +74,6 @@ $(function()
 				}
 
 
-		  		// console.log(data.event_code);
 		  		//Event Title
 		  		$("#event_title").html(data.name);
 		  		//Prize Money
@@ -82,7 +81,6 @@ $(function()
 		  		//Participation
 		  		$("#participation").css("display","block");
 		  		
-		  		console.log(data);
 
 		  		if(data.team_max == 99){
 		  			//No limit for maximum
@@ -182,7 +180,6 @@ $(function()
 			{
 			  	if(data.response == 'success')
 			  	{
-			  		// console.log(data.event_code);
 			  		//Event Title
 			  		$("#event_title").html(data.name);
 			  		//Prize Money
