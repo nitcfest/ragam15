@@ -191,7 +191,7 @@ var Grid = (function() {
 		support = Modernizr.csstransitions,
 		// default settings
 		settings = {
-			minHeight : 500,
+			minHeight : 300,
 			speed : 350,
 			easing : 'ease'
 		};
@@ -344,7 +344,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">Visit website</a>' );
+			this.$href = $( '<a href="#" target="_blank">Visit website</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -454,7 +454,8 @@ var Grid = (function() {
 		},
 		calcHeight : function() {
 
-			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
+			var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded - 100,
+
 				itemHeight = winsize.height;
 
 			if( heightPreview < settings.minHeight ) {
@@ -478,7 +479,7 @@ var Grid = (function() {
 
 			this.calcHeight();
 			this.$previewEl.css( 'height', this.height );
-			this.$item.css( 'height', this.itemHeight ).on( transEndEventName, onEndFn );
+			this.$item.css( 'height', '100%').on( transEndEventName, onEndFn );
 
 			if( !support ) {
 				onEndFn.call();

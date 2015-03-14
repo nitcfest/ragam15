@@ -20,6 +20,20 @@
 
   /*list-style-type:none;*/
 }
+
+#preloader {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height:100%;
+  background-color: black;
+  background-image: url("../img/preloader.gif");
+  background-repeat:no-repeat;
+  background-position: center;
+  color: #20c068;
+  font-size: 40px;
+}
+
 #fadebox
  {
   position: absolute;
@@ -368,9 +382,10 @@ body{
  }
  .sprite2
  {
+  position: absolute;
   height:40%;
   width:80%;
-  margin-top: -28%;
+  margin-top: 25%;
  }
 .words-place
  {
@@ -944,6 +959,63 @@ cursor: pointer;}
 .not_muted{
   background-position: 0% 0% !important;
 }
+
+.slideLeft{
+  animation-name: slideLeft;
+  -webkit-animation-name: slideLeft;  
+
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out; 
+  -webkit-animation-timing-function: ease-in-out;   
+
+  visibility: visible !important; 
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  50%{
+    transform: translateX(-8%);
+  }
+  65%{
+    transform: translateX(4%);
+  }
+  80%{
+    transform: translateX(-4%);
+  }
+  95%{
+    transform: translateX(2%);
+  }     
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(150%);
+  }
+  50%{
+    -webkit-transform: translateX(-8%);
+  }
+  65%{
+    -webkit-transform: translateX(4%);
+  }
+  80%{
+    -webkit-transform: translateX(-4%);
+  }
+  95%{
+    -webkit-transform: translateX(2%);
+  }     
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+/* custom inclusion of right, left and below tabs */
+
 .heading{
   position: relative;
   font-size: 2.5em;
@@ -954,5 +1026,25 @@ cursor: pointer;}
   position: absolute;
   left:40%;
   font-family:"NexaB";
-  z-index: 100;
 }
+
+#proshow_heading{
+  position: absolute;
+  top: 36%;
+  left:43%;
+  font-size: 2.5em;
+  color:white;
+  height:10%;
+  font-family:"NexaB";
+}
+
+#proshow_details{
+  position: absolute;
+  top: 65%;
+  left:50%;
+  font-size: 1.5em;
+  color:white;
+  height:10%;
+  font-family:"NexaB";
+}
+

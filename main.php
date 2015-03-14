@@ -17,6 +17,9 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
+		<link rel="stylesheet" type="text/css" href="css/componentworkshop.css">
+		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+		<script src="js/modernizr.custom.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
         <link rel="stylesheet" type="text/css" href="css/style6.css" />
@@ -34,6 +37,7 @@ $event_code=$_GET["events"];
 
 	</head>
 	<body>
+		<div id="preloader"></div>
 		<div id="fadebox"></div>
 		<div id="backgrounds">
 			<div id="grad1" class="background"></div>
@@ -273,7 +277,7 @@ $event_code=$_GET["events"];
 <!--**********************************************EVENTS END*******************-->				
 <!--**********************************************2WORKSHOPS START*******************-->				
 
-			<div id="Workshops" class="sec">
+			<div id="Workshops" class="sec">	
 				<div class="heading">Workshops</div>
 					<div id="wlist">
 						<section class="main">
@@ -352,24 +356,42 @@ $event_code=$_GET["events"];
 <!--**********************************************3PROSHOWS START*******************-->				
 			
 			<div id="Proshows" class="sec">
-				<div style="height:100%;width:50%;float:left;">
-					<div id="proshows-head-place" class="head-place2">
-						<div id="proshows-head" class="head">
-							Proshows
-						</div>
-					</div>
-					<div id="proshows-words-place" class="words-place2">
-					</div>
+
+				<div style="height:100%;width:100%;float:left">
+					<div id="proshow_heading">Proshows</div>
 					<div id="sprite1" class="sprite2">
 					</div>
-				</div>
-				<div style="height:100%;width:50%;float:left;">
-					<!-- <div class="center-attraction">
-						Too anxious to know about all the major events?<br/>
+					<div id="proshow_details">
+						For Proshow and ticket details contact:<br/>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 9633 976 139<br/>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 7738 823 901
+					</div>
+					<div class="container">	
+						<div class="main">
+							<ul id="og-grid" class="og-grid">
+								<li>
+									<a href="http://eluveitie.ch/" data-largesrc="img/eluveitieband.jpg" data-title="Eluveitie" data-description="This Ragam, we promise you an epic night, an experience like never before. We push new boundaries and bring to you, for the first time in South India, from halfway across the world, Swiss folk metal band, ELUVEITIE.
+ Along with the typical lead, rhythm, base guitars and drums, Eluveitie continues to incorporate an armada of instruments that give their folk metal that really unique Celtic sound. Hurdy-gurdy, bagpipes, tin whistles, flutes, pipes, violin have all made a return through their music.   
+Witness them create magic, as they blend folk death metal and classic Celtic music and transform the Ragam stage to truly international standards.">
+										<img src="img/eluveitie.jpg" alt="Eluveitie"/>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/music.ankit" data-largesrc="img/ankitband.jpg" data-title="Ankit Tiwari" data-description="It is the electrifying crowd, the charge in the atmosphere and the sheer energy as you scream out that makes Ragam a memory worth saving. Create another memory on -th March, as Ragam'15 proudly presents Ankit Tiwari, for the first time, on the largest stage in south India. Immerse yourself in music, as you are regaled by the versatile singer of famous tracks like Galliyan and the evergreen Sun Rahai Tu. The emotions are real, the music magical and the crowd amazing, we promise you a night like none before, an experience to last a lifetime and a memory that will stand the test of time. This is the stuff dreams are made of. 
+A night where promises will come true and dreams unfold. Follow the trail, for the destination is where your heart truly belongs, Ragam '15.">
+										<img src="img/ankit.jpg" alt="Ankit"/>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/Ragam.nitc" data-largesrc="img/who.jpg" data-title="Coming soon" data-description="Too anxious to know about all the major events?<br/>
 						Expect a few surprises in the coming days..<br/>
-						Stay tuned for updates.
-					</div> -->
-					<div id="proshow_coming_soon" class="comingsoon2">COMING SOON</div>
+						Stay tuned for updates.">
+										<img src="img/who.jpg" alt="who"/>
+									</a>
+								</li>							
+							</ul>
+						</div>
+					</div><!-- /container -->
 				</div>
 			</div>
 <!--**********************************************3PROSHOWS END*******************-->
@@ -383,7 +405,7 @@ $event_code=$_GET["events"];
 					</div>
 					<div id="sneha-words-place" class="words-place4">
 						The joy of bringing a smile on a person’s face can seldom be expressed by words; it’s the pinnacle of delectation, one must experience. Sneharagam is one such experience which is more than just a social initiative; where we share our joy and happiness with the differently abled, while creating an aura of exhilaration amongst them, followed by building a promising platform for them to showcase their respective talents.
-						<br><a href="sneharagam/" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
+						<br><a href="http://www.ragam.org.in/2015/sneharagam/" target="_blank" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
 					</div>
 					<div id="sneha-sprite" class="sprite"></div>
 				</div>
@@ -555,7 +577,7 @@ $event_code=$_GET["events"];
 								 <li>Only teams presenting a printed copy of the confirmation letter will be allowed to register for events like Couture Boulevard, Choreo Nite(Themed and Non-Themed), Swararaaga, Amplified, Acoustics and Drama.</li></br>
 							</ol><br><br>
 
-							<h3>For the special attention of the participants who are coming in groups: </h3>
+							<h3>For the special attention of the participants who are coming in groups: <br/></h3>
 
 
 							<ol>
@@ -586,7 +608,7 @@ $event_code=$_GET["events"];
 							</ol><br><br>
 							<h3 style="text-transform: uppercase;">The Ragam'15 Hospitality team will not be held responsible for any damage or loss of belongings</h3>
 						</div>
-						<div class= "info-tab" id="tab-reach">
+						<div class= "info-tab slideLeft" id="tab-reach">
 							<h2>How To Reach NIT Calicut</h2>
 							<h3>
 								By Road:
@@ -594,9 +616,9 @@ $event_code=$_GET["events"];
 							
 							Just follow the yellow brick road. Just kidding! You can reach NIT Calicut by taxi 
 							from the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the 
-							taxi fare is approximately Rs. 400/- You can reach NIT Calicut by autoriksha from 
+							taxi fare is approximately Rs. 500/- You can reach NIT Calicut by autoriksha from 
 							the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the fare is 
-							approximately Rs. 300/-
+							approximately Rs. 400/-
 							</br>
 							OR
 							</br>
@@ -616,13 +638,13 @@ $event_code=$_GET["events"];
 							Trivandrum and Varanasi. The Calicut bound trains take deviation from the main 
 							Madras-Cochin route from Palghat Junction or Shornur Junction. You can reach 
 							NIT Calicut by taxi from the Kozhikode (Calicut) Railway station and the taxi fare is 
-							approximately Rs. 400/- OR You can reach NIT Calicut by autorikshaw from the 
-							Kozhikode (Calicut) Railway station and the fare is approximately Rs. 300/-
+							approximately Rs. 500/- OR You can reach NIT Calicut by autorikshaw from the 
+							Kozhikode (Calicut) Railway station and the fare is approximately Rs. 400/-
 							</br>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="100%" height="100%" frameborder="0" style="border:0"></iframe>	
-
+							
 						</div>
-						<div class= "info-tab" id="tab-faq">
+						<div class= "info-tab slideLeft" id="tab-faq">
 						<ol>
 							<li>What to do at Ragam '15?</li>
 							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is 
@@ -825,6 +847,21 @@ $event_code=$_GET["events"];
 	<script type="text/javascript" src="js/svgLoader.js"></script>
 	<script type="text/javascript" src="js/fetch.js"></script>
 	<script type="text/javascript" src="js/loadereve.js"></script>
+
+	<script type="text/javascript" src="js/TimelineMax.min.js"></script>
+	<script type="text/javascript" src="js/grid.js"></script>
+			<script>
+			$(function() {
+				Grid.init();
+				// adding more items
+				$('#og-additems').on( 'click', function() {
+					var $items = $( '<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="img/eluveitie.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>	<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>' ).appendTo( $( '#og-grid' ) );
+					
+					Grid.addItems( $items );
+					return false;
+				} );
+			});
+		</script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- Registration -->
 	<script src="js/registration/select2.min.js"></script>
