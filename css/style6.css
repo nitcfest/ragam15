@@ -182,7 +182,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	background-position: center center;
 	-webkit-transition: all 0.4s linear;
 	-moz-transition: all 0.4s linear;
@@ -197,7 +197,7 @@
 }
 
 .ech-info .ech-info-front {
-	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
+	/*box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);*/
 }
 
 .ech-info .ech-info-back {
