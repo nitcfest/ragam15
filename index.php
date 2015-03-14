@@ -35,12 +35,13 @@
 			</div>-->
 
 
-			<div class="registration-bar">			
+			<div class="registration-bar">	
+				<span id="registration-current-status">&nbsp;</span>		
 				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success" style="display:none;">LOGIN</button>
 				<button id="registration-action-register" type="button" class="pure-button button-xsmall" style="display:none;">REGISTER</button>
 				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary" style="display:none;">VIEW PROFILE</button>
 				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button>
-				<span id="registration-current-status">&nbsp;</span>
+				
 			</div>
 
 
@@ -173,7 +174,7 @@
 					<a data-href="main.php#Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="main.php#Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="main.php#sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
-					<a data-href="main.php#CelebTalks"><span class="icon-user-tie"></span><span class="align-mid">Celebrity Talks</span></a>
+					<a data-href="main.php#CelebTalks"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
 					<a data-href="main.php#Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
 				</div>	

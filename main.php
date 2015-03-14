@@ -17,16 +17,12 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
 		<link rel="stylesheet" type="text/css" href="css/celebtalk.css"/>
-<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" href="css/componentworkshop.css">
 		<link rel="stylesheet" type="text/css" href="css/select2.min.css">
 		<script src="js/modernizr.custom.js"></script>
-=======
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
         <link rel="stylesheet" type="text/css" href="css/style6.css" />
->>>>>>> ae1bbd34f0bee2477f6417fb83937d1c25602531
-
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -49,6 +45,7 @@ $event_code=$_GET["events"];
 			<div id="grad4" class="background"></div>
 			<div id="grad5" class="background"></div>
 			<div id="grad6" class="background"></div>
+			<div id="grad7" class="background"></div>
 		</div>
 
 
@@ -56,11 +53,11 @@ $event_code=$_GET["events"];
 
 
 			<div class="registration-bar">			
+				<span id="registration-current-status">&nbsp;</span>
 				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success" style="display:none;">LOGIN</button>
 				<button id="registration-action-register" type="button" class="pure-button button-xsmall" style="display:none;">REGISTER</button>
 				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary" style="display:none;">VIEW PROFILE</button>
 				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button>
-				<span id="registration-current-status">&nbsp;</span>
 			</div>
 
 
@@ -198,7 +195,7 @@ $event_code=$_GET["events"];
 				    		    		<td>Event Name</td>
 				    		    		<td id="registration-data-event-name">..</td>
 				    		    	</tr>
-				    		    	<tr id="registration-team-size-container">
+				    		    	<tr>
 				    		    		<td>Team Size (Min/Max)</td>
 				    		    		<td id="registration-data-team-size">..</td>
 				    		    	</tr>
@@ -227,7 +224,7 @@ $event_code=$_GET["events"];
 			</div>
 
 
-			<a href="./" style="position:fixed;z-index:400;top:10px;right:10px;">
+			<a href="./" style="position:fixed;z-index:1400;top:10px;left:10px;">
 				<div id="home-button" style="width:40px;height:40px;border-radius:20px;">
 				<div id="asd" style="margin-top: 37px;position: absolute;color: white;font-size:14px;"> HOME</div>
 				</div>
@@ -236,23 +233,9 @@ $event_code=$_GET["events"];
 			</div>
 <!--**********************************************1EVENTS START*******************-->				
 			<div id="Events" class="sec">
-				<div style="height:98%;width:28%;float:left;">
-					<div id="events-head-place" class="head-place3">
-						<div id="events-head" class="head">
-							Competitions
-						</div>
-					</div>
-					<div id="events-words-place" class="words-place3">
-						Rekindle the hero within you. 
-						</br>Fight in the battle of your life. 
-						</br>Emerge triumphant, and the trophy shall be waiting for you.
-					</div>
-					<div id="events-sprite" class="sprite">
-						<img src="img/events.jpg" style="width: 200%;">
-					</div>
-				</div>
 				<div id="pagewrap">
-					<div id="event_list" style="height:100%;width:70%;float:left">
+					<div class="heading">Events</div>
+					<div id="event_list" style="height:100%;width:95%;float:left">
 						<ul id="elist"></ul>
 					</div>
 					<div id="eventContent" class="container" id="page-2" style="position:fixed;z-index:500;">
@@ -294,70 +277,71 @@ $event_code=$_GET["events"];
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">	
-				<div id="workshop_heading">Workshops</div>
+				<div class="heading">Workshops</div>
 					<div id="wlist">
 						<section class="main">
 							<ul class="ch-gridw">
+								
 								<li>
-									<div class="ch-itemw ch-img-1w event-name" id="PTY">				
+									<div class="ch-itemw event-name" id="DJW">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-3w"></div>
+												<div class="ch-info-backw">
+													<h3>DJ Workshop</h3>
+													<p> </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw event-name" id="PTY">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-4w"></div>
+												<div class="ch-info-backw">
+													<h3>Photography</h3>
+													<p>Two day Photography workshop. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw event-name" id="PTY">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-5w"></div>
+												<div class="ch-info-backw">
+													<h3>Self Defence Workshop</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw event-name" id="PTY">				
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-1w"></div>
 												<div class="ch-info-backw">
-													<h3>Services Image</h3>
-													<p>by Gumball Creative <a href="http://drbl.in/eFDk">View on Dribbble</a></p>
+													<h3>Archery</h3>
+													<p>Coming Soon</p>
 												</div>	
 											</div>
 										</div>
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw ch-img-2w event-name" id="SDW">
+									<div class="ch-itemw event-name" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
 												<div class="ch-info-backw">
-													<h3>Heart</h3>
-													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="ch-itemw ch-img-3w event-name" id="DJW">
-										<div class="ch-info-wrapw">
-											<div class="ch-infow">
-												<div class="ch-info-frontw ch-img-3w"></div>
-												<div class="ch-info-backw">
-													<h3>Heart</h3>
-													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="ch-itemw ch-img-4w event-name" id="PTY">
-										<div class="ch-info-wrapw">
-											<div class="ch-infow">
-												<div class="ch-info-frontw ch-img-4w"></div>
-												<div class="ch-info-backw">
-													<h3>Heart</h3>
-													<p>by Brian Hurst <a href="http://drbl.in/eQva">View on Dribbble</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="ch-itemw ch-img-5w event-name" id="PTY">
-										<div class="ch-info-wrapw">
-											<div class="ch-infow">
-												<div class="ch-info-frontw ch-img-5w"></div>
-												<div class="ch-info-backw">
-													<h3>Art Print</h3>
-													<p>by Tad Carpenter <a href="http://drbl.in/eNTe">View on Dribbble</a></p>
+													<h3>Dance</h3>
+													<p>Coming Soon</p>
 												</div>
 											</div>
 										</div>
@@ -420,7 +404,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 					</div>
 					<div id="sneha-words-place" class="words-place4">
 						The joy of bringing a smile on a person’s face can seldom be expressed by words; it’s the pinnacle of delectation, one must experience. Sneharagam is one such experience which is more than just a social initiative; where we share our joy and happiness with the differently abled, while creating an aura of exhilaration amongst them, followed by building a promising platform for them to showcase their respective talents.
-						<br><a href="sneharagam/" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
+						<br><a href="http://www.ragam.org.in/2015/sneharagam/" target="_blank" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
 					</div>
 					<div id="sneha-sprite" class="sprite"></div>
 				</div>
@@ -431,9 +415,9 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 <!--**********************************************SNEHARAGAM ENDS*******************-->	
 <!--**********************************************4INFO START*******************-->		
 			<div id="CelebTalks" class="sec">
-				<div id="ctalk-overlay">
+				<div class="ctalk-overlay" id="modal1">
 					<div id="ctalk-box">
-					<div id="lbox"></div>
+					<div id="lbox" style="background-image:url('img/prodezza/jg.jpg');"></div>
 					<div id="rbox">
 						<div id="ctalk-header">
 						<h3>Jagadish</h3>
@@ -442,39 +426,100 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<span class="close rounded black"></span>
 						<div id="ctalk-container">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
-						
-						
 						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
 						</p>
 						</div>
-						
 					</div>
 					</div>
 				</div>
-				<div style="height:100%;width:30%;float:left">
-					<div id="Highlights-head-place" class="head-place">
-						<div id="Highlights-head" class="head">
-							Celebrity Talks
+				<div class="ctalk-overlay" id="modal2">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/gpm.jpg');"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Govind P Menon</h3>
+						<h5>Violin Performance</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Thaikudam Bridge is a music band based out of Kerala and founded by cousins- Siddharth Menon and Govind Menon. The 14 member band specializes in an eclectic mix of songs from genres across the spectrum. The band has metamorphised into a sensation succeeding in leaving its spectators in a frenzy after each performance. 
+						Mr. Govind was the brain behind the band and was instrumental in bringing together the talent of 14 members. He was the music director of the award  winning North 24 Katham. As a violinist and vocalist, he has offers pouring in from Mollywood.
+						</p>
 						</div>
 					</div>
-					<div id="Highlights-words-place" class="words-place">
-						
 					</div>
-					<div id="Highlights-sprite" class="sprite"></div>
 				</div>
-				<div style="height:100%;width:70%;float:left;margin-top:8%;">
-				
+				<div class="ctalk-overlay" id="modal3">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/banana_big.jpg');"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Mr Banana Show</h3>
+						<h5>Interactive comedy with Circus Arts</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Pierrick St-Pierre or Mr Banana Show, as he's popularly known, is an acclaimed Canadian Juggling Artist based in Paris. A world class performer, he uses interactive comedy and circus skills to give out a message that can be understood worldwide. He has made a name for himself in Canada, France, Germany, United Kingdom, and a many other countries. Inspired by his travels all across the globe, including a stint in Goa, his work is considered one of the best in the world in the forte of  interactive comedy. This Ragam, he is set to make the crowds roar with amusement with his performance
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="ctalk-overlay" id="modal4">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/job_inside.jpg');"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Job Kurian</h3>
+						<h5>Singer</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Job Kurian,the hugely popular musician has come a long way from the young man who participated in Amritha TV’s music reality show Super Star years ago. An established playback singer in Malayalam movies, he now has an album called Thaalam to his credit. His talent was noticed by many during the reality show and he later bagged several offers as a playback singer for movies like Black Cat and Rithu. Critically acclaimed for the originality in his compositions, he has performed several of his own songs at many concerts and shows.
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			
+					<div class="heading">Prodezza</div>
 					<ul class="ch-grid">
 						<li>
-							<div class="ch-item ch-img-2">
-								<div class="ch-info md-trigger" data-modal="modal-11">
+							<div class="ch-item ch-img-1">
+								<div class="ch-info md-trigger" id="modal1_link">
 									<h3>Jagadish</h3>
 									<p>Actor | Screenwriter</p>
 								</div>
 							</div>
 						</li>
+						<li>
+							<div class="ch-item ch-img-2">
+								<div class="ch-info md-trigger" id="modal2_link">
+									<h3>Govind P Menon</h3>
+									<p>Violin Performance</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-3">
+								<div class="ch-info md-trigger" id="modal3_link">
+									<h3>Mr Banana Show</h3>
+									<p>Interactive comedy with Circus Arts</p>
+								</div>
+							</div>
+						</li>
+						<!-- <li>
+							<div class="ch-item ch-img-4">
+								<div class="ch-info md-trigger" id="modal4_link">
+									<h3>Job Kurian</h3>
+									<p>Singer</p>
+								</div>
+							</div>
+						</li> -->
 					</ul>
-				</div>
 			</div>
 			<div id="Info" class="sec">
 				<div id="info_scroll" style="height:100%;width:70%;float:left;position:absolute">
@@ -531,7 +576,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 								 <li>Only teams presenting a printed copy of the confirmation letter will be allowed to register for events like Couture Boulevard, Choreo Nite(Themed and Non-Themed), Swararaaga, Amplified, Acoustics and Drama.</li></br>
 							</ol><br><br>
 
-							<h3>For the special attention of the participants who are coming in groups: </h3>
+							<h3>For the special attention of the participants who are coming in groups: <br/></h3>
 
 
 							<ol>
@@ -570,9 +615,9 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 							
 							Just follow the yellow brick road. Just kidding! You can reach NIT Calicut by taxi 
 							from the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the 
-							taxi fare is approximately Rs. 400/- You can reach NIT Calicut by autoriksha from 
+							taxi fare is approximately Rs. 500/- You can reach NIT Calicut by autoriksha from 
 							the Kozhikode (Calicut) bus station (KSRTC or private bus station) and the fare is 
-							approximately Rs. 300/-
+							approximately Rs. 400/-
 							</br>
 							OR
 							</br>
@@ -592,11 +637,11 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 							Trivandrum and Varanasi. The Calicut bound trains take deviation from the main 
 							Madras-Cochin route from Palghat Junction or Shornur Junction. You can reach 
 							NIT Calicut by taxi from the Kozhikode (Calicut) Railway station and the taxi fare is 
-							approximately Rs. 400/- OR You can reach NIT Calicut by autorikshaw from the 
-							Kozhikode (Calicut) Railway station and the fare is approximately Rs. 300/-
+							approximately Rs. 500/- OR You can reach NIT Calicut by autorikshaw from the 
+							Kozhikode (Calicut) Railway station and the fare is approximately Rs. 400/-
 							</br>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7824.467159110062!2d75.93262136303221!3d11.317630530845543!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424820583878" width="100%" height="100%" frameborder="0" style="border:0"></iframe>	
-
+							
 						</div>
 						<div class= "info-tab slideLeft" id="tab-faq">
 						<ol>
@@ -821,7 +866,6 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 	<script src="js/registration/select2.min.js"></script>
 	<script src="js/registration/jquery.remodal.js"></script>
 	<script src="js/registration/registration-common.js"></script>
-
 
 	
 	

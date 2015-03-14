@@ -123,11 +123,11 @@
     to { width: 70%; }
 }
 #contact-icon{
-  right: 2px;
+  right: 15%;
   bottom: -26px;
 }
 #music-icon{
-  left: 2px;
+  left: 15%;
   bottom: -26px;
 }
 #music-icon>.cbh-ph-img-circle 

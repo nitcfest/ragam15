@@ -125,6 +125,16 @@ body{
   background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(248,174,104,1) 0%, rgba(246,93,112,1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff54eb', endColorstr='#e64585', GradientType=1 );*/
 }
+#grad7{
+  background: url(../img/crisp-paper-ruffles.png),rgba(130,174,63,1);
+  background: url(../img/crisp-paper-ruffles.png),-moz-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-webkit-gradient(left top, right top, color-stop(0%, rgba(130,174,63,1)), color-stop(100%, rgba(56,154,71,1)));
+  background: url(../img/crisp-paper-ruffles.png),-webkit-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-o-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),-ms-linear-gradient(left, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  background: url(../img/crisp-paper-ruffles.png),linear-gradient(to right, rgba(130,174,63,1) 0%, rgba(56,154,71,1) 100%);
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );*/
+}
 .sec{
   width:100%;
   position: relative;
@@ -205,7 +215,7 @@ body{
   #elist_filter { width: 30%; max-width: 160px; }
   #elist>li  { float: none; width: auto; padding: 2px 8px; margin: 0; }
   #elist>li>h4  { cursor: pointer; padding: 6px 0; }
-  #elist ul  { display:none; padding-left: 4px; }
+  #elist ul  {  padding-left: 4px; }
 }
 
 @media screen and (max-width: 819px)
@@ -285,7 +295,7 @@ body{
   #wlist_filter { width: 30%; max-width: 160px; }
   #wlist>li  { float: none; width: auto; padding: 2px 8px; margin: 0; }
   #wlist>li>h4  { cursor: pointer; padding: 6px 0; }
-  #wlist ul  { display:none; padding-left: 4px; }
+  #wlist ul  { padding-left: 4px; }
 }
 
 @media screen and (max-width: 819px)
@@ -426,6 +436,8 @@ body{
   height:50px;
   position: absolute;
   cursor:pointer;
+  top:60px;
+  right: 24%;
  }
 #closein
  {
@@ -637,7 +649,7 @@ body{
     background-color:red;
     left: 0%;
  }
-#ctalk-overlay
+.ctalk-overlay
  {
   z-index:600;
   position: fixed;
@@ -858,7 +870,7 @@ box-sizing: border-box;
   width: 40%;
   height: 100%;
   float: left;
-  background: url(../img/jg.jpg) no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
 }
 #rbox{
@@ -990,12 +1002,15 @@ cursor: pointer;}
 }
 /* custom inclusion of right, left and below tabs */
 
-#workshop_heading{
+.heading{
+  position: relative;
   font-size: 2.5em;
   color:white;
   height:10%;
   text-align: center;
-  width:90%;
+  width:20%;
+  position: absolute;
+  left:40%;
   font-family:"NexaB";
 }
 
@@ -1018,5 +1033,4 @@ cursor: pointer;}
   height:10%;
   font-family:"NexaB";
 }
-
 

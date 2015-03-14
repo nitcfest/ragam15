@@ -1,5 +1,5 @@
 .ch-grid {
-	margin: 20px 0 0 0;
+	margin: 10% 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;
@@ -43,13 +43,20 @@
 }
 
 .ch-img-1 { 
-	background-image: url(../img/no.jpg);
+	background-image: url(../img/prodezza/jg.jpg);
 }
 
 .ch-img-2 { 
-	background-image: url(../img/jg.jpg);
+	background-image: url(../img/prodezza/gpm.jpg);
+	background-position: 45% 0;
+	background-size: 88%;
 }
-
+.ch-img-3 { 
+	background-image: url("../img/prodezza/banana small.jpg");
+}
+.ch-img-4 { 
+	background-image: url("../img/prodezza/job kurian out.jpg");
+}
 .ch-info {
 	position: absolute;
 	width: 100%;
