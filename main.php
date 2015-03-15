@@ -117,11 +117,15 @@ $event_code=$_GET["events"];
 							Do you need hospitality services during Ragam '15?
 							<label class="pure-radio">
 								<input type="radio" name="hospitality_type" value="0" checked="checked">
-								I do not require accomodation.
+								I do not require accomodation
 							</label>
 							<label class="pure-radio">
 								<input type="radio" name="hospitality_type" value="1">
-								I would like accomodation.
+								I would require accomodation (Male)
+							</label>
+							<label class="pure-radio">
+								<input type="radio" name="hospitality_type" value="2">
+								I would require accomodation (Female)
 							</label>
 
 							<button type="submit" class="pure-button button-success">Register </button>
