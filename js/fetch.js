@@ -165,7 +165,7 @@ $(function()
 		});
 
 	}
-	$('#elist').on('click', '.event-name', function(event) {
+	$('#elist,#wlist').on('click', '.event-name', function(event) {
 		// event.preventDefault();
 		fetch_event(this.id);
 	});

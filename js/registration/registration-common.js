@@ -115,10 +115,12 @@ $(function() {
 			event_data+='<tr><td colspan="4">Not registered for any events.</td></tr>';
 
 		$('#registration-table-events').html(event_data);
+		$( "#close" ).trigger("click");
 	};
 
 	var loggedOutActions = function(){
 		$('#registration-action-login').show();
+		$( "#close" ).trigger("click");
 		$('#registration-action-register').show();
 		$('#registration-action-user').hide();
 		$('#registration-action-logout').hide();

@@ -311,13 +311,13 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw event-name" id="SDW">
+									<div class="ch-itemw" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-5w"></div>
 												<div class="ch-info-backw">
 													<h3>Self Defence Workshop</h3>
-													<p></p>
+													<p>Coming Soon</p>
 												</div>
 											</div>
 										</div>
