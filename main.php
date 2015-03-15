@@ -304,40 +304,40 @@ $event_code=$_GET["events"];
 												<div class="ch-info-frontw ch-img-4w"></div>
 												<div class="ch-info-backw">
 													<h3>Photography</h3>
-													<p>Two day Photography workshop. </p>
+													<p>Two day Photography workshop</p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw" id="SDW">
+									<div class="ch-itemw event-name" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-5w"></div>
 												<div class="ch-info-backw">
 													<h3>Self Defence Workshop</h3>
-													<p>Coming Soon</p>
+													<p></p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw" id="PTY">				
+									<div class="ch-itemw event-name" id="ARW">				
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-1w"></div>
 												<div class="ch-info-backw">
 													<h3>Archery</h3>
-													<p>Coming Soon</p>
+													<p></p>
 												</div>	
 											</div>
 										</div>
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw" id="SDW">
+									<div class="ch-itemw event-name" id="HFS ">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
