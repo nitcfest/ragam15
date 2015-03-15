@@ -384,8 +384,7 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 									</a>
 								</li>
 								<li>
-									<a href="https://www.facebook.com/music.ankit" data-largesrc="img/ankitband.jpg" data-title="Ankit Tiwari" data-description="It is the electrifying crowd, the charge in the atmosphere and the sheer energy as you scream out that makes Ragam a memory worth saving. Create another memory on -th March, as Ragam'15 proudly presents Ankit Tiwari, for the first time, on the largest stage in south India. Immerse yourself in music, as you are regaled by the versatile singer of famous tracks like Galliyan and the evergreen Sun Rahai Tu. The emotions are real, the music magical and the crowd amazing, we promise you a night like none before, an experience to last a lifetime and a memory that will stand the test of time. This is the stuff dreams are made of. 
-A night where promises will come true and dreams unfold. Follow the trail, for the destination is where your heart truly belongs, Ragam '15.">
+									<a href="https://www.facebook.com/music.ankit" data-largesrc="img/ankitband.jpg" data-title="Ankit Tiwari" data-description="It is the electrifying crowd, the charge in the atmosphere and the sheer energy as you scream out that makes Ragam a memory worth saving. Create another memory on 28th March, as Ragam'15 proudly presents Ankit Tiwari, for the first time, on the largest stage in south India. Immerse yourself in music, as you are regaled by the versatile singer of famous tracks like Galliyan and the evergreen Sun Raha Hai Na Tu. The emotions are real, the music magical and the crowd amazing, we promise you a night like none before, an experience to last a lifetime and a memory that will stand the test of time. This is the stuff dreams are made of. A night where promises will come true and dreams unfold. Follow the trail, for the destination is where your heart truly belongs, Ragam '15.">
 										<img src="img/ankit.jpg" alt="Ankit"/>
 									</a>
 								</li>
@@ -895,11 +894,24 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 	<script>
 	var div_links_map={
 		"Events":"Events",
+		"Event":"Events",
+		"events":"Events",
+		"event":"Events",
 		"Workshops":"Workshops",
+		"Workshop":"Workshops",
+		"workshops":"Workshops",
+		"workshop":"Workshops",
 		"Proshows":"Proshows",
+		"Proshow":"Proshows",
+		"proshow":"Proshows",
+		"proshows":"Proshows",
 		"Sneharagam":"sneharagam",
 		"Prodezza":"CelebTalks",
-		"GeneralInfo":"Info"
+		"GeneralInfo":"Info",
+		"generalInfo":"Info",
+		"generalinfo":"Info",
+		"sneharagam":"sneharagam",
+		"prodezza":"CelebTalks",
 	}
 	get_link=function(link){
 		if(div_links_map[link])
