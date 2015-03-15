@@ -562,8 +562,8 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 								 <li>The prize moneys for the events have to be collected from the Registration desk in person, with valid Ragam and College ID cards, before 3:00.a.m, March 30, 2015.</li></br>
 
 
-								<li>Registration Fee : Rs.150;</li><br>
-								<li>Hospitality fees:Rs.200 (In addition a caution deposit of Rs.100 will also be collected, which will be refunded at the return of utilities provided).</li><br>
+								<li>Registration Fee : Rs.200;</li><br>
+								<li>Hospitality fees:Rs.150 (In addition a caution deposit of Rs.100 will also be collected, which will be refunded at the return of utilities provided).</li><br>
 								<li>Workshops: As per the stipulated fee (No other registration fee required).</li></br>
 
 								<li>Registration fee of Rs.50/person/quiz. Those with valid Ragam IDs need not register separately for the quizzes. </li></br>
