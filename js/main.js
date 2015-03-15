@@ -121,16 +121,16 @@ $(function (){
  var tween_contacts = new TimelineMax ()
                                  .add([
                                     TweenMax.fromTo($("#contact-head"), 1, {opacity:0,x:-100},{opacity:1,x:0}),
-                                    TweenMax.staggerFromTo($(".contacts-tabs"), 1, {opacity:0,x:-100},{opacity:1,x:0},.5),
+                                    TweenMax.staggerFromTo($(".contacts-tabs"), 1, {opacity:0,x:-100},{opacity:1,x:0},.1),
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:-100,opacity:0},{x:0,opacity:1})
                                 ]);
  var tween_contacts_reverse = new TimelineMax ()
                                  .add([
                                     TweenMax.fromTo($("#contact-head"), 1, {opacity:1,x:0},{opacity:0,x:-100}),
-                                    TweenMax.staggerFromTo($(".contacts-tabs"), 1, {opacity:1,x:0},{opacity:0,x:-100},.5),
+                                    TweenMax.staggerFromTo($(".contacts-tabs"), .1, {opacity:1,x:0},{opacity:0,x:-100},.01),
                                     // TweenMax.fromTo($("#Workshop-left"), 1, {x:0,opacity:1},{x:-100,opacity:0})
                                 ]);
- TweenMax.staggerFromTo($(".contacts-tabs"), .1, {opacity:1,x:0},{opacity:0,x:-100},.5);
+ TweenMax.staggerFromTo($(".contacts-tabs"), .1, {opacity:1,x:0},{opacity:0,x:-100},.1);
 	new ScrollScene({triggerElement: "#Events"})
 					.setClassToggle("#grad1", "active") // add class toggle
 					.addTo(controller)
