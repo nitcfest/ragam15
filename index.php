@@ -179,12 +179,12 @@
 
 				<div id="two" class="target">
 					<!--Login button somewhere here-->
-					<a data-href="/Events"><span class="icon-drawer"></span><span class="align-mid">Competitions<span></a>
-					<a data-href="/Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
-					<a data-href="/Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
-					<a data-href="/sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
-					<a data-href="/CelebTalks"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
-					<a data-href="/Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
+					<a data-href="/2015/Events"><span class="icon-drawer"></span><span class="align-mid">Competitions<span></a>
+					<a data-href="/2015/Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
+					<a data-href="/2015/Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
+					<a data-href="/2015/sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
+					<a data-href="/2015/CelebTalks"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
+					<a data-href="/2015/Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
 				</div>	
 			</nav>
