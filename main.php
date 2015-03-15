@@ -341,7 +341,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw" id="DCW">
+									<div class="ch-itemw" id="CDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
