@@ -328,26 +328,26 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw" id="PTY">				
+									<div class="ch-itemw" id="ARW">				
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-1w"></div>
 												<div class="ch-info-backw">
 													<h3>Archery</h3>
-													<p>Coming Soon</p>
+													<p></p>
 												</div>	
 											</div>
 										</div>
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw" id="SDW">
+									<div class="ch-itemw" id="DCW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
 												<div class="ch-info-backw">
 													<h3>Dance</h3>
-													<p>Coming Soon</p>
+													<p></p>
 												</div>
 											</div>
 										</div>
