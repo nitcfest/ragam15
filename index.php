@@ -104,7 +104,11 @@
 							</label>
 							<label class="pure-radio">
 								<input type="radio" name="hospitality_type" value="1">
-								I would like accomodation.
+								I would require accomodation (Male)
+							</label>
+							<label class="pure-radio">
+								<input type="radio" name="hospitality_type" value="2">
+								I would require accomodation (Female)
 							</label>
 
 							<button type="submit" class="pure-button button-success">Register </button>
