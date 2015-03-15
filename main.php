@@ -404,22 +404,22 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 <!--**********************************************3PROSHOWS END*******************-->
 <!--**********************************************SNEHARAGAM*******************-->								
 				<div id="sneharagam" class="sec">
-				<div style="height:100%;width:50%;float:left">
-					<div id="sneha-head-place" class="head-place">
-						<div id="sneha-head" class="head">
-							Sneharagam
+					<div style="height:100%;width:50%;float:left">
+						<div id="sneha-head-place" class="head-place">
+							<div id="sneha-head" class="head">
+								Sneharagam
+							</div>
 						</div>
+						<div id="sneha-words-place" class="words-place4">
+							The joy of bringing a smile on a person’s face can seldom be expressed by words; it’s the pinnacle of delectation, one must experience. Sneharagam is one such experience which is more than just a social initiative; where we share our joy and happiness with the differently abled, while creating an aura of exhilaration amongst them, followed by building a promising platform for them to showcase their respective talents.
+							<br><a href="http://www.ragam.org.in/2015/sneharagam/" target="_blank" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
+						</div>
+						<div id="sneha-sprite" class="sprite"></div>
 					</div>
-					<div id="sneha-words-place" class="words-place4">
-						The joy of bringing a smile on a person’s face can seldom be expressed by words; it’s the pinnacle of delectation, one must experience. Sneharagam is one such experience which is more than just a social initiative; where we share our joy and happiness with the differently abled, while creating an aura of exhilaration amongst them, followed by building a promising platform for them to showcase their respective talents.
-						<br><a href="http://www.ragam.org.in/2015/sneharagam/" target="_blank" style="float:right;text-decoration:none;color:#28201D;">Read More</a>
+					<div style="height:100%;width:50%;float:left">
+						
 					</div>
-					<div id="sneha-sprite" class="sprite"></div>
 				</div>
-				<div style="height:100%;width:50%;float:left">
-					
-				</div>
-			</div>
 <!--**********************************************SNEHARAGAM ENDS*******************-->	
 <!--**********************************************4INFO START*******************-->		
 			<div id="CelebTalks" class="sec">
@@ -891,6 +891,31 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 		    })
 
 		});
+	</script>
+	<script>
+	var div_links_map={
+		"Events":"Events",
+		"Workshops":"Workshops",
+		"Proshows":"Proshows",
+		"Sneharagam":"sneharagam",
+		"Prodezza":"CelebTalks",
+		"GeneralInfo":"Info"
+	}
+	get_link=function(link){
+		if(div_links_map[link])
+			return div_links_map[link];
+		else return "Events";
+	}
+	var parts = location.href.split("/");
+	var result = parts[parts.length - 1]; 
+	$(window).load(    // full load
+	    // function(){$('html, body').animate({
+	    //     scrollTop: $("#"+div_links_map[result]).offset().top
+	    // }, 2000);
+		function(){
+			document.getElementById(get_link(result)).scrollIntoView();
+		}
+	);
 	</script>
 	<!-- Registration -->
 	<script src="js/registration/select2.min.js"></script>
