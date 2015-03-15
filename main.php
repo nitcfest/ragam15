@@ -25,7 +25,9 @@ $event_code=$_GET["events"];
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
         <link rel="stylesheet" type="text/css" href="css/style6.css" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
+		<link rel="stylesheet" href="css/alertify.core.css" />
+		<!-- include a theme, can be included into the core instead of 2 separate files -->
+		<link rel="stylesheet" href="css/alertify.default.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -867,6 +869,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 				} );
 			});
 		</script>
+	<script src="js/alertify.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery.windows.js"></script>
 	<script>
@@ -893,7 +896,6 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 	<script src="js/registration/select2.min.js"></script>
 	<script src="js/registration/jquery.remodal.js"></script>
 	<script src="js/registration/registration-common.js"></script>
-
 	
 	
 </html>

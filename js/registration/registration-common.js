@@ -281,14 +281,14 @@ $(function() {
 		  data: $('#form-signup').serialize(),
 		  success: function(data, textStatus, xhr) {
 		  	if(data.result == 'success'){
-		  		$('#signup-messages').html('<br>Signup complete. You may register for events.');
+				alertify.alert('Signup complete.<br>Your Ragam ID is '+data.user.id+'.<br>You may register for events.');
 
 		  		//If success, the user will be automatically logged in.
 		  		loggedInActions(data.user);
 
 		  		$.remodal.lookup[$('[data-remodal-id=show-registration-register]').data('remodal')].close();
 		  	}else{
-		  		$('#signup-messages').html('<br>Error signing up.<br>'+data.error_messages);
+		  		alertify.alert('Error signing up.<br>'+data.error_messages);
 		  	}
 		  },
 		  error: function(xhr, textStatus, errorThrown) {

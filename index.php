@@ -14,7 +14,10 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<link rel="stylesheet" type="text/css" href="css/ticker.css">
 		<link rel="stylesheet" type="text/css" href="css/mine.css">
-
+		<!-- include the core styles -->
+		<link rel="stylesheet" href="css/alertify.core.css" />
+		<!-- include a theme, can be included into the core instead of 2 separate files -->
+		<link rel="stylesheet" href="css/alertify.default.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Registration -->
@@ -241,13 +244,13 @@
 		<script type="text/javascript" src="js/blur.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/classie.js"></script>
+		<script src="js/alertify.js"></script>
 		<script>
 
 			// $('#two').blurjs({
 			// 	source: 'body',
 			// 	overlay: 'rgba(255,255,255,0.4)',
 			// });
-
 			function setCookie(cname, cvalue, exdays) {
 				var d = new Date();
 				d.setTime(d.getTime() + (exdays*24*60*60*1000));
