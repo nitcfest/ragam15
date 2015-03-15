@@ -7,6 +7,7 @@
 		<title>Ragam 2015</title>
 		<meta name="description" content="Ragam 2015, NIT Calicut's Annual Cultural Festival">
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga">
+		<meta name="google-site-verification" content="OguuMK3kMTqLJsjIlgyCWciCHLn99B2OECdmL4RfX1Y" />
 		<meta name="author" content="Ragam Creative Team">	
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css">

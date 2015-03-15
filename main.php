@@ -12,6 +12,7 @@ $event_code=$_GET["events"];
 		<meta name="description" content="Ragam 2015, NIT Calicut's Annual Cultural Festival" />
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
 		<meta name="author" content="Ragam Creative Team" />
+		<meta name="google-site-verification" content="OguuMK3kMTqLJsjIlgyCWciCHLn99B2OECdmL4RfX1Y" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
@@ -310,7 +311,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw event-name" id="PTY">
+									<div class="ch-itemw event-name" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-5w"></div>
@@ -323,7 +324,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw event-name" id="PTY">				
+									<div class="ch-itemw" id="PTY">				
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-1w"></div>
@@ -336,7 +337,7 @@ $event_code=$_GET["events"];
 									</div>
 								</li>
 								<li>
-									<div class="ch-itemw event-name" id="SDW">
+									<div class="ch-itemw" id="SDW">
 										<div class="ch-info-wrapw">
 											<div class="ch-infow">
 												<div class="ch-info-frontw ch-img-2w"></div>
