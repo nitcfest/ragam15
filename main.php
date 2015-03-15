@@ -432,7 +432,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<h5>Actor | Screen writer</h5>
 						</div>
 						<span class="close rounded black"></span>
-						<div id="ctalk-container">
+						<div id="ctalk-container" class="ctalk-container-class">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
 						Shri Jagadish , renowned film actor and screenwriter is no stranger to the Kerala film industry. His talent is immortalised in the Malayalam film industry through his memorable performances in films like In Harihar Nagar, Godfather, His Highness Abdullah, No 20 Madras Mail, Aye Auto, Sethurama Iyer CBI ,Mantrikacheppu, and Hitler. He has starred in more than 300 films and has established for himself the image of a comic hero who evokes spontaneous laughter with his own brand of humour.
 						</p>
@@ -449,7 +449,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<h5>Violin Performance</h5>
 						</div>
 						<span class="close rounded black"></span>
-						<div id="ctalk-container">
+						<div id="ctalk-container" class="ctalk-container-class">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
 						Thaikudam Bridge is a music band based out of Kerala and founded by cousins- Siddharth Menon and Govind Menon. The 14 member band specializes in an eclectic mix of songs from genres across the spectrum. The band has metamorphised into a sensation succeeding in leaving its spectators in a frenzy after each performance. 
 						Mr. Govind was the brain behind the band and was instrumental in bringing together the talent of 14 members. He was the music director of the award  winning North 24 Katham. As a violinist and vocalist, he has offers pouring in from Mollywood.
@@ -467,7 +467,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<h5>Interactive comedy with Circus Arts</h5>
 						</div>
 						<span class="close rounded black"></span>
-						<div id="ctalk-container">
+						<div id="ctalk-container" class="ctalk-container-class">
 						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
 						Pierrick St-Pierre or Mr Banana Show, as he's popularly known, is an acclaimed Canadian Juggling Artist based in Paris. A world class performer, he uses interactive comedy and circus skills to give out a message that can be understood worldwide. He has made a name for himself in Canada, France, Germany, United Kingdom, and a many other countries. Inspired by his travels all across the globe, including a stint in Goa, his work is considered one of the best in the world in the forte of  interactive comedy. This Ragam, he is set to make the crowds roar with amusement with his performance
 						</p>

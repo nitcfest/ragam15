@@ -1047,4 +1047,7 @@ cursor: pointer;}
   height:10%;
   font-family:"NexaB";
 }
-
+.ctalk-container-class{
+  overflow: auto;
+  height: 65%;s
+}
