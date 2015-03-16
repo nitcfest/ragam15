@@ -187,8 +187,8 @@
 					<a data-href="/2015/Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="/2015/Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="/2015/sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
-					<a data-href="/2015/CelebTalks"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
-					<a data-href="/2015/Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
+					<a data-href="/2015/Prodezza"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
+					<a data-href="/2015/GeneralInfo"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
 				</div>	
 			</nav>
