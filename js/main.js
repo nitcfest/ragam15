@@ -153,7 +153,7 @@ $(function (){
 					.setClassToggle("#grad7", "active") // add class toggle
 					.addTo(controller)
 
-	new ScrollScene({triggerElement: "#Workshops", duration: 600})
+	new ScrollScene({triggerElement: "#Workshops", duration: 1000})
 					.addTo(controller)
 					 .on("enter", function(event) {
 	                console.log("Enter");
