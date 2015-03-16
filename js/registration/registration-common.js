@@ -219,12 +219,17 @@ $(function() {
 			        page: params.page
 			    	};
 			},
-			processResults: function (data, page) {
-		      return {
-		      	results: data.colleges
-		      };
-		  },
-		  cache: true
+			processResults: function (data, params) {
+
+			    params.page = params.page || 1;
+			    return {
+			        results: data.colleges,
+			        pagination: {
+			          more: (params.page * 30) < data.total_count
+			        }
+			    };
+			},
+		  	cache: true
 		},
 		escapeMarkup: function (markup) { return markup; },
 		minimumInputLength: 2,
