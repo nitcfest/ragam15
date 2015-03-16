@@ -13,7 +13,10 @@ $event_code=$_GET["events"];
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
 		<meta name="author" content="Ragam Creative Team" />
 		<meta name="google-site-verification" content="OguuMK3kMTqLJsjIlgyCWciCHLn99B2OECdmL4RfX1Y" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		
+		<link rel="icon" href="http://www.ragam.org.in/2015/img/favicon.png">
+		<link rel="shortcut icon" href="http://www.ragam.org.in/2015/img/favicon.png">
+
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
@@ -203,7 +206,7 @@ $event_code=$_GET["events"];
 				    		    		<td>Event Name</td>
 				    		    		<td id="registration-data-event-name">..</td>
 				    		    	</tr>
-				    		    	<tr>
+				    		    	<tr id="registration-team-size-container">
 				    		    		<td>Team Size (Min/Max)</td>
 				    		    		<td id="registration-data-team-size">..</td>
 				    		    	</tr>
@@ -628,7 +631,7 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 						<div class= "info-tab" id="tab-hosp">
 							<h2>Hospitality Guidelines</h2><br><br>
 							<ol>
-								<li>The registration fee for hospitality is Rs.300 per ’bed’, out of which Rs.100 will be refunded on successful de-registration.</li><br>
+								<li>The registration fee for hospitality is Rs.250 per ’bed’, out of which Rs.100 will be refunded on successful de-registration.</li><br>
 								<li>For Rs.100 refund, participants must submit Hospitality Registration form, Bill receipt and all the utilities provided (without any damage). Failing to submit any of the above mentioned will mean that the candidate will not be eligible to collect his/her refund.</li><br>
 								<li>If any commodity is missing or damaged, the refund amount for the whole team will not be returned.</li><br>
 								<li>All the utilities given to participants should be returned to the hospitality desk without any damage before 8 P. M., 29th March.</li><br>

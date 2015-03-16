@@ -9,7 +9,11 @@
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga">
 		<meta name="google-site-verification" content="OguuMK3kMTqLJsjIlgyCWciCHLn99B2OECdmL4RfX1Y" />
 		<meta name="author" content="Ragam Creative Team">	
-		<link rel="shortcut icon" href="../favicon.ico">
+
+		<link rel="icon" href="http://www.ragam.org.in/2015/img/favicon.png">
+		<link rel="shortcut icon" href="http://www.ragam.org.in/2015/img/favicon.png">
+
+		
 		<link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<link rel="stylesheet" type="text/css" href="css/ticker.css">
@@ -183,8 +187,8 @@
 					<a data-href="/2015/Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="/2015/Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
 					<a data-href="/2015/sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
-					<a data-href="/2015/CelebTalks"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
-					<a data-href="/2015/Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a> -->
+					<a data-href="/2015/Prodezza"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
+					<a data-href="/2015/GeneralInfo"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>-->
 					<a data-href="/ragam15/Events"><span class="icon-drawer"></span><span class="align-mid">Competitions<span></a>
 					<a data-href="/ragam15/Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="/ragam15/Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>

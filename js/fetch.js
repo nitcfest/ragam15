@@ -51,7 +51,6 @@ $(function()
 		{
 		  	if(data.response == 'success')
 		  	{
-
 		  		//Set up registration essentials.
 		  		$('#registration-team-size-container').show();
 		  		$('#registration-data-event-name').html(data.name);
@@ -81,19 +80,19 @@ $(function()
 		  		$("#participation").css("display","block");
 		  		
 
-		  		if(data.team_max == 99){
+		  		if( parseInt(data.team_max) == 99){
 		  			//No limit for maximum
 		  			$("#participation").css("display","none");
 		  			$('#registration-team-size-container').hide();
 		  			$('#registration-select-team').show();
-		  		}else if(data.team_min == 0 && data.team_max ==0){
+		  		}else if( parseInt(data.team_min) == 0 && parseInt(data.team_max) ==0){
 		  			//Disable registration for these events.
 		  			//These are supposed to be informational events OR on spot registration.
 		  			$('#register-button-space').hide();
 		  			$('#register-message-space').hide();
 		  			$("#participation").hide();
 
-		  		}else if(data.team_min>data.team_max){
+		  		}else if(parseInt(data.team_min) > parseInt(data.team_max) ){
 		  			//Some mismatch in event details.
 		  			//Disable registration too.
 
@@ -103,8 +102,8 @@ $(function()
 
 	  				$('#registration-select-team').hide();
 
-		  		}else if(data.team_min==data.team_max){	
-		  			if(data.team_min==1){
+		  		}else if( parseInt(data.team_min) == parseInt(data.team_max) ) {	
+		  			if( parseInt(data.team_min) ==1){
 		  				$("#participation").html('Solo Event');
 		  				$('#registration-select-team').hide();
 		  			}else{
