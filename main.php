@@ -608,7 +608,7 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<div class= "info-tab" id="tab-hosp">
 							<h2>Hospitality Guidelines</h2><br><br>
 							<ol>
-								<li>The registration fee for hospitality is Rs.300 per ’bed’, out of which Rs.100 will be refunded on successful de-registration.</li><br>
+								<li>The registration fee for hospitality is Rs.250 per ’bed’, out of which Rs.100 will be refunded on successful de-registration.</li><br>
 								<li>For Rs.100 refund, participants must submit Hospitality Registration form, Bill receipt and all the utilities provided (without any damage). Failing to submit any of the above mentioned will mean that the candidate will not be eligible to collect his/her refund.</li><br>
 								<li>If any commodity is missing or damaged, the refund amount for the whole team will not be returned.</li><br>
 								<li>All the utilities given to participants should be returned to the hospitality desk without any damage before 8 P. M., 29th March.</li><br>
