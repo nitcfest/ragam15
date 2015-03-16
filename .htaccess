@@ -13,17 +13,10 @@ RewriteRule ^ - [L]
 
 
 #Removes trailing slash
-#RewriteRule ^(.*)/$ /$1 [L,R=301]
-
-RewriteRule ^main.php$ http://localhost/ragam15/main [R=301,END]
-RewriteRule ^main.php([\#\?].*?)$ http://localhost/ragam15/main$1 [R=301,END]
-RewriteRule ^main$ main.php [END]
-RewriteRule ^main/(.+?)$ $1 [END]
-RewriteRule ^main([\#\?].+?)$ main.php$1 [END]
-
+RewriteRule ^(.*)/$ /$1 [L,R=301]
 #This line will rewrite every url like ragam.org.in/events and ragam.org.in/workshops to main.html. Then appropriate js code is required to show events or workshops as required.
 #Remove the hash below to start url rewriting.
 
-#RewriteRule    ^([A-Za-z0-9-]+)/?$    main.php    [QSA,NC]
+RewriteRule    ^([A-Za-z0-9-]+)/?$    main.php    [QSA,NC]
 
 </IfModule>

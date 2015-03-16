@@ -267,6 +267,11 @@ $(function (){
 		$("#modal4").show();
 
 	});
+	$("#modal5_link").click(function()
+	{
+		$("#modal5").show();
+
+	});
 	$(".close").click(function()
 	{
 		$(".ctalk-overlay").hide();

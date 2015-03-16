@@ -57,6 +57,10 @@
 .ch-img-4 { 
 	background-image: url("../img/prodezza/job kurian out.jpg");
 }
+.ch-img-5 { 
+	background-image: url("../img/prodezza/sre_small.jpg");
+	background-size:100%;
+}
 .ch-info {
 	position: absolute;
 	width: 100%;

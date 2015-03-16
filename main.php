@@ -366,8 +366,7 @@ $event_code=$_GET["events"];
 
 				<div style="height:100%;width:100%;float:left">
 					<div id="proshow_heading">Proshows</div>
-					<div id="sprite1" class="sprite2">
-					</div>
+					<!-- <div id="sprite1" class="sprite2"></div> -->
 					<div id="proshow_details">
 						For Proshow and ticket details contact:<br/>
 						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 9633 976 139<br/>
@@ -491,8 +490,25 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 					</div>
 					</div>
 				</div>
+				<div class="ctalk-overlay" id="modal5">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/sreenath_bhasi.jpg');"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Sreenath Bhasi </h3>
+						<h5>Actor</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Mr. Sreenath Bhasi is a Malayalam film actor, singer, model and director. He has marked his place as a youth icon amongst an immense population of youngsters in and out of Kerala, whose hearts he captured through his commendable performances in the films Pranayam, 22 Female Kottayam, Arike, Da Thadiya, Ustad Hotel, Honey Bee: Its Tripping... and in some short films such as Iced Tea. He was also a part of the Christian alternative metal band named Crimson Wood and is currently the vocalist of an experimental djent band from Kerala. To NITC's pride and honour, the Ragam Record selfie that made its way to the Limca Book of Records was captured by this renowned actor/vocali
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			
-					<div class="heading">Prodezza</div>
+				<div class="heading">Prodezza</div>
 					<ul class="ch-grid">
 						<li>
 							<div class="ch-item ch-img-1">
@@ -515,6 +531,14 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 								<div class="ch-info md-trigger" id="modal3_link">
 									<h3>Mr Banana Show</h3>
 									<p>Interactive comedy with Circus Arts</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-5">
+								<div class="ch-info md-trigger" id="modal5_link">
+									<h3>Sreenath Bhasi</h3>
+									<p>Actor</p>
 								</div>
 							</div>
 						</li>
