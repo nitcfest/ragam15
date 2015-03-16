@@ -13,7 +13,10 @@ $event_code=$_GET["events"];
 		<meta name="keywords" content="ragam, raagam, nitc, nit calicut, tathva, raga, raaga" />
 		<meta name="author" content="Ragam Creative Team" />
 		<meta name="google-site-verification" content="OguuMK3kMTqLJsjIlgyCWciCHLn99B2OECdmL4RfX1Y" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		
+		<link rel="icon" href="http://www.ragam.org.in/2015/img/favicon.png">
+		<link rel="shortcut icon" href="http://www.ragam.org.in/2015/img/favicon.png">
+
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/modalload.css"/>
 		<link rel="stylesheet" type="text/css" href="css/ticker.css"/>
