@@ -286,7 +286,7 @@ $(function() {
 		  data: $('#form-signup').serialize(),
 		  success: function(data, textStatus, xhr) {
 		  	if(data.result == 'success'){
-				alertify.alert('Signup complete.<br>Your Ragam ID is '+data.user.id+'.<br>You may register for events.');
+				alertify.alert('Signup complete.<br>Please note down your Ragam ID: RAG'+data.user.id+'.<br> You may register for events.');
 
 		  		//If success, the user will be automatically logged in.
 		  		loggedInActions(data.user);
