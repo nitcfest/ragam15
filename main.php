@@ -656,34 +656,24 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<div class= "info-tab slideLeft" id="tab-faq">
 						<ol>
 							<li>What to do at Ragam '15?</li>
-							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is 
-							the platform to showcase your talents. Various workshops and exhibitions on art and art forms will 
-							be conducted throughout the 3 days. Informals, Adventure Sports and various other fun events 
-							will also be organised to keep you occupied.<br><br>
+							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is the platform to showcase your talents. Various workshops and exhibitions on art and art forms will be conducted throughout the 3 days. Informals, Adventure Sports and various other fun events will also be organised to keep you occupied. The icing on the cake will be the proshows by Eluveitie ,and ankith tiwari<br><br>
 							<li>Where to register for Ragam '15?</li>
-							Online registration will start soon.<br><br> 
+							Online registration has already begun. You can sign up directly from this site (Home Page -> Login) which would simplify the process as you only need to confirm your registration at Registration desk (MB 206) which will be functioning through the course of Ragam'15. The Registration desk also provides on the spot registration<br><br> 
 							<li>Where to collect your prizes?</li>
 							You can collect your prizes and certificates at the registration desk after the announcement 
 							of results. Participation certificates will also be provided.<br><br>
 							<li>How to avail rooms for outsiders?</li>
-							We have a dedicated set of team that will ensure your pleasant stay. A Hospitality Desk will be 
-							working 24 hours a day during Ragam.<br><br> 
+							We have a dedicated team that will ensure your pleasant stay. A Hospitality Desk will be working 24 hours a day during Ragam in MB 207.<br><br> 
 							<li>To eat or not to eat?</li>
-							Calicut is famous for its delicious food. There will be array of food stalls that showcase Malabar 
-							as well as other type of cuisines. In addition to all that, we have the Main Canteen which is right 
-							outside the Main Gate and also the Mini Canteen. Apart from these, one could also try out the 
-							various restaurants in Kattangal, the nearest junction.<br><br>
+							Calicut is famous for its delicious food. There will be array of food stalls that showcase Malabar as well as other type of cuisines. In addition to all that, we have the Main Canteen which is right outside the Main Gate and also the Mini Canteen. Apart from these, one could also try out the various restaurants in Kattangal, the nearest junction.<br><br>
 							<li>Availability of ATMs?</li>
 							There are 4 ATMs within the campus. There is one ATM near the centre circle, within the college; 
 							another ATM next to the Main Ladies Hostel Gate; a Punjab National Bank ATM in the School of 
 							Management Studies campus and the farthest one is right next to SBI which is a 5 minutes' walk 
-							from the main gate.<br><br> 
+							from the main gate. In addition to these , there are two more ATM s at Kattangal junction<br><br>
 							<li>Queries regarding events?</li>
 							The event description and rules are given in the Events section of the website. For any queries 
-							regarding individual events, feel free to contact the event co-ordinators which has been listed. It is 
-							highly recommended that you keep the contact numbers of the respective event co-ordinators so 
-							that any doubts regarding clash of events, schedule, etc. can be sorted out. An exclusive PC Room 
-							will be set up, for further clarifications.<br><br>
+							regarding individual events, feel free to contact the event co-ordinators which has been listed. It is highly recommended that you keep the contact numbers of the respective event co-ordinators so that any doubts regarding clash of events, schedule, etc. can be sorted out. An exclusive PC Room will be set up, for further clarifications.<br><br>
 							<li>Entries for proshow?</li>
 							For non-NIT students, tickets for the proshow will be sold during the 3 days of Ragam at the MB 
 							Lobby. This ticket along with your respective college ID card will be adequate. For NIT-C students, 
