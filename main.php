@@ -369,8 +369,7 @@ $event_code=$_GET["events"];
 
 				<div style="height:100%;width:100%;float:left">
 					<div id="proshow_heading">Proshows</div>
-					<div id="sprite1" class="sprite2">
-					</div>
+					<!-- <div id="sprite1" class="sprite2"></div> -->
 					<div id="proshow_details">
 						For Proshow and ticket details contact:<br/>
 						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 7736 823 901
@@ -386,8 +385,7 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 									</a>
 								</li>
 								<li>
-									<a href="https://www.facebook.com/music.ankit" data-largesrc="img/ankitband.jpg" data-title="Ankit Tiwari" data-description="It is the electrifying crowd, the charge in the atmosphere and the sheer energy as you scream out that makes Ragam a memory worth saving. Create another memory on -th March, as Ragam'15 proudly presents Ankit Tiwari, for the first time, on the largest stage in south India. Immerse yourself in music, as you are regaled by the versatile singer of famous tracks like Galliyan and the evergreen Sun Rahai Tu. The emotions are real, the music magical and the crowd amazing, we promise you a night like none before, an experience to last a lifetime and a memory that will stand the test of time. This is the stuff dreams are made of. 
-A night where promises will come true and dreams unfold. Follow the trail, for the destination is where your heart truly belongs, Ragam '15.">
+									<a href="https://www.facebook.com/music.ankit" data-largesrc="img/ankitband.jpg" data-title="Ankit Tiwari" data-description="It is the electrifying crowd, the charge in the atmosphere and the sheer energy as you scream out that makes Ragam a memory worth saving. Create another memory on 28th March, as Ragam'15 proudly presents Ankit Tiwari, for the first time, on the largest stage in south India. Immerse yourself in music, as you are regaled by the versatile singer of famous tracks like Galliyan and the evergreen Sun Raha Hai Na Tu. The emotions are real, the music magical and the crowd amazing, we promise you a night like none before, an experience to last a lifetime and a memory that will stand the test of time. This is the stuff dreams are made of. A night where promises will come true and dreams unfold. Follow the trail, for the destination is where your heart truly belongs, Ragam '15.">
 										<img src="img/ankit.jpg" alt="Ankit"/>
 									</a>
 								</li>
@@ -494,8 +492,25 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 					</div>
 					</div>
 				</div>
+				<div class="ctalk-overlay" id="modal5">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/sreenath_bhasi.jpg');"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Sreenath Bhasi </h3>
+						<h5>Actor</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Mr. Sreenath Bhasi is a Malayalam film actor, singer, model and director. He has marked his place as a youth icon amongst an immense population of youngsters in and out of Kerala, whose hearts he captured through his commendable performances in the films Pranayam, 22 Female Kottayam, Arike, Da Thadiya, Ustad Hotel, Honey Bee: Its Tripping... and in some short films such as Iced Tea. He was also a part of the Christian alternative metal band named Crimson Wood and is currently the vocalist of an experimental djent band from Kerala. To NITC's pride and honour, the Ragam Record selfie that made its way to the Limca Book of Records was captured by this renowned actor/vocali
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			
-					<div class="heading">Prodezza</div>
+				<div class="heading">Prodezza</div>
 					<ul class="ch-grid">
 						<li>
 							<div class="ch-item ch-img-1">
@@ -521,14 +536,22 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 								</div>
 							</div>
 						</li>
-						<!-- <li>
+						<li>
 							<div class="ch-item ch-img-4">
 								<div class="ch-info md-trigger" id="modal4_link">
 									<h3>Job Kurian</h3>
 									<p>Singer</p>
 								</div>
 							</div>
-						</li> -->
+						</li>
+						<li>
+							<div class="ch-item ch-img-5">
+								<div class="ch-info md-trigger" id="modal5_link">
+									<h3>Sreenath Bhasi</h3>
+									<p>Actor</p>
+								</div>
+							</div>
+						</li>
 					</ul>
 			</div>
 			<div id="Info" class="sec">
@@ -656,34 +679,24 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 						<div class= "info-tab slideLeft" id="tab-faq">
 						<ol>
 							<li>What to do at Ragam '15?</li>
-							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is 
-							the platform to showcase your talents. Various workshops and exhibitions on art and art forms will 
-							be conducted throughout the 3 days. Informals, Adventure Sports and various other fun events 
-							will also be organised to keep you occupied.<br><br>
+							With over 7 lakhs to be won in 50+ events and with contestants from all over the country, this is the platform to showcase your talents. Various workshops and exhibitions on art and art forms will be conducted throughout the 3 days. Informals, Adventure Sports and various other fun events will also be organised to keep you occupied. The icing on the cake will be the proshows by Eluveitie ,and ankith tiwari<br><br>
 							<li>Where to register for Ragam '15?</li>
-							Online registration will start soon.<br><br> 
+							Online registration has already begun. You can sign up directly from this site (Home Page -> Login) which would simplify the process as you only need to confirm your registration at Registration desk (MB 206) which will be functioning through the course of Ragam'15. The Registration desk also provides on the spot registration<br><br> 
 							<li>Where to collect your prizes?</li>
 							You can collect your prizes and certificates at the registration desk after the announcement 
 							of results. Participation certificates will also be provided.<br><br>
 							<li>How to avail rooms for outsiders?</li>
-							We have a dedicated set of team that will ensure your pleasant stay. A Hospitality Desk will be 
-							working 24 hours a day during Ragam.<br><br> 
+							We have a dedicated team that will ensure your pleasant stay. A Hospitality Desk will be working 24 hours a day during Ragam in MB 207.<br><br> 
 							<li>To eat or not to eat?</li>
-							Calicut is famous for its delicious food. There will be array of food stalls that showcase Malabar 
-							as well as other type of cuisines. In addition to all that, we have the Main Canteen which is right 
-							outside the Main Gate and also the Mini Canteen. Apart from these, one could also try out the 
-							various restaurants in Kattangal, the nearest junction.<br><br>
+							Calicut is famous for its delicious food. There will be array of food stalls that showcase Malabar as well as other type of cuisines. In addition to all that, we have the Main Canteen which is right outside the Main Gate and also the Mini Canteen. Apart from these, one could also try out the various restaurants in Kattangal, the nearest junction.<br><br>
 							<li>Availability of ATMs?</li>
 							There are 4 ATMs within the campus. There is one ATM near the centre circle, within the college; 
 							another ATM next to the Main Ladies Hostel Gate; a Punjab National Bank ATM in the School of 
 							Management Studies campus and the farthest one is right next to SBI which is a 5 minutes' walk 
-							from the main gate.<br><br> 
+							from the main gate. In addition to these , there are two more ATM s at Kattangal junction<br><br>
 							<li>Queries regarding events?</li>
 							The event description and rules are given in the Events section of the website. For any queries 
-							regarding individual events, feel free to contact the event co-ordinators which has been listed. It is 
-							highly recommended that you keep the contact numbers of the respective event co-ordinators so 
-							that any doubts regarding clash of events, schedule, etc. can be sorted out. An exclusive PC Room 
-							will be set up, for further clarifications.<br><br>
+							regarding individual events, feel free to contact the event co-ordinators which has been listed. It is highly recommended that you keep the contact numbers of the respective event co-ordinators so that any doubts regarding clash of events, schedule, etc. can be sorted out. An exclusive PC Room will be set up, for further clarifications.<br><br>
 							<li>Entries for proshow?</li>
 							For non-NIT students, tickets for the proshow will be sold during the 3 days of Ragam at the MB 
 							Lobby. This ticket along with your respective college ID card will be adequate. For NIT-C students, 
@@ -897,11 +910,26 @@ A night where promises will come true and dreams unfold. Follow the trail, for t
 	<script>
 	var div_links_map={
 		"Events":"Events",
+		"Event":"Events",
+		"events":"Events",
+		"event":"Events",
 		"Workshops":"Workshops",
+		"Workshop":"Workshops",
+		"workshops":"Workshops",
+		"workshop":"Workshops",
 		"Proshows":"Proshows",
+		"Proshow":"Proshows",
+		"proshow":"Proshows",
+		"proshows":"Proshows",
 		"Sneharagam":"sneharagam",
+		"sneharagam":"sneharagam",
 		"Prodezza":"CelebTalks",
-		"GeneralInfo":"Info"
+		"prodezza":"CelebTalks",
+		"GeneralInfo":"Info",
+		"generalInfo":"Info",
+		"generalinfo":"Info",
+		"contacts":"contacts",
+		"Contacts":"contacts",
 	}
 	get_link=function(link){
 		if(div_links_map[link])

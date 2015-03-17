@@ -60,7 +60,6 @@ $(function()
 
 				if(data.registration.status == 'registered'){
 					$('#register-message-space').html('You have registered for this event.');
-
 					$('#register-button-space').hide();
 					$('#register-message-space').show();
 				}else if(data.registration.status == 'not_logged_in'){

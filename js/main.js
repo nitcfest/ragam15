@@ -153,7 +153,7 @@ $(function (){
 					.setClassToggle("#grad7", "active") // add class toggle
 					.addTo(controller)
 
-	new ScrollScene({triggerElement: "#Workshops", duration: 600})
+	new ScrollScene({triggerElement: "#Workshops", duration: 1000})
 					.addTo(controller)
 					 .on("enter", function(event) {
 	                console.log("Enter");
@@ -265,6 +265,11 @@ $(function (){
 	$("#modal4_link").click(function()
 	{
 		$("#modal4").show();
+
+	});
+	$("#modal5_link").click(function()
+	{
+		$("#modal5").show();
 
 	});
 	$(".close").click(function()
