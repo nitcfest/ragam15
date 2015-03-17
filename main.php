@@ -538,6 +538,14 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 							</div>
 						</li>
 						<li>
+							<div class="ch-item ch-img-4">
+								<div class="ch-info md-trigger" id="modal4_link">
+									<h3>Job Kurian</h3>
+									<p>Singer</p>
+								</div>
+							</div>
+						</li>
+						<li>
 							<div class="ch-item ch-img-5">
 								<div class="ch-info md-trigger" id="modal5_link">
 									<h3>Sreenath Bhasi</h3>
@@ -545,14 +553,6 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 								</div>
 							</div>
 						</li>
-						<!-- <li>
-							<div class="ch-item ch-img-4">
-								<div class="ch-info md-trigger" id="modal4_link">
-									<h3>Job Kurian</h3>
-									<p>Singer</p>
-								</div>
-							</div>
-						</li> -->
 					</ul>
 			</div>
 			<div id="Info" class="sec">
@@ -933,12 +933,14 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 		"proshow":"Proshows",
 		"proshows":"Proshows",
 		"Sneharagam":"sneharagam",
+		"sneharagam":"sneharagam",
 		"Prodezza":"CelebTalks",
+		"prodezza":"CelebTalks",
 		"GeneralInfo":"Info",
 		"generalInfo":"Info",
 		"generalinfo":"Info",
-		"sneharagam":"sneharagam",
-		"prodezza":"CelebTalks",
+		"contacts":"contacts",
+		"Contacts":"contacts",
 	}
 	get_link=function(link){
 		if(div_links_map[link])
