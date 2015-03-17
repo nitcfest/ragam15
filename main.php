@@ -94,15 +94,15 @@ $event_code=$_GET["events"];
 				    	<a href="http://www.ragam.org.in/2015/cms/api/user/fb_login"><img src="img/fb_login.png"></a><br><br>
 						<p>Note that if you have already logged in with Facebook, you cannot use the same email to register another account.</p>
 						<form action="" id="form-signup" method="POST" role="form" class="pure-form">
-							<input class="pure-input-1" type="text" name="name" placeholder="Full name">
+							<input class="pure-input-1"  id="data-registration-name" type="text" name="name" placeholder="Full name">
 							<br><br>
-							<input class="pure-input-1" type="text" name="email" placeholder="Email address">
+							<input class="pure-input-1" id="data-registration-email" type="text" name="email" placeholder="Email address">
 							<br><br>
 							<input class="pure-input-1" type="password" name="password" placeholder="Password">
 							<br><br>
 							<input class="pure-input-1" type="password" name="password_confirmation" placeholder="Confirm password">
 							<br><br>
-							<input class="pure-input-1" type="text" name="phone" placeholder="Phone number">
+							<input class="pure-input-1" id="data-registration-phone" type="text" name="phone" placeholder="Phone number">
 							<br><br>
 							<select name="college" id="college_select" style="width:100%;">
 								<option value="0">Loading...</option>

@@ -248,14 +248,18 @@ $(function() {
 		event.preventDefault();
 
         var college_name = $('#name_new_college').val();
+        var email = $('#data-registration-email').val();
+        var name = $('#data-registration-name').val();
+        var phone = $('#data-registration-phone').val();
 
         $('#add-college-messages').html('<img src="img/loading.gif">');
+
 
         $.ajax({
           url: base_url + 'colleges/new',
           type: 'GET',
           dataType: 'jsonp',
-          data: { college_name: college_name },
+          data: { college_name: college_name, email: email, name: name, phone: phone },
           success: function(data, textStatus, xhr) {
           	if(data.result == 'success'){
           		$('#add-college-messages').html('<br>Your college has been added and is pending validation.');
