@@ -373,8 +373,7 @@ $event_code=$_GET["events"];
 					</div>
 					<div id="proshow_details">
 						For Proshow and ticket details contact:<br/>
-						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 9633 976 139<br/>
-						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 7738 823 901
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+91 7736 823 901
 					</div>
 					<div class="container">	
 						<div class="main">
