@@ -509,6 +509,23 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 					</div>
 					</div>
 				</div>
+				<div class="ctalk-overlay" id="modal6">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/armenon.jpg');"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Anil Radhakrishnan Menon </h3>
+						<h5>Director</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Shri Anil Radhakrishnan Menon is an Indian film director, mainly of Malayalam films. His directorial debut North 24 Kaatham (2013) won the National Film Award for Best Feature Film in Malayalam and Kerala State Film Award for Second Best Film. His second film Sapthamashree Thaskaraha (2014) also received positive reviews from critics, and became a hit at the box office. His movies are known for its simplicity, but at the same time they are thought provoking, leaving a lasting impression in the minds of the audience.
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			
 				<div class="heading">Prodezza</div>
 					<ul class="ch-grid">
@@ -549,6 +566,14 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 								<div class="ch-info md-trigger" id="modal5_link">
 									<h3>Sreenath Bhasi</h3>
 									<p>Actor</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-6">
+								<div class="ch-info md-trigger" id="modal6_link">
+									<h2>Anil Radhakrishnan Menon</h2>
+									<p>Director</p>
 								</div>
 							</div>
 						</li>
