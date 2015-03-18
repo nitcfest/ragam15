@@ -576,7 +576,7 @@ Catch him performing live this Ragam">
 						<li>
 							<div class="ch-item ch-img-6">
 								<div class="ch-info md-trigger" id="modal6_link">
-									<h2>Anil Radhakrishnan Menon</h2>
+									<h4>Anil Radhakrishnan Menon</h4>
 									<p>Director</p>
 								</div>
 							</div>

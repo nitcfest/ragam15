@@ -63,8 +63,7 @@
 }
 .ch-img-6 { 
 	background-image: url("../img/prodezza/armenon.jpg");
-	background-size:173%;
-	background-position: 92%;
+	background-size:100%;
 }
 .ch-info {
 	position: absolute;
