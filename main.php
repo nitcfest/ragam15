@@ -390,10 +390,14 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 									</a>
 								</li>
 								<li>
-									<a href="https://www.facebook.com/Ragam.nitc" data-largesrc="img/who.jpg" data-title="Coming soon" data-description="Too anxious to know about all the major events?<br/>
-						Expect a few surprises in the coming days..<br/>
-						Stay tuned for updates.">
-										<img src="img/who.jpg" alt="who"/>
+									<a href="#" data-largesrc="img/djp.jpg" data-title="DJ Diego Miranda" data-description="Get ready to party like never before. 
+Gear up for a whole new dimension of dance, party and entertainment. 
+Things just can’t get any bigger than this. 
+The biggest Sunburn Campus is here at National Institute of Technology Calicut, this Ragam.
+Keeping the promise of three nites of pure entertainment and awesomeness like never before at the biggest cultural fest in South India, Sunburn Campus and Ragam, National Institute of Technology Calicut presents ‘International EDM Nite’ featuring, for the first time ever in India, Diego Miranda , accompanied by Lost Stories and DJ A.K.S on 29 March,2015. 
+Ranked #70 in the world by DJ Mag,a Diego Miranda is one of the most influential Portuguese DJs and producers. 
+Catch him performing live this Ragam">
+										<img src="img/djm.jpg" alt="dj"/>
 									</a>
 								</li>							
 							</ul>
