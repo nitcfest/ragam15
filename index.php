@@ -239,7 +239,7 @@
   					</ul>
 					</div>
 				</div>
-				<div style="color:white;position:absolute;width:100%;font-size:2em;"><center><a href="Ragam15-schedule.pdf" style="color:white;">Download Schedule</a></center></div>
+				<div style="color:white;position:absolute;width:100%;font-size:2em;"><center><a href="schedule.pdf" style="color:white;">Download Schedule</a></center></div>
 				<div style="position:absolute;bottom:10%;height:10%;width:100%;font-size:2em;color:#fff"><center>March 26<sup>th</sup> - 29<sup>th</sup> </center></div>
 			</div>
 		</div>
