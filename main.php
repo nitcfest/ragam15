@@ -390,7 +390,7 @@ Witness them create magic, as they blend folk death metal and classic Celtic mus
 									</a>
 								</li>
 								<li>
-									<a href="#" data-largesrc="img/djp.jpg" data-title="DJ Diego Miranda" data-description="Get ready to party like never before. 
+									<a href="http://www.djdiegomiranda.com/" data-largesrc="img/djp.jpg" data-title="DJ Diego Miranda" data-description="Get ready to party like never before. 
 Gear up for a whole new dimension of dance, party and entertainment. 
 Things just can’t get any bigger than this. 
 The biggest Sunburn Campus is here at National Institute of Technology Calicut, this Ragam.
