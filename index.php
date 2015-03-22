@@ -188,6 +188,7 @@
 					<a data-href="sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
 					<a data-href="Prodezza"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
 					<a data-href="Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
+					<a data-href="http://app.ragam.org.in"><span class="icon-mobile"></span><span class="align-mid">Mobile Apps</span></a>
 					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
 				</div>	
 			</nav>
