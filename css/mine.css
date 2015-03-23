@@ -91,6 +91,9 @@
 .icon-mobile:before {
   content: "\e958";
 }
+.icon-heart:before {
+    content: url(../img/sneharagam1.png);
+}
 
 #spmenu-s2 {
   top: 50px;

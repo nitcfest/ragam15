@@ -1053,13 +1053,14 @@ cursor: pointer;}
 }
 #sponsers>ul{
   padding: 3%;
-  margin-top:10%;
-  margin-left: 5%;
 }
 .sponser_item{
   overflow: hidden;
   display: inline-block;
   margin: .5%;
+  height: 150px;
+  width: 150px;
+  position: relative;
   border: 2px solid white;
   padding: .5%;
   -webkit-transition: all .3s ease-in;
@@ -1077,6 +1078,12 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 box-shadow: inset 31px 0px 45px 0px rgba(0,0,0,0.75);
 }
 .sponser_item>img{
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 110px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
 }

@@ -895,59 +895,91 @@ Catch him performing live this Ragam">
 							</div>
 				</div>
 			</div>
-			<!-- <div id="sponsers" class="sec">
+			<div id="sponsers" class="sec">
 				<ul>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					<center>TITLE</center><br>
+						<img src="img/Companies_logo/title_sponsor.jpg">
+					</li>
+					<br>
+					<li class="sponser_item">
+						<center>POWERED BY</center><br>
+						<img src="img/Companies_logo/samagra.JPG">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>T-SHIRT</center><br>
+						<img src="img/Companies_logo/t-shirt sponsor.jpg">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>BANKING</center><br>
+						<img src="img/Companies_logo/banking partner.png">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>BANKING ASSOCIATE</center><br>
+						<img src="img/Companies_logo/Banking Associate .png">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>REGISTRATIONS PARTNER</center><br>
+						<img src="img/Companies_logo/reg partner.jpg">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>SNEHARAGAM</center><br>
+						<img src="img/Companies_logo/uae_exchange.jpg">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>POSTER PARTNER</center><br>
+						<img src="img/Companies_logo/playwhite.JPG">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>TELECOM PARTNER</center><br>
+						<img src="img/Companies_logo/telecom partner.png">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
-					</li>
-					<a href="http://www.google.com">
-					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>Radio Mango</center>
-					</li></a>
-					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>TOURISM PARTNER</center><br>
+						<img src="img/Companies_logo/Tourism Partner.png">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>TECH PARTNER</center><br>
+						<img src="img/Companies_logo/TECH Partner.jpg">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>IT PARTNER</center><br>
+						<img src="img/Companies_logo/IT Partner.gif">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>INSURANCE PARTNER </center><br>
+						<img src="img/Companies_logo/insurance partner.jpg">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>BEVERAGE PARTNER</center><br>
+						<img src="img/Companies_logo/bevarage.JPG">
 					</li>
 					<li class="sponser_item">
-						<img src="img/3.jpg"><br><center>sdfsdf</center>
+						<center>EVENTS PARTNER</center><br>
+						<img src="img/Companies_logo/event sponsor.gif">
+					</li>
+					<li class="sponser_item">
+						<center>EVENTS PARTNER</center><br>
+						<img src="img/Companies_logo/event sponsor.png">
+					</li>
+					<li class="sponser_item">
+						<br><center>EVENTS PARTNER</center>
+						<img src="img/Companies_logo/samagra.JPG">
+					</li>
+					<li class="sponser_item">
+							<br><center>EVENTS PARTNER</center>
+							<img src="img/Companies_logo/UCO-Bank-Event.jpg">
+					</li>
+					<li class="sponser_item">
+							<br><center>EVENTS PARTNER</center>
+							<img src="img/Companies_logo/zebronics_black_logo.png">
+					</li>
+					<li class="sponser_item">
+							<br><center>OTHERS</center>
+							<img src="img/Companies_logo/motor.JPG">
 					</li>
 				</ul>
-			</div> -->
+			</div>
 <!--**********************************************4INFO END*******************-->				
 <!--**********************************************5Highlights START*******************-->				
 	

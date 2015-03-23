@@ -185,11 +185,12 @@
 					<a data-href="Events"><span class="icon-drawer"></span><span class="align-mid">Competitions<span></a>
 					<a data-href="Workshops"><span class="icon-hammer2"></span><span class="align-mid">Workshops</span></a>
 					<a data-href="Proshows"><span class="icon-film"></span><span class="align-mid">Proshows</span></a>
-					<a data-href="sneharagam"><span class="icon-hammer2"></span><span class="align-mid">Sneharagam</span></a>
+					<a data-href="sneharagam"><span class="icon-heart"></span><span class="align-mid">Sneharagam</span></a>
 					<a data-href="Prodezza"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
 					<a data-href="Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="http://app.ragam.org.in"><span class="icon-mobile"></span><span class="align-mid">Mobile Apps</span></a>
 					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
+					<a data-href="sponsors.html"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
 				</div>	
 			</nav>
 			<div class="container">
@@ -216,7 +217,7 @@
 					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
 				</a>
 				<div style="position: absolute;margin-top: -7%;text-align: center;">
-					<img id="logo" src="img/sponsers/cap.jpg" style="width: 21%;">
+					<img id="logo" src="img/sponsers/cap.jpg" style="width: 21%;margin-left: 2%;">
 				 </div>
 				<div class="main">
 					<div id="main-text" class="path-container">
