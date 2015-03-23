@@ -214,6 +214,9 @@
 				<a target="_blank" href="https://www.youtube.com/user/RagamCulfest" data-toggle="modal" data-target="#callback" class="cbh-phone cbh-contact gray show static playing" id="youtube-icon">
 					<div class="cbh-ph-img-circle cbh-ph-img-circle-logo"></div>
 				</a>
+				<div style="position: absolute;margin-top: -7%;text-align: center;">
+					<img id="logo" src="img/sponsers/cap.jpg" style="width: 21%;">
+				 </div>
 				<div class="main">
 					<div id="main-text" class="path-container">
 					<ul class="ulstyled">
@@ -239,7 +242,7 @@
   					</ul>
 					</div>
 				</div>
-				<div style="color:white;position:absolute;width:100%;font-size:2em;"><center><a href="schedule.pdf" style="color:white;">Download Schedule</a></center></div>
+				<div style="color:white;position:absolute;width:100%;font-size:2em;bottom:20%;"><center><a href="schedule.pdf" style="color:white;">Download Schedule</a></center></div>
 				<div style="position:absolute;bottom:10%;height:10%;width:100%;font-size:2em;color:#fff"><center>March 26<sup>th</sup> - 29<sup>th</sup> </center></div>
 			</div>
 		</div>

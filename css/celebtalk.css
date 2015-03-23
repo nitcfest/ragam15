@@ -1,10 +1,10 @@
 .ch-grid {
-	margin: 5% 0 0 10%;
+	margin: 5% 0 0 8%;
 	padding: 0;
 	list-style: none;
 	display: block;
 	text-align: center;
-	width: 75%;
+	width: 85%;
 }
 
 .ch-grid:after,
@@ -64,6 +64,16 @@
 .ch-img-6 { 
 	background-image: url("../img/prodezza/armenon.jpg");
 	background-size:100%;
+}
+.ch-img-7 { 
+	background-image: url("../img/prodezza/sreejith_ravi.jpg");
+	background-size: 148%;
+	background-position: 88% 66%;
+}
+.ch-img-8 { 
+	background-image: url("../img/prodezza/san_sivan.jpg");
+	background-size: 148%;
+	background-position: 88% 66%;
 }
 .ch-info {
 	position: absolute;

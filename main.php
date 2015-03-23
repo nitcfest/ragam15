@@ -530,6 +530,40 @@ Catch him performing live this Ragam">
 					</div>
 					</div>
 				</div>
+				<div class="ctalk-overlay" id="modal7">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/sreejith_ravi.jpg');background-position:60% 0%"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Sreejith Ravi</h3>
+						<h5>Actor</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Mr. Sreejith Ravi is an industrialist and a Malayalam film actor. He also happens to be a distinguished alumnus of NIT, Suratkal. This talented actor is the son of the equally gifted actor, T G Ravindranathan, popularly known as T G Ravi. Mr. Sreejith's entry into movies was in 2005 through the movie Mayookham. Chanthupottu released in the same year which ran for more than 100 days came as a break for this actor. He eventually ventured into the Tamil film industry with the movie Vettai. His journey as an actor through over 50 movies in the Malayalam and Tamil film industry clearly highlights the versatility of this brilliant actor. He can perfectly fit into the shoes of the character; be it a malevolent villian or a highly amusing and entertaining comedian!
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="ctalk-overlay" id="modal8">
+					<div id="ctalk-box">
+					<div id="lbox" style="background-image:url('img/prodezza/san_sivan.jpg');background-position:60% 0%"></div>
+					<div id="rbox">
+						<div id="ctalk-header">
+						<h3>Sangeeth Sivan</h3>
+						<h5>Director | Screenwriter</h5>
+						</div>
+						<span class="close rounded black"></span>
+						<div id="ctalk-container">
+						<p style="color:#67919c;text-align:justify;font-size:.7em;width:89%;padding-top:20px;">
+						Sangeeth Sivan is a director and screenwriter who works in the Hindi and Malayalam film industries alike. He is most renowned for directing the highly successful and critically acclaimed 1992 Malayalam film Yodha, through which he established himself as a leading director in Malayalam. Son of the filmmaker Sivan, he started his career as the executive producer of the movie Raakh, starring Amir Khan and Pankaj Kapur. Soon he made his directorial debut with the Malayalam film Vyooham. His other well noticed works are Gandharvam, Nirnayam (Malayalam), Yamla Pagla Deewana 2 and Chura Liya Hai Tumne (Hindi).
+						</p>
+						</div>
+					</div>
+					</div>
+				</div>
 			
 				<div class="heading">Prodezza</div>
 					<ul class="ch-grid">
@@ -578,6 +612,22 @@ Catch him performing live this Ragam">
 								<div class="ch-info md-trigger" id="modal6_link">
 									<h4>Anil Radhakrishnan Menon</h4>
 									<p>Director</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-7">
+								<div class="ch-info md-trigger" id="modal7_link">
+									<h4>Sreejith Ravi</h4>
+									<p>Actor</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ch-item ch-img-8">
+								<div class="ch-info md-trigger" id="modal8_link">
+									<h4>Sangeeth Sivan</h4>
+									<p>Director | Screenwriter</p>
 								</div>
 							</div>
 						</li>
@@ -762,8 +812,6 @@ Catch him performing live this Ragam">
 
 			</div>
 			<div id="contacts" class="sec">
-				
-
 				<div style="height:100%;width:80%;float:left;margin-top:8%;padding-left:10%">
 					
 					<div id="contact-head-place" class="head-place" style="margin-top:0;padding-left:38%">
@@ -847,6 +895,59 @@ Catch him performing live this Ragam">
 							</div>
 				</div>
 			</div>
+			<!-- <div id="sponsers" class="sec">
+				<ul>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<a href="http://www.google.com">
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>Radio Mango</center>
+					</li></a>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+					<li class="sponser_item">
+						<img src="img/3.jpg"><br><center>sdfsdf</center>
+					</li>
+				</ul>
+			</div> -->
 <!--**********************************************4INFO END*******************-->				
 <!--**********************************************5Highlights START*******************-->				
 	
