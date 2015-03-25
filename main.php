@@ -358,6 +358,19 @@ $event_code=$_GET["events"];
 										</div>
 									</div>
 								</li>
+								<li>
+									<div class="ch-itemw event-name" id="EEX ">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-6w"></div>
+												<div class="ch-info-backw">
+													<h3>Ethnic Exhibition</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</section>
 					</div>

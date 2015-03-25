@@ -189,7 +189,7 @@
 					<a data-href="Prodezza"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
 					<a data-href="Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="http://app.ragam.org.in"><span class="icon-mobile"></span><span class="align-mid">Mobile Apps</span></a>
-					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
+					<!-- <a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a> -->
 					<a data-href="sponsors.html"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
 				</div>	
 			</nav>
