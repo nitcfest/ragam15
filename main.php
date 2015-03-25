@@ -705,6 +705,46 @@ Catch him performing live this Ragam">
 
 								<li>Ragam'15 Registration Desk will be open from 6:00 P.M, 26th March. In case of early arrival at the NIT Campus, contact the hospitality manager to avail temporary accommodation.</li></br>
 							</ol>
+							<h3>Evaluation and Result Declaration Policy</h3>
+							<ol>
+								<li>
+									Every participant should abide by the rules, regulations and specifications given in Ragam’15 website for each event. A participant will be disqualified if any of the instruments is not compliant with the specifications of the event or if his/her conduct is deemed unreasonable by the event co-ordinators.
+								</li>
+								<li>
+									If the participation for any event is low, the model given below will be used as a reference for awarding the prize money:
+									<ol>
+										<li>
+											Only one team: Consolation prize (not necessary)
+										</li>
+										<li>
+											Two teams: 50% of first prize only.
+										</li>
+										<li>
+											Three teams: 70% of first prize only.
+										</li>
+										<li>
+											Four teams: 1st and 2nd only. 
+										</li>
+									</ol>
+								</li>
+								<li>
+									The final decision regarding the prize money to be awarded will be the discretion of the organisers based on the performance of the participants.
+								</li> 
+								<li>
+									In case of two first/second prizes (A tie which cannot be settled by the tie breaking rounds or any method described in the specific event rules) then the prize money will be decided as follows:<br/>
+										Case a : 2 first positions - (First prize money + Second prize money)/2
+										<br/>Second position – Third Prize money
+										<br/>Third position will not be declared in this case.
+										<br/>Case b : 2 second positions – (Second Prize money + Third prize money)/2. <br/>Third place will not be declared in this case.<br/>
+										Case c : 2 third positions - third prize money/2<br/>
+								</li>
+								<li>
+									Decisions of event co-ordinators will be final and irrevocable.
+								</li>
+								<li>
+									If there is any issue regarding the result, it should be resolved with the respective event coordinators, at the event venue itself.
+								</li>
+							</ol>
 						</div>
 						<div class= "info-tab" id="tab-hosp">
 							<h2>Hospitality Guidelines</h2><br><br>
@@ -894,91 +934,6 @@ Catch him performing live this Ragam">
 								<h4>workshop@ragam.org.in</h4>
 							</div>
 				</div>
-			</div>
-			<div id="sponsers" class="sec">
-				<ul>
-					<li class="sponser_item">
-					<center>TITLE</center><br>
-						<img src="img/Companies_logo/title_sponsor.jpg">
-					</li>
-					<br>
-					<li class="sponser_item">
-						<center>POWERED BY</center><br>
-						<img src="img/Companies_logo/samagra.JPG">
-					</li>
-					<li class="sponser_item">
-						<center>T-SHIRT</center><br>
-						<img src="img/Companies_logo/t-shirt sponsor.jpg">
-					</li>
-					<li class="sponser_item">
-						<center>BANKING</center><br>
-						<img src="img/Companies_logo/banking partner.png">
-					</li>
-					<li class="sponser_item">
-						<center>BANKING ASSOCIATE</center><br>
-						<img src="img/Companies_logo/Banking Associate .png">
-					</li>
-					<li class="sponser_item">
-						<center>REGISTRATIONS PARTNER</center><br>
-						<img src="img/Companies_logo/reg partner.jpg">
-					</li>
-					<li class="sponser_item">
-						<center>SNEHARAGAM</center><br>
-						<img src="img/Companies_logo/uae_exchange.jpg">
-					</li>
-					<li class="sponser_item">
-						<center>POSTER PARTNER</center><br>
-						<img src="img/Companies_logo/playwhite.JPG">
-					</li>
-					<li class="sponser_item">
-						<center>TELECOM PARTNER</center><br>
-						<img src="img/Companies_logo/telecom partner.png">
-					</li>
-					<li class="sponser_item">
-						<center>TOURISM PARTNER</center><br>
-						<img src="img/Companies_logo/Tourism Partner.png">
-					</li>
-					<li class="sponser_item">
-						<center>TECH PARTNER</center><br>
-						<img src="img/Companies_logo/TECH Partner.jpg">
-					</li>
-					<li class="sponser_item">
-						<center>IT PARTNER</center><br>
-						<img src="img/Companies_logo/IT Partner.gif">
-					</li>
-					<li class="sponser_item">
-						<center>INSURANCE PARTNER </center><br>
-						<img src="img/Companies_logo/insurance partner.jpg">
-					</li>
-					<li class="sponser_item">
-						<center>BEVERAGE PARTNER</center><br>
-						<img src="img/Companies_logo/bevarage.JPG">
-					</li>
-					<li class="sponser_item">
-						<center>EVENTS PARTNER</center><br>
-						<img src="img/Companies_logo/event sponsor.gif">
-					</li>
-					<li class="sponser_item">
-						<center>EVENTS PARTNER</center><br>
-						<img src="img/Companies_logo/event sponsor.png">
-					</li>
-					<li class="sponser_item">
-						<br><center>EVENTS PARTNER</center>
-						<img src="img/Companies_logo/samagra.JPG">
-					</li>
-					<li class="sponser_item">
-							<br><center>EVENTS PARTNER</center>
-							<img src="img/Companies_logo/UCO-Bank-Event.jpg">
-					</li>
-					<li class="sponser_item">
-							<br><center>EVENTS PARTNER</center>
-							<img src="img/Companies_logo/zebronics_black_logo.png">
-					</li>
-					<li class="sponser_item">
-							<br><center>OTHERS</center>
-							<img src="img/Companies_logo/motor.JPG">
-					</li>
-				</ul>
 			</div>
 <!--**********************************************4INFO END*******************-->				
 <!--**********************************************5Highlights START*******************-->				

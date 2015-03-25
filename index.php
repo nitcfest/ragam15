@@ -189,7 +189,6 @@
 					<a data-href="Prodezza"><span class="icon-user-tie"></span><span class="align-mid">Prodezza</span></a>
 					<a data-href="Info"><span class="icon-compass"></span><span class="align-mid">General Info</span></a>
 					<a data-href="http://app.ragam.org.in"><span class="icon-mobile"></span><span class="align-mid">Mobile Apps</span></a>
-					<a data-href="http://ragam.org.in/2015/marketing"><span class="icon-user-tie"></span><span class="align-mid">Sponsor Us</span></a>
 					<a data-href="sponsors.html"><span class="icon-user-tie"></span><span class="align-mid">Sponsors</span></a>
 				</div>	
 			</nav>
@@ -244,8 +243,9 @@
   					</ul>
 					</div>
 				</div>
-				<div style="color:white;position:absolute;width:100%;font-size:1.2em;bottom:20%;"><center><a href="schedule.pdf" style="color:white;">Download Schedule</a></center></div>
-				<div style="position:absolute;bottom:10%;height:10%;width:100%;font-size:2em;color:#fff"><center>March 26<sup>th</sup> - 29<sup>th</sup> </center></div>
+				<div style="color:white;position:absolute;width:20%;font-size:1.2em;top:5%;"><center><a href="schedule.pdf" style="color:white;">Download Schedule</a></center></div>
+				<div style="color:white;position:absolute;width:20%;font-size:1.2em;top:10%;"><center><a href="guidelines.pdf" style="color:white;">Download Guidelines</a></center></div>
+				<div style="position:absolute;bottom:20%;height:10%;width:100%;font-size:2em;color:#fff"><center>March 26<sup>th</sup> - 29<sup>th</sup> </center></div>
 			</div>
 		</div>
 		
