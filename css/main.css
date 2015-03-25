@@ -1078,12 +1078,13 @@ box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 box-shadow: inset 31px 0px 45px 0px rgba(0,0,0,0.75);
 }
 .sponser_item>img{
-  max-width: 150px;
-  max-height: 110px;
+  max-width: 100%;
+  max-height: 80%;
   position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
   right: 0px;
   margin: auto;
+  z-index: -1;
 }

@@ -288,7 +288,7 @@ $event_code=$_GET["events"];
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">	
-				<div class="heading">Workshops</div>
+				<div class="heading" style="width: 40%;left: 30%;">Workshops And Exhibitions</div>
 					<div id="wlist">
 						<section class="main">
 							<ul class="ch-gridw">
@@ -352,6 +352,19 @@ $event_code=$_GET["events"];
 												<div class="ch-info-frontw ch-img-2w"></div>
 												<div class="ch-info-backw">
 													<h3>Dance</h3>
+													<p></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-itemw event-name" id="EEX ">
+										<div class="ch-info-wrapw">
+											<div class="ch-infow">
+												<div class="ch-info-frontw ch-img-6w"></div>
+												<div class="ch-info-backw">
+													<h3>Ethnic Exhibition</h3>
 													<p></p>
 												</div>
 											</div>
