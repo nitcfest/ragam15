@@ -288,7 +288,7 @@ $event_code=$_GET["events"];
 <!--**********************************************2WORKSHOPS START*******************-->				
 
 			<div id="Workshops" class="sec">	
-				<div class="heading">Workshops And Exhibitions</div>
+				<div class="heading" style="width: 40%;left: 30%;">Workshops And Exhibitions</div>
 					<div id="wlist">
 						<section class="main">
 							<ul class="ch-gridw">
