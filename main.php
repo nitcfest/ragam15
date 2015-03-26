@@ -60,11 +60,13 @@ $event_code=$_GET["events"];
 
 
 			<div class="registration-bar">			
-				<span id="registration-current-status">&nbsp;</span>
+<!-- 				<span id="registration-current-status">&nbsp;</span>
 				<button id="registration-action-login" type="button" class="pure-button button-xsmall button-success" style="display:none;">LOGIN</button>
 				<button id="registration-action-register" type="button" class="pure-button button-xsmall" style="display:none;">REGISTER</button>
 				<button id="registration-action-user" type="button" class="pure-button button-xsmall button-secondary" style="display:none;">VIEW PROFILE</button>
-				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button>
+				<button id="registration-action-logout" type="button" class="pure-button button-xsmall button-warning" style="display:none;">LOG OUT</button> -->
+				Online Registration is closed. See you at Ragam.
+
 			</div>
 
 
